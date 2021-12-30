@@ -1,0 +1,65 @@
+#+TITLE: Guix System Configuration
+#+PROPERTY: header-args:scheme :tangle config.scm
+
+(use-modules (gnu) (guix) (guix-package) (srfi srfi-1))
+(use-service-modules mcron networking ssh virtualization)
+(use-package-modules bootloaders certs package-management)
+
+(operating-system
+  (locale "en_US.utf8")
+  (timezone "America/New_York")
+  (keyboard-layout (keyboard-layout "us"))
+  (host-name "node1")
+  (users (cons* (user-account
+                  (name "vm")
+                  (comment "Virtual Manager")
+                  (group "users")
+                  (home-directory "/home/vm")
+                  (supplementary-groups
+                    '("kvm" "netdev" "wheel")))
+                %base-user-accounts))
+  (bootloader
+    (bootloader-configuration
+      (bootloader grub-efi-bootloader)
+      (targets "/boot/efi")
+      (keyboard-layout keyboard-layout)))
+  (mapped-devices
+    (list (mapped-device
+            (source
+              (uuid ""))
+            (targets "cryptroot")
+            (type luks-device-mapping))))
+  (file-systems
+    (cons* (file-system
+             (mount-point "/")
+             (device "/dev/mapper/cryptroot")
+             (type "bcachefs")
+             (dependencies mapped-devices))
+           (file-system
+             (mount-point "/boot/efi")
+             (device (uuid "" 'fat32))
+             (type "vfat"))
+           %base-file-systems))
+  (packages
+    (append
+      (list 
+      )
+      %min-packages))
+  (services
+    (append
+      (list (service openssh-service-type)
+            (service rtorrent-service-type)
+            (service static-networking-service-type
+                  (list (static-networking
+                         (addresses
+                          (list (network-address
+                                 (device "eno1")
+                                 (value "10.0.0.50/8"))))
+                         (routes
+                          (list (network-route
+                                 (destination "default")
+                                 (gateway "10.10.10.10"))))
+                         (name-servers '("10.10.10.10")))))
+            %base-services))))
+
+

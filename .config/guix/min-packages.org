@@ -1,0 +1,46 @@
+#+TITLE: Guix Minimal-Packages
+#+PROPERTY: header-args:scheme :tangle min-packages.scm
+
+(list
+ (min-packages
+   bash
+   bash-completion
+   bzip2
+   coreutils
+   diffutils
+   emacs
+   emacs-evil
+   emacs-evil-collection
+   emacs-geiser
+   emacs-geiser-guile
+   emacs-guix
+   emacs-magit
+   emacs-org
+   emacs-tramp
+   emacs-undo-tree
+   emacs-which-key
+   eudev
+   findutils
+   gawk
+   git
+   grep
+   guile
+   guile-colorized
+   guile-readline
+   gzip
+   kmod
+   less
+   lzip
+   man-db
+   nss-certs
+   patch
+   procps
+   psmisc
+   sed
+   shadow
+   tar
+   util-linux-with-udev
+   wget
+   which
+   xz
+   zsftd))

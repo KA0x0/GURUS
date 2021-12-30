@@ -1,0 +1,4 @@
+#+TITLE: Guix Hestia
+
+* Guix Hestia
+Managed with guix-home manager.

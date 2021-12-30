@@ -1,0 +1,61 @@
+#+TITLE: Guix System Configuration
+#+PROPERTY: header-args:scheme :tangle config.scm
+
+(use-modules (gnu) (guix) (guix-package) (srfi srfi-1))
+(use-service-modules desktop mcron networking spice ssh virtualization xorg)
+(use-package-modules bootloaders certs fonts package-management wget)
+
+(operating-system
+  (locale "en_US.utf8")
+  (timezone "America/New_York")
+  (keyboard-layout (keyboard-layout "us"))
+  (host-name "dev")
+  (users (cons* (user-account
+                  (name "khaoz")
+                  (comment "KHAOZ")
+                  (group "users")
+                  (home-directory "/home/khaoz")
+                  (supplementary-groups
+                    '("audio" "kvm" "netdev" "video" "wheel")))
+                %base-user-accounts))
+  (bootloader
+    (bootloader-configuration
+      (bootloader grub-efi-bootloader)
+      (targets "/boot/efi")
+      (keyboard-layout keyboard-layout)))
+  (mapped-devices
+    (list (mapped-device
+            (source
+              (uuid ""))
+            (targets "cryptroot")
+            (type luks-device-mapping))))
+  (file-systems
+    (cons* (file-system
+             (mount-point "/")
+             (device "/dev/mapper/cryptroot")
+             (type "bcachefs")
+             (dependencies mapped-devices))
+           (file-system
+             (mount-point "/boot/efi")
+             (device (uuid "" 'fat32))
+             (type "vfat"))
+           %base-file-systems))
+  (packages
+    (append
+      (list
+        dbus
+        emacs-exwm
+        piperwire
+        spice-vdagent
+        xinit
+        xrandr)
+ %min-packages))
+  (services
+    (append
+      (list (service elogind-service-type)
+            (service libvirt-service-type)
+            (service network-manager-service-type)
+            (service openssh-service-type)
+            (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
+            (service wpa-supplicant-service-type)
+      %base-services))))

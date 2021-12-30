@@ -1,0 +1,31 @@
+#+TITLE: Guix Home Configuration
+#+PROPERTY: header-args:scheme :tangle home.scm
+
+;; This "home-environment" file can be passed to 'guix home reconfigure'
+;; to reproduce the content of your profile.  This is "symbolic": it only
+;; specifies package names.  To reproduce the exact same profile, you also
+;; need to capture the channels being used, as returned by "guix describe".
+;; See the "Replicating Guix" section in the manual.
+
+(use-modules (gnu home) (gnu home services) (gnu home services shells) (guix gexp) (gnu services) (guix-package admin) (gnu packages bash))
+
+(home-environment
+  (services
+    (list (service
+            home-bash-service-type
+            (home-bash-configuration
+              (aliases
+               '(("cp" . "cp -iv")
+                 ("df" . "df -h")
+                 ("egrep" . "egrep --color=auto")
+                 ("fgrep" . "fgrep --color=auto")
+                 ("free" . "free -m")
+                 ("grep" . "grep --color=auto")
+                 ("ls" . "ls --color=auto")
+                 ("mkdir" . "mkdir --parents --verbose")
+                 ("mv" . "mv -iv")
+                 ("rm" . "rm -iv")))
+          (environment-variables
+              ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
+              ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
+              ("SHELL" . ,(file-append bash "/bin/bash"))))))))
