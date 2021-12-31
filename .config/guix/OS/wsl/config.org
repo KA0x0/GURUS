@@ -2,8 +2,8 @@
 #+PROPERTY: header-args:scheme :tangle config.scm
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules mcron)
 (use-package-modules certs)
+(use-service-modules mcron)
 
 (operating-system
   (host-name "wsl")

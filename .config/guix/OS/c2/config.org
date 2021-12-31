@@ -2,8 +2,8 @@
 #+PROPERTY: header-args:scheme :tangle config.scm
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules mcron networking ssh)
 (use-package-modules bootloaders certs package-management)
+(use-service-modules mcron networking ssh)
 
 (operating-system
   (locale "en_US.utf8")
