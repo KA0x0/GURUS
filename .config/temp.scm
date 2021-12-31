@@ -1,17 +1,10 @@
 ZFS if needed
 
-(use-modules (gnu))
-(use-modules (gnu packages file-systems))
-(use-modules (gnu services docker))
-(use-service-modules networking ssh)
-(use-modules (gnu services desktop))
-(use-modules (gnu services virtualization))
+(use-modules (gnu) (guix) (guix-package) (guix-profiles) (srfi srfi-1))
+(use-service-modules linux mcron virtualization)
+(use-package-modules certs)
 
-(use-modules (guix packages))
-(use-package-modules file-systems linux)
-(use-service-modules linux shepherd)
-
-(define my-kernel linux-libre-5.10) ; change to your preferred version.
+(define my-kernel linux-libre-5.15) ; change to latest LTS version : https://www.kernel.org/category/releases.html
 
 (define my-zfs
   (package
@@ -75,7 +68,7 @@ ZFS if needed
   (mapped-devices
     (list (mapped-device
             (source
-              (uuid "5ad467b2-ef48-4aef-abd7-5619d90277db"))
+              (uuid "31a5b79e-3e86-4d9b-9637-8e114e7cc30b"))
             (target "cryptroot")
             (type luks-device-mapping))))
   (file-systems
@@ -86,22 +79,20 @@ ZFS if needed
              (dependencies mapped-devices))
            (file-system
              (mount-point "/boot/efi")
-             (device (uuid "F7D2-3ACD" 'fat32))
+             (device (uuid "89FD-BE66" 'fat32))
              (type "vfat"))
            %base-file-systems))
   (packages
     (append
-      (map specification->package '("emacs" "nss-certs"))
-      (list my-zfs)
-      %base-packages))
+      (list
+      my-zfs)
+  %min-packages))
   (services
     (append
       (list (service openssh-service-type)
             (service network-manager-service-type)
-            (service wpa-supplicant-service-type)
             (service docker-service-type)
             (service libvirt-service-type)
-            (elogind-service)
             (simple-service
               'zfs-loader
               kernel-module-loader-service-type
@@ -120,10 +111,10 @@ ZFS if needed
               '(zfs-automount)))
       %base-services))
 
-  (kernel my-kernel)
-  ; This *installs* ZFS into your kernel.
-  (kernel-loadable-modules (list
-                             (list my-zfs "module"))))
+(kernel my-kernel)
+; This *installs* ZFS into your kernel.
+(kernel-loadable-modules (list
+                          (list my-zfs "module"))))
 
 
 
@@ -163,9 +154,6 @@ ZFS if needed
 
   (packages (append (list font-bitstream-vera nss-certs nvi wget)
                     %base-packages))
-
-  (services
-   (append (list (service xfce-desktop-service-type)
 
                  ;; Choose SLiM, which is lighter than the default GDM.
                  (service slim-service-type
