@@ -1,7 +1,7 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle config.scm
 
-(use-modules (gnu) (guix) (guix-package) (guix-profiles) (srfi srfi-1))
+(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules mcron)
 (use-package-modules certs)
 
@@ -38,7 +38,7 @@
       (list
       sshfs
       )
- %min-packages))
+  %my-packages))
   (services
     (append
       (list (service network-manager-service-type)

@@ -1,7 +1,7 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle config.scm
 
-(use-modules (gnu) (guix) (guix-package) (srfi srfi-1))
+(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules desktop mcron networking spice ssh virtualization xorg)
 (use-package-modules bootloaders certs fonts package-management wget)
 
@@ -49,7 +49,7 @@
         spice-vdagent
         xinit
         xrandr)
- %min-packages))
+ %my-packages))
   (services
     (append
       (list (service elogind-service-type)
