@@ -1,8 +1,6 @@
-ZFS if needed
-
-(use-modules (gnu) (guix) (guix-package) (guix-profiles) (srfi srfi-1))
-(use-service-modules linux mcron virtualization)
+(use-modules (gnu) (guix) (guix-package) (srfi srfi-1))
 (use-package-modules certs)
+(use-service-modules linux mcron virtualization)
 
 (define my-kernel linux-libre-5.15) ; change to latest LTS version : https://www.kernel.org/category/releases.html
 
