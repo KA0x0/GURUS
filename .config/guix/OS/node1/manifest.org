@@ -7,6 +7,9 @@
 ;; capture the channels being used, as returned by "guix describe".
 ;; See the "Replicating Guix" section in the manual.
 
+(use-modules (guix packages) (gcrypt hash))
+(use-modules (gnu packages bittorrent))
+
 (define my-libtorrent
   (package
     (inherit libtorrent)

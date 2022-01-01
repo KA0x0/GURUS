@@ -1,9 +1,11 @@
 #+TITLE: Guix Minimal-Packages
 #+PROPERTY: header-args:scheme :tangle min-packages.scm
 
+(use-modules (gnu packages))
 (define-module (my-variables))
 
 (define-public my-packages
+  (map specification->package
   '("bash"
    "bash-completion"
    "bzip2"
@@ -43,5 +45,4 @@
    "util-linux-with-udev"
    "wget"
    "which"
-   "xz"
-   "zsftd"))
+   "xz")))

@@ -1,6 +1,7 @@
-(use-modules (gnu) (guix) (guix-package) (srfi srfi-1))
-(use-package-modules certs)
-(use-service-modules linux mcron virtualization)
+(add-to-load-path (dirname (current-filename)))
+(use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
+(use-service-modules linux mcron networking shepherd ssh virtualization)
+(use-package-modules certs file-systems linux)
 
 (define my-kernel linux-libre-5.15) ; change to latest LTS version : https://www.kernel.org/category/releases.html
 
@@ -84,13 +85,13 @@
     (append
       (list
       my-zfs)
-  %min-packages))
+  my-packages))
   (services
     (append
       (list (service openssh-service-type)
             (service network-manager-service-type)
-            (service docker-service-type)
             (service libvirt-service-type)
+            (service wpa-supplicant-service-type)
             (simple-service
               'zfs-loader
               kernel-module-loader-service-type
@@ -113,13 +114,7 @@
 ; This *installs* ZFS into your kernel.
 (kernel-loadable-modules (list
                           (list my-zfs "module"))))
-
-
-
-
-
-
-
+                          
 
 (operating-system
   (host-name "network")
