@@ -16,6 +16,7 @@
         "emacs-password-store-otp"
         "ffmpeg"
         "freerdp"
+        "gdb"
         "google-cloud-sdk"
         "mktorrent"
         "mpd"
