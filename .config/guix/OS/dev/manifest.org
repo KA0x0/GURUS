@@ -31,6 +31,7 @@
         "podman"
         "python"
         "rsync"
+        "scanmem"
         "sshfs"
         "wireguard-tools"
         "yt-dlp"))
