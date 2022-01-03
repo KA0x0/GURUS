@@ -43,6 +43,7 @@
   (packages
     (append
       (list
+      ppp
       )
  %my-packages))
   (services
