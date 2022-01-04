@@ -1,5 +1,5 @@
 #+TITLE: Guix Minimal-Packages
-#+PROPERTY: header-args:scheme :tangle min-packages.scm
+#+PROPERTY: header-args:scheme :tangle my-variables.scm
 
 (use-modules (gnu packages))
 (define-module (my-variables))

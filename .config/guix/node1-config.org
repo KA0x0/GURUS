@@ -1,22 +1,22 @@
 #+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle config.scm
+#+PROPERTY: header-args:scheme :tangle node1-config.scm
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-package-modules bootloaders certs package-management)
-(use-service-modules mcron networking ssh)
+(use-service-modules mcron networking ssh virtualization)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "vpn")
+  (host-name "node1")
   (users (cons* (user-account
-                  (name "hop")
-                  (comment "Hopping from point to point")
+                  (name "vm")
+                  (comment "Virtual Manager")
                   (group "users")
-                  (home-directory "/home/hop")
+                  (home-directory "/home/vm")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("kvm" "netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -42,22 +42,24 @@
            %base-file-systems))
   (packages
     (append
-      (list
+      (list 
       )
   %my-packages))
   (services
     (append
       (list (service openssh-service-type)
+            (service rtorrent-service-type)
             (service static-networking-service-type
                   (list (static-networking
                          (addresses
                           (list (network-address
-                                 (device "wlan0")
-                                 (value "10.10.10.10/8"))))
+                                 (device "eno1")
+                                 (value "10.0.0.50/8"))))
                          (routes
                           (list (network-route
                                  (destination "default")
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
-            (service wireguard-service-type)
-      %base-services))))
+            %base-services))))
+
+

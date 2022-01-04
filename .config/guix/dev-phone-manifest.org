@@ -1,5 +1,5 @@
 #+TITLE: Guix Manifest
-#+PROPERTY: header-args:scheme :tangle manifest.scm
+#+PROPERTY: header-args:scheme :tangle dev-phone-manifest.scm
 
 ;; This "manifest" file can be passed to 'guix package -m' to reproduce
 ;; the content of your profile.  This is "symbolic": it only specifies

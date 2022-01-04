@@ -1,5 +1,5 @@
 #+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle config.scm
+#+PROPERTY: header-args:scheme :tangle network-config.scm
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-package-modules bootloaders certs package-management)

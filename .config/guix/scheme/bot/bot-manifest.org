@@ -1,5 +1,5 @@
 #+TITLE: Guix Manifest
-#+PROPERTY: header-args:scheme :tangle manifest.scm
+#+PROPERTY: header-args:scheme :tangle bot-manifest.scm
 
 ;; This "manifest" file can be passed to 'guix package -m' to reproduce
 ;; the content of your profile.  This is "symbolic": it only specifies
@@ -8,7 +8,9 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "hashcat"
-        "nyxt"
+  (list "curl"
+        "ffmpeg"
+        "python"
         "rsync"
-        "virt-manager"))
+        "sshfs"
+        "wireguard-tools"))
