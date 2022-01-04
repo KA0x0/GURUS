@@ -1,22 +1,24 @@
 #+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle node1-config.scm
+#+PROPERTY: header-args:scheme :tangle laptop-config.scm
+
+(add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-package-modules bootloaders certs package-management)
-(use-service-modules mcron networking ssh virtualization)
+(use-package-modules bootloaders certs fonts package-management)
+(use-service-modules desktop mcron networking ssh virtualization xorg)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "node1")
+  (host-name "phone")
   (users (cons* (user-account
-                  (name "vm")
-                  (comment "Virtual Manager")
+                  (name "mobile")
+                  (comment "Mobile")
                   (group "users")
-                  (home-directory "/home/vm")
+                  (home-directory "/home/mobile")
                   (supplementary-groups
-                    '("kvm" "netdev" "wheel")))
+                    '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -42,24 +44,17 @@
            %base-file-systems))
   (packages
     (append
-      (list 
-      )
-  %my-packages))
+      (list
+        dbus
+        emacs-exwm
+        xinit
+        xrandr)
+ %my-packages))
   (services
     (append
-      (list (service openssh-service-type)
-            (service rtorrent-service-type)
-            (service static-networking-service-type
-                  (list (static-networking
-                         (addresses
-                          (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.50/8"))))
-                         (routes
-                          (list (network-route
-                                 (destination "default")
-                                 (gateway "10.10.10.10"))))
-                         (name-servers '("10.10.10.10")))))
-            %base-services))))
-
-
+      (list (service elogind-service-type)
+            (service libvirt-service-type)
+            (service network-manager-service-type)
+            (service openssh-service-type)
+            (service wpa-supplicant-service-type)
+      %base-services))))

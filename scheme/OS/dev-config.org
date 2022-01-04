@@ -1,20 +1,22 @@
 #+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle laptop-config.scm
+#+PROPERTY: header-args:scheme :tangle dev-config.scm
+
+(add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-package-modules bootloaders certs fonts package-management)
-(use-service-modules desktop mcron networking ssh virtualization xorg)
+(use-service-modules desktop mcron networking spice ssh virtualization xorg)
+(use-package-modules bootloaders certs fonts package-management wget)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "laptop")
+  (host-name "dev")
   (users (cons* (user-account
-                  (name "mobile")
-                  (comment "Mobile")
+                  (name "khaoz")
+                  (comment "KHAOZ")
                   (group "users")
-                  (home-directory "/home/mobile")
+                  (home-directory "/home/khaoz")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
@@ -45,6 +47,8 @@
       (list
         dbus
         emacs-exwm
+        piperwire
+        spice-vdagent
         xinit
         xrandr)
  %my-packages))
@@ -54,5 +58,6 @@
             (service libvirt-service-type)
             (service network-manager-service-type)
             (service openssh-service-type)
+            (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
             (service wpa-supplicant-service-type)
       %base-services))))

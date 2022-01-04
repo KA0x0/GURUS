@@ -1,9 +1,11 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle wsl-config.scm
 
+(add-to-load-path (dirname (current-filename)))
+
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-package-modules certs)
 (use-service-modules mcron)
+(use-package-modules certs)
 
 (operating-system
   (host-name "wsl")

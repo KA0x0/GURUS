@@ -1,9 +1,11 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle vpn-config.scm
 
+(add-to-load-path (dirname (current-filename)))
+
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-package-modules bootloaders certs package-management)
 (use-service-modules mcron networking ssh)
+(use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
