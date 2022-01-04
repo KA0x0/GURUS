@@ -9,12 +9,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "phone")
+  (host-name "site")
   (users (cons* (user-account
-                  (name "mobile")
-                  (comment "Mobile")
+                  (name "web")
+                  (comment "Web")
                   (group "users")
-                  (home-directory "/home/mobile")
+                  (home-directory "/home/web")
                   (supplementary-groups
                     '("wheel" "netdev")))
                 %base-user-accounts))
