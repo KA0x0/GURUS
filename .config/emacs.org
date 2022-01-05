@@ -1,8 +1,6 @@
 #+TITLE: Emacs Configuration
 #+PROPERTY: header-args:emacs-lisp :tangle .emacs.d/init.el
 
-This is an ongoing evolution of my original Emacs configuration files, inspired by a bunch of resources I've found online.
-
 * Table of Contents
 :PROPERTIES:
 :TOC:      :include all :ignore this
@@ -4482,10 +4480,6 @@ I use this nice package from [[https://gitlab.com/willvaughn][nackjicholson]] to
   (defun dw/bluetooth-connect-q30 ()
     (interactive)
     (start-process-shell-command "bluetoothctl" nil "bluetoothctl -- connect 11:14:00:00:1E:1A"))
-
-  (defun dw/bluetooth-connect-qc35 ()
-    (interactive)
-    (start-process-shell-command "bluetoothctl" nil "bluetoothctl -- connect 04:52:C7:5E:5C:A8"))
 
   (defun dw/bluetooth-disconnect ()
     (interactive)
