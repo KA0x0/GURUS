@@ -29,3 +29,11 @@
               ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
               ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
               ("SHELL" . ,(file-append bash "/bin/bash"))))))))
+            (service home-shepherd-service-type
+              (home-shepherd-configuration
+		           (services
+		            (list
+		             (shepherd-service
+			            (provision '(emacs))
+			            (start #~(make-system-constructor "emacs --daemon"))
+                  (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'")))

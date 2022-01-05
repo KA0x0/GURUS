@@ -61,5 +61,20 @@
                                  (destination "default")
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
-            (service wireguard-service-type)
+                                     (service wireguard-service-type
+            (wireguard-configuration
+                          (addresses '("10.0.0.0/8"))
+                          (peers
+                           (list (wireguard-peer (name "cloud")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.2/28")))
+                                 (wireguard-peer)(name "laptop")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.2/32")))
+                                 (wireguard-peer (name "network")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.3/32")))
+                                 (wireguard-peer (name "phone")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.17/32")))))))
       %base-services))))
