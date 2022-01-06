@@ -4,7 +4,7 @@
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
-(use-service-modules mcron networking shepherd ssh)
+(use-service-modules mcron networking shepherd ssh vpn)
 (use-package-modules bootloaders certs package-management)
 
 (operating-system
@@ -46,7 +46,7 @@
     (append
       (list
       )
-  %my-packages))
+  my-packages))
   (services
     (append
       (list (service openssh-service-type)

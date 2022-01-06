@@ -34,7 +34,6 @@
     - [[#basic-customization][Basic Customization]]
     - [[#enable-mode-diminishing][Enable Mode Diminishing]]
     - [[#smart-mode-line][Smart Mode Line]]
-    - [[#doom-modeline][Doom Modeline]]
   - [[#workspaces][Workspaces]]
   - [[#notifications][Notifications]]
   - [[#auto-saving-changed-files][Auto-Saving Changed Files]]
@@ -119,19 +118,14 @@
     - [[#language-server-support][Language Server Support]]
       - [[#eglot][Eglot]]
     - [[#debug-adapter-support][Debug Adapter Support]]
-    - [[#meta-lisp][Meta Lisp]]
     - [[#clojure][Clojure]]
     - [[#common-lisp][Common Lisp]]
-    - [[#scheme][Scheme]]
-    - [[#typescript-and-javascript][TypeScript and JavaScript]]
     - [[#cc][C/C++]]
     - [[#go][Go]]
     - [[#rust][Rust]]
-    - [[#ocaml][OCaml]]
     - [[#f][F#]]
     - [[#emacs-lisp][Emacs Lisp]]
     - [[#scheme][Scheme]]
-    - [[#zig][Zig]]
     - [[#markdown][Markdown]]
     - [[#html][HTML]]
     - [[#yaml][YAML]]
@@ -245,7 +239,7 @@ Some parts of the configuration require knowledge of whether Emacs is running on
   (setq dw/is-termux
         (string-suffix-p "Android" (string-trim (shell-command-to-string "uname -a"))))
 
-  (setq dw/is-guix-system (and (eq system-type 'gnu/linux)
+  (setq dw/is-guix (and (eq system-type 'gnu/linux)
                                (require 'f)
                                (string-equal (f-read "/etc/issue")
                                              "\nThis is the GNU system.  Welcome.\n")))
@@ -4313,25 +4307,6 @@ I use this nice package from [[https://gitlab.com/willvaughn][nackjicholson]] to
 
 #+end_src
 
-** Mastodon
-
-#+begin_src emacs-lisp
-
-  (use-package mastodon
-    :defer t
-    :config
-    (setq mastodon-instance-url "https://mastodon.social"))
-
-#+end_src
-
-*Guix Packages*
-
-#+begin_src scheme :noweb-ref packages :noweb-sep ""
-
-  "emacs-mastodon"
-
-#+end_src
-
 ** RSS with Elfeed
 
 [[https://github.com/skeeto/elfeed][Elfeed]] looks like a great RSS feed reader.  Not using it much yet, but definitely looking forward to using it to keep track of a few different blogs I follow using Twitter.  Also seems to be great for following subreddits like /r/Emacs.
@@ -4479,11 +4454,7 @@ I use this nice package from [[https://gitlab.com/willvaughn][nackjicholson]] to
 
   (defun dw/bluetooth-connect-q30 ()
     (interactive)
-    (start-process-shell-command "bluetoothctl" nil "bluetoothctl -- connect 11:14:00:00:1E:1A"))
-
-  (defun dw/bluetooth-disconnect ()
-    (interactive)
-    (start-process-shell-command "bluetoothctl" nil "bluetoothctl -- disconnect"))
+    (start-process-shell-command "bluetoothctl" nil "bluetoothctl -- connect "))
 
 #+end_src
 

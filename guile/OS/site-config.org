@@ -46,7 +46,7 @@
     (append
       (list
       )
-  %my-packages))
+  my-packages))
   (services
     (append
       (list (service network-manager-service-type)

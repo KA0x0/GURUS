@@ -49,7 +49,7 @@
         emacs-exwm
         xinit
         xrandr)
- %my-packages))
+ my-packages))
   (services
     (append
       (list (service elogind-service-type)

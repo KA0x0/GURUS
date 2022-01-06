@@ -47,7 +47,7 @@
       (list
       ppp
       )
- %my-packages))
+ my-packages))
   (services
     (append
       (list (service openssh-service-type)
