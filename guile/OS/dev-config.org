@@ -46,6 +46,7 @@
     (append
       (list
         dbus
+        my-emacs
         emacs-exwm
         piperwire
         spice-vdagent
