@@ -33,8 +33,6 @@
    "coreutils"
    "diffutils"
    "my-emacs-no-x"
-   "direnv"
-   "emacs-direnv"
    "emacs-evil"
    "emacs-evil-collection"
    "emacs-geiser"

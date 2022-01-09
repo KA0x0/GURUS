@@ -10,6 +10,8 @@
 (specifications->manifest
   (list "awscli"
         "curl"
+        "direnv"
+        "emacs-direnv"
         "emacs-emms"
         "emacs-exiftool"
         "emacs-password-store"
