@@ -11,7 +11,7 @@
   (list "awscli"
         "curl"
         "direnv"
-        "emacs-direnv emacs-envrc"
+        "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
         "emacs-password-store"
