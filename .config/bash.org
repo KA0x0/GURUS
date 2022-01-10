@@ -173,4 +173,6 @@ bind '"\C-p": history-search-backward'
 bind '"\C-n": history-search-forward'
 
 ### VARIABLES 
-EDITOR = emacsclient
+EDITOR = /bin/emacsclient
+VISUAL = /bin/emacslient
+SHELL = /bin/bash
