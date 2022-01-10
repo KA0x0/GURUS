@@ -9,6 +9,7 @@
 
 (specifications->manifest
   (list "awscli"
+        "bluez"
         "curl"
         "direnv"
         "emacs-envrc"
