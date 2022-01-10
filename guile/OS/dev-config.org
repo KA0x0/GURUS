@@ -45,6 +45,7 @@
   (packages
     (append
       (list
+        bluez
         dbus
         my-emacs
         emacs-exwm

@@ -9,7 +9,6 @@
 
 (specifications->manifest
   (list "awscli"
-        "bluez"
         "emacs-bluetooth"
         "curl"
         "direnv"
