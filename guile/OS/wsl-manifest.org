@@ -8,7 +8,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "hashcat"
+  (list "my-emacs"
+        "hashcat"
         "nyxt"
         "rsync"
         "virt-manager"))
