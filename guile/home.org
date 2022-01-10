@@ -11,8 +11,7 @@
 
 (home-environment
   (services
-    (list (service
-            home-bash-service-type
+    (list (service home-bash-service-type
             (home-bash-configuration
               (aliases
                '(("cp" . "cp -iv")
@@ -28,7 +27,7 @@
           (environment-variables
               ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
               ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
-              ("SHELL" . ,(file-append bash "/bin/bash"))))))))
+              ("SHELL" . ,(file-append bash "/bin/bash")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
 		           (services
@@ -36,4 +35,4 @@
 		             (shepherd-service
 			            (provision '(emacs))
 			            (start #~(make-system-constructor "emacs --daemon"))
-                  (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'")))
+                  (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))))))))))
