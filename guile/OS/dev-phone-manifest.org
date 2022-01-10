@@ -17,6 +17,7 @@
         "emacs-modus-themes"
         "emacs-password-store"
         "emacs-password-store-otp"
+        "eshell-prompt-extras"
         "ffmpeg"
         "freerdp"
         "gdb"
