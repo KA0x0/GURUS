@@ -5,4 +5,4 @@
 	name = KH405
 	email = jasonmercier666@gmail.com
 [core]
-	editor = emacsclient
+	editor = /bin/emacsclient
