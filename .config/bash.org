@@ -174,5 +174,5 @@ bind '"\C-n": history-search-forward'
 
 ### VARIABLES 
 EDITOR = /bin/emacsclient
-VISUAL = /bin/emacslient
+VISUAL = /bin/emacsclient
 SHELL = /bin/bash
