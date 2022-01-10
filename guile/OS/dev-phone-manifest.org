@@ -14,6 +14,7 @@
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
+        "emacs-modus-themes"
         "emacs-password-store"
         "emacs-password-store-otp"
         "ffmpeg"
