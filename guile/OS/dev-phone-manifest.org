@@ -35,6 +35,7 @@
         "pass-rotate"
         "pass-tomb"
         "podman"
+        "emacs-powershell"
         "python"
         "rsync"
         "sshfs"
