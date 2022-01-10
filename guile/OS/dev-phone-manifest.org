@@ -18,6 +18,7 @@
         "emacs-modus-themes"
         "eshell-prompt-extras"
         "ffmpeg"
+        "font-hack"
         "freerdp"
         "gdb"
         "google-cloud-sdk"
