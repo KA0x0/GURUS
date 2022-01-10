@@ -13,10 +13,10 @@
   (keyboard-layout (keyboard-layout "us"))
   (host-name "C2")
   (users (cons* (user-account
-                  (name "communication")
-                  (comment "Communicating")
+                  (name "commandcontrol")
+                  (comment "CommAndControl")
                   (group "users")
-                  (home-directory "/home/communication")
+                  (home-directory "/home/commandcontrol")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
