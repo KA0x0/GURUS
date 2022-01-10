@@ -24,10 +24,10 @@
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "mv -iv")
                  ("rm" . "rm -iv")))
-          (environment-variables
-              ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
-              ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
-              ("SHELL" . ,(file-append bash "/bin/bash")))))
+              (environment-variables
+                 ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
+                 ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
+                 ("SHELL" . ,(file-append bash "/bin/bash")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
 		           (services
