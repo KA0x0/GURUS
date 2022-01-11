@@ -25,7 +25,7 @@
     (source (sha256
                (base32
                 "1bs2fnf4q7mlhkhzp3i1v052v9xn8qa7g845pk9ia8hlpw207pwy")))
-    (inputs `(("libtorrent" ,my-libtorrent)))))
+    (inputs (list my-libtorrent))))
 
 (specifications->manifest
   (list "calibre"
