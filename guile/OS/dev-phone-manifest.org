@@ -13,7 +13,6 @@
         "curl"
         "direnv"
         "emacs-envrc"
-        "emacs-build-farm"
         "emacs-emms"
         "emacs-exiftool"
         "emacs-modus-themes"
