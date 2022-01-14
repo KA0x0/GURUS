@@ -25,7 +25,6 @@
         "mktorrent"
         "mpd"
         "mpv"
-        "nyxt"
         "openvpn"
         "password-store"
         "emacs-password-store"

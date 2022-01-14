@@ -10,6 +10,5 @@
 (specifications->manifest
   (list "my-emacs"
         "hashcat"
-        "nyxt"
         "rsync"
         "virt-manager"))
