@@ -64,6 +64,7 @@
    "psmisc"
    "sed"
    "shadow"
+   "sudo"
    "tar"
    "util-linux-with-udev"
    "wget"
