@@ -48,6 +48,7 @@
         bluez
         dbus
         emacs-exwm
+        pipewire
         xinit
         xrandr)
  my-packages))
