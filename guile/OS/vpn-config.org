@@ -77,4 +77,5 @@
                                  (wireguard-peer (name "phone")
                                                  (public-key "")
                                                  (allowed-ips '("172.28.1.17/32")))))))
+            (service unattended-upgrade-service-type)
       %base-services))))

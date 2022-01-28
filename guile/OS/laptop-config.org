@@ -57,5 +57,6 @@
             (service libvirt-service-type)
             (service network-manager-service-type)
             (service openssh-service-type)
+            (service unattended-upgrade-service-type)
             (service wpa-supplicant-service-type)
       %base-services))))

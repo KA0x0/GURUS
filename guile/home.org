@@ -33,6 +33,7 @@
                (services
                 (list
                   (shepherd-service
-                  (provision '(emacs))
-                  (start #~(make-system-constructor "emacs --daemon"))
-                  (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))))))))))
+                    (provision '(emacs))
+                    (start #~(make-system-constructor "emacs --daemon"))
+                     (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))))))))))
+                  (service unattended-upgrade-service-type)
