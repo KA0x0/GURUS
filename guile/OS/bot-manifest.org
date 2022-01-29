@@ -8,8 +8,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "curl"
-        "ffmpeg"
+  (list "ffmpeg"
         "python"
         "rsync"
         "wireguard-tools"))
