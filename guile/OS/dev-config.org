@@ -2,7 +2,6 @@
 #+PROPERTY: header-args:scheme :tangle dev-config.scm
 
 #+begin_src
-
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
@@ -67,5 +66,4 @@
             (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
             (service wpa-supplicant-service-type)
       %base-services))))
-
 #+end_src

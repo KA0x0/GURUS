@@ -2,7 +2,6 @@
 #+PROPERTY: header-args:scheme :tangle my-variables.scm
 
 #+begin_src
-
 (use-modules (gnu packages) (gcrypt hash) 
 (use-modules (gnu packages emacs))
 (define-module (my-variables))
@@ -82,5 +81,4 @@ All activities performed on this device are logged and monitored.\n\n")))))
    "wget"
    "which"
    "xz")))
-
 #+end_src
