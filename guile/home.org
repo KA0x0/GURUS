@@ -1,6 +1,8 @@
 #+TITLE: Guix Home Configuration
 #+PROPERTY: header-args:scheme :tangle home.scm
 
+#+begin_src
+
 ;; This "home-environment" file can be passed to 'guix home reconfigure'
 ;; to reproduce the content of your profile.  This is "symbolic": it only
 ;; specifies package names.  To reproduce the exact same profile, you also
@@ -37,3 +39,5 @@
                     (start #~(make-system-constructor "emacs --daemon"))
                      (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))))))))))
                   (service unattended-upgrade-service-type)
+
+#+end_src

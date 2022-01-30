@@ -1,6 +1,8 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle laptop-config.scm
 
+#+begin_src
+
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
@@ -61,3 +63,5 @@
             (service unattended-upgrade-service-type)
             (service wpa-supplicant-service-type)
       %base-services))))
+
+#+end_src

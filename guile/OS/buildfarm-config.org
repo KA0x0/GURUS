@@ -1,6 +1,8 @@
 #+TITLE: Guix System Configuration
 #+PROPERTY: header-args:scheme :tangle buildfarm-config.scm
 
+#+begin_src
+
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
@@ -53,3 +55,5 @@
             (service network-manager-service-type)
             (service openssh-service-type)
       %base-services))))
+
+#+end_src

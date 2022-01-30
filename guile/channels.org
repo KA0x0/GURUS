@@ -1,6 +1,8 @@
 #+TITLE: Guix Channels Configuration
 #+PROPERTY: header-args:scheme :tangle channels.scm
 
+#+begin_src
+
 (append
  (list
   (channel
@@ -12,3 +14,5 @@
      (openpgp-fingerprint
       "")))))
  %default-channels)
+
+#+end_src
