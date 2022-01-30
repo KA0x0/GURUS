@@ -49,7 +49,8 @@
   my-packages))
   (services
     (append
-      (list (service openssh-service-type)
+      (list (service login-service-type my-motd)
+            (service openssh-service-type)
             (service rtorrent-service-type)
             (service static-networking-service-type
                   (list (static-networking
