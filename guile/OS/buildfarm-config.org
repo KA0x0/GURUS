@@ -11,12 +11,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "builder")
+  (host-name "buildfarm")
   (users (cons* (user-account
-                  (name "buildfarm")
-                  (comment "Build Farm")
+                  (name "builder")
+                  (comment "I build stuff")
                   (group "users")
-                  (home-directory "/home/buildfarm")
+                  (home-directory "/home/builder")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
