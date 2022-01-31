@@ -15,16 +15,16 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases
-               '(("cp" . "cp -iv")
-                  ("df" . "df -h")
+               '(("cp" . "cp --interactive --verbose")
+                  ("df" . "df --human-readable")
                   ("egrep" . "egrep --color=auto")
                   ("fgrep" . "fgrep --color=auto")
-                  ("free" . "free -m")
+                  ("free" . "free --human")
                   ("grep" . "grep --color=auto")
-                  ("ls" . "ls -ahl --color=auto")
+                  ("ls" . "ls -l --all --color=auto --dired --human-readable")
                   ("mkdir" . "mkdir --parents --verbose")
-                  ("mv" . "mv -iv")
-                  ("rm" . "rm -iv")))
+                  ("mv" . "mv --interactive --verbose")
+                  ("rm" . "rm --interactive --verbose")))
               (environment-variables
                   ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
                   ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
