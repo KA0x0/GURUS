@@ -38,6 +38,7 @@
         "emacs-powershell"
         "python"
         "rsync"
+        "socat"
         "sshfs"
         "wireguard-tools"
         "yt-dlp"))
