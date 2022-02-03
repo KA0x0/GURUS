@@ -24,6 +24,7 @@
                   ("ls" . "ls -l --all --color=auto --dired --human-readable")
                   ("mkdir" . "mkdir --parents --verbose")
                   ("mv" . "mv --interactive --verbose")
+                  ("nc" . "socat STDIN TCP4:")
                   ("rm" . "rm --interactive --verbose")))
               (environment-variables
                   ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
