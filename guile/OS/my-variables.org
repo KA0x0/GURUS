@@ -55,6 +55,7 @@ All activities performed on this device are logged and monitored.\n\n")))))
    "emacs-paredit" 
    "emacs-tramp"
    "emacs-undo-tree"
+   "emacs-vertico"
    "emacs-which-key"
    "eudev"
    "findutils"
