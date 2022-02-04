@@ -50,6 +50,7 @@
         dbus
         emacs-exwm
         pipewire
+        usbguard
         xinit
         xrandr)
  my-packages))

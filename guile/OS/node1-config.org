@@ -46,6 +46,7 @@
   (packages
     (append
       (list 
+      usbguard
       )
   my-packages))
   (services

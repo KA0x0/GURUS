@@ -49,6 +49,7 @@
         dbus
         my-emacs
         emacs-exwm
+        usbguard
         xinit
         xrandr)
  my-packages))
