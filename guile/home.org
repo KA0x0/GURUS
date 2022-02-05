@@ -14,21 +14,25 @@
   (services
     (list (service home-bash-service-type
             (home-bash-configuration
-              (aliases
+              (aliases                                                                             ;; use "\" to escape an alias.
                '(("cp" . "cp --interactive --verbose")
                   ("df" . "df --human-readable")
+                  ("dir" . "dir --color=auto")
                   ("egrep" . "egrep --color=auto")
+                  ("emacs" . "emacsclient -a")
                   ("fgrep" . "fgrep --color=auto")
                   ("free" . "free --human")
                   ("grep" . "grep --color=auto")
                   ("ls" . "ls -l --all --color=auto --dired --human-readable")
+                  ("logout" . "pkill emacsclient & logout")
                   ("mkdir" . "mkdir --parents --verbose")
                   ("mv" . "mv --interactive --verbose")
                   ("nc" . "socat -,rawer,escape=0x1d tcp:")
-                  ("rm" . "rm --interactive --verbose")))
+                  ("rm" . "rm --interactive --verbose")
+                  ("vdir" . "vdir --color=auto")))
               (environment-variables
-                  ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient"))
-                  ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient"))
+                  ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
+                  ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
                   ("SHELL" . ,(file-append bash "/bin/bash")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
