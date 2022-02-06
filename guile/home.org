@@ -19,7 +19,7 @@
                   ("df" . "df --human-readable")
                   ("dir" . "dir --color=auto")
                   ("egrep" . "egrep --color=auto")
-                  ("emacs" . "emacsclient -a")
+                  ("emacs" . "emacsclient -a -c")
                   ("fgrep" . "fgrep --color=auto")
                   ("free" . "free --human")
                   ("grep" . "grep --color=auto")
@@ -41,6 +41,6 @@
                   (shepherd-service
                     (provision '(emacs))
                     (start #~(make-system-constructor "emacs --daemon"))
-                     (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))))))))))
-                  (service unattended-upgrade-service-type)
+                     (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))
+                  (service unattended-upgrade-service-type)))))))))
 #+end_src
