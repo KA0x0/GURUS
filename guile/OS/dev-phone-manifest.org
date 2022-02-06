@@ -17,6 +17,7 @@
         "emacs-emms"
         "emacs-exiftool"
         "emacs-modus-themes"
+        "emacs-request"
         "eshell-prompt-extras"
         "ffmpeg"
         "font-hack"
