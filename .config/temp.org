@@ -215,3 +215,6 @@
                                  (destination "default")
                                  (gateway "10.0.2.2"))))
                          (name-servers '("10.0.2.3")))))
+
+
+;; Todo : setup Mac randomizer with network Manager ?
