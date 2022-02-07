@@ -9,5 +9,5 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list ""))
+  (list "emacs-with-native-comp-no-x"))
 #+end_src

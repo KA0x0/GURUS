@@ -10,5 +10,6 @@
 
 (specifications->manifest
   (list "cuirass"
-        "emacs-build-farm))
+        "emacs-build-farm"
+        "emacs-with-native-comp-no-x"))
 #+end_src

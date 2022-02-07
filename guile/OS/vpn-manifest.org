@@ -9,5 +9,6 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "wireguard-tools"))
+  (list "emacs-with-native-comp-no-x"
+        "wireguard-tools"))
 #+end_src

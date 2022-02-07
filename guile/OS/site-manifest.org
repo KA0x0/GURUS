@@ -10,5 +10,6 @@
 
 (specifications->manifest
   (list "letsencrypt"
+        "emacs-with-native-comp-no-x"
         "nginx"))
 #+end_src

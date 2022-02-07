@@ -9,7 +9,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "python"
+  (list "emacs-with-native-comp-no-x"
+        "python"
         "rsync"
         "sshfs"
         "wireguard-tools"))

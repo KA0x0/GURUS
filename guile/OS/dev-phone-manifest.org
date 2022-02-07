@@ -13,6 +13,7 @@
         "emacs-bluetooth"
         "curl"
         "direnv"
+        "emacs-with-native-comp"
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
