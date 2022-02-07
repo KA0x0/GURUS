@@ -1,5 +1,5 @@
 #+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle mailserver-config.scm
+#+PROPERTY: header-args:scheme :tangle jump-config.scm
 
 #+begin_src
 (add-to-load-path (dirname (current-filename)))
@@ -12,12 +12,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "mail")
+  (host-name "jump")
   (users (cons* (user-account
-                  (name "e")
-                  (comment "Transfering email")
+                  (name "hop")
+                  (comment "I hop")
                   (group "users")
-                  (home-directory "/home/e")
+                  (home-directory "/home/hop")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
