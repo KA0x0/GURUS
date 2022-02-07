@@ -47,7 +47,7 @@ editor (console only)")
    "coreutils"
    "curl"
    "diffutils"
-   "my-emacs-no-x"
+   "emacs-with-native-comp-no-x"
    "emacs-consult"
    "emacs-embark"
    "emacs-evil"

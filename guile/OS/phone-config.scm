@@ -48,6 +48,7 @@
       (list
         bluez
         dbus
+        emacs-with-native-comp-no-x
         emacs-exwm
         pipewire
         usbguard

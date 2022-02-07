@@ -48,7 +48,7 @@
       (list
         bluez
         dbus
-        my-emacs
+        emacs-with-native-comp
         emacs-exwm
         piperwire
         spice-vdagent
