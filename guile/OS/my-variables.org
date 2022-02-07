@@ -15,25 +15,28 @@ You must have explicit, authorized permission to access or configure this device
 Unauthorized attempts and actions to access or use this system may result in civil and/or criminal penalties.\n
 All activities performed on this device are logged and monitored.\n\n")))))
 
-(define my-emacs-no-x
-  (package
-    (inherit emacs-no-x) 
-      (snippet
-        '(begin
-          (with-directory-excursion "emacs/lisp"
-            (for-each delete-file-recursively
-              '("obsolete"
-                "play")))))))
+(define-public emacs-with-native-comp-no-x
+  (package/inherit emacs-with-native-comp
+    (name "emacs-with-native-comp-no-x")
+    (synopsis "The extensible, customizable, self-documenting text
+editor (console only)")
+    (build-system gnu-build-system)
+    (inputs (fold alist-delete
+                  (package-inputs emacs)
+                  '("libx11" "gtk+" "libxft" "libtiff" "giflib" "libjpeg"
+                    "imagemagick" "libpng" "librsvg" "libxpm" "libice"
+                    "libsm" "cairo" "pango" "harfbuzz"
 
-(define my-emacs
-  (package
-    (inherit emacs)
-      (snippet
-        '(begin
-          (with-directory-excursion "emacs/lisp"
-            (for-each delete-file-recursively
-              '("obsolete"
-                "play")))))))
+                    ;; These depend on libx11, so remove them as well.
+                    "libotf" "m17n-lib" "dbus")))
+    (arguments
+     (substitute-keyword-arguments (package-arguments emacs)
+       ((#:configure-flags flags ''())
+        `(delete "--with-cairo" ,flags))
+       ((#:phases phases)
+        `(modify-phases ,phases
+           (delete 'restore-emacs-pdmp)
+           (delete 'strip-double-wrap)))))))
 
 (define-public my-packages
   (map specification->package
