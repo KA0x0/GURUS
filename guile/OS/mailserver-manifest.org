@@ -1,5 +1,5 @@
 #+TITLE: Guix Manifest
-#+PROPERTY: header-args:scheme :tangle bot-manifest.scm
+#+PROPERTY: header-args:scheme :tangle mailserver-manifest.scm
 
 #+begin_src
 ;; This "manifest" file can be passed to 'guix package -m' to reproduce
