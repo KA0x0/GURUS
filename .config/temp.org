@@ -4,7 +4,7 @@
 (use-service-modules linux mcron networking shepherd ssh virtualization)
 (use-package-modules certs file-systems linux)
 
-(define my-kernel linux-libre-5.15) ; change to latest LTS version : https://www.kernel.org/category/releases.html
+(define my-kernel linux-libre-5.15) ;;                change to latest LTS version : https://www.kernel.org/category/releases.html
 
 (define my-zfs
   (package
