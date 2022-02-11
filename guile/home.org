@@ -16,6 +16,7 @@
             (home-bash-configuration
               (aliases                                                                             ;; use "\" to escape an alias.
                '(("cp" . "cp --interactive --verbose")
+                  ("dd" . "dd status=progress")
                   ("df" . "df --human-readable")
                   ("dir" . "dir --color=auto")
                   ("egrep" . "egrep --color=auto")
