@@ -21,6 +21,7 @@
         "emacs-request"
         "eshell-prompt-extras"
         "ffmpeg"
+        "file"
         "font-hack"
         "freerdp"
         "gdb"
