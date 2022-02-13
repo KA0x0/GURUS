@@ -2,7 +2,7 @@
 
 * Guix Chur
 
-Managed with guix.
+Managed with Guix.
 
 GNU Guix --- Functional package management for GNU
 
