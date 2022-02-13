@@ -1,4 +1,4 @@
-(use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
+(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules mcron networking shepherd ssh virtualization)
 (use-package-modules bootloaders certs package-management)
 
@@ -42,7 +42,7 @@
       (list 
       usbguard
       )
-  my-packages))
+  %my-base-packagess))
   (services
     (append
       (list (service login-service-type my-motd)

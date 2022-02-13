@@ -1,4 +1,4 @@
-(use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
+(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules desktop mcron networking shepherd ssh virtualization xorg)
 (use-package-modules bootloaders certs fonts package-management)
 
@@ -46,7 +46,7 @@
         usbguard
         xinit
         xrandr)
- my-packages))
+ %my-base-packagess))
   (services
     (append
       (list (service elogind-service-type)
