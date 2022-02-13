@@ -6,12 +6,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "jump")
+  (host-name "bot")
   (users (cons* (user-account
-                  (name "hop")
-                  (comment "I hop")
+                  (name "beacon")
+                  (comment "Beacon")
                   (group "users")
-                  (home-directory "/home/hop")
+                  (home-directory "/home/beacon")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
@@ -41,7 +41,7 @@
     (append
       (list
       )
- %my-base-packagess))
+ %my-base-packages))
   (services
     (append
       (list (service login-service-type my-motd)
@@ -49,3 +49,5 @@
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; bot-config.scm ends here

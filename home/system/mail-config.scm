@@ -1,19 +1,19 @@
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules mcron networking shepherd ssh virtualization)
+(use-service-modules mcron networking shepherd ssh)
 (use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "node1")
+  (host-name "mail")
   (users (cons* (user-account
-                  (name "vm")
-                  (comment "Virtual Manager")
+                  (name "e")
+                  (comment "Transfering email")
                   (group "users")
-                  (home-directory "/home/vm")
+                  (home-directory "/home/e")
                   (supplementary-groups
-                    '("kvm" "netdev" "wheel")))
+                    '("netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -39,25 +39,15 @@
            %base-file-systems))
   (packages
     (append
-      (list 
-      usbguard
+      (list
       )
-  %my-base-packagess))
+ %my-base-packagess))
   (services
     (append
       (list (service login-service-type my-motd)
+            (service network-manager-service-type)
             (service openssh-service-type)
-            (service rtorrent-service-type)
-            (service static-networking-service-type
-                  (list (static-networking
-                         (addresses
-                          (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.50/8"))))
-                         (routes
-                          (list (network-route
-                                 (destination "default")
-                                 (gateway "10.10.10.10"))))
-                         (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
-            %base-services))))
+      %base-services))))
+
+;;; mail-config.scm ends here

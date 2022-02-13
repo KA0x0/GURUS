@@ -5,6 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-with-native-comp-no-x"
-        "nftables"
-        "wireguard-tools"))
+  (list "cuirass"
+        "emacs-build-farm"
+        "emacs-with-native-comp-no-x"))
+
+;;; buildfarm-manifest.scm ends here

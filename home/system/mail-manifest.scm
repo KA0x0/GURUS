@@ -6,3 +6,5 @@
 
 (specifications->manifest
   (list "emacs-with-native-comp-no-x"))
+
+;;; mail-manifest.scm ends here

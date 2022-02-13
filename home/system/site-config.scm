@@ -1,19 +1,19 @@
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules mcron networking shepherd ssh)
-(use-package-modules bootloaders certs package-management)
+(use-package-modules bootloaders certs fonts package-management wget)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "network")
+  (host-name "site")
   (users (cons* (user-account
-                  (name "route")
-                  (comment "Routing")
+                  (name "web")
+                  (comment "Web")
                   (group "users")
-                  (home-directory "/home/route")
+                  (home-directory "/home/web")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("wheel" "netdev")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -40,23 +40,14 @@
   (packages
     (append
       (list
-      ppp
       )
- %my-base-packagess))
+  %my-base-packagess))
   (services
     (append
       (list (service login-service-type my-motd)
+            (service network-manager-service-type)
             (service openssh-service-type)
-            (service static-networking-service-type
-                  (list (static-networking
-                         (addresses
-                          (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.1/24"))))
-                         (routes
-                          (list (network-route
-                                 (destination "default")
-                                 (gateway "10.10.10.10"))))
-                         (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; site-config.scm ends here

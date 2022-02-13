@@ -6,6 +6,9 @@
 
 (specifications->manifest
   (list "emacs-with-native-comp-no-x"
-        "hashcat"
-        "rsync"
-        "virt-manager"))
+        "qemu"
+        "sshfs"
+        "virt-manager"
+        "wireguard-tools"))
+
+;;; laptop-manifest.scm ends here

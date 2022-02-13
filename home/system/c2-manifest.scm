@@ -10,3 +10,5 @@
         "rsync"
         "sshfs"
         "wireguard-tools"))
+
+;;; c2-manifest.scm ends here

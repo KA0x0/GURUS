@@ -1,6 +1,6 @@
 ;;; GNU Guix --- Functional package management for GNU
 ;;;
-;;; This file is part of GNU Guix.
+;;; This file is NOT part of GNU Guix.
 ;;;
 ;;; GNU Guix is free software; you can redistribute it and/or modify it
 ;;; under the terms of the GNU General Public License as published by
@@ -549,3 +549,5 @@ output."
   ;; fiddle with multiple-value returns.
   (packages->manifest
    (map (compose list specification->package+output) specs)))
+
+;;; packages.scm ends here

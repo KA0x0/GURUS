@@ -5,6 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "letsencrypt"
-        "emacs-with-native-comp-no-x"
-        "nginx"))
+  (list "emacs-with-native-comp-no-x"
+        "wireguard-tools"))
+
+;;; vpn-manifest.scm ends here

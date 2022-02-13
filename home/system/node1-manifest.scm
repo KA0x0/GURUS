@@ -30,3 +30,5 @@
         "qemu"
         "sshfs"
         "my-rtorrent"))
+
+;;; node1-manifest.scm ends here

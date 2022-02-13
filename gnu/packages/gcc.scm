@@ -68,3 +68,5 @@
 
 (define-public libgccjit-11
   (libgccjit-for-gcc gcc-11))
+
+;;; gcc.scm ends here

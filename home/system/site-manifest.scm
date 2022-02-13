@@ -5,6 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "cuirass"
-        "emacs-build-farm"
-        "emacs-with-native-comp-no-x"))
+  (list "letsencrypt"
+        "emacs-with-native-comp-no-x"
+        "nginx"))
+
+;;; site-manifest.scm ends here

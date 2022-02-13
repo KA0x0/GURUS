@@ -41,3 +41,5 @@
         "sshfs"
         "wireguard-tools"
         "yt-dlp"))
+
+;;; dev-phone-manifest.scm ends here

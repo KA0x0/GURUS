@@ -6,12 +6,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "mail")
+  (host-name "buildfarm")
   (users (cons* (user-account
-                  (name "e")
-                  (comment "Transfering email")
+                  (name "builder")
+                  (comment "I build stuff")
                   (group "users")
-                  (home-directory "/home/e")
+                  (home-directory "/home/builder")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
@@ -47,5 +47,6 @@
       (list (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
-            (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; buildfarm-config.scm ends here

@@ -10,3 +10,5 @@
         "python"
         "rsync"
         "wireguard-tools"))
+
+;;; bot-manifest.scm ends here

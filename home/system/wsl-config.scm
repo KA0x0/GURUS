@@ -44,3 +44,5 @@
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; wsl-config.scm ends here

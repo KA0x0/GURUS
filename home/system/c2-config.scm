@@ -49,3 +49,5 @@
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; c2-config.scm ends here

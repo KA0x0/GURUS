@@ -1,19 +1,19 @@
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-package-modules bootloaders certs fonts package-management shepherd ssh)
-(use-service-modules desktop mcron networking ssh virtualization xorg)
+(use-service-modules mcron networking shepherd ssh)
+(use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "phone")
+  (host-name "jump")
   (users (cons* (user-account
-                  (name "mobile")
-                  (comment "Mobile")
+                  (name "hop")
+                  (comment "I hop")
                   (group "users")
-                  (home-directory "/home/mobile")
+                  (home-directory "/home/hop")
                   (supplementary-groups
-                    '("audio" "kvm" "netdev" "video" "wheel")))
+                    '("netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -40,21 +40,14 @@
   (packages
     (append
       (list
-        bluez
-        dbus
-        emacs-with-native-comp-no-x
-        emacs-exwm
-        pipewire
-        usbguard
-        xinit
-        xrandr)
+      )
  %my-base-packagess))
   (services
     (append
-      (list (service elogind-service-type)
-            (service libvirt-service-type)
-            (service login-service-type my-motd)
+      (list (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
-            (service wpa-supplicant-service-type)
+            (service unattended-upgrade-service-type)
       %base-services))))
+
+;;; jump-config.scm ends here

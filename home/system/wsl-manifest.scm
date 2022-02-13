@@ -6,7 +6,8 @@
 
 (specifications->manifest
   (list "emacs-with-native-comp-no-x"
-        "qemu"
-        "sshfs"
-        "virt-manager"
-        "wireguard-tools"))
+        "hashcat"
+        "rsync"
+        "virt-manager"))
+
+;;; wsl-manifest.scm ends here

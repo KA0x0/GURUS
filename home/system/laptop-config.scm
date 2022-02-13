@@ -1,17 +1,17 @@
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules desktop mcron networking shepherd spice ssh virtualization xorg)
-(use-package-modules bootloaders certs fonts package-management wget)
+(use-service-modules desktop mcron networking shepherd ssh virtualization xorg)
+(use-package-modules bootloaders certs fonts package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "dev")
+  (host-name "laptop")
   (users (cons* (user-account
-                  (name "khaoz")
-                  (comment "KHAOZ")
+                  (name "mobile")
+                  (comment "Mobile")
                   (group "users")
-                  (home-directory "/home/khaoz")
+                  (home-directory "/home/mobile")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
@@ -40,13 +40,10 @@
   (packages
     (append
       (list
-        bluez
         dbus
-        emacs-with-native-comp
+        my-emacs
         emacs-exwm
-        piperwire
-        spice-vdagent
-        xf86-video-amdgpu
+        usbguard
         xinit
         xrandr)
  %my-base-packagess))
@@ -57,6 +54,8 @@
             (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
-            (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
+            (service unattended-upgrade-service-type)
             (service wpa-supplicant-service-type)
       %base-services))))
+
+;;; laptop-config.scm ends here
