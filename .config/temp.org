@@ -219,6 +219,8 @@
 
 ;; Todo : setup Mac randomizer with network Manager ?
 
-unatended upgrade : add guix home reconfigure
+;; unatended upgrade : add guix home reconfigure
 
-Unatended upgrade user : guix pull && guix upgrade && guix home reconfigure
+ ;; Unatended upgrade user : guix pull && guix upgrade && guix home reconfigure
+
+ ;; rtorrent service file
