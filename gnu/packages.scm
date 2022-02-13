@@ -440,7 +440,6 @@ reducing the memory footprint."
                                #:opts '(#:to-file? #t)))))
   cache-file)
 
-
 (define %sigint-prompt
   ;; The prompt to jump to upon SIGINT.
   (make-prompt-tag "interruptible"))
@@ -462,7 +461,6 @@ return its return value."
                     (lambda (k signum)
                       (handler signum))))
 
-
 ;;;
 ;;; Package specification.
 ;;;
