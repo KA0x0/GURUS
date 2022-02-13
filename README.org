@@ -1,7 +1,5 @@
 #+TITLE: Guix Chur
 
-* Guix Chur
-
 Managed with Guix.
 
 GNU Guix --- Functional package management for GNU
