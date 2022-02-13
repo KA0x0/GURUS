@@ -139,3 +139,26 @@
    #:git-repo "https://git.sr.ht//emacs-gcc.git"
    #:git-commit ""
    #:checksum ""))
+
+(define-public emacs-with-native-comp-no-x
+  (package/inherit emacs-with-native-comp
+    (name "emacs-with-native-comp-no-x")
+    (synopsis "The extensible, customizable, self-documenting text
+editor (console only)")
+    (build-system gnu-build-system)
+    (inputs (fold alist-delete
+                  (package-inputs emacs)
+                  '("libx11" "gtk+" "libxft" "libtiff" "giflib" "libjpeg"
+                    "imagemagick" "libpng" "librsvg" "libxpm" "libice"
+                    "libsm" "cairo" "pango" "harfbuzz"
+
+                    ;; These depend on libx11, so remove them as well.
+                    "libotf" "m17n-lib" "dbus")))
+    (arguments
+     (substitute-keyword-arguments (package-arguments emacs)
+       ((#:configure-flags flags ''())
+        `(delete "--with-cairo" ,flags))
+       ((#:phases phases)
+        `(modify-phases ,phases
+           (delete 'restore-emacs-pdmp)
+           (delete 'strip-double-wrap)))))))
