@@ -1,5 +1,3 @@
-(add-to-load-path (dirname (current-filename)))
-
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
 (use-service-modules desktop mcron networking shepherd spice ssh virtualization xorg)
 (use-package-modules bootloaders certs fonts package-management wget)
