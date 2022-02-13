@@ -1,25 +1,21 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle node1-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
-(use-service-modules mcron networking shepherd ssh virtualization)
+(use-service-modules mcron networking shepherd ssh vpn)
 (use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "node1")
+  (host-name "vpn")
   (users (cons* (user-account
-                  (name "vm")
-                  (comment "Virtual Manager")
+                  (name "hop")
+                  (comment "Hopping from point to point")
                   (group "users")
-                  (home-directory "/home/vm")
+                  (home-directory "/home/hop")
                   (supplementary-groups
-                    '("kvm" "netdev" "wheel")))
+                    '("netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -45,26 +41,39 @@
            %base-file-systems))
   (packages
     (append
-      (list 
-      usbguard
+      (list
       )
   my-packages))
   (services
     (append
       (list (service login-service-type my-motd)
             (service openssh-service-type)
-            (service rtorrent-service-type)
             (service static-networking-service-type
                   (list (static-networking
                          (addresses
                           (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.50/8"))))
+                                 (device "wlan0")
+                                 (value "10.10.10.10/8"))))
                          (routes
                           (list (network-route
                                  (destination "default")
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
+                                     (service wireguard-service-type
+            (wireguard-configuration
+                          (addresses '("10.0.0.0/8"))
+                          (peers
+                           (list (wireguard-peer (name "cloud")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.2/28")))
+                                 (wireguard-peer)(name "laptop")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.2/32")))
+                                 (wireguard-peer (name "network")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.3/32")))
+                                 (wireguard-peer (name "phone")
+                                                 (public-key "")
+                                                 (allowed-ips '("172.28.1.17/32")))))))
             (service unattended-upgrade-service-type)
-            %base-services))))
-#+end_src
+      %base-services))))

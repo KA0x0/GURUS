@@ -1,25 +1,21 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle network-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
-(use-service-modules mcron networking shepherd ssh)
+(use-service-modules mcron networking shepherd ssh virtualization)
 (use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "network")
+  (host-name "node1")
   (users (cons* (user-account
-                  (name "route")
-                  (comment "Routing")
+                  (name "vm")
+                  (comment "Virtual Manager")
                   (group "users")
-                  (home-directory "/home/route")
+                  (home-directory "/home/vm")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("kvm" "netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -45,25 +41,25 @@
            %base-file-systems))
   (packages
     (append
-      (list
-      ppp
+      (list 
+      usbguard
       )
- my-packages))
+  my-packages))
   (services
     (append
       (list (service login-service-type my-motd)
             (service openssh-service-type)
+            (service rtorrent-service-type)
             (service static-networking-service-type
                   (list (static-networking
                          (addresses
                           (list (network-address
                                  (device "eno1")
-                                 (value "10.0.0.1/24"))))
+                                 (value "10.0.0.50/8"))))
                          (routes
                           (list (network-route
                                  (destination "default")
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
-      %base-services))))
-#+end_src
+            %base-services))))

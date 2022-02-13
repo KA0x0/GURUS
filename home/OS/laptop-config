@@ -1,25 +1,21 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle jump-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
-(use-service-modules mcron networking shepherd ssh)
-(use-package-modules bootloaders certs package-management)
+(use-service-modules desktop mcron networking shepherd ssh virtualization xorg)
+(use-package-modules bootloaders certs fonts package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "jump")
+  (host-name "laptop")
   (users (cons* (user-account
-                  (name "hop")
-                  (comment "I hop")
+                  (name "mobile")
+                  (comment "Mobile")
                   (group "users")
-                  (home-directory "/home/hop")
+                  (home-directory "/home/mobile")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -46,13 +42,20 @@
   (packages
     (append
       (list
-      )
+        dbus
+        my-emacs
+        emacs-exwm
+        usbguard
+        xinit
+        xrandr)
  my-packages))
   (services
     (append
-      (list (service login-service-type my-motd)
+      (list (service elogind-service-type)
+            (service libvirt-service-type)
+            (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
+            (service wpa-supplicant-service-type)
       %base-services))))
-#+end_src

@@ -1,23 +1,19 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle laptop-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
-(use-package-modules bootloaders certs fonts package-management shepherd ssh)
-(use-service-modules desktop mcron networking ssh virtualization xorg)
+(use-service-modules desktop mcron networking shepherd spice ssh virtualization xorg)
+(use-package-modules bootloaders certs fonts package-management wget)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "phone")
+  (host-name "dev")
   (users (cons* (user-account
-                  (name "mobile")
-                  (comment "Mobile")
+                  (name "khaoz")
+                  (comment "KHAOZ")
                   (group "users")
-                  (home-directory "/home/mobile")
+                  (home-directory "/home/khaoz")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
@@ -48,10 +44,11 @@
       (list
         bluez
         dbus
-        emacs-with-native-comp-no-x
+        emacs-with-native-comp
         emacs-exwm
-        pipewire
-        usbguard
+        piperwire
+        spice-vdagent
+        xf86-video-amdgpu
         xinit
         xrandr)
  my-packages))
@@ -62,6 +59,6 @@
             (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
+            (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
             (service wpa-supplicant-service-type)
       %base-services))))
-#+end_src

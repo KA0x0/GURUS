@@ -1,25 +1,21 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle site-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
 (use-service-modules mcron networking shepherd ssh)
-(use-package-modules bootloaders certs fonts package-management wget)
+(use-package-modules bootloaders certs package-management)
 
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "site")
+  (host-name "mail")
   (users (cons* (user-account
-                  (name "web")
-                  (comment "Web")
+                  (name "e")
+                  (comment "Transfering email")
                   (group "users")
-                  (home-directory "/home/web")
+                  (home-directory "/home/e")
                   (supplementary-groups
-                    '("wheel" "netdev")))
+                    '("netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
@@ -47,7 +43,7 @@
     (append
       (list
       )
-  my-packages))
+ my-packages))
   (services
     (append
       (list (service login-service-type my-motd)
@@ -55,4 +51,3 @@
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
       %base-services))))
-#+end_src

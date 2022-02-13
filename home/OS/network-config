@@ -1,7 +1,3 @@
-#+TITLE: Guix System Configuration
-#+PROPERTY: header-args:scheme :tangle bot-config.scm
-
-#+begin_src
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1) (my-variables))
@@ -12,12 +8,12 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us"))
-  (host-name "bot")
+  (host-name "network")
   (users (cons* (user-account
-                  (name "beacon")
-                  (comment "Beacon")
+                  (name "route")
+                  (comment "Routing")
                   (group "users")
-                  (home-directory "/home/beacon")
+                  (home-directory "/home/route")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
@@ -46,13 +42,23 @@
   (packages
     (append
       (list
+      ppp
       )
  my-packages))
   (services
     (append
       (list (service login-service-type my-motd)
-            (service network-manager-service-type)
             (service openssh-service-type)
+            (service static-networking-service-type
+                  (list (static-networking
+                         (addresses
+                          (list (network-address
+                                 (device "eno1")
+                                 (value "10.0.0.1/24"))))
+                         (routes
+                          (list (network-route
+                                 (destination "default")
+                                 (gateway "10.10.10.10"))))
+                         (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
       %base-services))))
-#+end_src

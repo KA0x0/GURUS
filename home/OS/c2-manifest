@@ -1,7 +1,3 @@
-#+TITLE: Guix Manifest
-#+PROPERTY: header-args:scheme :tangle c2-manifest.scm
-
-#+begin_src
 ;; This "manifest" file can be passed to 'guix package -m' to reproduce
 ;; the content of your profile.  This is "symbolic": it only specifies
 ;; package names.  To reproduce the exact same profile, you also need to
@@ -14,4 +10,3 @@
         "rsync"
         "sshfs"
         "wireguard-tools"))
-#+end_src
