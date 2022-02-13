@@ -217,7 +217,7 @@
                          (name-servers '("10.0.2.3")))))
 
 
-;; Todo : setup Mac randomizer with network Manager ?
+;; Todo : setup Mac randomizer with network Manager on dev and phone
 
 ;; unatended upgrade : add guix home reconfigure
 
