@@ -39,6 +39,7 @@
         "rsync"
         "socat"
         "sshfs"
+        "tiled"
         "wireguard-tools"
         "yt-dlp"))
 
