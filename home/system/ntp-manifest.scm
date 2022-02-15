@@ -5,6 +5,6 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "ntp"))
+  (list "chrony"))
 
 ;;; ntp-manifest.scm ends here
