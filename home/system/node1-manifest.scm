@@ -6,6 +6,7 @@
 
 (specifications->manifest
   (list "calibre"
+        "emacs-with-native-comp-no-x"
         "podman"
         "qemu"
         "sshfs"

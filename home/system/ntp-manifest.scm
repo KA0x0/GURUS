@@ -5,6 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "chrony"))
+  (list "chrony"
+        "emacs-with-native-comp-no-x))
 
 ;;; ntp-manifest.scm ends here
