@@ -1,8 +1,0 @@
-#+TITLE: Git Configuration
-#+PROPERTY: tangle /etc/gitconfig
-
-[user]
-	name = KH405
-	email = jasonmercier666@gmail.com
-[core]
-	editor = /bin/emacsclient

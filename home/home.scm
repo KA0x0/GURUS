@@ -26,7 +26,8 @@
                   ("mv" . "mv --interactive --verbose")
                   ("nc" . "socat -,rawer,escape=0x1d tcp:")
                   ("rm" . "rm --interactive --verbose")
-                  ("vdir" . "vdir --color=auto")))
+                  ("vdir" . "vdir --color=auto")
+                  ("wget" . "wget --show-progress")))
               (environment-variables
                   ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
                   ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
