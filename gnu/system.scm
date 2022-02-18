@@ -72,7 +72,7 @@
   #:export (%my-base-packages))
 
 
-(define-public %my-packages
+(define-public %my-base-packages
   (map specification->package
   '("bash"
    "bash-completion"
