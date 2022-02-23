@@ -5,6 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-with-native-comp-no-x"))
+  (list "dovecot"
+        "emacs-with-native-comp-no-x"
+        "postfix"))
 
 ;;; mail-manifest.scm ends here
