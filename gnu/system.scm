@@ -110,6 +110,7 @@
    "lzip"
    "man-db"
    "nss-certs"
+   "openssh-sans-x"
    "patch"
    "procps"
    "psmisc"

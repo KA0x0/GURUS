@@ -25,6 +25,7 @@
         "mktorrent"
         "mpd"
         "mpv"
+        "openssh"
         "openvpn"
         "password-store"
         "emacs-password-store"
