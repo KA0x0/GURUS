@@ -20,6 +20,7 @@
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
                  ("grep" . "grep --color=auto")
+                 ("guix pull" . "guix pull --news --details")
                  ("ls" . "ls -l --all --color=auto --dired --human-readable")
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
