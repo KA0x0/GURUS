@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "awscli"
+  (list "aria2"
+        "awscli"
         "emacs-bluetooth"
         "curl"
         "direnv"
