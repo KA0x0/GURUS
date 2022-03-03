@@ -15,7 +15,6 @@
         "emacs-emms"
         "emacs-exiftool"
         "emacs-modus-themes"
-        "emacs-org-tree-slide"
         "emacs-request"
         "eshell-prompt-extras"
         "ffmpeg"
