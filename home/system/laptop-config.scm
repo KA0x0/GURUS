@@ -41,7 +41,7 @@
     (append
       (list
         dbus
-        my-emacs
+        emacs-with-native-comp
         emacs-exwm
         usbguard
         xinit
