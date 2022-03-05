@@ -8,10 +8,10 @@
   (keyboard-layout (keyboard-layout "us"))
   (host-name "C2")
   (users (cons* (user-account
-                  (name "commandcontrol")
-                  (comment "CommAndControl")
+                  (name "beacon")
+                  (comment "Beaconing")
                   (group "users")
-                  (home-directory "/home/commandcontrol")
+                  (home-directory "/home/beacon")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
