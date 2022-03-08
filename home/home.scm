@@ -10,7 +10,7 @@
   (services
     (list (service home-bash-service-type
             (home-bash-configuration
-              (aliases                                                                             ;; use "\" to escape an alias.
+              (aliases                                                                             ;; use "\" to escape aliases.
                '(("cp" . "cp --interactive --verbose")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
