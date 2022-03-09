@@ -6,6 +6,6 @@
 
 (specifications->manifest
   (list "chrony"
-        "emacs-with-native-comp-no-x))
+        "emacs-with-native-comp-no-x"))
 
 ;;; ntp-manifest.scm ends here
