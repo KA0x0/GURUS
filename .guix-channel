@@ -3,4 +3,4 @@
 (channel
   (version 0)
   (keyring-reference "keyring")
-  (url "https://git.sr.ht//guix-channel")) ;the primary URL
+  (url "https://git.sr.ht//guix-chur")) ;the primary URL
