@@ -130,19 +130,9 @@
    #:git-commit "ab2f27542210580ed6235fd7a721a5396a416492"
    #:checksum "1v5v01q3jqlfjj5z9v0iks2qpagjyrw0bxlq5pdp58cc5w23px56"))
 
-(define-public emacs-pgtk-native-comp
-  (emacs-from-git
-   (emacs-with-native-comp emacs-next-pgtk gcc-11 'full-aot)
-   #:pkg-name "emacs-pgtk-native-comp"
-   #:pkg-version "28.0.91"
-   #:pkg-revision "218"
-   #:git-repo "https://git.sr.ht//emacs-gcc.git"
-   #:git-commit ""
-   #:checksum ""))
-
-(define-public emacs-with-native-comp-no-x
-  (package/inherit emacs-with-native-comp
-    (name "emacs-with-native-comp-no-x")
+(define-public emacs-native-comp-no-x
+  (package/inherit emacs-native-comp
+    (name "emacs-native-comp-no-x")
     (synopsis "The extensible, customizable, self-documenting text
 editor (console only)")
     (build-system gnu-build-system)
