@@ -42,7 +42,7 @@
       (list 
       usbguard
       )
-  %my-base-packagess))
+  %my-base-packages))
   (services
     (append
       (list (service login-service-type my-motd)
