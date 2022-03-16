@@ -83,6 +83,7 @@
     "diffutils"
     "emacs-with-native-comp-no-x"
     "emacs-consult"
+    "emacs-doom-modeline"
     "emacs-embark"
     "emacs-evil"
     "emacs-evil-collection"
