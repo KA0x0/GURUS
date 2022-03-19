@@ -20,7 +20,7 @@
         "eshell-prompt-extras"
         "ffmpeg"
         "file"
-        "font-hack"
+        "font-fira-code"
         "freerdp"
         "gdb"
         "google-cloud-sdk"
