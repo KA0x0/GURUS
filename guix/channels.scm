@@ -16,6 +16,6 @@
 ;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (cons* (channel
-        (name 'guix-chur)
+        (name 'channel-4-guix)
         (url "https://git.sr.ht//channel-4-guix"))
        %default-channels)
