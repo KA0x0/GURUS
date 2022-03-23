@@ -1,4 +1,4 @@
-#+TITLE: Channel 4 guix
+#+TITLE: Channel 4 Guix
 
 Managed with Guix.
 
