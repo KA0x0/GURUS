@@ -17,5 +17,5 @@
 
 (cons* (channel
         (name 'guix-chur)
-        (url "https://git.sr.ht//guix-channel"))
+        (url "https://git.sr.ht//channel-4-guix"))
        %default-channels)
