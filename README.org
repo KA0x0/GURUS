@@ -1,7 +1,5 @@
 #+TITLE: Channel 4 Guix
 
-Managed with Guix.
-
 GNU Guix --- Functional package management for GNU
 
 This file is NOT part of GNU Guix.
