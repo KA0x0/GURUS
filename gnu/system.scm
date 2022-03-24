@@ -75,6 +75,8 @@
 (define-public %my-base-packages
   (map specification->package
   '("bash"
+    "bash-completion"
+    "emacs-bash-completion"
     "bzip2"
     "coreutils"
     "curl"
