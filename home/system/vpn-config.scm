@@ -5,7 +5,7 @@
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
-  (keyboard-layout (keyboard-layout "us"))
+  (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "vpn")
   (users (cons* (user-account
                   (name "hop")

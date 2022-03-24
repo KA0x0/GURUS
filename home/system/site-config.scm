@@ -5,7 +5,7 @@
 (operating-system
   (locale "en_US.utf8")
   (timezone "America/New_York")
-  (keyboard-layout (keyboard-layout "us"))
+  (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "site")
   (users (cons* (user-account
                   (name "web")
