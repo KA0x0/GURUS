@@ -40,6 +40,7 @@
   (packages
     (append
       (list 
+      lm-sensors
       usbguard
       )
   %my-base-packages))

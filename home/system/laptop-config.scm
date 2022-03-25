@@ -43,6 +43,7 @@
         dbus
         emacs-with-native-comp
         emacs-exwm
+        lm-sensors
         usbguard
         xinit
         xrandr)
