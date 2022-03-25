@@ -69,7 +69,8 @@
   #:use-module (srfi srfi-34)
   #:use-module (srfi srfi-35)
   #:use-module (rnrs bytevectors)
-  #:export (%my-base-packages))
+  #:export (%my-base-packages)
+  #:export (%my-base-settings))
 
 
 (define-public %my-base-packages
@@ -124,4 +125,7 @@
     "which"
     "xz")))
 
+(define-public %my-base-settings
+  (keyboard-layout (keyboard-layout "us" "ru"))
+  
 ;;; system.scm ends here
