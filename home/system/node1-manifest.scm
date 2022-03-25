@@ -9,6 +9,7 @@
         "emacs-with-native-comp-no-x"
         "podman"
         "qemu"
+        "rclone"
         "sshfs"
         "my-rtorrent"))
 
