@@ -126,6 +126,8 @@
     "xz")))
 
 (define-public %my-base-settings
-  (keyboard-layout (keyboard-layout "us" "ru"))
+  (operating-system
+   (locale "en_US.utf8")
+   (keyboard-layout (keyboard-layout "us" "ru")))
   
 ;;; system.scm ends here
