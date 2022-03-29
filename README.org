@@ -1,5 +1,7 @@
 #+TITLE: Channel 4 Guix
 
+This channel should provide packages and configurations that exceed the controls of ISO-27003.
+
 GNU Guix --- Functional package management for GNU
 
 This file is NOT part of GNU Guix.
