@@ -2,4 +2,4 @@
 
 GNU Guix --- Functional package management for GNU
 
-This channel should provide audited packages and opinonated configurations that exceed the controls of ISO-27003.
+This channel should provide audited packages and opinonated configurations that exceed the controls of NIST CSF and ISO-27003.
