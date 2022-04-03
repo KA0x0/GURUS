@@ -42,7 +42,7 @@
         "rsync"
         "socat"
         "sshfs"
-        "tesseract-cor"
+        "tesseract-ocr"
         "wireguard-tools"
         "yt-dlp"))
 
