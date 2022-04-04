@@ -6,7 +6,7 @@
 
 (specifications->manifest
   (list "letsencrypt"
-        "emacs-with-native-comp-no-x"
+        "emacs-next-gcc-no-x"
         "nginx"))
 
 ;;; site-manifest.scm ends here

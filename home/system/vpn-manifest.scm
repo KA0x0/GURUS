@@ -5,7 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-with-native-comp-no-x"
+  (list "emacs-next-gcc-no-x"
         "wireguard-tools"))
 
 ;;; vpn-manifest.scm ends here

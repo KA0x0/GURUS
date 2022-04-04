@@ -82,7 +82,7 @@
     "coreutils"
     "curl"
     "diffutils"
-    "emacs-with-native-comp-no-x"
+    "emacs-next-gcc-no-x"
     "emacs-consult"
     "emacs-doom-modeline"
     "emacs-embark"

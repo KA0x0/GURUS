@@ -6,7 +6,7 @@
 
 (specifications->manifest
   (list "dovecot"
-        "emacs-with-native-comp-no-x"
+        "emacs-next-gcc-no-x"
         "postfix"))
 
 ;;; mail-manifest.scm ends here

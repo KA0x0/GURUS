@@ -5,6 +5,6 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-with-native-comp-no-x"))
+  (list "emacs-next-gcc-no-x"))
 
 ;;; jump-manifest.scm ends here

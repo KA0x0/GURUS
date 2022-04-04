@@ -6,7 +6,7 @@
 
 (specifications->manifest
   (list "calibre"
-        "emacs-with-native-comp-no-x"
+        "emacs-next-gcc-no-x"
         "podman"
         "qemu"
         "rclone"
