@@ -31,10 +31,26 @@
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26))
 
-(define-public emacs-next-gcc-no-x
+(define-public emacs-next-gcc
     (package
       (inherit emacs-next)
-      (define-public emacs-no-x
+      (name "emacs-next-gcc")
+      (snippet
+          '(begin
+            (with-directory-excursion "emacs/lisp"
+              (for-each delete-file-recursively
+                '("obsolete"
+                  "play")))))
+      (arguments
+       (substitute-keyword-arguments (package-arguments emacs-next)
+         ((#:configure-flags flags ''())
+          `(cons* "--with-native-compilation" ,flags))))))
+
+
+(define-public emacs-next-gcc-no-x
+    (package
+      (inherit emacs-next-gcc)
+      (define-public emacs-gcc-no-x
     (build-system gnu-build-system)
     (inputs (fold alist-delete
                   (package-inputs emacs)
@@ -44,35 +60,13 @@
 
                     ;; These depend on libx11, so remove them as well.
                     "libotf" "m17n-lib" "dbus")))
-      (snippet
-          '(begin
-            (with-directory-excursion "emacs/lisp"
-              (for-each delete-file-recursively
-                '("obsolete"
-                  "play")))))
       (arguments
        (substitute-keyword-arguments (package-arguments emacs-next-no-x)
          ((#:configure-flags flags ''())
-          `(cons* "--with-native-compilation" ,flags)
           `(delete "--with-cairo" ,flags))
        ((#:phases phases)
         `(modify-phases ,phases
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap))))))))
-
-(define-public emacs-next-gcc-pgtk
-    (package
-      (inherit emacs-next-pgtk)
-      (name "emacs-next-gcc-pgtk")
-      (snippet
-          '(begin
-            (with-directory-excursion "emacs/lisp"
-              (for-each delete-file-recursively
-                '("obsolete"
-                  "play")))))
-      (arguments
-       (substitute-keyword-arguments (package-arguments emacs-next-pgtk)
-         ((#:configure-flags flags ''())
-          `(cons* "--with-native-compilation" ,flags))))))
 
 ;;; emacs-gcc.scm ends here

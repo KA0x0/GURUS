@@ -11,7 +11,7 @@
         "curl"
         "diffoscope"
         "direnv"
-        "emacs-next-gcc-pgtk"
+        "emacs-next-gcc"
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
