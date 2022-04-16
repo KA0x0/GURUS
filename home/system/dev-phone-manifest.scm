@@ -16,7 +16,7 @@
         "emacs-emms"
         "emacs-exiftool"
         "emacs-modus-themes"
-        "emacs-request"
+        "emacs-restclient"
         "eshell-prompt-extras"
         "ffmpeg"
         "file"
