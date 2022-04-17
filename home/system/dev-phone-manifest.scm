@@ -38,7 +38,6 @@
         "podman"
         "emacs-powershell"
         "python"
-        "rsync"
         "socat"
         "sshfs"
         "tesseract-ocr"

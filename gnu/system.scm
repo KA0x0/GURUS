@@ -116,6 +116,7 @@
     "patch"
     "procps"
     "psmisc"
+    "rsync"
     "sed"
     "shadow"
     "sudo"
