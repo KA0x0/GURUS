@@ -20,7 +20,7 @@
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
                  ("grep" . "grep --color=auto")
-                 ("ls" . "ls -l --all --color=auto --dired --human-readable")
+                 ("ls" . "ls -lr --all --color=auto --dired --human-readable")
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "mv --interactive --verbose")
