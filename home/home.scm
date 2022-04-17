@@ -29,8 +29,8 @@
                  ("vdir" . "vdir --color=auto")
                  ("wget" . "wget --show-progress")))
               (environment-variables
-                 ("EDITOR" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
-                 ("VISUAL" . ,(file-append emacs-native-comp "/bin/emacsclient -a -c"))
+                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient -a -c"))
+                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient -a -c"))
                  ("SHELL" . ,(file-append bash "/bin/bash")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
