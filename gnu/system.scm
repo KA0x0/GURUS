@@ -84,7 +84,6 @@
     "diffutils"
     "emacs-next-gcc-no-x"
     "emacs-consult"
-    "emacs-doom-modeline"
     "emacs-embark"
     "emacs-evil"
     "emacs-evil-collection"
