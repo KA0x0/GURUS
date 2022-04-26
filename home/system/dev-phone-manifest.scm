@@ -38,6 +38,8 @@
         "podman"
         "emacs-powershell"
         "python"
+        "emacs-restclient"
+        "emacs-ob-restclient"
         "socat"
         "sshfs"
         "tesseract-ocr"
