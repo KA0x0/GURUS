@@ -44,6 +44,7 @@
         dbus
         emacs-with-native-comp
         emacs-exwm
+        fontconfig
         piperwire
         spice-vdagent
         xf86-video-amdgpu
