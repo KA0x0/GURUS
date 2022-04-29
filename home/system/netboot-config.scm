@@ -9,7 +9,7 @@
   (host-name "boot")
   (users (cons* (user-account
                   (name "net")
-                  (comment "I boot stuff")
+                  (comment "Preboot eXecution Environement")
                   (group "users")
                   (home-directory "/home/net")
                   (supplementary-groups
