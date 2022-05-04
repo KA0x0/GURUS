@@ -37,28 +37,27 @@
   #:use-module (ice-9 match))
 
 (define-public emacs-mentor
-  (let ((commit "3336eaa97de923f74b90dda3e35985e122d40805")
-        (revision "1"))   
-    (package
-      (name "emacs-mentor")
-      (version (git-version "0.3.5" revision commit))
-      (source (origin
-                (method git-fetch)
-                (uri (git-reference
-                      (url "https://github.com/skangas/mentor")
-                      (commit commit)))
-                (file-name (git-file-name name version))
-                (sha256
-                 (base32
-                  "ebc43db934fab4345ef63c1c0f7113b9293d0646"))))
-      (build-system emacs-build-system)
-      (arguments
-       `(#:tests? #f))                  ; requires network access.
-      (propagated-inputs
-       (list emacs-deferred))
-      (home-page "https://github.com/skangas/mentor")
-      (synopsis "mentor is a GNU Emacs frontend for the rTorrent bittorrent client.")
-      (description "mentor is a GNU Emacs frontend for the rTorrent bittorrent client.")
-      (license license:gpl3+))))
+  (package
+    (name "emacs-mentor")
+    (version "20220113.2136")
+    (source
+      (origin
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://github.com/skangas/mentor.git")
+               (commit
+                 "afab3a14a4bfb5117f8e25417fdf151611b3df0b")))
+        (sha256
+          (base32
+            "0wcmgynshjk9xdiv4y86d5qb7ncxkswim2gp34hkhslhvfmhfh8f"))))
+    (build-system melpa-build-system)
+    (propagated-inputs
+      (list emacs-xml-rpc emacs-async))
+    (home-page "https://github.com/skangas/mentor")
+    (synopsis
+      "Frontend for the rTorrent bittorrent client")
+    (description
+      "Documentation at https://melpa.org/#/mentor")
+    (license #f)))
 
 ;;; emacs-xyz.scm ends here
