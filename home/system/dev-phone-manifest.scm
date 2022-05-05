@@ -15,6 +15,8 @@
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
+        "emacs-jabber"
+        "emacs-mentor"
         "emacs-modus-themes"
         "emacs-restclient"
         "emacs-ob-restclient"
