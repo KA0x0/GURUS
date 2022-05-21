@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "site.home.arpa")
+  (host-name "site")
   (users (cons* (user-account
                   (name "web")
                   (comment "Web")

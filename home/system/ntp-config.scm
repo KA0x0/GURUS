@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "ntp.home.arpa")
+  (host-name "ntp")
   (users (cons* (user-account
                   (name "time")
                   (comment "Tik Tok")

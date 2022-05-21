@@ -3,7 +3,7 @@
 (use-package-modules certs)
 
 (operating-system
-  (host-name "wsl.home.arpa")
+  (host-name "wsl")
   (timezone "America/New_York")
   (locale "en_US.utf8")
   (kernel hello)

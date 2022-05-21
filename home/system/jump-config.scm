@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "jump.home.arpa")
+  (host-name "jump")
   (users (cons* (user-account
                   (name "hop")
                   (comment "I hop")

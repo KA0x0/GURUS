@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "mail.home.arpa")
+  (host-name "mail")
   (users (cons* (user-account
                   (name "e")
                   (comment "Transfering email")

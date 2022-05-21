@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "pot.home.arpa")
+  (host-name "pot")
   (users (cons* (user-account
                   (name "honey")
                   (comment "honey")

@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "node1.home.arpa")
+  (host-name "node1")
   (users (cons* (user-account
                   (name "vm")
                   (comment "Virtual Manager")
