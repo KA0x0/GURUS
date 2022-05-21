@@ -52,7 +52,19 @@
  %my-base-packagess))
   (services
     (append
-      (list (service elogind-service-type)
+      (list (service autofs-service-type
+         (autofs-configuration
+          (mounts (list
+                   (autofs-mount-configuration
+                    (target "/mnt/storage/khaoz")
+                    (source ":sshfs\\#node1\\:/mnt/storage/khaoz"))))))
+
+;; mount -t fuse and autofs
+(extra-special-file "/bin/sshfs"
+                    (file-append sshfs "/bin/sshfs"))
+(extra-special-file "/bin/ssh"
+                    (file-append openssh "/bin/ssh"))
+            (service elogind-service-type)
             (service libvirt-service-type)
             (service login-service-type my-motd)
             (service network-manager-service-type)
