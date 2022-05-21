@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "C2")
+  (host-name "c2.home.arpa")
   (users (cons* (user-account
                   (name "beacon")
                   (comment "Beaconing")

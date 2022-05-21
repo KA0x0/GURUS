@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "laptop")
+  (host-name "laptop.home.arpa")
   (users (cons* (user-account
                   (name "mobile")
                   (comment "Mobile")

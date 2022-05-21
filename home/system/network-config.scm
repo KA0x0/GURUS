@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "network")
+  (host-name "network.home.arpa")
   (users (cons* (user-account
                   (name "route")
                   (comment "Routing")
