@@ -44,8 +44,8 @@
         emacs-with-native-comp
         emacs-exwm
         lm-sensors
+        sx
         usbguard
-        xinit
         xrandr
         xsecurelock)
  %my-base-packagess))

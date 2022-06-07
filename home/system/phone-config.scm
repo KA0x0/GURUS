@@ -46,8 +46,8 @@
         emacs-exwm
         lm-sensors
         pipewire
+        sx
         usbguard
-        xinit
         xrandr
         xsecurelock)
  %my-base-packagess))
