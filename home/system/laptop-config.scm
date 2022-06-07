@@ -46,7 +46,8 @@
         lm-sensors
         usbguard
         xinit
-        xrandr)
+        xrandr
+        xsecurelock)
  %my-base-packagess))
   (services
     (append
