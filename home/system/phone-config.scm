@@ -47,7 +47,7 @@
         lm-sensors
         pipewire
         usbguard
-        wayland)
+        xorg-server-xwayland)
  %my-base-packagess))
   (services
     (append

@@ -45,7 +45,7 @@
         emacs-exwm
         lm-sensors
         usbguard
-        wayland)
+        xorg-server-xwayland)
  %my-base-packagess))
   (services
     (append
