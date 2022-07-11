@@ -48,8 +48,7 @@
         piperwire
         spice-vdagent
         xf86-video-amdgpu
-        xinit
-        xrandr)
+        wayland)
  %my-base-packagess))
   (services
     (append

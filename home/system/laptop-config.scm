@@ -44,10 +44,8 @@
         emacs-with-native-comp
         emacs-exwm
         lm-sensors
-        sx
         usbguard
-        xrandr
-        xsecurelock)
+        wayland)
  %my-base-packagess))
   (services
     (append

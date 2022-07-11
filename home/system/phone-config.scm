@@ -46,10 +46,8 @@
         emacs-exwm
         lm-sensors
         pipewire
-        sx
         usbguard
-        xrandr
-        xsecurelock)
+        wayland)
  %my-base-packagess))
   (services
     (append

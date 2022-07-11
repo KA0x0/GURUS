@@ -35,6 +35,7 @@
       (list
       xf86-video-amdgpu
       sshfs
+      wayland
       )
   %my-base-packagess))
   (services
