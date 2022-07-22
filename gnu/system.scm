@@ -79,6 +79,7 @@
     "bash-completion"
     "emacs-bash-completion"
     "bzip2"
+    "chrony"
     "coreutils"
     "curl"
     "diffutils"
