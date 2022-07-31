@@ -116,6 +116,7 @@
     "patch"
     "procps"
     "psmisc"
+    "python"
     "rsync"
     "sed"
     "shadow"
