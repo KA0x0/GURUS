@@ -86,7 +86,7 @@
     "emacs-next-gcc-no-x"
     "emacs-consult"
     "emacs-embark"
-    "emacs-meow""
+    "emacs-meow"
     "emacs-geiser"
     "emacs-geiser-guile"
     "emacs-guix"
