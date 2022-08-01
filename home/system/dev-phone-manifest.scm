@@ -18,6 +18,7 @@
         "emacs-jabber"
         "emacs-mentor"
         "emacs-modus-themes"
+        "emacs-notmuch"
         "emacs-restclient"
         "emacs-ob-restclient"
         "eshell-prompt-extras"
