@@ -43,7 +43,6 @@
         "pass-tomb"
         "podman"
         "emacs-powershell"
-        "python"
         "socat"
         "sshfs"
         "tesseract-ocr"
