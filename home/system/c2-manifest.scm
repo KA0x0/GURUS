@@ -6,7 +6,6 @@
 
 (specifications->manifest
   (list "emacs-next-gcc-no-x"
-        "python"
         "rsync"
         "sshfs"
         "wireguard-tools"))
