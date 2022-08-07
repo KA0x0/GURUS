@@ -41,3 +41,5 @@
                     (start #~(make-system-constructor "emacs --daemon"))
                      (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))
                   (service unattended-upgrade-service-type)))))))))
+
+;;; home.scm ends here
