@@ -84,6 +84,7 @@
     "curl"
     "diffutils"
     "emacs-next-gcc-no-x"
+    "emacs-async"
     "emacs-consult"
     "emacs-embark"
     "emacs-meow"
