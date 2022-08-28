@@ -28,6 +28,7 @@
                  ("rm" . "rm --interactive --verbose")
                  ("vdir" . "vdir --color=auto")
                  ("wget" . "wget --show-progress")))
+              ((match (command-line) ((command) (invoke ipython)) ((command args ...) (apply invoke python args))))
               (environment-variables
                  ("EDITOR" . ,(file-append emacs "/bin/emacsclient -a -c"))
                  ("VISUAL" . ,(file-append emacs "/bin/emacsclient -a -c"))
