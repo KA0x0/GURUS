@@ -114,6 +114,8 @@
     "nss-certs"
     "openssh-sans-x"
     "patch"
+    "pinentry"
+    "emacs-pinentry"
     "procps"
     "psmisc"
     "python"
