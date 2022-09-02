@@ -46,6 +46,7 @@
         "socat"
         "sshfs"
         "tesseract-ocr"
+        "tiled"
         "wireguard-tools"
         "yt-dlp"))
 
