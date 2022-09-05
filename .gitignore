@@ -4,7 +4,6 @@
 .bash_profile
 .bashrc
 .cache/*
-channel-4-guix/*
 .config/*
 .gdbinit
 .guile
