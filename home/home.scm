@@ -20,7 +20,7 @@
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
                  ("grep" . "grep --color=auto")
-                 ("ls" . "ls -lr --all --color=auto --dired --human-readable")
+                 ("ls" . "ls -lr --all --color=auto --dired --human-readable -v")
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "rsync -avhW --progress --info=progress2 --remove-source-files")
