@@ -41,11 +41,6 @@
               (for-each delete-file-recursively
                 '("obsolete"
                   "play")))))
-      (arguments
-       (substitute-keyword-arguments (package-arguments emacs-next)
-         ((#:configure-flags flags ''())
-          `(cons* "--with-native-compilation" ,flags))))))
-
 
 (define-public emacs-next-gcc-no-x
     (package
