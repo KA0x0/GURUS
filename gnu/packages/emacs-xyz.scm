@@ -36,30 +36,6 @@
   #:use-module (srfi srfi-1)
   #:use-module (ice-9 match))
 
-(define-public emacs-mentor
-  (package
-    (name "emacs-mentor")
-    (version "20220113.2136")
-    (source
-      (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://github.com/skangas/mentor.git")
-               (commit
-                 "afab3a14a4bfb5117f8e25417fdf151611b3df0b")))
-        (sha256
-          (base32
-            "0wcmgynshjk9xdiv4y86d5qb7ncxkswim2gp34hkhslhvfmhfh8f"))))
-    (build-system melpa-build-system)
-    (propagated-inputs
-      (list emacs-xml-rpc emacs-async))
-    (home-page "https://github.com/skangas/mentor")
-    (synopsis
-      "Frontend for the rTorrent bittorrent client")
-    (description
-      "Documentation at https://melpa.org/#/mentor")
-    (license #f)))
-
 (define-public emacs-jabber
   (package
     (name "emacs-jabber")
