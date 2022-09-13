@@ -39,29 +39,22 @@
 (define-public emacs-jabber
   (package
     (name "emacs-jabber")
-    (version "20180927.2325")
+    (version "20220713.1538")
     (source
       (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://github.com/legoscia/emacs-jabber.git")
+       (method url-fetch)
+       (uri (string-append "https://melpa.org/packages/jabber-"version ".tar")
                (commit
-                 "fff33826f42e040dad7ef64ea312d85215d3b0a1")))
+                 "af0315e174fa6446d5c4dd3e6465d48912950e58")))
         (sha256
           (base32
             "1fif38qhiaxskfmqin82n9334bzrkgd1h5ip1djcm571i670gj74"))))
     (build-system melpa-build-system)
-    (propagated-inputs (list emacs-fsm emacs-srv))
-    (arguments
-      '(#:files
-        ("*.el"
-         "*.texi"
-         ("jabber-fallback-lib"
-          "jabber-fallback-lib/hexrgb.el"))))
-    (home-page "unspecified")
+    (propagated-inputs (list emacs-async))
+    (home-page "https://melpa.org/#/jabber")
     (synopsis "A Jabber client for Emacs.")
     (description
-      "Documentation at https://melpa.org/#/jabber")
+      "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see http://xmpp.org for more information.")
     (license #f)))
 
 ;;; emacs-xyz.scm ends here
