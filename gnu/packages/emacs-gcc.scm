@@ -52,7 +52,6 @@
                   '("libx11" "gtk+" "libxft" "libtiff" "giflib" "libjpeg"
                     "imagemagick" "libpng" "librsvg" "libxpm" "libice"
                     "libsm" "cairo" "pango" "harfbuzz"
-
                     ;; These depend on libx11, so remove them as well.
                     "libotf" "m17n-lib" "dbus")))
       (arguments
