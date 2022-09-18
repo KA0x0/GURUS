@@ -7,7 +7,6 @@
 (specifications->manifest
   (list "emacs-next-gcc-no-x"
         "hashcat"
-        "rsync"
-        "virt-manager"))
+        "rsync"))
 
 ;;; wsl-manifest.scm ends here

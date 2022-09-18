@@ -8,7 +8,6 @@
   (list "emacs-next-gcc-no-x"
         "qemu"
         "sshfs"
-        "virt-manager"
         "wireguard-tools"))
 
 ;;; laptop-manifest.scm ends here
