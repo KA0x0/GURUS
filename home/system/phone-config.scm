@@ -55,8 +55,8 @@
          (autofs-configuration
           (mounts (list
                    (autofs-mount-configuration
-                    (target "/mnt/storage/khaoz")
-                    (source ":sshfs\\#node1.home.arpa\\:/mnt/storage/khaoz"))))))
+                    (target "/mnt/storage/kaox")
+                    (source ":sshfs\\#node1.home.arpa\\:/mnt/storage/kaox"))))))
 
 ;; mount -t fuse and autofs
 (extra-special-file "/bin/sshfs"

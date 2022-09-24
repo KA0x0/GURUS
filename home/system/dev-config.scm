@@ -8,10 +8,10 @@
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "dev")
   (users (cons* (user-account
-                  (name "khaoz")
-                  (comment "KHAOZ")
+                  (name "kaox")
+                  (comment "KA0x0")
                   (group "users")
-                  (home-directory "/home/khaoz")
+                  (home-directory "/home/kaox")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
@@ -56,8 +56,8 @@
          (autofs-configuration
           (mounts (list
                    (autofs-mount-configuration
-                    (target "/mnt/storage/khaoz")
-                    (source ":sshfs\\#node1.home.arpa\\:/mnt/storage/khaoz"))))))
+                    (target "/mnt/storage/kaox")
+                    (source ":sshfs\\#node1.home.arpa\\:/mnt/storage/kaox"))))))
 
 ;; mount -t fuse and autofs
 (extra-special-file "/bin/sshfs"
