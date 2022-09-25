@@ -2,48 +2,45 @@
 (use-service-modules mcron)
 (use-package-modules certs)
 
-(operating-system
-  (host-name "wsl")
-  (timezone "America/New_York")
-  (locale "en_US.utf8")
-  (kernel hello)
-    (initrd (lambda* (. rest) (plain-file "dummyinitrd" "dummyinitrd")))
+  (operating-system
+    (host-name "wsl")
+    (timezone "America/New_York")
+    (bootloader
+     (bootloader-configuration
+      (bootloader dummy-bootloader)))
+    (kernel dummy-kernel)
+    (initrd dummy-initrd)
     (initrd-modules '())
     (firmware '())
-  (bootloader
-    (bootloader-configuration
-      (bootloader
-        (bootloader
-          (name 'dummybootloader)
-          (package hello)
-          (configuration-file "/dev/null")
-          (configuration-file-generator (lambda* (. rest) (computed-file "dummybootloader" #~(mkdir #$output))))
-          (installer #~(const #t))))))
-  (file-systems (list (file-system
-                        (device "/dev/vda")
-                        (mount-point "/")
-                        (type "ext4")
-                        (mount? #t))))
-  (users (cons (user-account
-                (name "kracken")
-                (comment "Kracking hashes")
-                (group "users")
-                (supplementary-groups '("wheel")))
-               %base-user-accounts))
-  (packages
-    (append
-      (list
-      xf86-video-amdgpu
-      sshfs
-      xorg-server-xwayland
-      )
+    (file-systems '())
+    (users (cons* (user-account
+                   (name "kracken")
+                   (group "users")
+                   (supplementary-groups '("wheel")) ; allow use of sudo
+                   (password "")
+                   (comment "Kracking hashes"))
+                  (user-account
+                   (inherit %root-account)
+                   (shell (wsl-boot-program "guest")))
+                  %base-user-accounts))
+    (packages
+      (append
+        (list
+        xf86-video-amdgpu
+        sshfs
+        xorg-server-xwayland
+    )))
   %my-base-packagess))
-  (services
-    (append
-      (list (service login-service-type my-motd)
-            (service network-manager-service-type)
-            (service openssh-service-type)
-            (service unattended-upgrade-service-type)
-      %base-services))))
+    (services
+     (list
+      (service login-service-type my-motd)
+      (service openssh-service-type)
+      (service unattended-upgrade-service-type)
+      (service guix-service-type)
+      (service special-files-service-type
+               `(("/bin/sh" ,(file-append bash "/bin/bash"))
+                 ("/bin/mount" ,(file-append util-linux "/bin/mount"))
+                 ("/usr/bin/env" ,(file-append coreutils "/bin/env"))
+                 %base-services))))))))))
 
 ;;; wsl-config.scm ends here
