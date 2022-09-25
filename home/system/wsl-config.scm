@@ -24,11 +24,10 @@
                   (shell (wsl-boot-program "guest")))
                  %base-user-accounts))
    (packages
-     (append
        (list
-       xf86-video-amdgpu
-       sshfs
-       xorg-server-xwayland
+        xf86-video-amdgpu
+        sshfs
+        xorg-server-xwayland
    )))
  %my-base-packagess))
    (services
