@@ -8,6 +8,7 @@
   (list "aria2"
         "awscli"
         "emacs-bluetooth"
+        "ccid"
         "curl"
         "diffoscope"
         "direnv"
