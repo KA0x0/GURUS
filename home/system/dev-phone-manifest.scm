@@ -29,7 +29,6 @@
         "freerdp"
         "gdb"
         "google-cloud-sdk"
-        "ipython"
         "mktorrent"
         "mpd"
         "mpv"
