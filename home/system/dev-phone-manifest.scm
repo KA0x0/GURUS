@@ -45,7 +45,6 @@
         "podman"
         "emacs-powershell"
         "socat"
-        "sssd"
         "sshfs"
         "tesseract-ocr"
         "tiled"
