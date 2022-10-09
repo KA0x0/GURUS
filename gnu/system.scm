@@ -108,6 +108,7 @@
     "guile-colorized"
     "guile-readline"
     "gzip"
+    "inotify-tools"
     "kmod"
     "less"
     "lzip"
