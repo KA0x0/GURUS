@@ -73,7 +73,9 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("bash"
+  '("awscli"
+    "aws-vault"
+    "bash"
     "bash-completion"
     "emacs-bash-completion"
     "bzip2"
@@ -99,6 +101,7 @@
     "emacs-tramp"
     "emacs-undo-tree"
     "emacs-which-key"
+    "eshell-prompt-extras"
     "eudev"
     "findutils"
     "gawk"
@@ -115,6 +118,13 @@
     "man-db"
     "nss-certs"
     "openssh-sans-x"
+    "password-store"
+    "emacs-password-store"
+    "emacs-password-store-otp"
+    "pass-git-helper"
+    "pass-otp"
+    "pass-rotate"
+    "pass-tomb"
     "patch"
     "pinentry"
     "emacs-pinentry"
