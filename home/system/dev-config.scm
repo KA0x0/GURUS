@@ -50,7 +50,7 @@
         spice-vdagent
         xf86-video-amdgpu
         xorg-server-xwayland)
- %my-base-packagess))
+ %bare-packages))
   (services
     (append
       (list (service autofs-service-type

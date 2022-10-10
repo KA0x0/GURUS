@@ -37,8 +37,8 @@
   #:use-module (gnu packages texinfo)
   #:use-module (gnu packages text-editors)
   #:use-module (gnu packages wget)
-  #:export (%my-base-packages)
-  #:export (%my-base-settings))
+  #:export (%bare-packages)
+  #:export (%bare-settings))
 
 
 (define-public %my-base-packages
