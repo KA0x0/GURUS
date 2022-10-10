@@ -37,8 +37,8 @@
   #:use-module (gnu packages texinfo)
   #:use-module (gnu packages text-editors)
   #:use-module (gnu packages wget)
-  #:export (%bare-packages)
-  #:export (%bare-settings))
+  #:export (%my-base-packages)
+  #:export (%my-base-settings))
 
 
 (define-public %my-base-packages
@@ -112,7 +112,7 @@
     "xonsh"
     "xz")))
 
-(define-public %bare-settings
+(define-public %my-base-settings
   (operating-system
    (locale "en_US.utf8")
    (keyboard-layout (keyboard-layout "us" "ru")))
