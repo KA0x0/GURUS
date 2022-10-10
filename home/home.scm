@@ -19,6 +19,7 @@
                  ("emacs" . "emacsclient -a -c")
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
+                 ("git commit' . "git commit --gpg-sign")
                  ("grep" . "grep --color=auto")
                  ("ls" . "ls -lr --all --color=auto --dired --human-readable -v")
                  ("logout" . "pkill emacsclient & logout")
