@@ -11,6 +11,7 @@
                   (name "vm")
                   (comment "Virtual Manager")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/vm")
                   (supplementary-groups
                     '("kvm" "netdev" "wheel")))

@@ -11,6 +11,7 @@
                   (name "mobile")
                   (comment "Mobile")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/mobile")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))

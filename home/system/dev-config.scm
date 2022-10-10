@@ -11,6 +11,7 @@
                   (name "kaox")
                   (comment "KA0x0")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/kaox")
                   (supplementary-groups
                     '("audio" "kvm" "netdev" "video" "wheel")))

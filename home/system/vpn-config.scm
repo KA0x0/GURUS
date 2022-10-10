@@ -11,6 +11,7 @@
                   (name "hop")
                   (comment "Hopping from point to point")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/hop")
                   (supplementary-groups
                     '("netdev" "wheel")))

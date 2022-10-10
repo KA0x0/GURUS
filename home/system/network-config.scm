@@ -11,6 +11,7 @@
                   (name "route")
                   (comment "Routing")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/route")
                   (supplementary-groups
                     '("netdev" "wheel")))

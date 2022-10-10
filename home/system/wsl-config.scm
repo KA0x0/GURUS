@@ -18,7 +18,8 @@
                   (group "users")
                   (supplementary-groups '("wheel")) ; allow use of sudo
                   (password "")
-                  (comment "Kracking hashes"))
+                  (comment "Kracking hashes")
+                  (shell (file-append xonsh "/bin/xonsh")))
                  (user-account
                   (inherit %root-account)
                   (shell (wsl-boot-program "guest")))

@@ -11,6 +11,7 @@
                   (name "builder")
                   (comment "I build stuff")
                   (group "users")
+                  (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/builder")
                   (supplementary-groups
                     '("netdev" "wheel")))

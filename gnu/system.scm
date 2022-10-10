@@ -129,6 +129,7 @@
     "util-linux-with-udev"
     "wget"
     "which"
+    "xonsh"
     "xz")))
 
 (define-public %my-base-settings
