@@ -11,7 +11,6 @@
         "qemu"
         "rclone"
         "my-rtorrent"
-        "sshfs"
-))
+        "sshfs"))
 
 ;;; node1-manifest.scm ends here
