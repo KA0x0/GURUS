@@ -39,6 +39,7 @@
         "tesseract-ocr"
         "tiled"
         "wireguard-tools"
+        "wireshark"
         "yt-dlp"))
 
 ;;; dev-phone-manifest.scm ends here
