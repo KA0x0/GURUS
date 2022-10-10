@@ -96,7 +96,7 @@
     "pass-rotate"
     "pass-tomb"
     "patch"
-    "pinentry"
+    "pinentry-tty"
     "emacs-pinentry"
     "procps"
     "psmisc"
