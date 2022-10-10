@@ -112,7 +112,7 @@
     "xonsh"
     "xz")))
 
-(define-public %my-base-settings
+(define-public %bare-settings
   (operating-system
    (locale "en_US.utf8")
    (keyboard-layout (keyboard-layout "us" "ru")))
