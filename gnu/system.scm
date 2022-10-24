@@ -57,6 +57,7 @@
     "emacs-async"
     "emacs-consult"
     "emacs-consult-org-roam"
+    "emacs-eglot"
     "emacs-embark"
     "emacs-flycheck"
     "emacs-geiser"
