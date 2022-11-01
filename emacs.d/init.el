@@ -10,6 +10,7 @@
 (blink-cursor-mode -1)
 (column-number-mode)
 (load-theme 'modus-vivendi)
+(set-frame-font "fira code 12" nil t)
 
 ;; Interactively do things.
 (ido-mode 1)
