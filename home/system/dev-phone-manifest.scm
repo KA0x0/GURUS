@@ -26,7 +26,6 @@
         "font-fira-code"
         "freerdp"
         "gdb"
-        "git:send-email"
         "google-cloud-sdk"
         "mktorrent"
         "mpd"
