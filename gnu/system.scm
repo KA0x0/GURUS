@@ -77,6 +77,7 @@
     "findutils"
     "gawk"
     "git"
+    "git-crypt"
     "grep"
     "guile"
     "guile-colorized"
