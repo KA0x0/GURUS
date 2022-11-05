@@ -17,7 +17,7 @@
 (ligature-set-ligatures 't '("www"))
 
 ;; Enable ligatures in programming modes                                                           
-(ligature-set-ligatures 'prog-mode '("w ww" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
+(ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
                                      ":::" ":=" "!!" "!=" "!==" "-}" "----" "-->" "->" "->>"
                                      "-<" "-<<" "-~" "#{" "#[" "##" "###" "####" "#(" "#?" "#_"
                                      "#_(" ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*" "/**"
