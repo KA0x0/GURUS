@@ -6,8 +6,9 @@
 
 (specifications->manifest
   (list "calibre"
+        "docker"
+        "docker-compose"
         "emacs-next-gcc-no-x"
-        "podman"
         "qemu"
         "rclone"
         "my-rtorrent"
