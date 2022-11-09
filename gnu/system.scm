@@ -108,7 +108,7 @@
     "shadow"
     "sudo"
     "tar"
-    "util-linux-with-udev"
+    "util-linux"
     "wget"
     "which"
     "xonsh"
