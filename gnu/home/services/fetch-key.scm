@@ -4,7 +4,7 @@
   (ice-9 binary-ports))
 
 (define (meta-data path)
-  (let ((uri (string-append "http://ka0x.com/" path)))
+  (let ((uri (string-append "https://ka0x.com/" path)))
     (receive (header body)
         (http-get uri #:decode-body? #f)
       body)))
