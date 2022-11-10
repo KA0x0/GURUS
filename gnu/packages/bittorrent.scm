@@ -25,7 +25,7 @@
     (version "0.13.8")
     (source (sha256
                (base32
-                "10z9i1rc41cmmi7nx8k7k1agsx6afv09g9cl7g9zr35fyhl5l4gd")))))    
+                "10z9i1rc41cmmi7nx8k7k1agsx6afv09g9cl7g9zr35fyhl5l4gd"))))
 
 (define my-rtorrent
   (package
