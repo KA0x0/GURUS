@@ -39,6 +39,7 @@
         "sshfs"
         "tesseract-ocr"
         "tiled"
+        "tor"
         "wireguard-tools"
         "yt-dlp"))
 
