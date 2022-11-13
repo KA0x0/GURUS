@@ -4,7 +4,14 @@
 ;; need to capture the channels being used, as returned by "guix describe".
 ;; See the "Replicating Guix" section in the manual.
 
-(use-modules (gnu home) (gnu home services) (gnu home services shells) (guix gexp) (gnu services) (guix-package admin) (gnu packages bash))
+(use-modules
+  (gnu home) 
+  (gnu home services) 
+  (gnu home services shells) 
+  (guix gexp) 
+  (gnu services) 
+  (guix-package admin) 
+  (gnu packages bash))
 
 (home-environment
   (services
