@@ -22,11 +22,11 @@
 	{
 	    "type": "file",
 	    "source": "guix.sh",
-	    "destination": "/tmp/guix.sh"
+	    "destination": "/tmp/guix-init.sh"
 	},
 	{
 	    "type": "shell",
-	    "inline": "sudo bash /tmp/guix.sh"
+	    "inline": "sudo bash /tmp/guix-init.sh"
 	}
     ],
     "builders": [{
