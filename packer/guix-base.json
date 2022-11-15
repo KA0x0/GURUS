@@ -1,0 +1,67 @@
+{
+    "variables": {
+	"aws_access_key": "{{ env `AWS_ACCESS_KEY`}}",
+	"aws_secret_key": "{{ env `AWS_SECRET_KEY`}}"
+    },
+    "provisioners": [
+	{
+	    "type": "file",
+	    "source": "authorized_keys",
+	    "destination": "/tmp/authorized_keys"
+	},
+	{
+	    "type": "file",
+	    "source": "aws-fetch-ssh-key",
+	    "destination": "/tmp/aws-fetch-ssh-key"
+	},
+	{
+	    "type": "file",
+	    "source": "config.scm",
+	    "destination": "/tmp/config.scm"
+	},
+	{
+	    "type": "file",
+	    "source": "guix.sh",
+	    "destination": "/tmp/guix.sh"
+	},
+	{
+	    "type": "shell",
+	    "inline": "sudo bash /tmp/guix.sh"
+	}
+    ],
+    "builders": [{
+	"type": "amazon-ebssurrogate",
+	"ami_virtualization_type": "hvm",
+	"access_key": "{{user `aws_access_key`}}",
+	"secret_key": "{{user `aws_secret_key`}}",
+	"region": "eu-east-2",
+	"source_ami_filter": {
+	    "filters": {
+		"virtualization-type": "hvm",
+		"name": "nix-*-x86_64-linux",
+		"root-device-type": "ebs"
+	    },
+	    "owners": ["080433136561"],
+	    "most_recent": true
+	},
+	"instance_type": "t2.small",
+	"ssh_username": "nix",
+	"ami_name": "guix-packer {{timestamp}}",
+	"ena_support": true,
+	"launch_block_device_mappings" : [
+	    {
+		"volume_type" : "gp2",
+		"device_name" : "/dev/xvdf",
+		"delete_on_termination" : false,
+		"volume_size" : 8
+	    }
+	],
+	"ami_root_device": {
+	    "source_device_name": "/dev/xvdf",
+	    "device_name": "/dev/xvda",
+	    "delete_on_termination": true,
+	    "volume_size": 8,
+	    "volume_type": "gp2"
+	}
+    }]
+}
