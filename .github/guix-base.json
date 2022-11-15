@@ -8,26 +8,26 @@
 	{
 	    "type": "file",
 	    "source": "authorized_keys",
-	    "destination": "/tmp/authorized_keys"
+	    "destination": "/~/.ssh/authorized_keys"
 	},
 	{
 	    "type": "file",
 	    "source": "aws-fetch-ssh-key",
-	    "destination": "/tmp/aws-fetch-ssh-key"
+	    "destination": "/~/aws-fetch-ssh-key"
 	},
 	{
 	    "type": "file",
-	    "source": "{{hostname}}",
-	    "destination": "/tmp/{{hostname}}"
+	    "source": "{{hostname}}.scm",
+	    "destination": "/~/{{hostname}}.scm"
 	},
 	{
 	    "type": "file",
 	    "source": "guix.sh",
-	    "destination": "/tmp/guix-init.sh"
+	    "destination": "/~/guix-init.sh"
 	},
 	{
 	    "type": "shell",
-	    "inline": "sudo bash /tmp/guix-init.sh"
+	    "inline": "sudo bash /~/guix-init.sh"
 	}
     ],
     "builders": [{
