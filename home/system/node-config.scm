@@ -6,7 +6,7 @@
   (locale "en_US.utf8")
   (timezone "America/New_York")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "node50")
+  (host-name "node")
   (users (cons* (user-account
                   (name "vm")
                   (comment "Virtual Manager")
