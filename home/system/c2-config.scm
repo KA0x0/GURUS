@@ -14,7 +14,7 @@
                   (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/beacon")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("docker" "netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

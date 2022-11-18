@@ -5,7 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-next-gcc-no-x"
+  (list "docker"
+        "emacs-docker"
+        "docker-compose"
+        "emacs-next-gcc-no-x"
         "rsync"
         "sshfs"
         "wireguard-tools"))

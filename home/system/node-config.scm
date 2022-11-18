@@ -14,7 +14,7 @@
                   (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/vm")
                   (supplementary-groups
-                    '("kvm" "netdev" "wheel")))
+                    '("docker" "kvm" "netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
