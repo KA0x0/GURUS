@@ -12,6 +12,7 @@
         "diffoscope"
         "direnv"
         "docker"
+        "emacs-docker"
         "docker-compose"
         "emacs-next-gcc"
         "emacs-envrc"

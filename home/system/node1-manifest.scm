@@ -7,6 +7,7 @@
 (specifications->manifest
   (list "calibre"
         "docker"
+        "emacs-docker"
         "docker-compose"
         "emacs-next-gcc-no-x"
         "qemu"
