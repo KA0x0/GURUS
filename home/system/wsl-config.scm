@@ -15,10 +15,10 @@
    (file-systems '())
    (users (cons* (user-account
                   (name "kracken")
-                  (group "users")
-                  (supplementary-groups '("wheel")) ; allow use of sudo
-                  (password "")
                   (comment "Kracking hashes")
+                  (group "users")
+                  (supplementary-groups
+                    '("kvm" "wheel"))
                   (shell (file-append xonsh "/bin/xonsh")))
                  (user-account
                   (inherit %root-account)
