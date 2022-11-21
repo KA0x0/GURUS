@@ -24,11 +24,9 @@
   #:use-module (gnu packages cryptsetup)
   #:use-module (gnu packages disk)
   #:use-module (gnu packages file-systems)
-  #:use-module (gnu packages firmware)
   #:use-module (gnu packages gawk)
   #:use-module (gnu packages guile)
   #:use-module (gnu packages guile-xyz)
-  #:use-module (gnu packages hurd)
   #:use-module (gnu packages less)
   #:use-module (gnu packages linux)
   #:use-module (gnu packages nvi)
@@ -48,6 +46,7 @@
     "bash"
     "bash-completion"
     "emacs-bash-completion"
+    "bcachefs-tools"
     "bzip2"
     "chrony"
     "coreutils"
