@@ -11,7 +11,6 @@
         "docker-compose"
         "emacs-next-gcc-no-x"
         "qemu"
-        "rclone"
         "my-rtorrent"
         "sshfs"))
 
