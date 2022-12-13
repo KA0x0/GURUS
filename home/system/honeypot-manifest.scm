@@ -5,7 +5,6 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-next-gcc-no-x"
-        "podman"))
+  (list "emacs-next-gcc-no-x"))
 
 ;;; honeypot-manifest.scm ends here

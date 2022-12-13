@@ -65,6 +65,7 @@
                     (file-append sshfs "/bin/sshfs"))
 (extra-special-file "/bin/ssh"
                     (file-append openssh "/bin/ssh"))
+            (service docker-service-type)
             (service elogind-service-type)
             (service libvirt-service-type)
             (service login-service-type my-motd)
