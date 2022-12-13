@@ -19,3 +19,5 @@
         (name 'channel-4-guix)
         (url "https://git.sr.ht//channel-4-guix"))
        %default-channels)
+
+;;; channels.scm ends here
