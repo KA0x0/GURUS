@@ -112,8 +112,7 @@
     "wget"
     "which"
     "xonsh"
-    "xz"
-    "zabbix-agent2")))
+    "xz")))
 
 (define-public %my-base-settings
   (operating-system
