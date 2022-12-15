@@ -42,7 +42,6 @@
         "tiled"
         "tor"
         "wireguard-tools"
-        "yt-dlp"
-        "zabbix-cli"))
+        "yt-dlp"))
 
 ;;; dev-phone-manifest.scm ends here
