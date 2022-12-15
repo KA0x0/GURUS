@@ -5,8 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "aria2"
-        "emacs-bluetooth"
+  (list "emacs-bluetooth"
         "ccid"
         "curl"
         "diffoscope"
