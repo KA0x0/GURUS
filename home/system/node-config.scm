@@ -65,4 +65,4 @@
             (service unattended-upgrade-service-type)
             %base-services))))
 
-;;; node1-config.scm ends here
+;;; node-config.scm ends here
