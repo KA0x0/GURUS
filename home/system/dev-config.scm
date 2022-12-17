@@ -61,10 +61,10 @@
                     (source ":sshfs\\#node.home.arpa\\:/mnt/storage/kaox"))))))
 
 ;; mount -t fuse and autofs
-(extra-special-file "/bin/sshfs"
-                    (file-append sshfs "/bin/sshfs"))
 (extra-special-file "/bin/ssh"
                     (file-append openssh "/bin/ssh"))
+(extra-special-file "/bin/sshfs"
+                    (file-append sshfs "/bin/sshfs"))
             (service docker-service-type)
             (service elogind-service-type)
             (service libvirt-service-type)
