@@ -40,7 +40,7 @@
      (service special-files-service-type
               `(("/bin/sh" ,(file-append bash "/bin/bash"))
                 ("/bin/mount" ,(file-append util-linux "/bin/mount"))
-                ("/usr/bin/env" ,(file-append coreutils "/bin/env"))
-                %base-services))))))))))
+                ("/usr/bin/env" ,(file-append coreutils "/bin/env"))))
+                %base-services))))))))
 
 ;;; wsl-config.scm ends here
