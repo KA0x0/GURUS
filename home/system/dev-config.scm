@@ -59,13 +59,11 @@
                    (autofs-mount-configuration
                     (target "/mnt/storage/kaox")
                     (source ":sshfs\\#node.home.arpa\\:/mnt/storage/kaox"))))))
-
 ;; mount -t fuse and autofs
-(extra-special-file "/bin/ssh"
-                    (file-append openssh "/bin/ssh"))
-(extra-special-file "/bin/sshfs"
+                  (extra-special-file "/bin/sshfs"
                     (file-append sshfs "/bin/sshfs"))
-            (service docker-service-type)
+                  (extra-special-file "/bin/ssh"
+                    (file-append openssh "/bin/ssh"))
             (service elogind-service-type)
             (service libvirt-service-type)
             (service login-service-type my-motd)
