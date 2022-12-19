@@ -29,6 +29,7 @@
         "freerdp"
         "gdb"
         "google-cloud-sdk"
+        "guile-aws"
         "mktorrent"
         "mpd"
         "mpv"
