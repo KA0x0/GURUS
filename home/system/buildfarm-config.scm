@@ -41,7 +41,8 @@
  %my-base-packagess))
   (services
     (append
-      (list (service login-service-type my-motd)
+      (list (service cuirass-service-type)
+            (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
       %base-services))))
