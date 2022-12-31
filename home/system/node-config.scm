@@ -50,6 +50,7 @@
       (list (service docker-service-type)
             (service login-service-type my-motd)
             (service openssh-service-type)
+            (service rsync-service-type)
             (service rtorrent-service-type)
             (service static-networking-service-type
                   (list (static-networking
