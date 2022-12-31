@@ -40,7 +40,7 @@
            %base-file-systems))
   (packages
     (append
-      (list 
+      (list
       lm-sensors
       usbguard
       )
