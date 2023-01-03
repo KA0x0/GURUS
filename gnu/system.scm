@@ -71,6 +71,7 @@
     "emacs-paredit" 
     "emacs-tramp"
     "emacs-undo-tree"
+    "emacs-libvterm"
     "emacs-which-key"
     "eshell-prompt-extras"
     "eudev"
