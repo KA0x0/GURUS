@@ -41,8 +41,7 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("awscli"
-    "aws-vault"
+  '("aws-vault"
     "bash"
     "bash-completion"
     "emacs-bash-completion"
