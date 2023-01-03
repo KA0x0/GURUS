@@ -68,7 +68,7 @@
     "emacs-orderless"
     "emacs-org"
     "emacs-org-roam"
-    "emacs-paredit" 
+    "emacs-paredit"
     "emacs-tramp"
     "emacs-undo-tree"
     "emacs-libvterm"
