@@ -31,7 +31,6 @@
         "gdb"
         "google-cloud-sdk"
         "guile-aws"
-        "i2pd"
         "mktorrent"
         "mpd"
         "mpv"
