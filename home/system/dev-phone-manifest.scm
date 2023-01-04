@@ -31,6 +31,7 @@
         "gdb"
         "google-cloud-sdk"
         "guile-aws"
+        "i2pd"
         "mktorrent"
         "mpd"
         "mpv"
@@ -41,7 +42,6 @@
         "sshfs"
         "tesseract-ocr"
         "tiled"
-        "tor"
         "wireguard-tools"
         "yt-dlp"))
 
