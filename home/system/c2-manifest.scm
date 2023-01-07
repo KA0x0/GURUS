@@ -5,12 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "docker"
-        "emacs-docker"
-        "docker-compose"
-        "emacs-next-gcc-no-x"
+  (list "emacs-next-gcc-no-x"
         "rsync"
         "sshfs"
+        "podman"
         "wireguard-tools"))
 
 ;;; c2-manifest.scm ends here

@@ -6,10 +6,8 @@
 
 (specifications->manifest
   (list "calibre"
-        "docker"
-        "emacs-docker"
-        "docker-compose"
         "emacs-next-gcc-no-x"
+        "podman"
         "qemu"
         "my-rtorrent"
         "sshfs"))
