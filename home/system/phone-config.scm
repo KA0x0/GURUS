@@ -52,24 +52,23 @@
  %my-base-packagess))
   (services
     (append
-      (list (service autofs-service-type
+      (list 
+        (service autofs-service-type
          (autofs-configuration
           (mounts (list
-                   (autofs-mount-configuration
-                    (target "/mnt/storage/kaox")
-                    (source ":sshfs\\#node1.home.arpa\\:/mnt/storage/kaox"))))))
-
-;; mount -t fuse and autofs
-(extra-special-file "/bin/sshfs"
-                    (file-append sshfs "/bin/sshfs"))
-(extra-special-file "/bin/ssh"
-                    (file-append openssh "/bin/ssh"))
-            (service elogind-service-type)
-            (service libvirt-service-type)
-            (service login-service-type my-motd)
-            (service network-manager-service-type)
-            (service openssh-service-type)
-            (service wpa-supplicant-service-type)
+            (autofs-mount-configuration ;; mount -t fuse and autofs
+              (target "/mnt/storage/kaox")
+              (source ":sshfs\\#node.home.arpa\\:/mnt/storage/kaox"))))))
+             (extra-special-file "/bin/sshfs"
+                (file-append sshfs "/bin/sshfs"))
+              (extra-special-file "/bin/ssh"
+                (file-append openssh "/bin/ssh"))
+        (service elogind-service-type)
+        (service libvirt-service-type)
+        (service login-service-type my-motd)
+        (service network-manager-service-type)
+        (service openssh-service-type)
+        (service wpa-supplicant-service-type)
       %base-services))))
 
 ;;; phone-config.scm ends here
