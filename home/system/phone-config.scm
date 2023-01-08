@@ -55,7 +55,8 @@
       (list 
         (service autofs-service-type
          (autofs-configuration
-          (mounts (list
+          (mounts
+           (list
             (autofs-mount-configuration ;; mount -t fuse and autofs
               (target "/mnt/storage/kaox")
               (source ":sshfs\\#node.home.arpa\\:/mnt/storage/kaox"))))))
