@@ -53,6 +53,7 @@
     "diffutils"
     "emacs-next-gcc-no-x"
     "emacs-async"
+    "emacs-auto-compile"
     "emacs-consult"
     "emacs-consult-org-roam"
     "emacs-dirvish"
