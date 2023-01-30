@@ -24,6 +24,7 @@
         "emacs-ob-restclient"
         "fd"
         "ffmpeg"
+        "ffmpegthumbnailer"
         "file"
         "font-fira-code"
         "freerdp"
