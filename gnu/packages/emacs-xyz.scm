@@ -36,22 +36,55 @@
   #:use-module (srfi srfi-1)
   #:use-module (ice-9 match))
 
+(define-public emacs-dirvish
+  (package
+    (name "emacs-dirvish")
+    (version "20230123.1201")
+    (source
+      (origin
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://github.com/alexluigit/dirvish.git")
+               (commit
+                 "4b63cd2e5ba994f8e674388db7035de1a8f0343f")))
+        (sha256
+          (base32
+            "1qp71p28h2k8xxpcsfxgdpgg587gaxwi6ialjwmhbd8qf07q4x3j"))))
+    (build-system melpa-build-system)
+    (arguments
+      '(#:files (:defaults "extensions/*.el")))
+    (home-page
+      "https://github.com/alexluigit/dirvish")
+    (synopsis
+      "A modern file manager based on dired mode")
+    (description
+      "Documentation at https://melpa.org/#/dirvish")
+    (license #f)))
+
 (define-public emacs-jabber
   (package
     (name "emacs-jabber")
     (version "20220713.1538")
     (source
       (origin
-       (method url-fetch)
-       (uri (string-append "https://melpa.org/packages/jabber-"version ".tar")
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://codeberg.org/emacs-jabber/emacs-jabber.git")
                (commit
                  "af0315e174fa6446d5c4dd3e6465d48912950e58")))
         (sha256
           (base32
-            "1fif38qhiaxskfmqin82n9334bzrkgd1h5ip1djcm571i670gj74"))))
+            "08q0hbm4pvp8sf261w1ihqa93sg8blfybfkhq7wrnvgs6kasgwvq"))))
     (build-system melpa-build-system)
-    (propagated-inputs (list emacs-async))
-    (home-page "https://melpa.org/#/jabber")
+    (propagated-inputs (list emacs-fsm emacs-srv))
+    (arguments
+      '(#:files
+        (:defaults
+          "*.org"
+          ("jabber-fallback-lib"
+           "jabber-fallback-lib/hexrgb.el"))))
+    (home-page
+      "https://codeberg.org/emacs-jabber/emacs-jabber")
     (synopsis "A Jabber client for Emacs.")
     (description
       "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see http://xmpp.org for more information.")
