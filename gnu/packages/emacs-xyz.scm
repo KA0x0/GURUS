@@ -59,7 +59,7 @@
       "A modern file manager based on dired mode")
     (description
       "Documentation at https://melpa.org/#/dirvish")
-    (license #f)))
+    (license:gpl3)))
 
 (define-public emacs-jabber
   (package
