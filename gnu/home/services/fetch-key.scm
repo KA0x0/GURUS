@@ -13,3 +13,5 @@
   (call-with-output-file "/etc/ssh/authorized_keys.d/template"
     (lambda (port)
       (put-bytevector port pubkey))))
+
+;;; fetch-key.scm ends here
