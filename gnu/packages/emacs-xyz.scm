@@ -58,7 +58,7 @@
     (synopsis
       "A modern file manager based on dired mode")
     (description
-      "Documentation at https://melpa.org/#/dirvish")
+      "Dirvish is an improved version of the Emacs inbuilt package Dired. It not only gives Dired an appealing and highly customizable user interface, but also comes together with almost all possible parts required for full usability as a modern file manager.")
     (license:gpl3)))
 
 (define-public emacs-jabber
