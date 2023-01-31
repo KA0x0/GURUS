@@ -17,24 +17,11 @@
 
 (define-module (my packages emacs-xyz)
   #:use-module ((guix licenses) #:prefix license:)
-  #:use-module (guix packages)
-  #:use-module (guix cvs-download)
   #:use-module (guix download)
-  #:use-module (guix bzr-download)
-  #:use-module (guix gexp)
+  #:use-module (gnu packages emacs-xyz)
   #:use-module (guix git-download)
-  #:use-module (guix hg-download)
-  #:use-module (guix build-system gnu)
-  #:use-module (guix build-system cmake)
-  #:use-module (guix build-system copy)
-  #:use-module (guix build-system emacs)
-  #:use-module (guix build-system glib-or-gtk)
-  #:use-module (guix build-system perl)
-  #:use-module (guix build-system trivial)
-  #:use-module (gnu packages)
-  #:use-module (guix utils)
-  #:use-module (srfi srfi-1)
-  #:use-module (ice-9 match))
+  #:use-module (gnu packages emacs-xyz)
+
 
 (define-public emacs-dirvish
   (package
