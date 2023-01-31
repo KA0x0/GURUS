@@ -87,7 +87,7 @@
       "https://codeberg.org/emacs-jabber/emacs-jabber")
     (synopsis "A Jabber client for Emacs.")
     (description
-      "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see http://xmpp.org for more information.")
+      "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see https://xmpp.org for more information.")
     (license #f)))
 
 ;;; emacs-xyz.scm ends here
