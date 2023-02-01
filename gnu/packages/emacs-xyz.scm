@@ -18,8 +18,8 @@
 (define-module (my packages emacs-xyz)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix download)
-  #:use-module (gnu packages emacs-xyz)
   #:use-module (guix git-download)
+  #:use-module (gnu packages emacs-xyz)
   #:use-module (gnu packages emacs-xyz)
 
 
