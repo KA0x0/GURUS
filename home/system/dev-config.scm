@@ -46,7 +46,7 @@
         emacs-with-native-comp
         emacs-exwm
         fontconfig
-        piperwire
+        pipewire
         spice-vdagent
         xf86-video-amdgpu
         xorg-server-xwayland)
