@@ -12,7 +12,7 @@
                   (comment "I build stuff")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/builder")
+                  (home-directory "/home/build")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
