@@ -9,7 +9,7 @@
   (host-name "jump")
   (users (cons* (user-account
                   (name "hop")
-                  (comment "I hop from nodes to nodes")
+                  (comment "I hop from node to node")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/hop")
