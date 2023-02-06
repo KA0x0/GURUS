@@ -45,8 +45,7 @@
  %my-base-packagess))
   (services
     (append
-      (list (service docker-service-type)
-            (service login-service-type my-motd)
+      (list (service login-service-type my-motd)
             (service network-manager-service-type)
             (service openssh-service-type)
             (service unattended-upgrade-service-type)
