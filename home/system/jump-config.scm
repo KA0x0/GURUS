@@ -38,6 +38,8 @@
              (device (uuid "" 'fat32))
              (type "vfat"))
            %base-file-systems))
+  (packages
+    (append
  %my-base-packagess))
   (services
     (append
