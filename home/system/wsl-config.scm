@@ -4,7 +4,7 @@
 
 (operating-system
    (host-name "wsl")
-   (timezone "America/New_York")
+   (timezone "Etc/Greenwich")
    (bootloader
     (bootloader-configuration
      (bootloader dummy-bootloader)))

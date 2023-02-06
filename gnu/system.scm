@@ -110,6 +110,7 @@
 (define-public %my-base-settings
   (operating-system
    (locale "en_US.utf8")
+   (timezone "Etc/Greenwich")
    (keyboard-layout (keyboard-layout "us" "ru")))
   
 ;;; system.scm ends here

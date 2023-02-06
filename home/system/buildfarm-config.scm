@@ -4,7 +4,7 @@
 
 (operating-system
   (locale "en_US.utf8")
-  (timezone "America/New_York")
+  (timezone "Etc/Greenwich")
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "buildfarm")
   (users (cons* (user-account
