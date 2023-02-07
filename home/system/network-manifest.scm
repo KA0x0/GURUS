@@ -6,7 +6,6 @@
 
 (specifications->manifest
   (list "emacs-next-gcc-no-x"
-        "nftables"
         "wireguard-tools"))
 
 ;;; network-manifest.scm ends here

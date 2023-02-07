@@ -88,6 +88,7 @@
     "less"
     "lzip"
     "man-db"
+    "nftables"
     "nss-certs"
     "openssh-sans-x"
     "patch"
