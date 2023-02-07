@@ -115,6 +115,6 @@
     "xz")))
 
 (define-public %my-base-services
-services)
+  services)
   
 ;;; system.scm ends here
