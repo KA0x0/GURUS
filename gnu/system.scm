@@ -35,9 +35,15 @@
   #:use-module (gnu packages texinfo)
   #:use-module (gnu packages text-editors)
   #:use-module (gnu packages wget)
+  #:export (%my-base-operating-system)
   #:export (%my-base-packages)
-  #:export (%my-base-settings))
+  #:export (%my-base-services))
 
+(define-public %my-base-operating-system
+  (operating-system
+   (locale "en_US.utf8")
+   (timezone "Etc/Greenwich")
+   (keyboard-layout (keyboard-layout "us" "ru")))
 
 (define-public %my-base-packages
   (map specification->package
@@ -108,10 +114,7 @@
     "xonsh"
     "xz")))
 
-(define-public %my-base-settings
-  (operating-system
-   (locale "en_US.utf8")
-   (timezone "Etc/Greenwich")
-   (keyboard-layout (keyboard-layout "us" "ru")))
+(define-public %my-base-services
+services)
   
 ;;; system.scm ends here
