@@ -39,6 +39,7 @@
         "openvpn"
         "podman"
         "emacs-powershell"
+        "qemu"
         "ripgrep"
         "socat"
         "sshfs"
