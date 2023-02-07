@@ -115,6 +115,7 @@
     "xz")))
 
 (define-public %my-base-services
-  services)
+  (append
+      (list (service login-service-type my-motd)
   
 ;;; system.scm ends here
