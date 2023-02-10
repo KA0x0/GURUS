@@ -70,6 +70,7 @@
         (service network-manager-service-type)
         (service openssh-service-type)
         (service wpa-supplicant-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; phone-config.scm ends here

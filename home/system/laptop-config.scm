@@ -54,6 +54,7 @@
             (service libvirt-service-type)
             (service network-manager-service-type)
             (service wpa-supplicant-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; laptop-config.scm ends here

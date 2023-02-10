@@ -44,6 +44,7 @@
   (services
     (append
       (list (service network-manager-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; jump-config.scm ends here

@@ -38,6 +38,7 @@
               `(("/bin/sh" ,(file-append bash "/bin/bash"))
                 ("/bin/mount" ,(file-append util-linux "/bin/mount"))
                 ("/usr/bin/env" ,(file-append coreutils "/bin/env"))))
-                %base-services))))))))
+                %base-services
+                %my-base-services))))))))
 
 ;;; wsl-config.scm ends here

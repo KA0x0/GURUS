@@ -45,6 +45,7 @@
     (append
       (list (service cuirass-service-type)
             (service network-manager-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; buildfarm-config.scm ends here

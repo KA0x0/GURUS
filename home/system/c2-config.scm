@@ -40,11 +40,11 @@
            %base-file-systems))
   (packages
     (append
- %my-base-packagess))
+ %my-base-packages))
   (services
     (append
-      (list (service login-service-type my-motd)
-            (service network-manager-service-type)
-      %base-services))))
+      (list (service network-manager-service-type)
+      %base-services
+      %my-base-services))))
 
 ;;; c2-config.scm ends here

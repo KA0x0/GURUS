@@ -59,6 +59,7 @@
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; network-config.scm ends here

@@ -46,6 +46,7 @@
   (services
     (append
       (list (service network-manager-service-type)
-      %base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; honeypot-config.scm ends here
