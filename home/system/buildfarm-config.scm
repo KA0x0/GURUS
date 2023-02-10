@@ -44,9 +44,7 @@
   (services
     (append
       (list (service cuirass-service-type)
-            (service login-service-type my-motd)
             (service network-manager-service-type)
-            (service openssh-service-type)
       %base-services))))
 
 ;;; buildfarm-config.scm ends here

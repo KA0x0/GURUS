@@ -47,9 +47,7 @@
  %my-base-packagess))
   (services
     (append
-      (list (service login-service-type my-motd)
-            (service openssh-service-type)
-            (service static-networking-service-type
+      (list (service static-networking-service-type
                   (list (static-networking
                          (addresses
                           (list (network-address

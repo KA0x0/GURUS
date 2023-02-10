@@ -45,8 +45,6 @@
     (append
       (list (service login-service-type my-motd)
             (service network-manager-service-type)
-            (service openssh-service-type)
-            (service unattended-upgrade-service-type)
       %base-services))))
 
 ;;; c2-config.scm ends here

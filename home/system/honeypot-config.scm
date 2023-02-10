@@ -45,10 +45,7 @@
  %my-base-packagess))
   (services
     (append
-      (list (service login-service-type my-motd)
-            (service network-manager-service-type)
-            (service openssh-service-type)
-            (service unattended-upgrade-service-type)
+      (list (service network-manager-service-type)
       %base-services))))
 
 ;;; honeypot-config.scm ends here

@@ -85,7 +85,7 @@
     "gawk"
     "git"
     "grep"
-    "guile"
+    "guile-next"
     "guile-colorized"
     "guile-readline"
     "gzip"
@@ -117,5 +117,7 @@
 (define-public %my-base-services
   (append
       (list (service login-service-type my-motd)
+            (service openssh-service-type)
+            (service unattended-upgrade-service-type))))
   
 ;;; system.scm ends here

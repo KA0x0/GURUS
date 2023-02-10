@@ -67,9 +67,7 @@
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service login-service-type my-motd)
         (service network-manager-service-type)
-        (service openssh-service-type)
         (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
         (service wpa-supplicant-service-type)
       %base-services))))

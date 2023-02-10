@@ -52,10 +52,7 @@
     (append
       (list (service elogind-service-type)
             (service libvirt-service-type)
-            (service login-service-type my-motd)
             (service network-manager-service-type)
-            (service openssh-service-type)
-            (service unattended-upgrade-service-type)
             (service wpa-supplicant-service-type)
       %base-services))))
 

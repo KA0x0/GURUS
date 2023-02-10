@@ -33,9 +33,6 @@
  %my-base-packagess))
    (services
     (list
-     (service login-service-type my-motd)
-     (service openssh-service-type)
-     (service unattended-upgrade-service-type)
      (service guix-service-type)
      (service special-files-service-type
               `(("/bin/sh" ,(file-append bash "/bin/bash"))
