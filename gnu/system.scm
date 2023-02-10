@@ -117,6 +117,7 @@
 (define-public %my-base-services
   (append
       (list (service login-service-type my-motd)
+            (service nftables-service-type)
             (service openssh-service-type)
             (service unattended-upgrade-service-type))))
   
