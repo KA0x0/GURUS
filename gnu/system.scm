@@ -62,7 +62,6 @@
     "emacs-auto-compile"
     "emacs-consult"
     "emacs-consult-org-roam"
-    "emacs-dirvish"
     "emacs-eglot"
     "emacs-embark"
     "emacs-flycheck"
