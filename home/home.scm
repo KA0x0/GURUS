@@ -17,7 +17,7 @@
   (services
     (list (service home-bash-service-type
             (home-bash-configuration
-              (aliases                                                                             ;; use "\" to escape aliases.
+              (aliases ;; use "\" to escape aliases.
                '(("cp" . "rsync -avhW --progress --info=progress2")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
