@@ -40,12 +40,11 @@
            %base-file-systems))
   (packages
     (append
-      (list
-      )
- %my-base-packagess))
+      %my-base-packages))
   (services
     (append
-      (list (service network-manager-service-type)
+      (list
+        (service network-manager-service-type)
       %base-services
       %my-base-services))))
 

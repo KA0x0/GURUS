@@ -25,20 +25,21 @@
                   (shell (wsl-boot-program "guest")))
                  %base-user-accounts))
    (packages
-       (list
+    (append
+      (list
         xf86-video-amdgpu
         sshfs
-        xorg-server-xwayland
-   )))
- %my-base-packagess))
+        xorg-server-xwayland)))
+      %my-base-packagess))
    (services
-    (list
-     (service guix-service-type)
-     (service special-files-service-type
-              `(("/bin/sh" ,(file-append bash "/bin/bash"))
-                ("/bin/mount" ,(file-append util-linux "/bin/mount"))
-                ("/usr/bin/env" ,(file-append coreutils "/bin/env"))))
-                %base-services
-                %my-base-services))))))))
+    (append
+      (list
+        (service guix-service-type)
+        (service special-files-service-type
+          `(("/bin/sh" ,(file-append bash "/bin/bash"))
+            ("/bin/mount" ,(file-append util-linux "/bin/mount"))
+            ("/usr/bin/env" ,(file-append coreutils "/bin/env"))))
+      %base-services
+      %my-base-services))))))))
 
 ;;; wsl-config.scm ends here

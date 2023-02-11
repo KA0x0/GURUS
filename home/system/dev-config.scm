@@ -50,7 +50,7 @@
         spice-vdagent
         xf86-video-amdgpu
         xorg-server-xwayland)
- %my-base-packages))
+      %my-base-packages))
   (services
     (append
       (list 
@@ -70,7 +70,7 @@
         (service network-manager-service-type)
         (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
         (service wpa-supplicant-service-type)
-      %base-services
-      %my-base-services))))
+       %base-services
+       %my-base-services))))
 
 ;;; dev-config.scm ends here

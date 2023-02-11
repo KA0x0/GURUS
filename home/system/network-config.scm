@@ -41,24 +41,27 @@
   (packages
     (append
       (list
-      i2pd
-      ppp
-      )
- %my-base-packagess))
+        i2pd
+        ppp)
+      %my-base-packages))
   (services
     (append
-      (list (service static-networking-service-type
-                  (list (static-networking
-                         (addresses
-                          (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.1/24"))))
-                         (routes
-                          (list (network-route
-                                 (destination "default")
-                                 (gateway "10.10.10.10"))))
-                         (name-servers '("10.10.10.10")))))
-            (service unattended-upgrade-service-type)
+      (list
+        (service static-networking-service-type
+          (list
+            (static-networking
+              (addresses
+                (list
+                 (network-address
+                  (device "eno1")
+                  (value "10.0.0.1/24"))))
+              (routes
+                (list
+                  (network-route
+                   (destination "default")
+                   (gateway "10.10.10.10"))))
+              (name-servers '("10.10.10.10")))))
+        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 

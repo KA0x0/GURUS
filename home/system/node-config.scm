@@ -41,10 +41,9 @@
   (packages
     (append
       (list
-      lm-sensors
-      usbguard
-      )
-  %my-base-packages))
+        lm-sensors
+        usbguard)
+    %my-base-packages))
   (services
     (append
       (list (service rtorrent-service-type)
@@ -60,7 +59,7 @@
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
             (service unattended-upgrade-service-type)
-            %base-services
-            %my-base-services))))
+      %base-services
+      %my-base-services))))
 
 ;;; node-config.scm ends here

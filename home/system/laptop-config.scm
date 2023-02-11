@@ -47,13 +47,14 @@
         lm-sensors
         usbguard
         xorg-server-xwayland)
- %my-base-packagess))
+      %my-base-packages))
   (services
     (append
-      (list (service elogind-service-type)
-            (service libvirt-service-type)
-            (service network-manager-service-type)
-            (service wpa-supplicant-service-type)
+      (list 
+        (service elogind-service-type)
+        (service libvirt-service-type)
+        (service network-manager-service-type)
+        (service wpa-supplicant-service-type)
       %base-services
       %my-base-services))))
 
