@@ -66,9 +66,7 @@
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service login-service-type my-motd)
         (service network-manager-service-type)
-        (service openssh-service-type)
         (service wpa-supplicant-service-type)
       %base-services
       %my-base-services))))
