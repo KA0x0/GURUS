@@ -31,6 +31,7 @@
         "gdb"
         "google-cloud-sdk"
         "guile-aws"
+        "guile-ssh"
         "mediainfo"
         "mktorrent"
         "mpd"
