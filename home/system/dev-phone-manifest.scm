@@ -40,6 +40,7 @@
         "openvpn"
         "podman"
         "emacs-powershell"
+        "pwntools"
         "qemu"
         "ripgrep"
         "socat"
