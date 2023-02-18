@@ -5,7 +5,9 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "awscli"
+  (list "audacity"
+        "awscli"
+        "blender"
         "emacs-bluetooth"
         "ccid"
         "curl"
@@ -29,6 +31,7 @@
         "font-fira-code"
         "freerdp"
         "gdb"
+        "gimp"
         "google-cloud-sdk"
         "guile-aws"
         "guile-ssh"
