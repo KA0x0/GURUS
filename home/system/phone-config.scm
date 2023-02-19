@@ -50,7 +50,7 @@
         pipewire
         usbguard
         xorg-server-xwayland)
- %my-base-packagess))
+ %my-base-packages))
   (services
     (append
       (list 

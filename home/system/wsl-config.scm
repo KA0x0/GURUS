@@ -30,7 +30,7 @@
         xf86-video-amdgpu
         sshfs
         xorg-server-xwayland)))
-      %my-base-packagess))
+      %my-base-packages))
    (services
     (append
       (list
