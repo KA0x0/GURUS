@@ -46,6 +46,7 @@
         emacs-with-native-comp
         emacs-exwm
         fontconfig
+        picom
         pipewire
         spice-vdagent
         xf86-video-amdgpu

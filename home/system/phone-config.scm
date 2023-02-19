@@ -46,6 +46,7 @@
         emacs-with-native-comp-no-x
         emacs-exwm
         lm-sensors
+        picom
         pipewire
         usbguard
         xorg-server-xwayland)
