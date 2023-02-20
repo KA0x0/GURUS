@@ -51,6 +51,7 @@
         "tesseract-ocr"
         "tiled"
         "upx"
+        "wine64-staging"
         "wireguard-tools"
         "yt-dlp"))
 
