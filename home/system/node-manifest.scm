@@ -10,6 +10,7 @@
         "podman"
         "qemu"
         "my-rtorrent"
-        "sshfs"))
+        "sshfs"
+        "tpm2-tss"))
 
 ;;; node1-manifest.scm ends here

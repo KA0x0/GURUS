@@ -50,6 +50,7 @@
         "sshfs"
         "tesseract-ocr"
         "tiled"
+        "tpm2-tss"
         "upx"
         "wireguard-tools"
         "yt-dlp"))

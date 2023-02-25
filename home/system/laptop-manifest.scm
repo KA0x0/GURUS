@@ -8,6 +8,7 @@
   (list "emacs-next-gcc-no-x"
         "qemu"
         "sshfs"
+        "tpm2-tss"
         "virt-manager"
         "wireguard-tools"))
 
