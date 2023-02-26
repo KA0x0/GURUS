@@ -39,6 +39,7 @@
         "mktorrent"
         "mpd"
         "mpv"
+        "nmap"
         "openssh"
         "openvpn"
         "podman"
