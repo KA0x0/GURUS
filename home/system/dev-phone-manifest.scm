@@ -42,6 +42,7 @@
         "mpv"
         "openssh"
         "openvpn"
+        "patchelf"
         "podman"
         "emacs-powershell"
         "pwntools"
