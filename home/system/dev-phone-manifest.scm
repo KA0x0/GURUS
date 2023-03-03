@@ -13,6 +13,7 @@
         "curl"
         "diffoscope"
         "direnv"
+        "elfutils"
         "emacs-next-gcc"
         "emacs-dirvish"
         "emacs-envrc"
