@@ -15,6 +15,8 @@
 ;;; You should have received a copy of the GNU General Public License
 ;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Code:
+
 (define-module (my services admin)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages certs)

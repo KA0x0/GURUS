@@ -1,3 +1,5 @@
+;;; Code:
+
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules mcron networking shepherd ssh virtualization)
 (use-package-modules bootloaders certs package-management)

@@ -2,6 +2,8 @@
 (use-service-modules mcron networking shepherd ssh)
 (use-package-modules bootloaders certs package-management)
 
+;;; Code:
+
 (operating-system
   (locale "en_US.utf8")
   (timezone "Etc/Greenwich")

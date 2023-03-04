@@ -15,6 +15,8 @@
 ;;; You should have received a copy of the GNU General Public License
 ;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Code:
+
 (cons* (channel
         (name 'channel-4-guix)
         (url "https://git.sr.ht//channel-4-guix"))

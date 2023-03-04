@@ -2,6 +2,8 @@
 (use-service-modules desktop mcron networking shepherd spice ssh virtualization xorg)
 (use-package-modules bootloaders certs fonts package-management wget)
 
+;;; Code:
+
 (operating-system
   (locale "en_US.utf8")
   (timezone "Etc/Greenwich")

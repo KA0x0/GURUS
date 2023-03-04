@@ -15,6 +15,8 @@
 ;;; You should have received a copy of the GNU General Public License
 ;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Code:
+
 (define-module (gnu services admin)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages certs)
@@ -54,9 +56,7 @@
             unattended-upgrade-configuration-maximum-duration
             unattended-upgrade-configuration-log-file))
 
-;;;
 ;;; Unattended upgrade.
-;;;
 
 (define-record-type* <unattended-upgrade-configuration>
   unattended-upgrade-configuration make-unattended-upgrade-configuration
