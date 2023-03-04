@@ -49,6 +49,7 @@
         "pwntools"
         "qemu"
         "ripgrep"
+        "emacs-deadgrep"
         "socat"
         "sshfs"
         "tesseract-ocr"
