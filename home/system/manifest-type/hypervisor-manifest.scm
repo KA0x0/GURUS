@@ -8,4 +8,4 @@
   (list "qemu"
         "tpm2-tss"))
 
-;;; node1-manifest.scm ends here
+;;; hypervisor-manifest.scm ends here

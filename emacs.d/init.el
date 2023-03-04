@@ -15,6 +15,10 @@
 
 ;;; Code:
 
+;; Packages:
+(require 'dirvish)
+(require 'meow)
+
 ;; UI:
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -45,6 +49,10 @@
 (ido-everywhere)
 (setq ido-enable-flex-matching t)
 (fido-mode)
+
+;; Vi emulation
+(meow-setup)
+(meow-global-mode 1)
 
 ;; Show stray whitespace.
 (setq-default show-trailing-whitespace t)

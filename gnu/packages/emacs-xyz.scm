@@ -20,8 +20,6 @@
   #:use-module (guix download)
   #:use-module (guix git-download)
   #:use-module (gnu packages emacs-xyz)
-  #:use-module (gnu packages emacs-xyz)
-
 
 (define-public emacs-dirvish
   (package
