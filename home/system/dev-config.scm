@@ -43,7 +43,7 @@
       (list
         bluez
         dbus
-        emacs-with-native-comp
+        my-emacs-next
         emacs-exwm
         fontconfig
         picom

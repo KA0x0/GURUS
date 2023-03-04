@@ -5,6 +5,6 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-next-gcc-no-x"))
+  (list "my-emacs-next-no-x"))
 
-;;; jump-manifest.scm ends here
+;;; base-manifest.scm ends here

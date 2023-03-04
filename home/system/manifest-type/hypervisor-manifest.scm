@@ -5,6 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "wireguard-tools"))
+  (list "qemu"
+        "tpm2-tss"))
 
-;;; network-manifest.scm ends here
+;;; node1-manifest.scm ends here

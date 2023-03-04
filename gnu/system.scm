@@ -57,7 +57,7 @@
     "coreutils"
     "curl"
     "diffutils"
-    "emacs-next-gcc-no-x"
+    "my-emacs-next-no-x"
     "emacs-async"
     "emacs-auto-compile"
     "emacs-consult"

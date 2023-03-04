@@ -31,10 +31,9 @@
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26))
 
-(define-public emacs-next-gcc
+(define-public my-emacs-next
     (package
       (inherit emacs-next)
-      (name "emacs-next-gcc")
       (snippet
           '(begin
             (with-directory-excursion "emacs/lisp"
@@ -42,10 +41,9 @@
                 '("obsolete"
                   "play")))))
 
-(define-public emacs-next-gcc-no-x
+(define-public my-emacs-next-no-x
     (package
-      (inherit emacs-next-gcc)
-      (define-public emacs-gcc-no-x
+      (inherit my-emacs-next)
     (build-system gnu-build-system)
     (inputs (fold alist-delete
                   (package-inputs emacs)

@@ -6,7 +6,6 @@
 
 (specifications->manifest
   (list "calibre"
-        "emacs-next-gcc-no-x"
         "podman"
         "qemu"
         "my-rtorrent"

@@ -5,8 +5,7 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-next-gcc-no-x"
-        "hashcat"
+  (list "hashcat"
         "rsync"
         "virt-manager"))
 

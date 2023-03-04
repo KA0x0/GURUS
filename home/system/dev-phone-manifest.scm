@@ -14,7 +14,7 @@
         "diffoscope"
         "direnv"
         "elfutils"
-        "emacs-next-gcc"
+        "my-emacs-next"
         "emacs-dirvish"
         "emacs-envrc"
         "emacs-emms"

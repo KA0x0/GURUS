@@ -6,7 +6,6 @@
 
 (specifications->manifest
   (list "cuirass"
-        "emacs-build-farm"
-        "emacs-next-gcc-no-x"))
+        "emacs-build-farm"))
 
 ;;; buildfarm-manifest.scm ends here
