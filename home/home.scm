@@ -20,7 +20,7 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cp" . "rsync -avhW --progress --info=progress2")
+               '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
                  ("dir" . "dir --color=auto")
@@ -29,10 +29,10 @@
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
                  ("grep" . "grep --color=auto")
-                 ("ls" . "ls -lr --all --color=auto --dired --human-readable -v")
+                 ("ls" . "ls --all --color=auto --dired --human-readable -l -v")
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
-                 ("mv" . "rsync -avhW --progress --info=progress2 --remove-source-files")
+                 ("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose")
                  ("nc" . "socat -,rawer,escape=0x1d tcp:")
                  ("rm" . "rm --interactive --verbose")
                  ("vdir" . "vdir --color=auto")
