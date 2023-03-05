@@ -21,6 +21,7 @@
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
                '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2")
+                 ("curl" . "curl --verbose")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
                  ("dir" . "dir --all --color=auto --dired --human-readable -v")
@@ -39,8 +40,11 @@
                  ("wget" . "wget --show-progress")))
               (environment-variables
                  ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
-                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
-                 ("SHELL" . ,(file-append xonsh "/bin/xonsh")))))
+                 ("HISTCONTROL" . ,(ignoreboth))
+                 ("HISTFILESIZE" . ,(4096))
+                 ("HISTSIZE" . ,(4096))
+                 ("SHELL" . ,(file-append xonsh "/bin/xonsh"))
+                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
                (services
