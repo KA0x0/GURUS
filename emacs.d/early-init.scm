@@ -1,3 +1,5 @@
+(define early-init.el
+ "\
 ;; This file is NOT part of GNU Emacs.
 
 ;; GNU Emacs is free software: you can redistribute it and/or modify
@@ -19,4 +21,4 @@
 (unless (server-running-p)
   (server-start))
 
-;;; early-init.el ends here
+;;; early-init.el ends here\n
