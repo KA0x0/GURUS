@@ -40,7 +40,10 @@
           '(begin
             (with-directory-excursion "emacs/lisp"
               (for-each delete-file-recursively
-                '("obsolete"
+                '("erc"
+                  "emulation"
+                  "mh-e"
+                  "obsolete"
                   "play")))))
 
 (define-public my-emacs-next-no-x
