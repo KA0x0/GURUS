@@ -22,6 +22,7 @@
         "emacs-emms"
         "emacs-exiftool"
         "emacs-jabber"
+        "emacs-marginalia"
         "emacs-mentor"
         "emacs-modus-themes"
         "emacs-notmuch"
