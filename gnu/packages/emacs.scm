@@ -58,7 +58,7 @@
                     ;; These depend on libx11, so remove them as well.
                     "libotf" "m17n-lib" "dbus")))
       (arguments
-       (substitute-keyword-arguments (package-arguments emacs-next-no-x)
+       (substitute-keyword-arguments (package-arguments my-emacs-next-no-x)
          ((#:configure-flags flags ''())
           `(delete "--with-cairo" ,flags))
        ((#:phases phases)
