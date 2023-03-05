@@ -23,23 +23,23 @@
                '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
-                 ("dir" . "dir --color=auto")
+                 ("dir" . "dir --all --color=auto --dired --human-readable -v")
                  ("egrep" . "egrep --color=auto")
-                 ("emacs" . "emacsclient -a -c")
+                 ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
                  ("fgrep" . "fgrep --color=auto")
                  ("free" . "free --human")
                  ("grep" . "grep --color=auto")
-                 ("ls" . "ls --all --color=auto --dired --human-readable -l -v")
+                 ("ls" . "ls --all --color=auto --dired --human-readable -v")
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose")
                  ("nc" . "socat -,rawer,escape=0x1d tcp:")
                  ("rm" . "rm --interactive --verbose")
-                 ("vdir" . "vdir --color=auto")
+                 ("vdir" . "vdir --all --color=auto --dired --human-readable -v")
                  ("wget" . "wget --show-progress")))
               (environment-variables
-                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient -a -c"))
-                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient -a -c"))
+                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
+                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                  ("SHELL" . ,(file-append bash "/bin/bash")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
@@ -48,7 +48,7 @@
                   (shepherd-service
                     (provision '(emacs))
                     (start #~(make-system-constructor "emacs --daemon"))
-                     (stop #~(make-system-constructor "emacsclient -e '(kill-emacs)'"))
+                     (stop #~(make-system-constructor "emacsclient --eval '(kill-emacs)'"))
                   (service unattended-upgrade-service-type)))))))))
 
 ;;; home.scm ends here
