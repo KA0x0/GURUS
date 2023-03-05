@@ -45,7 +45,6 @@
                  ("HISTCONTROL" . "ignoreboth")
                  ("HISTFILESIZE" . "4096")
                  ("HISTSIZE" . "4096")
-                 ("SHELL" . ,(file-append xonsh "/bin/xonsh"))
                  ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
