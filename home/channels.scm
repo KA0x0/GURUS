@@ -1,8 +1,8 @@
 (append
  (list
   (channel
-   (name 'guix-hestia)
-   (url "https://git.sr.ht//guix-hestia")
+   (name 'channel-4-guix)
+   (url "https://git.sr.ht//channel-4-guix")
    (introduction
     (make-channel-introduction
      ""
