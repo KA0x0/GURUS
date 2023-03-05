@@ -45,6 +45,7 @@
                  ("HISTCONTROL" . "ignoreboth")
                  ("HISTFILESIZE" . "4096")
                  ("HISTSIZE" . "4096")
+                 ("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                  ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
