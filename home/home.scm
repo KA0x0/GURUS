@@ -24,7 +24,7 @@
                  ("curl" . "curl --verbose")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
-                 ("dir" . "dir --all --color=auto --dired --human-readable --indicator-style -v")
+                 ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait'")
                  ("egrep" . "rg --engine auto --follow --smart-case")
                  ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
                  ("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case")
@@ -38,7 +38,7 @@
                  ("nc" . "socat -,rawer,escape=0x1d tcp:")
                  ("rm" . "rm --interactive --verbose")
                  ("rg" . "rg --engine auto --follow --smart-case")
-                 ("vdir" . "vdir --all --color=auto --dired --human-readable --indicator-style -v")
+                 ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")
                  ("wget" . "wget --show-progress")))
               (environment-variables
                  ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
