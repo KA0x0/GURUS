@@ -40,7 +40,7 @@
               (environment-variables
                  ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                  ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
-                 ("SHELL" . ,(file-append bash "/bin/bash")))))
+                 ("SHELL" . ,(file-append xonsh "/bin/xonsh")))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
                (services
