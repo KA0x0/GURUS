@@ -35,7 +35,7 @@
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "rsync -avhW --progress --info=progress2 --remove-source-files")
                  ("nc" . "socat -,rawer,escape=0x1d tcp:")
-                 ("nmap" . "six")
+                 ("nmap" . "sx")
                  ("rm" . "rm --interactive --verbose")
                  ("vdir" . "vdir --color=auto")
                  ("wget" . "wget --show-progress")))
