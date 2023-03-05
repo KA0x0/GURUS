@@ -40,8 +40,8 @@
           '(begin
             (with-directory-excursion "emacs/lisp"
               (for-each delete-file-recursively
-                '("erc"
-                  "emulation"
+                '("emulation"
+                  "erc"
                   "mh-e"
                   "obsolete"
                   "play")))))
