@@ -23,7 +23,6 @@
                '(("cp" . "rsync -avhW --progress --info=progress2")
                  ("dd" . "dd status=progress")
                  ("df" . "df --human-readable")
-                 ("dig" . "drill")
                  ("dir" . "dir --color=auto")
                  ("egrep" . "egrep --color=auto")
                  ("emacs" . "emacsclient -a -c")
