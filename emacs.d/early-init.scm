@@ -21,4 +21,4 @@
 (unless (server-running-p)
   (server-start))
 
-;;; early-init.el ends here\n
+;;; early-init.el ends here\n")

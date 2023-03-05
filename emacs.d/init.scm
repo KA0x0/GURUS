@@ -92,4 +92,4 @@
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-mode-hook 'enable-paredit-mode)
 
-;;; init.el ends here\n
+;;; init.el ends here\n")
