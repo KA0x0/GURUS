@@ -13,11 +13,11 @@
 ;;; GNU General Public License for more details.
 ;;;
 ;;; You should have received a copy of the GNU General Public License
-;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Code:
 
-(define-module (gnu services admin)
+(define-module (my services admin)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages certs)
   #:use-module (gnu packages package-management)
@@ -56,7 +56,18 @@
             unattended-upgrade-configuration-maximum-duration
             unattended-upgrade-configuration-log-file))
 
+(define my-motd
+     (service login-service-type
+               (login-configuration
+                (motd (plain-file "motd" "\
+UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED.\n
+You must have explicit, authorized permission to access or configure this device.\n
+Unauthorized attempts and actions to access or use this system may result in civil and/or criminal penalties.\n
+All activities performed on this device are logged and monitored.\n\n")))))
+
+;;;
 ;;; Unattended upgrade.
+;;;
 
 (define-record-type* <unattended-upgrade-configuration>
   unattended-upgrade-configuration make-unattended-upgrade-configuration
