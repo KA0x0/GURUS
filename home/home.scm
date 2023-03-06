@@ -20,7 +20,7 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cd" . "cd &1 && ls --all --color=auto --dired --human-readable --indicator-style -l -v)
+               '(("cd" . "cd $@ && ls --all --color=auto --dired --human-readable --indicator-style -l -v)
                  ("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2")
                  ("curl" . "curl --verbose")
                  ("dd" . "dd status=progress")
@@ -36,7 +36,7 @@
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose")
-                 ("nc" . "socat -,rawer,escape=0x1d tcp:$1")
+                 ("nc" . "socat -,rawer,escape=0x1d tcp:$@")
                  ("rm" . "rm --interactive --verbose")
                  ("rg" . "rg --engine auto --follow --smart-case")
                  ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")
