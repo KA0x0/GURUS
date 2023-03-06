@@ -36,7 +36,7 @@
                  ("logout" . "pkill emacsclient & logout")
                  ("mkdir" . "mkdir --parents --verbose")
                  ("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose")
-                 ("nc" . "socat -,rawer,escape=0x1d tcp:")
+                 ("nc" . "socat -,rawer,escape=0x1d tcp:$1")
                  ("rm" . "rm --interactive --verbose")
                  ("rg" . "rg --engine auto --follow --smart-case")
                  ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")
