@@ -58,8 +58,8 @@
                 (list
                   (shepherd-service
                     (provision '(emacs))
-                    (start #~(make-system-constructor "emacs --daemon"))
-                     (stop #~(make-system-constructor "emacsclient --eval '(kill-emacs)'"))
+                     (start #~(make-system-constructor "emacs --daemon"))
+                     (stop #~(make-system-constructor "emacsclient --eval '(kill-emacs)'")))
                   (service unattended-upgrade-service-type)))))))))
 
 ;;; home.scm ends here
