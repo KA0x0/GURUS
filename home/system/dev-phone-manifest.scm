@@ -17,7 +17,6 @@
         "direnv"
         "elfutils"
         "my-emacs-next"
-        "emacs-consult-yasnippet"
         "emacs-dirvish"
         "emacs-envrc"
         "emacs-emms"
