@@ -79,6 +79,7 @@
     "emacs-org"
     "emacs-org-roam"
     "emacs-paredit"
+    "emacs-rainbow-delimiters"
     "emacs-tramp"
     "emacs-undo-tree"
     "emacs-vertico"
