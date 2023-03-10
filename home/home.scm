@@ -41,6 +41,7 @@
                  ("ping6" . "ping6 -v")
                  ("rm" . "rm --interactive --one-file-system --verbose")
                  ("rg" . "rg --engine auto --follow --smart-case")
+                 ("strings" . "floss -v")
                  ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")
                  ("wget" . "wget --show-progress")))
               (environment-variables
