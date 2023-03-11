@@ -7,6 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "podman")) ;; Add mitmprocy once merged.
+  (list "podman")) ;; Add mitmproxy once merged.
 
 ;;; jump-manifest.scm ends here
