@@ -37,7 +37,6 @@
         "freerdp"
         "gdb"
         "gimp"
-        "go"
         "google-cloud-sdk"
         "guile-aws"
         "guile-ssh"
