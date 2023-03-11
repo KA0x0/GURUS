@@ -44,6 +44,46 @@
                  ("strings" . "floss -v")
                  ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")
                  ("wget" . "wget --show-progress")))
+              (bashrc
+                set colored-stats on
+                set completion-ignore-case on
+                set show-all-if-ambiguous on
+                set skip-completed-text on
+                shopt -s checkwinsize
+                shopt -s histappend
+                shopt -s autocd # change to named directory
+                shopt -s cdspell # autocorrects cd misspellings
+                shopt -s cmdhist # save multi-line commands in history as single line
+                ### BINDS
+                stty -ixon # Disable ctrl-s and ctrl-q
+                bind '"\C-p": history-search-backward'
+                bind '"\C-n": history-search-forward')
+                ### ARCHIVE EXTRACTION
+                # usage: ex <file>
+                ex ()
+                {
+                  if [ -f $1 ] ; then
+                    case $1 in
+                      *.tar.bz2)   tar xjf $1   ;;
+                      *.tar.gz)    tar xzf $1   ;;
+                      *.bz2)       bunzip2 $1   ;;
+                      *.rar)       unrar x $1   ;;
+                      *.gz)        gunzip $1    ;;
+                      *.tar)       tar xf $1    ;;
+                      *.tbz2)      tar xjf $1   ;;
+                      *.tgz)       tar xzf $1   ;;
+                      *.zip)       unzip $1     ;;
+                      *.Z)         uncompress $1;;
+                      *.7z)        7z x $1      ;;
+                      *.deb)       ar x $1      ;;
+                      *.tar.xz)    tar xf $1    ;;
+                      *.tar.zst)   unzstd $1    ;;
+                      *)           echo "'$1' cannot be extracted via ex()" ;;
+                    esac
+                  else
+                    echo "'$1' is not a valid file"
+                  fi
+                }
               (environment-variables
                  ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                  ("HISTCONTROL" . "ignoreboth")
