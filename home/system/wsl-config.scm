@@ -20,7 +20,7 @@
                   (comment "Kracking hashes")
                   (group "users")
                   (supplementary-groups
-                    '("kvm" "wheel"))
+                    '("audio" "kvm" "video" "wheel"))
                   (shell (file-append xonsh "/bin/xonsh")))
                  (user-account
                   (inherit %root-account)
