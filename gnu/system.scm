@@ -100,6 +100,7 @@
     "less"
     "lzip"
     "man-db"
+    "net-tools"
     "nftables"
     "nss-certs"
     "openssh-sans-x"
