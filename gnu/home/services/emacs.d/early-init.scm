@@ -1,4 +1,4 @@
-(define early-init.el
+(define guix-early-init.el
  "\
 ;; This file is NOT part of GNU Emacs.
 
