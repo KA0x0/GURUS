@@ -31,7 +31,7 @@
       (list
         xf86-video-amdgpu
         sshfs
-        xorg-server-xwayland)))
+        xorg-server-xwayland)
       %my-base-packages))
    (services
     (append
@@ -42,6 +42,6 @@
             ("/bin/mount" ,(file-append util-linux "/bin/mount"))
             ("/usr/bin/env" ,(file-append coreutils "/bin/env"))))
       %base-services
-      %my-base-services))))))))
+      %my-base-services))))
 
 ;;; wsl-config.scm ends here
