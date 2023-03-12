@@ -23,6 +23,8 @@
 
 ;;; early-init.el ends here\n")
 
+
+
 (define guix-init.el
  "\
 ;; This file is NOT part of GNU Emacs.
