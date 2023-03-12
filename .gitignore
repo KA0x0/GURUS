@@ -1,15 +1,2 @@
 *~
 *.env
-.bash_history
-.bash_profile
-.bashrc
-.cache/*
-.config/*
-.gdbinit
-.guile
-.guix-profile
-.lesshst
-.local/*
-.wget-hsts
-.Xdefaults
-.zprofile

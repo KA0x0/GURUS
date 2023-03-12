@@ -69,9 +69,6 @@
 ## are doing before doing so.
 ##
 
-# Set this to on to use timestamping by default:
-#timestamping = off
-
 # It is a good idea to make Wget send your email address in a `From:'
 # header with your request (so that server administrators can contact
 # you in case of errors).  Wget does *not* send `From:' by default.
@@ -83,12 +80,12 @@
 
 # You can set the default proxies for Wget to use for http, https, and ftp.
 # They will override the value in the environment.
-#https_proxy = http://proxy.yoyodyne.com:18023/
-#http_proxy = http://proxy.yoyodyne.com:18023/
-#ftp_proxy = http://proxy.yoyodyne.com:18023/
+#https_proxy = https://proxy.ka0x.com
+#http_proxy = https://proxy.ka0x.com
+#ftp_proxy = https://proxy.ka0x.com
 
 # If you do not want to use proxy at all, set this to off.
-#use_proxy = on
+use_proxy = ff
 
 # You can customize the retrieval outlook.  Valid options are default,
 # binary, mega and micro.
@@ -137,5 +134,42 @@
 
 # Tune HTTPS security (auto, SSLv2, SSLv3, TLSv1, PFS)
 #secureprotocol = auto
+
+# WARNING: This option forces an "insecure" mode of operation that turns the certificate
+# verification errors into warnings and allows you to proceed.
+check_certificate = off
+
+# Use the server-provided last modification date, if available
+timestamping = on
+
+# Do not go up in the directory structure when downloading recursively
+no_parent = on
+
+# Retry even when the connection was refused
+retry_connrefused = on
+
+# Use the last component of a redirection URL for the local file name
+trust_server_names = on
+
+# Follow FTP links from HTML documents by default
+follow_ftp = on
+
+# Add a `.html` extension to `text/html` or `application/xhtml+xml` files that lack one, or a `.css` extension to `text/css` files that lack one
+adjust_extension = on
+
+# Use UTF-8 as the default system encoding
+# Disabled as it makes `wget` builds that don’t support this feature unusable.
+# Does anyone know how to conditionally configure a wget setting?
+# http://unix.stackexchange.com/q/34730/6040
+#local_encoding = UTF-8
+
+# Ignore `robots.txt` and `<meta name=robots content=nofollow>`
+robots = off
+
+# Print the HTTP and FTP server responses
+server_response = on
+
+# Disguise as IE 9 on Windows 7
+user_agent = Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
 
 ### END of .wgetrc ###\n")
