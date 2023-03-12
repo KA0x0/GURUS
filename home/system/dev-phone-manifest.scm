@@ -51,6 +51,7 @@
         "podman"
         "emacs-powershell"
         "pwntools"
+        "python-scapy"
         "qemu"
         "ripgrep"
         "socat"
