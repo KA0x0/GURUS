@@ -1,4 +1,4 @@
-(define .gitconfig
+(define guix-gitconfig
  "\
 
 ")

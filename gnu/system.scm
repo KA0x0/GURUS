@@ -119,7 +119,7 @@
     "util-linux-with-udev"
     "wget"
     "which"
-    "xonsh"
+    "my-xonsh"
     "xz")))
 
 (define-public %my-base-services

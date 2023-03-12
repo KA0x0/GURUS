@@ -1,4 +1,4 @@
-(define rtorrent.rc
+(define guix-rtorrentrc
  "\
 #############################################################################
 # A minimal rTorrent configuration that provides the basic features
