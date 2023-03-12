@@ -9,4 +9,4 @@
 (specifications->manifest
   (list "podman")) ;; Add mitmproxy once merged.
 
-;;; jump-manifest.scm ends here
+;;; proxy-manifest.scm ends here

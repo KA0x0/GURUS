@@ -8,13 +8,13 @@
   (locale "en_US.utf8")
   (timezone "Etc/Greenwich")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "jump")
+  (host-name "proxy")
   (users (cons* (user-account
-                  (name "hop")
+                  (name "jump")
                   (comment "I hop from node to node")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/hop")
+                  (home-directory "/home/jump")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
@@ -50,4 +50,4 @@
       %base-services
       %my-base-services))))
 
-;;; jump-config.scm ends here
+;;; proxy-config.scm ends here
