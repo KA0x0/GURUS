@@ -20,7 +20,7 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cd" . "cd $@ && ls --all --color=auto --dired --human-readable --indicator-style -l -v)
+               '(("cd" . "cd $@ && ls --all --color=auto --dired --human-readable --indicator-style -l -v))
                  '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2"))
                  '(("curl" . "curl --verbose"))
                  '(("dd" . "dd status=progress"))
@@ -45,7 +45,7 @@
                  '(("rg" . "rg --engine auto --follow --smart-case"))
                  '(("strings" . "floss -v"))
                  '(("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
-                 '(("wget" . "wget --show-progress"))))
+                 '(("wget" . "wget --show-progress")))
               (bashrc
                 set colored-stats on
                 set completion-ignore-case on
