@@ -10,11 +10,11 @@
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "proxy")
   (users (cons* (user-account
-                  (name "jump")
-                  (comment "I hop from node to node")
+                  (name "hop")
+                  (comment "I jump from node to node")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/jump")
+                  (home-directory "/home/hop")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
