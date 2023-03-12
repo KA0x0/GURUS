@@ -44,7 +44,7 @@
     (append
       (list
         dbus
-        emacs-with-native-comp
+        my-emacs-next
         emacs-exwm
         lm-sensors
         usbguard
