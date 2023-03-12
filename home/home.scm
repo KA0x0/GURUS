@@ -20,7 +20,7 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cd" . "cd $@ && ls --all --color=auto --dired --human-readable --indicator-style -l -v))
+               '(("cd" . "cd $@ && ls --all --color=auto --dired --human-readable --indicator-style -v))
                  '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2"))
                  '(("curl" . "curl --verbose"))
                  '(("dd" . "dd status=progress"))
