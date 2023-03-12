@@ -7,9 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "qemu"
-        "sshfs"
-        "tpm2-tss"
+  (list "sshfs"
         "virt-manager"
         "wireguard-tools"))
 
