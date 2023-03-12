@@ -44,7 +44,7 @@
                   "erc"
                   "mh-e"
                   "obsolete"
-                  "play")))))
+                  "play")))))))
 
 (define-public my-emacs-next-no-x
     (package
@@ -64,6 +64,6 @@
        ((#:phases phases)
         `(modify-phases ,phases
            (delete 'restore-emacs-pdmp)
-           (delete 'strip-double-wrap))))))))
+           (delete 'strip-double-wrap)))))))
 
 ;;; emacs-gcc.scm ends here
