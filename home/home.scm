@@ -20,7 +20,7 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cd" . "cd $@ && ls --all --color=auto --human-readable --indicator-style))
+               '(("cd" . "cd $@ && ls --almost-all -c --color=auto --human-readable --indicator-style -v))
                  '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2"))
                  '(("curl" . "curl --verbose"))
                  '(("dd" . "dd status=progress"))
@@ -32,7 +32,7 @@
                  '(("free" . "free --human"))
                  '(("grep" . "grep --color=auto"))
                  '(("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v"))
-                 '(("ls" . "ls --all --color=auto --dired --human-readable --indicator-style -v"))
+                 '(("ls" . "ls --all --almost-all --color=auto --dired --human-readable --indicator-style -v"))
                  '(("logout" . "pkill emacsclient & logout"))
                  '(("mkdir" . "mkdir --parents --verbose"))
                  '(("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose"))
