@@ -94,6 +94,7 @@
     "guile-next"
     "guile-colorized"
     "guile-readline"
+    "guile-ssh"
     "gzip"
     "inotify-tools"
     "kmod"
