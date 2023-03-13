@@ -16,7 +16,7 @@
                   (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/kaox")
                   (supplementary-groups
-                    '("audio" "kvm" "netdev" "video" "wheel")))
+                    '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

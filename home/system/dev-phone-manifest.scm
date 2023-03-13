@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "audacity"
+  (list "adb"
+        "audacity"
         "awscli"
         "blender"
         "emacs-bluetooth"
