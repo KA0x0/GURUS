@@ -27,7 +27,7 @@
                  '(("df" . "df --human-readable"))
                  '(("diff" . "diffoscope"))
                  '(("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait'"))
-                 '((docker . "podman"))
+                 '(("docker" . "podman"))
                  '(("egrep" . "rg --engine auto --follow --smart-case"))
                  '(("emacs" . "emacsclient --alternate-editor --create-frame --no-wait"))
                  '(("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case"))
