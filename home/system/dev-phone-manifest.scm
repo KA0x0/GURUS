@@ -40,7 +40,6 @@
         "gimp"
         "google-cloud-sdk"
         "guile-aws"
-        "guile-ssh"
         "ldns"
         "mediainfo"
         "mktorrent"
