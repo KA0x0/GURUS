@@ -69,6 +69,7 @@
     "emacs-consult-org-roam"
     "emacs-corfu"
     "emacs-eglot"
+    "emacs-eshell-syntax-highlighting"
     "emacs-embark"
     "emacs-flycheck"
     "emacs-geiser"
