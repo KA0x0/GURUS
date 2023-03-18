@@ -45,8 +45,8 @@
 ;;; Code:
 
 ;; Packages:
-(require 'dirvish)
-(require 'meow)
+(use-package dirvish)
+(use-package meow)
 
 ;; UI:
 (menu-bar-mode -1)
