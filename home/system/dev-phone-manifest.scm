@@ -61,7 +61,7 @@
         "upx"
         "valgrind"
         "wireguard-tools"
-        "yt-dlp"
-        "xclip"))
+        "xclip"
+        "yt-dlp"))
 
 ;;; dev-phone-manifest.scm ends here
