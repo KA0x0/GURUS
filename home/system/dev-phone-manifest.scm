@@ -27,6 +27,7 @@
         "emacs-mentor"
         "emacs-modus-themes"
         "emacs-notmuch"
+        "emacs-verb"
         "emacs-yasnippet"
         "fd"
         "ffmpeg"

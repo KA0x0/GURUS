@@ -77,4 +77,25 @@
       "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see https://xmpp.org for more information.")
     (license #f)))
 
+(define-public emacs-verb
+  (package
+    (name "emacs-verb")
+    (version "20221113.2327")
+    (source
+      (origin
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://github.com/federicotdn/verb.git")
+               (commit
+                 "cb07a35bac5e2e3400d8f9e764177b9a9457deb1")))
+        (sha256
+          (base32
+            "1psah3k956hkl3qw3hjzfw89lcvcjp3zh6ap9ln0p9d8q696zmba"))))
+    (build-system melpa-build-system)
+    (home-page "https://github.com/federicotdn/verb")
+    (synopsis "Organize and send HTTP requests")
+    (description
+      "Verb is a package for Emacs which allows you to organize and send HTTP requests.")
+    (license license:gpl3)))
+
 ;;; emacs-xyz.scm ends here
