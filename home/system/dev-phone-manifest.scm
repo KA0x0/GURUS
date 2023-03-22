@@ -62,6 +62,7 @@
         "valgrind"
         "wireguard-tools"
         "xclip"
+        "emacs-xclip"
         "yt-dlp"))
 
 ;;; dev-phone-manifest.scm ends here
