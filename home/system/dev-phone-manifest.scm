@@ -27,6 +27,7 @@
         "emacs-mentor"
         "emacs-modus-themes"
         "emacs-notmuch"
+        "emacs-symon"
         "emacs-verb"
         "emacs-yasnippet"
         "fd"
