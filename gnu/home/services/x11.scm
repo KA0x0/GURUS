@@ -1,7 +1,8 @@
-(define guix-init.el
+(define picom.conf
  "\
 
-### init.el ends here\n")
+### picom.conf ends here\n
+")
 
 
 (define xorg.conf
