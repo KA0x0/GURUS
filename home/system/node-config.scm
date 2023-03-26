@@ -44,7 +44,8 @@
     (append
       (list
         lm-sensors
-        usbguard)
+        usbguard
+        wayland)
     %my-base-packages))
   (services
     (append
