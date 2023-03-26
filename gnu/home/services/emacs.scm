@@ -21,8 +21,8 @@
 (unless (server-running-p)
   (server-start))
 
-;;; early-init.el ends here\n")
-
+;;; early-init.el ends here\n
+")
 
 
 (define guix-init.el
@@ -124,4 +124,5 @@
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-mode-hook 'enable-paredit-mode)
 
-;;; init.el ends here\n")
+;;; init.el ends here\n
+")
