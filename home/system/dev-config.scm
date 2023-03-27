@@ -51,7 +51,6 @@
         picom
         pipewire
         spice-vdagent
-        wayland
         xf86-video-amdgpu
         xorg-server-xwayland)
       %my-base-packages))
