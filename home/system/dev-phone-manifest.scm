@@ -40,6 +40,7 @@
         "gimp"
         "google-cloud-sdk"
         "guile-aws"
+        "ipython"
         "ldns"
         "mediainfo"
         "mktorrent"
