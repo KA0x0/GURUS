@@ -51,6 +51,7 @@
         "podman"
         "emacs-powershell"
         "pwntools"
+        "python-boto3"
         "python-ipython"
         "python-scapy"
         "qemu"
