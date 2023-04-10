@@ -35,7 +35,7 @@
                '(("grep" . "grep --color=auto"))
                '(("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v"))
                '(("ls" . "ls --all --almost-all --color=auto --dired --human-readable --indicator-style -v"))
-               '(("logout" . "pkill emacsclient & logout"))
+               '(("logout" . "killall emacsclient & logout"))
                '(("mkdir" . "mkdir --parents --verbose"))
                '(("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose"))
                '(("nc" . "socat -,rawer,escape=0x1d tcp:$@"))
