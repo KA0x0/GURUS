@@ -105,7 +105,6 @@
     "nftables"
     "nss-certs"
     "openssh-sans-x"
-    "patch"
     "pinentry-tty"
     "emacs-pinentry"
     "psmisc"

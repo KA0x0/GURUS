@@ -48,6 +48,7 @@
         "mpv"
         "openssh"
         "openvpn"
+        "patch"
         "patchelf"
         "podman"
         "emacs-powershell"
