@@ -31,7 +31,6 @@
                '(("egrep" . "rg --engine auto --follow --smart-case"))
                '(("emacs" . "emacsclient --alternate-editor --create-frame --no-wait"))
                '(("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case"))
-               '(("free" . "free --human"))
                '(("grep" . "grep --color=auto"))
                '(("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v"))
                '(("ls" . "ls --all --almost-all --color=auto --dired --human-readable --indicator-style -v"))
