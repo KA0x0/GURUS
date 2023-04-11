@@ -118,7 +118,6 @@
     "tar"
     "tree-sitter"
     "util-linux-with-udev"
-    "wget"
     "which"
     "my-xonsh"
     "xz")))

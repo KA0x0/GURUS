@@ -45,8 +45,7 @@
                '(("rm" . "rm --interactive --one-file-system --verbose"))
                '(("rg" . "rg --engine auto --follow --smart-case"))
                '(("strings" . "floss -v"))
-               '(("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
-               '(("wget" . "wget --show-progress")))
+               '(("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")))
               (bashrc
                "\
                 set colored-stats on
