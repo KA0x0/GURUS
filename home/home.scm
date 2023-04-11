@@ -40,7 +40,6 @@
                '(("patch" . "patch --backup --verbose"))
                '(("ping" . "ping -v"))
                '(("ping6" . "ping6 -v"))
-               '(("ps" . "ps --forest"))
                '(("rm" . "rm --interactive --one-file-system --verbose"))
                '(("rg" . "rg --engine auto --follow --smart-case"))
                '(("strings" . "floss -v"))
