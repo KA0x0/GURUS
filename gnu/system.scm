@@ -109,7 +109,6 @@
     "patch"
     "pinentry-tty"
     "emacs-pinentry"
-    "procps"
     "psmisc"
     "python"
     "rsync"
