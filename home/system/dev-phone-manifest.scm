@@ -10,6 +10,7 @@
   (list "adb"
         "audacity"
         "awscli"
+        "binutils"
         "blender"
         "emacs-bluetooth"
         "ccid"

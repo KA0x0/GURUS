@@ -52,7 +52,6 @@
   '("aws-vault"
     "bash"
     "bash-completion"
-    "binutils"
     "emacs-bash-completion"
     "bcachefs-tools"
     "bzip2"
