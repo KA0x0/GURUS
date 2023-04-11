@@ -25,7 +25,6 @@
                '(("curl" . "curl --verbose"))
                '(("dd" . "dd status=progress"))
                '(("df" . "df --human-readable"))
-               '(("diff" . "diffoscope"))
                '(("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait'"))
                '(("docker" . "podman"))
                '(("egrep" . "rg --engine auto --follow --smart-case"))
