@@ -21,7 +21,7 @@
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
                '(("cd" . "cd $@ && ls --almost-all -c --color=auto --human-readable --indicator-style -v))
-               '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose --info=progress2"))
+               '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose))
                '(("curl" . "curl --verbose"))
                '(("dd" . "dd status=progress"))
                '(("df" . "df --human-readable"))
