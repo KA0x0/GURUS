@@ -40,7 +40,7 @@
                '(("patch" . "patch --backup --verbose"))
                '(("ping" . "ping -v"))
                '(("ping6" . "ping6 -v"))
-               '(("ps" . "emacsclient --alternate-editor --create-frame --eval '(proced)' --no-wait""))
+               '(("ps" . "emacsclient --alternate-editor --create-frame --eval '(proced)' --no-wait"))
                '(("rm" . "rm --interactive --one-file-system --verbose"))
                '(("rg" . "rg --engine auto --follow --smart-case"))
                '(("strings" . "floss -v"))
