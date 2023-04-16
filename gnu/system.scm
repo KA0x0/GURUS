@@ -36,7 +36,6 @@
   #:use-module (gnu packages pciutils)
   #:use-module (gnu packages texinfo)
   #:use-module (gnu packages text-editors)
-  #:use-module (gnu packages wget)
   #:export (%my-base-operating-system)
   #:export (%my-base-packages)
   #:export (%my-base-services))
