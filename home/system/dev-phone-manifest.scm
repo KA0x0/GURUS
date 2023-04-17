@@ -41,6 +41,7 @@
         "gimp"
         "google-cloud-sdk"
         "guile-aws"
+        "imagemagick"
         "ldns"
         "mediainfo"
         "mktorrent"
