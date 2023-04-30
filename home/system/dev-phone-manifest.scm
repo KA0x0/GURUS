@@ -40,6 +40,7 @@
         "gdb"
         "gimp"
         "google-cloud-sdk"
+        "graphviz"
         "guile-aws"
         "imagemagick"
         "ldns"
