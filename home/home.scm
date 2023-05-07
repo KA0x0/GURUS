@@ -25,7 +25,7 @@
                '(("curl" . "curl --verbose"))
                '(("dd" . "dd status=progress"))
                '(("df" . "df --human-readable"))
-               '(("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait'"))
+               '(("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait"))
                '(("docker" . "podman"))
                '(("egrep" . "rg --engine auto --follow --smart-case"))
                '(("emacs" . "emacsclient --alternate-editor --create-frame --no-wait"))
