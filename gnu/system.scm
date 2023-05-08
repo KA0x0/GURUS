@@ -123,7 +123,6 @@
   (append
       (list (service login-service-type my-motd)
             (service nftables-service-type)
-            (service openssh-service-type)
             (service openssh-service-type
               (openssh-configuration
                 (authorized-keys
