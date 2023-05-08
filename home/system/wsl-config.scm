@@ -41,7 +41,7 @@
           `(("/bin/sh" ,(file-append bash "/bin/bash"))
             ("/bin/mount" ,(file-append util-linux "/bin/mount"))
             ("/usr/bin/env" ,(file-append coreutils "/bin/env"))
-            (service unattended-upgrade-service-type))))
+        (service unattended-upgrade-service-type))))
       %base-services
       %my-base-services))))
 
