@@ -47,12 +47,13 @@
         dbus
         emacs-with-native-comp-no-x
         emacs-exwm
+        iwd
         lm-sensors
         picom
         pipewire
         usbguard
         xorg-server-xwayland)
- %my-base-packages))
+      %my-base-packages))
   (services
     (append
       (list 
@@ -69,8 +70,7 @@
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service network-manager-service-type)
-        (service wpa-supplicant-service-type)
+        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 

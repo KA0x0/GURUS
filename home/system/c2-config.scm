@@ -45,8 +45,9 @@
       %my-base-packages))
   (services
     (append
-      (list 
-        (service network-manager-service-type)
+      (list
+        (service nftables-service-type)
+        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 

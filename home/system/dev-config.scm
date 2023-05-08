@@ -48,6 +48,7 @@
         my-emacs-next
         emacs-exwm
         fontconfig
+        iwd
         picom
         pipewire
         spice-vdagent
@@ -70,9 +71,8 @@
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service network-manager-service-type)
+        (service ntp-service-type)
         (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
-        (service wpa-supplicant-service-type)
        %base-services
        %my-base-services))))
 

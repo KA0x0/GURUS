@@ -49,15 +49,15 @@
         lm-sensors
         usbguard
         xorg-server-xwayland)
-      %my-base-packages))
+        %my-base-packages))
   (services
     (append
-      (list 
+      (list
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service network-manager-service-type)
-        (service wpa-supplicant-service-type)
-      %base-services
-      %my-base-services))))
+        (service nftables-service-type)
+        (service unattended-upgrade-service-type)
+        %base-services
+        %my-base-services))))
 
 ;;; laptop-config.scm ends here

@@ -45,7 +45,7 @@
       (list
         i2pd
         ppp)
-      %my-base-packages))
+        %my-base-packages))
   (services
     (append
       (list
@@ -64,7 +64,7 @@
                    (gateway "10.10.10.10"))))
               (name-servers '("10.10.10.10")))))
         (service unattended-upgrade-service-type)
-      %base-services
-      %my-base-services))))
+        %base-services
+        %my-base-services))))
 
 ;;; network-config.scm ends here

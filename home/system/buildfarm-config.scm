@@ -45,9 +45,10 @@
      %my-base-packages))
   (services
     (append
-      (list 
+      (list
         (service cuirass-service-type)
-        (service network-manager-service-type)
+        (service nftables-service-type)
+        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 

@@ -46,7 +46,7 @@
   (services
     (append
       (list
-        (service network-manager-service-type)
+        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 
