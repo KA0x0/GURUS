@@ -124,6 +124,9 @@
       (list (service login-service-type my-motd)
             (service nftables-service-type)
             (service openssh-service-type)
-            (service unattended-upgrade-service-type))))
+            (service openssh-service-type
+              (openssh-configuration
+                (authorized-keys
+                  ("kaox" ,(local-file "ka0x.pub"))))))))
   
 ;;; system.scm ends here

@@ -10,11 +10,11 @@
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "dev")
   (users (cons* (user-account
-                  (name "kaox")
+                  (name "ka0x")
                   (comment "KA0x0")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/kaox")
+                  (home-directory "/home/ka0x")
                   (supplementary-groups
                     '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
