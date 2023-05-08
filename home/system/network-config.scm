@@ -63,7 +63,6 @@
                    (destination "default")
                    (gateway "10.10.10.10"))))
               (name-servers '("10.10.10.10")))))
-        (service unattended-upgrade-service-type)
         %base-services
         %my-base-services))))
 

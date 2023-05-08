@@ -47,8 +47,6 @@
   (services
     (append
       (list
-        (service nftables-service-type)
-        (service unattended-upgrade-service-type)
         %base-services
         %my-base-services))))
 

@@ -55,8 +55,6 @@
       (list
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service nftables-service-type)
-        (service unattended-upgrade-service-type)
         %base-services
         %my-base-services))))
 

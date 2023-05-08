@@ -70,7 +70,6 @@
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
         (service libvirt-service-type)
-        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 
