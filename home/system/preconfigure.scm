@@ -46,7 +46,6 @@
   (services
     (append
       (list
-        (service unattended-upgrade-service-type)
       %base-services
       %my-base-services))))
 
