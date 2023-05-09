@@ -126,6 +126,6 @@
             (service openssh-service-type
               (openssh-configuration
                 (authorized-keys
-                  ("kaox" ,(local-file "ka0x.pub"))))))))
+                  ("ka0x" ,(local-file "ka0x.pub"))))))))
 
 ;;; system.scm ends here
