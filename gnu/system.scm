@@ -127,5 +127,5 @@
               (openssh-configuration
                 (authorized-keys
                   ("kaox" ,(local-file "ka0x.pub"))))))))
-  
+
 ;;; system.scm ends here
