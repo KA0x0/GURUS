@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "hashcat"
+  (list "my-emacs-next"
+        "hashcat"
         "rsync"
         "virt-manager"))
 
