@@ -10,8 +10,8 @@
   (list "calibre"
         "podman"
         "qemu"
-        "my-rtorrent"
         "sshfs"
+        "my-transmission"
         "tpm2-tss"))
 
 ;;; node1-manifest.scm ends here

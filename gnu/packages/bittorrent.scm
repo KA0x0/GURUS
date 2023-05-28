@@ -20,21 +20,12 @@
 (use-modules (guix packages) (gcrypt hash))
 (use-modules (gnu packages bittorrent))
 
-(define my-libtorrent
+(define my-transmission
   (package
-    (inherit libtorrent)
-    (version "0.13.8")
+    (inherit transmission)
+    (version "4.0.3")
     (source (sha256
                (base32
-                "10z9i1rc41cmmi7nx8k7k1agsx6afv09g9cl7g9zr35fyhl5l4gd"))))
+                "0njlmpcdsxwx8vwdk9dvsby51l6f6awks9d0mgvi9fs2ivaizc5n")))))
 
-(define my-rtorrent
-  (package
-    (inherit rtorrent)
-    (version "0.9.8")
-    (source (sha256
-               (base32
-                "1bs2fnf4q7mlhkhzp3i1v052v9xn8qa7g845pk9ia8hlpw207pwy")))
-    (inputs (list my-libtorrent))))
-
-;;; rtorrent.scm ends here
+;;; bittorrent.scm ends here

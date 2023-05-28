@@ -45,7 +45,6 @@
         "imagemagick"
         "ldns"
         "mediainfo"
-        "mktorrent"
         "mpd"
         "mpv"
         "openssh"
