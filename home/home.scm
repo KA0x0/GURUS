@@ -93,9 +93,9 @@
                  '(("HISTSIZE" . "4096"))
                  '(("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
                  '(("PS1" . "\u@\H:\W\> ")) ;; Add Error Code, Git status
-                 '(("PS2" . "\t\$ ")) ;; Add Error Code
-                 '(("PS3" . "\t\$ "))
-                 '(("PS4" . "\$ "))
+                 '(("PS2" . "\t\> ")) ;; Add Error Code
+                 '(("PS3" . "\t\> "))
+                 '(("PS4" . "\> "))
                  '(("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
