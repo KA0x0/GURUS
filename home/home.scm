@@ -32,7 +32,7 @@
                '(("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case"))
                '(("grep" . "grep --color=auto"))
                '(("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v"))
-               '(("ls" . "ls --all --almost-all --color=auto --dired --human-readable --indicator-style -v"))
+               '(("ls" . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v"))
                '(("logout" . "emacsclient --eval '(server-delete-client)' & logout"))
                '(("mkdir" . "mkdir --parents --verbose"))
                '(("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose"))
