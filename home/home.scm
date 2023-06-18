@@ -20,31 +20,31 @@
     (list (service home-bash-service-type
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
-               '(("cd" . "cd $@ && ls --almost-all -c --color=auto --human-readable --indicator-style -v"))
-               '(("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose"))
-               '(("curl" . "curl --verbose"))
-               '(("dd" . "dd status=progress"))
-               '(("df" . "df --human-readable"))
-               '(("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait"))
-               '(("docker" . "podman"))
-               '(("egrep" . "rg --engine auto --follow --smart-case"))
-               '(("emacs" . "emacsclient --alternate-editor --create-frame --no-wait"))
-               '(("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case"))
-               '(("grep" . "grep --color=auto"))
-               '(("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v"))
-               '(("ls" . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v"))
-               '(("logout" . "emacsclient --eval '(server-delete-client)' & logout"))
-               '(("mkdir" . "mkdir --parents --verbose"))
-               '(("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose"))
-               '(("nc" . "socat -,rawer,escape=0x1d tcp:$@"))
-               '(("patch" . "patch --backup --verbose"))
-               '(("ping" . "ping -v"))
-               '(("ping6" . "ping6 -v"))
-               '(("ps" . "ps --forest"))
-               '(("rm" . "rm --interactive --one-file-system --verbose"))
-               '(("rg" . "rg --engine auto --follow --smart-case"))
-               '(("strings" . "floss -v"))
-               '(("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait")))
+               ("cd" . "cd $@ && ls --almost-all -c --color=auto --human-readable --indicator-style -v")
+               ("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose")
+               ("curl" . "curl --verbose")
+               ("dd" . "dd status=progress")
+               ("df" . "df --human-readable")
+               ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
+               ("docker" . "podman")
+               ("egrep" . "rg --engine auto --follow --smart-case")
+               ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
+               ("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case")
+               ("grep" . "grep --color=auto")
+               ("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
+               ("ls" . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v")
+               ("logout" . "emacsclient --eval '(server-delete-client)' & logout")
+               ("mkdir" . "mkdir --parents --verbose")
+               ("mv" . "rsync --archive --human-readable --info=progress2 --progress --remove-source-files --verbose")
+               ("nc" . "socat -,rawer,escape=0x1d tcp:$@")
+               ("patch" . "patch --backup --verbose")
+               ("ping" . "ping -v")
+               ("ping6" . "ping6 -v")
+               ("ps" . "ps --forest")
+               ("rm" . "rm --interactive --one-file-system --verbose")
+               ("rg" . "rg --engine auto --follow --smart-case")
+               ("strings" . "floss -v")
+               ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (bashrc
                "\
                 set colored-stats on
@@ -87,16 +87,16 @@
                   fi
                 }\n")
               (environment-variables
-                 '(("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
-                 '(("HISTCONTROL" . "ignoreboth"))
-                 '(("HISTFILESIZE" . "4096"))
-                 '(("HISTSIZE" . "4096"))
-                 '(("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
-                 '(("PS1" . "\u@\H:\W\> ")) ;; Add Error Code, Git status
-                 '(("PS2" . "\t\> ")) ;; Add Error Code
-                 '(("PS3" . "\t\> "))
-                 '(("PS4" . "\> "))
-                 '(("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
+                ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
+                ("HISTCONTROL" . "ignoreboth")
+                ("HISTFILESIZE" . "4096")
+                ("HISTSIZE" . "4096")
+                ("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
+                ("PS1" . "\u@\H:\W\> ") ;; Add Error Code, Git status
+                ("PS2" . "\t\> ") ;; Add Error Code
+                ("PS3" . "\t\> ")
+                ("PS4" . "\> ")
+                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
             (service home-shepherd-service-type
               (home-shepherd-configuration
                (services
