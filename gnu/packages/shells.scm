@@ -29,6 +29,10 @@
               (for-each delete-file-recursively
                 '("webconfig"
                   "wizard.py"
-                  "xonfig.py")))))))
+                  "xonfig.py"))
+            (with-directory-excursion "xonsh/test"
+              (for-each delete-file-recursively
+                '("test_wizard.py"
+                  "test_xonfig.py")))))))
 
 ;;; shells.scm ends here
