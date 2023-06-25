@@ -48,8 +48,7 @@
     %my-base-packages))
   (services
     (append
-      (list (service rtorrent-service-type)
-            (service static-networking-service-type
+      (list (service static-networking-service-type
                   (list (static-networking
                          (addresses
                           (list (network-address
@@ -60,6 +59,7 @@
                                  (destination "default")
                                  (gateway "10.10.10.10"))))
                          (name-servers '("10.10.10.10")))))
+              (service transmission-service-type)
       %base-services
       %my-base-services))))
 
