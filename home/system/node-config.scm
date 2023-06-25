@@ -49,16 +49,16 @@
   (services
     (append
       (list (service static-networking-service-type
-                  (list (static-networking
-                         (addresses
-                          (list (network-address
-                                 (device "eno1")
-                                 (value "10.0.0.50/8"))))
-                         (routes
-                          (list (network-route
-                                 (destination "default")
-                                 (gateway "10.10.10.10"))))
-                         (name-servers '("10.10.10.10")))))
+              (list (static-networking
+                     (addresses
+                      (list (network-address
+                             (device "eno1")
+                             (value "10.0.0.50/8"))))
+                     (routes
+                      (list (network-route
+                             (destination "default")
+                             (gateway "10.10.10.10"))))
+                     (name-servers '("10.10.10.10")))))
               (service transmission-service-type)
       %base-services
       %my-base-services))))
