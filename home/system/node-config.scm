@@ -10,8 +10,8 @@
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "node")
   (users (cons* (user-account
-                  (name "vm")
-                  (comment "Virtual Manager")
+                  (name "virtualizer")
+                  (comment "I virtualize stuff")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
                   (home-directory "/home/vm")
