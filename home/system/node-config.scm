@@ -14,7 +14,7 @@
                   (comment "I virtualize stuff")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/vm")
+                  (home-directory "/home/virtualizer")
                   (supplementary-groups
                     '("kvm" "netdev" "wheel")))
                 %base-user-accounts))
