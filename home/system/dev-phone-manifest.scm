@@ -45,6 +45,7 @@
         "imagemagick"
         "ldns"
         "mediainfo"
+        "mitmproxy"
         "mpd"
         "mpv"
         "openssh"
