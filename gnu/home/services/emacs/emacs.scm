@@ -51,23 +51,9 @@
 (blink-cursor-mode -1)
 (column-number-mode)
 (load-theme 'modus-vivendi)
-(set-frame-font "fira code 12" nil t)
-;; Enable the www ligature in every possible major mode
-(ligature-set-ligatures 't '("www"))
 
-;; Enable ligatures in programming modes                                                           
-(ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
-                                     ":::" ":=" "!!" "!=" "!==" "-}" "----" "-->" "->" "->>"
-                                     "-<" "-<<" "-~" "#{" "#[" "##" "###" "####" "#(" "#?" "#_"
-                                     "#_(" ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*" "/**"
-                                     "/=" "/==" "/>" "//" "///" "&&" "||" "||=" "|=" "|>" "^=" "$>"
-                                     "++" "+++" "+>" "=:=" "==" "===" "==>" "=>" "=>>" "<="
-                                     "=<<" "=/=" ">-" ">=" ">=>" ">>" ">>-" ">>=" ">>>" "<*"
-                                     "<*>" "<|" "<|>" "<$" "<$>" "<!--" "<-" "<--" "<->" "<+"
-                                     "<+>" "<=" "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<"
-                                     "<~" "<~~" "</" "</>" "~@" "~-" "~>" "~~" "~~>" "%%"))
-
-(global-ligature-mode 't)
+;; Startup:
+(setq-default set inhibit-startup-screen 1)
 
 ;; Interactively do things.
 (ido-mode 1)
@@ -115,9 +101,6 @@
 (add-hook 'ielm-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-mode-hook 'enable-paredit-mode)
-
-;; Dired
-(use-package dirvish)
 
 ;; Eshell
 (use-package eshell-syntax-highlighting
