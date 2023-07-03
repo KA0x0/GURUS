@@ -1,4 +1,4 @@
-(define guix-early-init.el
+(define emacs-client.el
  "\
 ;; This file is NOT part of GNU Emacs.
 
@@ -38,3 +38,6 @@
 
 ;; Dired
 (use-package dirvish)
+
+;;; emacs-client.el ends here\n
+")

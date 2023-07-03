@@ -26,10 +26,7 @@
                ("dd" . "dd status=progress")
                ("df" . "df --human-readable")
                ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
-               ("docker" . "podman")
-               ("egrep" . "rg --engine auto --follow --smart-case")
                ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
-               ("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case")
                ("grep" . "grep --color=auto")
                ("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
                ("ls" . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v")
@@ -42,8 +39,6 @@
                ("ping6" . "ping6 -v")
                ("ps" . "ps --forest")
                ("rm" . "rm --interactive --one-file-system --verbose")
-               ("rg" . "rg --engine auto --follow --smart-case")
-               ("strings" . "floss -v")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (bashrc
                "\
