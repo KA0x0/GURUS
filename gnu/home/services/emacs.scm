@@ -44,15 +44,6 @@
 
 ;;; Code:
 
-;; Packages:
-(use-package dirvish)
-(use-package eshell-syntax-highlighting
-  :after eshell-mode
-  :config
-  ;; Enable in all Eshell buffers.
-  (eshell-syntax-highlighting-global-mode +1))
-(use-package meow)
-
 ;; UI:
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -85,6 +76,7 @@
 (fido-mode)
 
 ;; Vi emulation
+(use-package meow)
 (meow-setup)
 (meow-global-mode 1)
 
@@ -123,6 +115,16 @@
 (add-hook 'ielm-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'lisp-mode-hook 'enable-paredit-mode)
+
+;; Dired
+(use-package dirvish)
+
+;; Eshell
+(use-package eshell-syntax-highlighting
+  :after eshell-mode
+  :config
+  ;; Enable in all Eshell buffers.
+  (eshell-syntax-highlighting-global-mode +1))
 
 ;;; init.el ends here\n
 ")
