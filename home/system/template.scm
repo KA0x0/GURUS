@@ -8,13 +8,13 @@
   (locale "en_US.utf8")
   (timezone "Etc/Greenwich")
   (keyboard-layout (keyboard-layout "us" "ru"))
-  (host-name "configure")
+  (host-name "template")
   (users (cons* (user-account
-                  (name "pre")
-                  (comment "Configure me")
+                  (name "minimal")
+                  (comment "Minimal")
                   (group "users")
                   (shell (file-append xonsh "/bin/xonsh"))
-                  (home-directory "/home/pre")
+                  (home-directory "/home/minimal")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
@@ -49,4 +49,4 @@
       %base-services
       %my-base-services))))
 
-;;; preconfigure.scm ends here
+;;; minimal.scm ends here

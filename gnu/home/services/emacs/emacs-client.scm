@@ -17,6 +17,9 @@
 
 ;;; Code:
 
+;; Theme:
+(load-theme 'modus-vivendi)
+
 ;; Fonts:
 (set-frame-font "fira code 12" nil t)
 ;; Enable the www ligature in every possible major mode

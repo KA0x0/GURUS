@@ -9,6 +9,7 @@
 (specifications->manifest
   (list "font-fira-code"
         "my-emacs-next"
+        "emacs-modus-themes"
         "hashcat"
         "rsync"
         "virt-manager"))
