@@ -20,7 +20,6 @@
         "elfutils"
         "my-emacs-next"
         "emacs-dirvish"
-        "emacs-eglot-x"
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
