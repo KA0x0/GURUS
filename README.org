@@ -1,4 +1,4 @@
-#+TITLE: Channel 4 Guix
+#+TITLE: Guix User Recursive Upgrades
 
 GNU Guix --- Functional package management for GNU
 
