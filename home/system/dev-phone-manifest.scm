@@ -63,7 +63,6 @@
         "sshfs"
         "tesseract-ocr"
         "tiled"
-        "tpm2-tss"
         "upx"
         "valgrind"
         "wireguard-tools"
