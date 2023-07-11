@@ -94,12 +94,8 @@
 ;; Disable lockfiles.
 (setq-default create-lockfiles nil)
 
-;; Enable Paredit.
-(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
-(add-hook 'eval-expression-minibuffer-setup-hook 'enable-paredit-mode)
-(add-hook 'ielm-mode-hook 'enable-paredit-mode)
-(add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
-(add-hook 'lisp-mode-hook 'enable-paredit-mode)
+;; Enable Electric-Pair-mode
+(electric-pair-mode 1)
 
 ;; Eshell
 (use-package eshell-syntax-highlighting
