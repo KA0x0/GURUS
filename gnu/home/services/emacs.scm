@@ -91,11 +91,11 @@
 ;; Do not move the current file while creating backup.
 (setq-default backup-by-copying t)
 
-;; Disable lockfiles.
-(setq-default create-lockfiles nil)
+;; Lockfiles.
+(setq-default create-lockfiles nil) ;; Disable lockfiles
 
-;; Enable Electric-Pair-mode
-(electric-pair-mode 1)
+;; Electric Pair
+(electric-pair-mode 1) ;; Enable Electric-Pair-mode
 (setq-default electric-pair-delete-adjacent-pairs 1)
 
 ;; Eshell
