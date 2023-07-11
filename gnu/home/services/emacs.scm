@@ -96,6 +96,7 @@
 
 ;; Enable Electric-Pair-mode
 (electric-pair-mode 1)
+(setq-default electric-pair-delete-adjacent-pairs 1)
 
 ;; Eshell
 (use-package eshell-syntax-highlighting
