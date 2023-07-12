@@ -36,4 +36,4 @@
       (list
         busybox))))
 
-;;; minimal.scm ends here
+;;; template.scm ends here
