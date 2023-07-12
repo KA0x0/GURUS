@@ -43,6 +43,6 @@
   (packages
     (append
       (list
-        coreutils))))
+        busybox))))
 
 ;;; minimal.scm ends here
