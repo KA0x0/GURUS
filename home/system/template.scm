@@ -22,12 +22,6 @@
       (bootloader grub-efi-bootloader)
       (target "/boot/efi")
       (keyboard-layout keyboard-layout)))
-  (mapped-devices
-    (list (mapped-device
-            (source
-              (uuid ""))
-            (target "cryptroot")
-            (type luks-device-mapping))))
   (file-systems
     (cons* (file-system
              (mount-point "/")
