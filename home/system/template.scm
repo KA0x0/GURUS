@@ -13,7 +13,7 @@
                   (name "minimal")
                   (comment "Minimal")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append xonsh "/bin/sh"))
                   (home-directory "/home/minimal")
                   (supplementary-groups
                     '("netdev" "wheel")))
