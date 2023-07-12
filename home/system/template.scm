@@ -1,8 +1,6 @@
 ;;; Code:
 
-(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules mcron networking shepherd ssh)
-(use-package-modules bootloaders certs package-management)
+(use-modules (gnu)
 
 (operating-system
   (locale "en_US.utf8")
