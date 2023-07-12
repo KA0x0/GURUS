@@ -42,11 +42,7 @@
            %base-file-systems))
   (packages
     (append
-     %my-base-packages))
-  (services
-    (append
       (list
-      %base-services
-      %my-base-services))))
+        coreutils))))
 
 ;;; minimal.scm ends here
