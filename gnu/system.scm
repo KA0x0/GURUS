@@ -107,7 +107,7 @@
     "emacs-pinentry"
     "procps"
     "psmisc"
-    "python"
+    "python-debug-sans-pip-wrapper"
     "rsync"
     "sed"
     "shadow"

@@ -66,4 +66,4 @@
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap)))))))
 
-;;; emacs-gcc.scm ends here
+;;; emacs.scm ends here
