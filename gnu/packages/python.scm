@@ -25,13 +25,6 @@
     (arguments
      (substitute-keyword-arguments (package-arguments python)
        ((#:configure-flags flags '())
-        `(cons "--with-pydebug" ,flags))))
-    (synopsis
-     "Python with the debug hooks enabled")
-    (description
-     "This variant of Python provides an interpreter built with
-@code{--with-pydebug} to help develop and debug extensions.  See
-@url{https://pythonextensionpatterns.readthedocs.io/en/latest/debugging/debug.html},
-for more information.")))
+        `(cons "--with-pydebug" ,flags))))))
 
 ;;; python.scm ends here
