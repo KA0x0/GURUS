@@ -38,7 +38,6 @@
         "font-fira-code"
         "freerdp"
         "gdb"
-        "gimp"
         "google-cloud-sdk"
         "graphviz"
         "guile-aws"
