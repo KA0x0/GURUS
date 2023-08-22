@@ -38,6 +38,7 @@
         "font-fira-code"
         "freerdp"
         "gdb"
+        "gnuradio"
         "google-cloud-sdk"
         "graphviz"
         "guile-aws"
