@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "adb"
-        "audacity"
         "awscli"
         "binutils"
         "blender"
