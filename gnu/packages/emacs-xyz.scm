@@ -77,6 +77,23 @@
       "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see https://xmpp.org for more information.")
     (license #f)))
 
+  (define-public emacs-modbus
+  (package
+    (name "emacs-modbus")
+    (version "20200318.1618")
+    (source
+      (origin
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://github.com/spauldo/emacs-modbus.git")
+               (commit
+                 "d9005843b04ccfce19b53e0415834f72b7fbed4a")))))
+    (build-system melpa-build-system)
+    (home-page "https://github.com/spauldo/emacs-modbus")
+    (synopsis
+      "Modbus-mode for emacs")
+    (license license:gpl2)))
+
 (define-public emacs-verb
   (package
     (name "emacs-verb")

@@ -24,6 +24,7 @@
         "emacs-exiftool"
         "emacs-jabber"
         "emacs-marginalia"
+        "emacs-modbus"
         "emacs-modus-themes"
         "emacs-notmuch"
         "emacs-symon"
