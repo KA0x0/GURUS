@@ -21,8 +21,8 @@
               (aliases ;; use "\" to escape aliases.
                ("docker" . "podman")
                ("egrep" . "rg --engine auto --follow --smart-case")
+               ("ffcuesplit $1 $2" . "ffmpeg -i "$1" -f cue -i "$2" -map_metadata -1 -c copy -map 0 -map_metadata 1 "%02d - $1"")
                ("fgrep" . "rg --engine auto --fixed-strings --follow --smart-case")
-               ("ffmsplit" . "ffmpeg -i "$1" -f cue -i "$2" -map_metadata -1 -c copy -map 0 -map_metadata 1 "${1%.*}_%02d.${$1##*.}")
                ("rg" . "rg --engine auto --follow --smart-case")
                ("strings" . "floss -v"))
 
