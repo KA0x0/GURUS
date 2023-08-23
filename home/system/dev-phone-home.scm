@@ -26,4 +26,4 @@
                ("rg" . "rg --engine auto --follow --smart-case")
                ("strings" . "floss -v"))
 
-;;; dev-home.scm ends here
+;;; dev-phone-home.scm ends here
