@@ -94,28 +94,6 @@
       "Modbus-mode for emacs")
     (license license:gpl2)))
 
-(define-public emacs-multi-run
-  (package
-    (name "emacs-multi-run")
-    (version "20210108.336")
-    (source
-      (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://github.com/sagarjha/multi-run.git")
-               (commit
-                 "13d4d923535b5e8482b13ff76185203075fb26a3")))
-        (sha256
-          (base32
-            "0b5pym2dk4rhrcbn0kgiaf6mqpwa45zfi5k2vh0lfzv9b45nngzs"))))
-    (build-system melpa-build-system)
-    (propagated-inputs (list emacs-window-layout))
-    (home-page
-      "https://sagarjha.github.io/multi-run")
-    (synopsis
-      "Efficiently manage multiple remote nodes")
-    (license license:gpl3)))
-
 (define-public emacs-verb
   (package
     (name "emacs-verb")
