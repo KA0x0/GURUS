@@ -26,6 +26,7 @@
         "emacs-marginalia"
         "emacs-modbus"
         "emacs-modus-themes"
+        "emacs-multi-run"
         "emacs-notmuch"
         "emacs-symon"
         "emacs-verb"
