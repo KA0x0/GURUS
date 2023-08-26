@@ -43,6 +43,7 @@
                 '("emulation"
                   "erc"
                   "mh-e"
+                  "net/dig.el"
                   "obsolete"
                   "play")))))))
 
