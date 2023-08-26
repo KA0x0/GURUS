@@ -42,6 +42,7 @@
               (for-each delete-file-recursively
                 '("emulation"
                   "erc"
+                  "gnus/smime.el"
                   "mh-e"
                   "net/dig.el"
                   "obsolete"
