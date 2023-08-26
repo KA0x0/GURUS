@@ -43,7 +43,6 @@
         "graphviz"
         "guile-aws"
         "imagemagick"
-        "ldns"
         "mediainfo"
         "mpd"
         "mpv"
