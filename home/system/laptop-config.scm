@@ -48,7 +48,7 @@
         emacs-exwm
         lm-sensors
         xorg-server-xwayland)
-        %my-base-packages))
+      %my-base-packages))
   (services
     (append
       (list
