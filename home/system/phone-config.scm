@@ -51,7 +51,6 @@
         lm-sensors
         picom
         pipewire
-        usbguard
         xorg-server-xwayland)
       %my-base-packages))
   (services

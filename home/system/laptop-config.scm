@@ -47,7 +47,6 @@
         my-emacs-next
         emacs-exwm
         lm-sensors
-        usbguard
         xorg-server-xwayland)
         %my-base-packages))
   (services
