@@ -107,7 +107,6 @@
     "pinentry-tty"
     "emacs-pinentry"
     "procps"
-    "psmisc"
     "python-debug-sans-pip-wrapper"
     "rsync"
     "sed"
