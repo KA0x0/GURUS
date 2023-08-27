@@ -22,6 +22,7 @@
         "emacs-envrc"
         "emacs-emms"
         "emacs-exiftool"
+        "emacs-hyperbole"
         "emacs-jabber"
         "emacs-marginalia"
         "emacs-modbus"
