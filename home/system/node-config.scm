@@ -43,8 +43,7 @@
   (packages
     (append
       (list
-        lm-sensors
-        usbguard)
+        physical)
     %my-base-packages))
   (services
     (append

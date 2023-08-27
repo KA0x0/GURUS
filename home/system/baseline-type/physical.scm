@@ -8,6 +8,7 @@
 
 (specifications->manifest
   (list "fwupd"
+        "lm-sensors"
         "usbguard"))
 
 ;;; physical-manifest.scm ends here

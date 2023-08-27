@@ -48,7 +48,6 @@
         emacs-with-native-comp-no-x
         emacs-exwm
         iwd
-        lm-sensors
         picom
         pipewire
         xorg-server-xwayland)
