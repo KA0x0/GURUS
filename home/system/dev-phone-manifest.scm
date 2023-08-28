@@ -21,7 +21,6 @@
         "emacs-dirvish"
         "emacs-envrc"
         "emacs-emms"
-        "emacs-exiftool"
         "emacs-hyperbole"
         "emacs-jabber"
         "emacs-marginalia"
