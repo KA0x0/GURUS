@@ -52,7 +52,6 @@
         "patch"
         "patchelf"
         "podman"
-        "emacs-powershell"
         "pwntools"
         "python-boto3"
         "python-ipython"
