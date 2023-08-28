@@ -88,7 +88,6 @@
     "findutils"
     "gawk"
     "git"
-    "stgit"
     "grep"
     "guix"
     "guile-next"
