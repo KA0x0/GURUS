@@ -4,6 +4,12 @@
 (use-service-modules mcron networking shepherd ssh virtualization)
 (use-package-modules bootloaders certs package-management)
 
+(define transmission-notification-job
+  ;; Sends notification about transmission every 30 minutes.
+  #~(job "30 * * * *"
+         "/bin/transmission-remote --list | sed '/Sum/d'") 
+         #:user "vm")
+
 (operating-system
   (locale "en_US.utf8")
   (timezone "Etc/Greenwich")
