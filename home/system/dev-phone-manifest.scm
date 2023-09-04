@@ -56,7 +56,6 @@
         "python-ipython"
         "python-scapy"
         "qemu"
-        "rclone"
         "ripgrep"
         "socat"
         "sshfs"

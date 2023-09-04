@@ -10,7 +10,6 @@
   (list "calibre"
         "podman"
         "qemu"
-        "rclone"
         "sshfs"
         "my-transmission"
         "tpm2-tss"))
