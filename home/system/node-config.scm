@@ -5,8 +5,8 @@
 (use-package-modules bootloaders certs package-management)
 
 (define transmission-notification-job
-  ;; Sends notification about transmission every 30 minutes.
-  #~(job "30 * * * *"
+  ;; Sends notification about torrents
+  #~(job "1 * * * *"
          "/bin/transmission-remote --list | sed '/Sum/d'") 
          #:user "vm")
 
