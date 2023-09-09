@@ -80,7 +80,8 @@
                   else
                     echo "'$1' is not a valid file"
                   fi
-
+                }
+                
                 # f --- Use emacsclient and stand-alone elisp functions in a pipe
 
                 # Usage example:
@@ -140,7 +141,7 @@
                 cat $TMP
                 rm $TMP
                 IFS="$oldIFS"
-                }\n")
+                \n")
               (environment-variables
                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                 ("HISTCONTROL" . "ignoreboth")
