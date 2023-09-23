@@ -1,5 +1,5 @@
-(define guix-xonshrc
+(define guix-config-nu
  "\
 
-### END of .xonshrc ###\n
+### END of .config.nu ###\n
 ")
