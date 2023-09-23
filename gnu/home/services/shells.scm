@@ -1,4 +1,4 @@
-(define guix-config-nu
+(define guix-nushell
  "\
 
 # Nushell Config File
