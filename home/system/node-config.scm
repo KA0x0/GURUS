@@ -65,7 +65,7 @@
                 (rpc-password
                   (transmission-password-hash ""))
                 (rpc-whitelist-enabled? #t)
-                (rpc-whitelist '("10.*"))
+                (rpc-whitelist '("192.168.255.254"))
                 (encryption 'require-encrypted-connections)
                 (alt-speed-down 0)
                 (alt-speed-up   0)
