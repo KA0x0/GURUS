@@ -1,2 +1,2 @@
 all:
-	guix system reconfigure $(hostname).scm
+	guix system reconfigure $(hostname)-config.scm
