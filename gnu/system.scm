@@ -117,7 +117,6 @@
     "util-linux-with-udev"
     "wget"
     "which"
-    "my-xonsh"
     "xz")))
 
 (define-public %my-base-services
