@@ -11,7 +11,7 @@
         "podman"
         "qemu"
         "sshfs"
-        "my-transmission"
+        "transmission"4.0.3"
         "tpm2-tss"))
 
 ;;; node1-manifest.scm ends here
