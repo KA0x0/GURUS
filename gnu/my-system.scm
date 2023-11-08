@@ -119,4 +119,4 @@
                 (authorized-keys
                   ("ka0x" ,(local-file "ka0x.pub"))))))))
 
-;;; system.scm ends here
+;;; my-system.scm ends here
