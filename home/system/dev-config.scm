@@ -13,7 +13,7 @@
                   (name "ka0x")
                   (comment "KA0x0")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/ka0x")
                   (supplementary-groups
                     '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))

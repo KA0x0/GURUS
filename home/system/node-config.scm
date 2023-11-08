@@ -13,7 +13,7 @@
                   (name "virtualizer")
                   (comment "I virtualize stuff")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/virtualizer")
                   (supplementary-groups
                     '("kvm" "netdev" "wheel")))

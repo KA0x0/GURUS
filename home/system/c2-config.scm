@@ -13,7 +13,7 @@
                   (name "beacon")
                   (comment "Beaconing")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/beacon")
                   (supplementary-groups
                     '("netdev" "wheel")))

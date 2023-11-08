@@ -13,7 +13,7 @@
                   (name "honey")
                   (comment "honey")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/honey")
                   (supplementary-groups
                     '("netdev" "wheel")))

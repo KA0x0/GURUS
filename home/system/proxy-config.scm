@@ -13,7 +13,7 @@
                   (name "hop")
                   (comment "I jump from node to node")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/hop")
                   (supplementary-groups
                     '("netdev" "wheel")))

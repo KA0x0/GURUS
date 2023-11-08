@@ -13,7 +13,7 @@
                   (name "mobile")
                   (comment "Mobile")
                   (group "users")
-                  (shell (file-append xonsh "/bin/xonsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/mobile")
                   (supplementary-groups
                     '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))

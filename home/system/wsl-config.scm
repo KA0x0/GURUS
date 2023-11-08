@@ -21,7 +21,7 @@
                   (group "users")
                   (supplementary-groups
                     '("audio" "kvm" "video" "wheel"))
-                  (shell (file-append xonsh "/bin/xonsh")))
+                  (shell (file-append bash "/bin/bash")))
                  (user-account
                   (inherit %root-account)
                   (shell (wsl-boot-program "guest")))
