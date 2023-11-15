@@ -40,8 +40,8 @@
                ("ping6" . "ping6 -v")
                ("ps" . "ps --forest")
                ("rm" . "rm --interactive --one-file-system --verbose")
-               ("sudo emacs" . "sudoedit")
-               ("sudo find-file" . "sudoedit")
+               ("sudo-emacs" . "sudoedit")
+               ("sudo-find-file" . "sudoedit")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (bashrc
                "\
