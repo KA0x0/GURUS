@@ -71,6 +71,7 @@
     "emacs-org"
     "emacs-org-roam"
     "emacs-pcmpl-args"
+    "emacs-psession"
     "emacs-rainbow-delimiters"
     "emacs-tramp"
     "emacs-undo-tree"
