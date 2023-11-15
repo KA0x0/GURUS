@@ -69,6 +69,7 @@
     "emacs-orderless"
     "emacs-org"
     "emacs-org-roam"
+    "emacs-pcmpl-args"
     "emacs-rainbow-delimiters"
     "emacs-tramp"
     "emacs-undo-tree"
