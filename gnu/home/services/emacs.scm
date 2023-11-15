@@ -26,7 +26,7 @@
   (background-color . "#000000")
   (ns-appearance . dark)
   (ns-transparent-titlebar . t)))
-")
+)
 
 
 (define guix-init.el
@@ -94,18 +94,18 @@
   (add-to-list 'load-path (expand-file-name "emacs-client.scm"))
 
   ;;; init.el ends here\n
-")
+)
 
 
 (define emacs-client.el
   ;; Theme:
   (load-theme 'modus-vivendi)
-  
+
   ;; Fonts:
   (set-frame-font "fira code 12" nil t)
   ;; Enable the www ligature in every possible major mode
   (ligature-set-ligatures 't '("www"))
-  
+
   ;; Enable ligatures in programming modes                                                           
   (ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
                                        ":::" ":=" "!!" "!=" "!==" "-}" "----" "-->" "->" "->>"
@@ -117,11 +117,11 @@
                                        "<*>" "<|" "<|>" "<$" "<$>" "<!--" "<-" "<--" "<->" "<+"
                                        "<+>" "<=" "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<"
                                        "<~" "<~~" "</" "</>" "~@" "~-" "~>" "~~" "~~>" "%%"))
-  
+
   (global-ligature-mode 't)
-  
+
   ;; Dired
   (use-package dirvish)
-  
+
   ;;; emacs-client.el ends here\n
-")
+)
