@@ -7,12 +7,12 @@
 ;;; Code:
 
 (use-modules
-  (gnu home) 
-  (gnu home services) 
-  (gnu home services shells) 
-  (guix gexp) 
-  (gnu services) 
-  (guix-package admin) 
+  (gnu home)
+  (gnu home services)
+  (gnu home services shells)
+  (guix gexp)
+  (gnu services)
+  (guix-package admin)
   (gnu packages bash))
 
 (home-environment
