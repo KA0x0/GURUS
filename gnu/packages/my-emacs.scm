@@ -65,31 +65,6 @@
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap)))))))
 
-(define-public emacs-dirvish
-  (package
-    (name "emacs-dirvish")
-    (version "20230123.1201")
-    (source
-      (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://github.com/alexluigit/dirvish.git")
-               (commit
-                 "4b63cd2e5ba994f8e674388db7035de1a8f0343f")))
-        (sha256
-          (base32
-            "1qp71p28h2k8xxpcsfxgdpgg587gaxwi6ialjwmhbd8qf07q4x3j"))))
-    (build-system melpa-build-system)
-    (arguments
-      '(#:files (:defaults "extensions/*.el")))
-    (home-page
-      "https://github.com/alexluigit/dirvish")
-    (synopsis
-      "A modern file manager based on dired mode")
-    (description
-      "Dirvish is an improved version of the Emacs inbuilt package Dired. It not only gives Dired an appealing and highly customizable user interface, but also comes together with almost all possible parts required for full usability as a modern file manager.")
-    (license license:gpl3)))
-
 (define-public emacs-jabber
   (package
     (name "emacs-jabber")
