@@ -18,7 +18,6 @@
         "direnv"
         "elfutils"
         "my-emacs-next"
-        "emacs-dirvish"
         "emacs-envrc"
         "emacs-emms"
         "emacs-hyperbole"
