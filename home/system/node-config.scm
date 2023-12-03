@@ -68,7 +68,7 @@
                 (rpc-whitelist '("192.168.255.*"))
                 (encryption 'require-encrypted-connections)
                 (alt-speed-down 0)
-                (alt-speed-up   0)
+                (alt-speed-up 0)
                 (watch-dir-enabled? #t)
                 (watch-dir "/mnt/storage/kaox/torrent/"))
       %base-services
