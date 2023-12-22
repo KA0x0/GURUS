@@ -47,6 +47,7 @@
         "patch"
         "patchelf"
         "podman"
+        "podman-compose"
         "pwntools"
         "python-boto3"
         "python-ipython"

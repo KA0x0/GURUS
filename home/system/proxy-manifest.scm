@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "podman")) ;; Add mitmproxy once merged.
+  (list "podman"
+        "podman-compose")) ;; Add mitmproxy once merged.
 
 ;;; Scan
 (define-record-type* <scan-configuration>

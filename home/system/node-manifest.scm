@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "calibre"
-        "podman"
         "qemu"
         "sshfs"
         "transmission@4.0.5
