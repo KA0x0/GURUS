@@ -13,7 +13,9 @@
                     hosts-service-type
                     (list (host "instagram.com"
                                 "")
-                          (host "twitter.com
+                          (host "twitter.com"
+                                "")
+                          (hosts "x.com"
                                 "")
                           (host "youtube.com"
                                 "")))
