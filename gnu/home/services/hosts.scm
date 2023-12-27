@@ -30,20 +30,18 @@
 
 (simple-service 'my-redirect
                     hosts-service-type
-                    (list (host "instagram.com"
-                                "")
-                          (host "twitter.com"
-                                "")
-                          (hosts "x.com"
-                                "")
-                          (host "youtube.com"
-                                "")))
+                    (list (host ""
+                                "instagram.com")
+                          (host ""
+                                "twitter.com")
+                          (hosts ""
+                                "x.com")
+                          (host ""
+                                "youtube.com")))
 
 (simple-service 'my-adblock
                     hosts-service-type
-                    (list (host ""
-                                "127.0.0.1")
-                          (host ""
-                                "127.0.0.1")))
+                    (list (host "127.0.0.1"
+                                "")))
 
 ;;; hosts.scm ends here
