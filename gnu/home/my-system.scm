@@ -114,7 +114,8 @@
 
 (define-public %my-base-services
   (append
-      (list (service login-service-type my-motd)
+      (list (service my-dns)
+            (service login-service-type my-motd)
             (service nftables-service-type)
             (service openssh-service-type
               (openssh-configuration
