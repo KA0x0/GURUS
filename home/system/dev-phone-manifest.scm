@@ -49,7 +49,6 @@
         "podman"
         "podman-compose"
         "pwntools"
-        "python-boto3"
         "python-ipython"
         "python-scapy"
         "qemu"
