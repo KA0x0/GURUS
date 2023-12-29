@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "adb"
-        "awscli"
         "binutils"
         "blender"
         "emacs-bluetooth"
