@@ -23,6 +23,6 @@
   (packages
     (append
       (list
-        busybox))))
+        %my-base-packages))))
 
 ;;; template.scm ends here
