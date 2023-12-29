@@ -39,7 +39,7 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("awscli"
+  '("awscli-2"
     "bash"
     "bash-completion"
     "emacs-bash-completion"
