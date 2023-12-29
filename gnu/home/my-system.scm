@@ -89,7 +89,6 @@
     "gzip"
     "iproute2"
     "kmod"
-    "less"
     "lzip"
     "man-db"
     "nftables"
