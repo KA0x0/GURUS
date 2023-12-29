@@ -35,7 +35,7 @@
   (operating-system
    (locale "en_US.utf8")
    (timezone "Etc/Greenwich")
-   (keyboard-layout (keyboard-layout "us" "ru")))
+   (keyboard-layout (keyboard-layout "us" "ru"))))
 
 (define-public %my-base-packages
   (map specification->package
