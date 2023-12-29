@@ -82,7 +82,6 @@
     "gawk"
     "git"
     "grep"
-    "guix"
     "guile-next"
     "guile-colorized"
     "guile-readline"

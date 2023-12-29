@@ -7,14 +7,6 @@
   (timezone "Etc/Greenwich")
   (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "template")
-  (users (cons* (user-account
-                  (name "minimal")
-                  (comment "Minimal")
-                  (group "users")
-                  (home-directory "/home/minimal")
-                  (supplementary-groups
-                    '("netdev" "wheel")))
-                %base-user-accounts))
   (bootloader
     (bootloader-configuration
       (bootloader grub-efi-bootloader)
