@@ -6,7 +6,6 @@
 
 (operating-system
    (host-name "wsl")
-   (timezone "Etc/Greenwich")
    (bootloader
     (bootloader-configuration
      (bootloader dummy-bootloader)))

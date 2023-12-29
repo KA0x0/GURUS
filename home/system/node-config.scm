@@ -5,9 +5,6 @@
 (use-package-modules bootloaders certs package-management)
 
 (operating-system
-  (locale "en_US.utf8")
-  (timezone "Etc/Greenwich")
-  (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "node")
   (users (cons* (user-account
                   (name "virtualizer")

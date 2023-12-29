@@ -5,9 +5,6 @@
 ;;; Code:
 
 (operating-system
-  (locale "en_US.utf8")
-  (timezone "Etc/Greenwich")
-  (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "network")
   (users (cons* (user-account
                   (name "route")

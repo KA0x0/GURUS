@@ -5,9 +5,6 @@
 (use-package-modules bootloaders certs fonts package-management)
 
 (operating-system
-  (locale "en_US.utf8")
-  (timezone "Etc/Greenwich")
-  (keyboard-layout (keyboard-layout "us" "ru"))
   (host-name "laptop")
   (users (cons* (user-account
                   (name "mobile")
