@@ -95,7 +95,6 @@
   ;;; init.el ends here\n
 )
 
-
 (define emacs-client.el
   ;; Theme:
   (load-theme 'modus-vivendi)
@@ -118,9 +117,6 @@
                                        "<~" "<~~" "</" "</>" "~@" "~-" "~>" "~~" "~~>" "%%"))
 
   (global-ligature-mode 't)
-
-  ;; Dired
-  (use-package dirvish)
 
   ;;; emacs-client.el ends here\n
 )
