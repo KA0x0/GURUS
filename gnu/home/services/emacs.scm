@@ -90,6 +90,7 @@
 
 (define emacs-full-client.el
   ;; Theme:
+  (use-package modus-themes)
   (load-theme 'modus-vivendi)
 
   ;; UI:
