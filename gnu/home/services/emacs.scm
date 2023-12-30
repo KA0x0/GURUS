@@ -95,7 +95,7 @@
   ;;; init.el ends here\n
 )
 
-(define emacs-client.el
+(define emacs-full-client.el
   ;; Theme:
   (load-theme 'modus-vivendi)
 
