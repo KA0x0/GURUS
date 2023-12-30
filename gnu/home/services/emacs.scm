@@ -29,13 +29,6 @@
 
 
 (define guix-init.el
-  ;; UI:
-  (menu-bar-mode -1)
-  (toggle-scroll-bar -1)
-  (tool-bar-mode -1)
-  (blink-cursor-mode -1)
-  (column-number-mode)
-
   ;; Startup:
   (setq-default set inhibit-startup-screen 1)
 
@@ -98,6 +91,13 @@
 (define emacs-full-client.el
   ;; Theme:
   (load-theme 'modus-vivendi)
+
+  ;; UI:
+  (menu-bar-mode -1)
+  (toggle-scroll-bar -1)
+  (tool-bar-mode -1)
+  (blink-cursor-mode -1)
+  (column-number-mode)
 
   ;; Fonts:
   (set-frame-font "fira code 12" nil t)
