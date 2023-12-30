@@ -15,7 +15,7 @@
   ;; Default frame configuration: full screen, good-looking title bar on macOS
   (setq frame-resize-pixelwise t)
   (tool-bar-mode -1) ; All these tools are in the menu-bar anyway
-  (setq default-frame-alist '((fullscreen . maximized)
+  (setq default-frame-alist '((fullscreen . maximized)))
 
   ;; Turn off scroll bars
   (vertical-scroll-bars . nil)
@@ -25,7 +25,7 @@
   ;; color as the theme gets activated
   (background-color . "#000000")
   (ns-appearance . dark)
-  (ns-transparent-titlebar . t))))
+  (ns-transparent-titlebar . t))
 
 
 (define guix-init.el
