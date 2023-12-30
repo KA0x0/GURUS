@@ -1,4 +1,4 @@
-(define public guix-early-init.el
+(define-public guix-early-init.el
   (require 'server)
   (unless (server-running-p)
     (server-start))
@@ -28,7 +28,7 @@
   (ns-transparent-titlebar . t))
 
 
-(define public guix-init.el
+(define-public guix-init.el
   ;; Startup:
   (setq-default set inhibit-startup-screen 1)
 
@@ -89,7 +89,7 @@
 )
 
 
-(define public emacs-full-client.el
+(define-public emacs-full-client.el
   ;; Theme:
   (use-package modus-themes)
   (load-theme 'modus-vivendi)
