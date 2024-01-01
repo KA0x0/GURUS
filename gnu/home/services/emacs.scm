@@ -25,7 +25,10 @@
   ;; color as the theme gets activated
   (background-color . "#000000")
   (ns-appearance . dark)
-  (ns-transparent-titlebar . t))
+  (ns-transparent-titlebar . t)
+
+    ;;; early-init.el ends here\n
+  )
 
 
 (define-public guix-init.el
