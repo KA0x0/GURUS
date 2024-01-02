@@ -32,10 +32,10 @@
 
 
 (define-public guix-init.el
-  ;; Startup:
+  ;; Startup
   (setq-default set inhibit-startup-screen 1)
 
-  ;; Interactively do things.
+  ;; Interactively do things
   (ido-mode 1)
   (ido-everywhere)
   (setq-default ido-enable-flex-matching t)
@@ -46,33 +46,33 @@
   (meow-setup)
   (meow-global-mode 1)
 
-  ;; Show stray whitespace.
+  ;; Show stray whitespace
   (setq-default show-trailing-whitespace t)
   (setq-default indicate-empty-lines t)
   (setq-default indicate-buffer-boundaries 'left)
 
-  ;; Add a newline automatically at the end of a file while saving.
+  ;; Add a newline automatically at the end of a file while saving
   (setq-default require-final-newline t)
 
-  ;; Consider a period followed by a single space to be end of sentence.
+  ;; Consider a period followed by a single space to be end of sentence
   (setq-default sentence-end-double-space nil)
 
-  ;; Use spaces, not tabs, for indentation.
+  ;; Use spaces, not tabs, for indentation
   (setq-default indent-tabs-mode nil)
 
-  ;; Highlight matching pairs of parentheses.
+  ;; Highlight matching pairs of parentheses
   (setq-default show-paren-delay 0)
   (show-paren-mode)
 
-  ;; Write auto-saves and backups to separate directory.
+  ;; Write auto-saves and backups to separate directory
   (make-directory "~/.tmp/emacs/auto-save/" t)
   (setq-default auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
   (setq-default backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
 
-  ;; Do not move the current file while creating backup.
+  ;; Do not move the current file while creating backup
   (setq-default backup-by-copying t)
 
-  ;; Lockfiles.
+  ;; Lockfiles
   (setq-default create-lockfiles nil) ;; Disable lockfiles
 
   ;; Electric Pair
@@ -93,18 +93,18 @@
 
 
 (define-public emacs-full-client.el
-  ;; Theme:
+  ;; Theme
   (use-package modus-themes)
   (load-theme 'modus-vivendi)
 
-  ;; UI:
+  ;; UI
   (menu-bar-mode -1)
   (toggle-scroll-bar -1)
   (tool-bar-mode -1)
   (blink-cursor-mode -1)
   (column-number-mode)
 
-  ;; Fonts:
+  ;; Fonts
   (set-frame-font "fira code 12" nil t)
   ;; Enable the www ligature in every possible major mode
   (ligature-set-ligatures 't '("www"))
