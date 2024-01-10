@@ -25,6 +25,7 @@
         "emacs-modbus"
         "emacs-modus-themes"
         "emacs-notmuch"
+        "emacs-symon"
         "emacs-verb"
         "emacs-x509-mode"
         "emacs-yasnippet"
