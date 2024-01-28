@@ -65,6 +65,7 @@
     "emacs-geiser"
     "emacs-geiser-guile"
     "emacs-guix"
+    "emacs-logview"
     "emacs-magit"
     "emacs-meow"
     "emacs-orderless"
