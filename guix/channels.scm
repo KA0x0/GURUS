@@ -18,8 +18,17 @@
 ;;; Code:
 
 (cons* (channel
-        (name 'channel-4-guix)
-        (url "https://git.sr.ht//channel-4-guix"))
+        (name 'GURU)
+        (url "https://git.sr.ht//GURU")) 
+       (channel
+        (name 'sops-guix)
+        (url "https://git.sr.ht/~fishinthecalculator/sops-guix")
+        (branch "main")
+        (introduction
+         (make-channel-introduction
+          "0bbaf1fdd25266c7df790f65640aaa01e6d2dbc9"
+      (openpgp-fingerprint
+        "D088 4467 87F7 CBB2 AE08  BE6D D075 F59A 4805 49C3"))))
        %default-channels)
 
 ;;; channels.scm ends here
