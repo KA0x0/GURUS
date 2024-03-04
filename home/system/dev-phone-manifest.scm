@@ -11,7 +11,6 @@
         "binutils"
         "blender"
         "emacs-bluetooth"
-        "ccid"
         "curl"
         "diffoscope"
         "direnv"
