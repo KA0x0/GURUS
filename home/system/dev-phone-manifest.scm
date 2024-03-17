@@ -58,7 +58,6 @@
         "upx"
         "valgrind"
         "wireguard-tools"
-        "wireshark"
         "xclip"
         "emacs-xclip"
         "yt-dlp"))
