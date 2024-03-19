@@ -20,7 +20,6 @@
         "emacs-emms"
         "emacs-hyperbole"
         "emacs-jabber"
-        "emacs-marginalia"
         "emacs-modbus"
         "emacs-modus-themes"
         "emacs-notmuch"
