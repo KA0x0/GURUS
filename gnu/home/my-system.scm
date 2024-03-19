@@ -54,7 +54,6 @@
     "emacs-auto-compile"
     "emacs-cape"
     "emacs-consult"
-    "emacs-consult-eglot"
     "emacs-consult-not-much"
     "emacs-consult-org-roam"
     "emacs-corfu"
