@@ -23,6 +23,7 @@
         "emacs-modbus"
         "emacs-modus-themes"
         "emacs-notmuch"
+        "emacs-consult-not-much"
         "emacs-symon"
         "emacs-verb"
         "emacs-x509-mode"
