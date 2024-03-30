@@ -57,6 +57,7 @@
         "tesseract-ocr"
         "upx"
         "valgrind"
+        "wine64"
         "wireguard-tools"
         "wireshark"
         "xclip"
