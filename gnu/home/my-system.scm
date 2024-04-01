@@ -77,7 +77,6 @@
     "emacs-undo-tree"
     "emacs-libvterm"
     "emacs-vertico"
-    "emacs-which-key"
     "eudev"
     "findutils"
     "gawk"
