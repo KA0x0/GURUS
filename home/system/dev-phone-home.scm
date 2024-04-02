@@ -20,7 +20,6 @@
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
                ("cue-split $1 $2" . "ffmpeg -i "$1" -f cue -i "$2" -c copy -map 0 -map_metadata 1 "%02d - $1"")
-               ("docker" . "podman")
-               ("strings" . "floss -v")))))))
+               ("docker" . "apptainer")))))))
 
 ;;; dev-phone-home.scm ends here
