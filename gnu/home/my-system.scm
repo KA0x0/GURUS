@@ -66,7 +66,6 @@
     "emacs-guix"
     "emacs-magit"
     "emacs-marginalia"
-    "emacs-meow"
     "emacs-orderless"
     "emacs-org"
     "emacs-org-roam"
