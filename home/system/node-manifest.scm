@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "calibre"
+  (list "age"
+        "calibre"
         "qemu"
         "sshfs"
         "transmission@4.0.5"
