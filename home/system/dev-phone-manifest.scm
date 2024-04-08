@@ -40,6 +40,7 @@
         "graphviz"
         "guile-aws"
         "imagemagick"
+        "monero"
         "mpd"
         "mpv"
         "openssh"
