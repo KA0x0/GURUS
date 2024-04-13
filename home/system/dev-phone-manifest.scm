@@ -40,6 +40,7 @@
         "graphviz"
         "guile-aws"
         "imagemagick"
+        "librewolf"
         "monero"
         "mpd"
         "mpv"
