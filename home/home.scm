@@ -47,6 +47,7 @@
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (bashrc
                "\
+                set colored-completion-prefix on
                 set colored-stats on
                 set completion-ignore-case on
                 set show-all-if-ambiguous on
