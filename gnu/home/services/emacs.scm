@@ -41,11 +41,6 @@
   (setq-default ido-enable-flex-matching t)
   (fido-mode)
 
-  ;; Vi emulation
-  (use-package meow)
-  (meow-setup)
-  (meow-global-mode 1)
-
   ;; Show stray whitespace
   (setq-default show-trailing-whitespace t)
   (setq-default indicate-empty-lines t)
