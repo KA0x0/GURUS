@@ -35,12 +35,6 @@
   ;; Startup
   (setq-default set inhibit-startup-screen 1)
 
-  ;; Interactively do things
-  (ido-mode 1)
-  (ido-everywhere)
-  (setq-default ido-enable-flex-matching t)
-  (fido-mode)
-
   ;; Show stray whitespace
   (setq-default show-trailing-whitespace t)
   (setq-default indicate-empty-lines t)
