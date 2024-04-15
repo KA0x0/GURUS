@@ -75,7 +75,7 @@
     ;; Enable in all Eshell buffers.
     (eshell-syntax-highlighting-global-mode +1))
 
-  ;; Enable vertico
+;; Enable vertico
 (use-package vertico
   :init
   (vertico-mode)
