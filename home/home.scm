@@ -23,8 +23,6 @@
                ("cd" . "cd $@ && ls --almost-all -c --color=auto --human-readable --indicator-style -v")
                ("cp" . "rsync --archive --human-readable --info=progress2 --progress --verbose")
                ("curl" . "curl --verbose")
-               ("docker" . "apptainer")
-               ("docker-compose" . "singularity-compose")
                ("dd" . "dd status=progress")
                ("df" . "df --human-readable")
                ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
