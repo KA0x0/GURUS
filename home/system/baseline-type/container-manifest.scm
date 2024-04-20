@@ -8,6 +8,7 @@
 
 (specifications->manifest
   (list "docker"
-        "docker-compose"))
+        "docker-compose"
+        "emacs-docker"))
 
 ;;; hypervisor-manifest.scm ends here
