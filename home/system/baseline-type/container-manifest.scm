@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "podman"
-        "podman-compose"))
+  (list "docker"
+        "docker-compose"))
 
 ;;; hypervisor-manifest.scm ends here

@@ -7,10 +7,10 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "rsync"
+  (list "docker"
+        "docker-compose"
+        "rsync"
         "sshfs"
-        "podman"
-        "podman-compose"
         "wireguard-tools"))
 
 ;;; c2-manifest.scm ends here
