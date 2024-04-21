@@ -11,4 +11,4 @@
         "docker-compose"
         "emacs-docker"))
 
-;;; hypervisor-manifest.scm ends here
+;;; container-manifest.scm ends here
