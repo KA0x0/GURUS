@@ -34,6 +34,7 @@
         "file"
         "font-fira-code"
         "freerdp"
+        "gcc"
         "gdb"
         "gnuradio"
         "go"
