@@ -11,4 +11,7 @@
         "docker-compose"
         "emacs-docker"))
 
+(define-record-type* <docker-autoheal>
+(* * * * * docker ps -f health=unhealthy --format "docker restart {{.ID}}" | sh))
+
 ;;; container-manifest.scm ends here
