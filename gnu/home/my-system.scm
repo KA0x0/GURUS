@@ -56,6 +56,7 @@
     "emacs-consult-org-roam"
     "emacs-corfu"
     "emacs-eglot"
+    "emacs-eglot-x"
     "emacs-eshell-prompt-extras"
     "emacs-eshell-syntax-highlighting"
     "emacs-embark"
