@@ -17,7 +17,6 @@
         "docker-compose"
         "elfutils"
         "my-emacs-next"
-        "emacs-buffer-env"
         "emacs-emms"
         "emacs-hyperbole"
         "emacs-jabber"
