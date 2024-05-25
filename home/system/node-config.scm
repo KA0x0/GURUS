@@ -75,7 +75,7 @@
                        ("/mnt/storage/kaox/config/archisteamfarm/plugins:/app/plugins"))
                     (environment
                       '("TZ" . "Etc/Greenwich")))))
-              (service transmission-service-type)
+              (service transmission-service-type
               (transmission-daemon-configuration
                 (rpc-authentication-required? #t)
                 (rpc-username "transmission")
@@ -87,7 +87,7 @@
                 (alt-speed-down 0)
                 (alt-speed-up 0)
                 (watch-dir-enabled? #t)
-                (watch-dir "/mnt/storage/kaox/torrent/"))
+                (watch-dir "/mnt/storage/kaox/torrent/")))
       %base-services
       %my-base-services))))
 
