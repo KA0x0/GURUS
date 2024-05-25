@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "docker"
-        "docker-compose"
         "emacs-docker"))
 
 (define-record-type* <docker-autoheal>

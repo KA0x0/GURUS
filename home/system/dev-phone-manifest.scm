@@ -14,7 +14,6 @@
         "curl"
         "diffoscope"
         "docker"
-        "docker-compose"
         "elfutils"
         "my-emacs-next"
         "emacs-emms"

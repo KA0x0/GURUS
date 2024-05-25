@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "docker"
-        "docker-compose"
         "rsync"
         "sshfs"
         "wireguard-tools"))
