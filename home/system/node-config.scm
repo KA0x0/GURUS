@@ -61,7 +61,10 @@
                     (image "containrrr/watchtower:latest")
                     (provision "watchtower")
                     (volumes
-                      '("/var/run/docker.sock:/var/run/docker.sock")))))
+                      '("/var/run/docker.sock:/var/run/docker.sock")
+                    (environment
+                        '("WATCHTOWER_CLEANUP" . "true")
+                          "WATCHTOWER_POLL_INTERVAL" . "60"))))))
               (service transmission-service-type)
               (transmission-daemon-configuration
                 (rpc-authentication-required? #t)
