@@ -55,6 +55,13 @@
                              (destination "default")
                              (gateway "10.10.10.10"))))
                      (name-servers '("10.10.10.10")))))
+              (service oci-container-service-type
+                (list
+                  (oci-container-configuration
+                    (image "containrrr/watchtower:latest")
+                    (provision "watchtower")
+                    (volumes
+                      '("/var/run/docker.sock:/var/run/docker.sock")))))
               (service transmission-service-type)
               (transmission-daemon-configuration
                 (rpc-authentication-required? #t)
