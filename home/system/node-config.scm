@@ -64,7 +64,17 @@
                       '("/var/run/docker.sock:/var/run/docker.sock")
                     (environment
                       '("WATCHTOWER_CLEANUP" . "true"
-                        "WATCHTOWER_POLL_INTERVAL" . "60"))))))
+                        "WATCHTOWER_POLL_INTERVAL" . "60"))))
+                  (oci-container-configuration
+                    (image "justarchi/archisteamfarm:released")
+                    (provision "archisteamfarm")
+                    (ports
+                      '("1242" . "1242"))
+                    (volumes
+                      '("/mnt/storage/kaox/config/archisteamfarm/config:/app/config")
+                       ("/mnt/storage/kaox/config/archisteamfarm/plugins:/app/plugins"))
+                    (environment
+                      '("TZ" . "Etc/Greenwich")))))
               (service transmission-service-type)
               (transmission-daemon-configuration
                 (rpc-authentication-required? #t)
