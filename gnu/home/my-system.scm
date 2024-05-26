@@ -73,6 +73,7 @@
     "emacs-pcmpl-args"
     "emacs-rainbow-delimiters"
     "emacs-tramp"
+    "emacs-transient"
     "emacs-undo-tree"
     "emacs-libvterm"
     "emacs-vertico"
