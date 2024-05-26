@@ -7,8 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "docker"
-        "docker-compose")) ;; Add mitmproxy once merged.
+  (list "docker")) ;; Add mitmproxy once merged.
 
 ;;; Scan
 (define-record-type* <scan-configuration>
