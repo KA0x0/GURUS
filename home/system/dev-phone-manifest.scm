@@ -37,7 +37,6 @@
         "gnuradio"
         "go"
         "godot"
-        "google-cloud-sdk"
         "graphviz"
         "guile-aws"
         "imagemagick"
