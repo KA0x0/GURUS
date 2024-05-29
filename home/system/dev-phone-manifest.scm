@@ -8,6 +8,7 @@
 
 (specifications->manifest
   (list "adb"
+        "ascii"
         "binutils"
         "blender"
         "emacs-bluetooth"
