@@ -16,6 +16,7 @@
         "diffoscope"
         "docker"
         "my-emacs-next"
+        "emacs-dape"
         "emacs-ement"
         "emacs-emms"
         "emacs-forge"
