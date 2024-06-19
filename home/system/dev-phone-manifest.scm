@@ -21,6 +21,7 @@
         "emacs-emms"
         "emacs-forge"
         "emacs-hyperbole"
+        "emacs-jsonrpc"
         "emacs-modbus"
         "emacs-modus-themes"
         "emacs-notmuch"
