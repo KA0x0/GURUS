@@ -49,8 +49,6 @@
     "coreutils"
     "diffutils"
     "my-emacs-next-no-x"
-    "emacs-async"
-    "emacs-auto-compile"
     "emacs-cape"
     "emacs-consult"
     "emacs-consult-org-roam"
