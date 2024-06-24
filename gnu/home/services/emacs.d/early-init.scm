@@ -1,4 +1,4 @@
-(define-public guix-early-init.el
+(define-public guix-early-init
   (require 'server)
   (unless (server-running-p)
     (server-start))
@@ -27,5 +27,5 @@
   (ns-appearance . dark)
   (ns-transparent-titlebar . t)
 
-    ;;; early-init.el ends here\n
+    ;;; early-init ends here\n
 )

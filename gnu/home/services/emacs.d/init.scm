@@ -1,4 +1,4 @@
-(define-public init.el
+(define-public init
   ;; Startup
   (setq-default set inhibit-startup-screen 1)
 
@@ -104,5 +104,5 @@
 
   (add-to-list 'load-path (expand-file-name "emacs-client.scm"))
 
-  ;;; init.el ends here\n
+  ;;; init ends here\n
 )

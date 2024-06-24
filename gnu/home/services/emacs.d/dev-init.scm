@@ -1,4 +1,4 @@
-(define-public dev-init.el
+(define-public dev-init
   ;; Theme
   (use-package modus-themes)
   (load-theme 'modus-vivendi)
@@ -29,5 +29,5 @@
 
   (global-ligature-mode 't)
 
-  ;;; dev-init.el ends here\n
+  ;;; dev-init ends here\n
 )
