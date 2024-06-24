@@ -1,37 +1,4 @@
-(define-public guix-early-init.el
-  (require 'server)
-  (unless (server-running-p)
-    (server-start))
-
-  ;; Startup speed, annoyance suppression
-  (setq gc-cons-threshold 10000000)
-  (setq byte-compile-warnings '(not obsolete))
-  (setq warning-suppress-log-types '((comp) (bytecomp)))
-  (setq native-comp-async-report-warnings-errors 'silent)
-
-  ;; Silence startup message
-  (setq inhibit-startup-echo-area-message (user-login-name))
-
-  ;; Default frame configuration: full screen, good-looking title bar on macOS
-  (setq frame-resize-pixelwise t)
-  (tool-bar-mode -1) ; All these tools are in the menu-bar anyway
-  (setq default-frame-alist '((fullscreen . maximized)))
-
-  ;; Turn off scroll bars
-  (vertical-scroll-bars . nil)
-  (horizontal-scroll-bars . nil)
-
-  ;; Setting the face in here prevents flashes of
-  ;; color as the theme gets activated
-  (background-color . "#000000")
-  (ns-appearance . dark)
-  (ns-transparent-titlebar . t)
-
-    ;;; early-init.el ends here\n
-  )
-
-
-(define-public guix-init.el
+(define-public init.el
   ;; Startup
   (setq-default set inhibit-startup-screen 1)
 
@@ -138,39 +105,4 @@
   (add-to-list 'load-path (expand-file-name "emacs-client.scm"))
 
   ;;; init.el ends here\n
-)
-
-
-(define-public emacs-full-client.el
-  ;; Theme
-  (use-package modus-themes)
-  (load-theme 'modus-vivendi)
-
-  ;; UI
-  (menu-bar-mode -1)
-  (toggle-scroll-bar -1)
-  (tool-bar-mode -1)
-  (blink-cursor-mode -1)
-  (column-number-mode)
-
-  ;; Fonts
-  (set-frame-font "fira code 12" nil t)
-  ;; Enable the www ligature in every possible major mode
-  (ligature-set-ligatures 't '("www"))
-
-  ;; Enable ligatures in programming modes                                                           
-  (ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
-                                       ":::" ":=" "!!" "!=" "!==" "-}" "----" "-->" "->" "->>"
-                                       "-<" "-<<" "-~" "#{" "#[" "##" "###" "####" "#(" "#?" "#_"
-                                       "#_(" ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*" "/**"
-                                       "/=" "/==" "/>" "//" "///" "&&" "||" "||=" "|=" "|>" "^=" "$>"
-                                       "++" "+++" "+>" "=:=" "==" "===" "==>" "=>" "=>>" "<="
-                                       "=<<" "=/=" ">-" ">=" ">=>" ">>" ">>-" ">>=" ">>>" "<*"
-                                       "<*>" "<|" "<|>" "<$" "<$>" "<!--" "<-" "<--" "<->" "<+"
-                                       "<+>" "<=" "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<"
-                                       "<~" "<~~" "</" "</>" "~@" "~-" "~>" "~~" "~~>" "%%"))
-
-  (global-ligature-mode 't)
-
-  ;;; emacs-client.el ends here\n
 )
