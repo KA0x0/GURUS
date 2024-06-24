@@ -18,6 +18,7 @@
         "my-emacs-next"
         "emacs-dape"
         "emacs-ement"
+        "emacs-emms"
         "emacs-forge"
         "emacs-hyperbole"
         "emacs-modbus"
