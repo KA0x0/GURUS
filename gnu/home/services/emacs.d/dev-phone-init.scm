@@ -1,4 +1,4 @@
-(define-public dev-init
+(define-public dev-phone-init
   ;; Theme
   (use-package modus-themes)
   (load-theme 'modus-vivendi)
@@ -29,5 +29,5 @@
 
   (global-ligature-mode 't)
 
-  ;;; dev-init ends here\n
+  ;;; dev-phone-init ends here\n
 )
