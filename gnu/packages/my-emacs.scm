@@ -65,35 +65,6 @@
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap)))))))
 
-(define-public emacs-jabber
-  (package
-    (name "emacs-jabber")
-    (version "20220713.1538")
-    (source
-      (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://codeberg.org/emacs-jabber/emacs-jabber.git")
-               (commit
-                 "af0315e174fa6446d5c4dd3e6465d48912950e58")))
-        (sha256
-          (base32
-            "08q0hbm4pvp8sf261w1ihqa93sg8blfybfkhq7wrnvgs6kasgwvq"))))
-    (build-system melpa-build-system)
-    (propagated-inputs (list emacs-fsm emacs-srv))
-    (arguments
-      '(#:files
-        (:defaults
-          "*.org"
-          ("jabber-fallback-lib"
-           "jabber-fallback-lib/hexrgb.el"))))
-    (home-page
-      "https://codeberg.org/emacs-jabber/emacs-jabber")
-    (synopsis "A Jabber client for Emacs.")
-    (description
-      "This is jabber.el, an XMPP client for Emacs. XMPP (also known as 'Jabber') is an instant messaging system; see https://xmpp.org for more information.")
-    (license #f)))
-
 (define-public emacs-modbus
   (package
     (name "emacs-modbus")
