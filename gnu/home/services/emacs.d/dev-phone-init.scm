@@ -15,10 +15,15 @@
   ;; Enable the www ligature in every possible major mode
   (ligature-set-ligatures 't '("www"))
 
-	(defun shrug ()
+  (defun shrug ()
   "insert /shrug ascii at point"
 	  (interactive)
-	  (insert " ̄\_(ツ)_/ ̄"))
+	  (insert "¯\_(ツ)_/¯"))
+
+  (defun tableflip ()
+  "insert /tableflip ascii at point"
+	  (interactive)
+	  (insert "(╯° °）╯︵ ┻━┻"))
 
   ;; Enable ligatures in programming modes                                                           
   (ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
