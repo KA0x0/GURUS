@@ -4,10 +4,10 @@
   (load-theme 'modus-vivendi)
 
   ;; UI
-  (menu-bar-mode -1)
-  (toggle-scroll-bar -1)
-  (tool-bar-mode -1)
-  (blink-cursor-mode -1)
+  (menu-bar-mode 0)
+  (toggle-scroll-bar 0)
+  (tool-bar-mode 0)
+  (blink-cursor-mode 0)
   (column-number-mode)
 
   ;; Fonts
