@@ -49,7 +49,7 @@
         "patch"
         "patchelf"
         "poke"
-        "emacs-poke"
+        "emacs-poke-mode"
         "pwntools"
         "python-ipython"
         "python-scapy"
