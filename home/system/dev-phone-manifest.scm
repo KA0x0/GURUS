@@ -48,6 +48,8 @@
         "openvpn"
         "patch"
         "patchelf"
+        "poke"
+        "emacs-poke"
         "pwntools"
         "python-ipython"
         "python-scapy"
