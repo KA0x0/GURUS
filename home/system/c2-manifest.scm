@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "docker"
+  (list "podman"
         "rsync"
         "sshfs"
         "wireguard-tools"))

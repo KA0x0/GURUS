@@ -9,7 +9,7 @@
 (specifications->manifest
   (list "age"
         "calibre"
-        "docker"
+        "podman"
         "qemu"
         "sshfs"
         "transmission@4.0.5"
