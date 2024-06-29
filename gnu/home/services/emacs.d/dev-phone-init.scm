@@ -1,6 +1,5 @@
 (define-public dev-phone-init
   ;; Theme
-  (use-package modus-themes)
   (load-theme 'modus-vivendi)
 
   ;; UI
