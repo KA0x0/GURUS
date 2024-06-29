@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "my-emacs-next"
-        "emacs-modus-themes"
         "font-fira-code"
         "hashcat"
         "rsync"
