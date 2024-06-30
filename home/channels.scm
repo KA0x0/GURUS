@@ -1,8 +1,8 @@
 (append
  (list
   (channel
-   (name 'C4GG)
-   (url "https://git.sr.ht//GURU")
+   (name 'GURU)
+   (url "https://github.com/KA0x0/GURU")
    (introduction
     (make-channel-introduction
      ""
