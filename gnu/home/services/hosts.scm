@@ -41,7 +41,7 @@
 
 (simple-service 'my-adblock
                     hosts-service-type
-                    (list (host "127.0.0.1"
+                    (list (host "0.0.0.0"
                                 "")))
 
 ;;; hosts.scm ends here
