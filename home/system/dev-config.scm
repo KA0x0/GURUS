@@ -10,7 +10,7 @@
                   (name "ka0x")
                   (comment "KA0x0")
                   (group "users")
-                  (shell (file-append bash "/bin/bash"))
+                  (shell (file-append pwsh "/bin/pwsh"))
                   (home-directory "/home/ka0x")
                   (supplementary-groups
                     '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))
