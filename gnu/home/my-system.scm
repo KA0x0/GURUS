@@ -44,6 +44,7 @@
     "bash-completion"
     "emacs-bash-completion"
     "bcachefs-tools"
+    "bridge-utils"
     "bzip2"
     "chrony"
     "coreutils"
