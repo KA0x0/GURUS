@@ -66,7 +66,6 @@
     "emacs-magit"
     "emacs-marginalia"
     "emacs-orderless"
-    "emacs-org-roam"
     "emacs-pcmpl-args"
     "emacs-rainbow-delimiters"
     "emacs-undo-tree"
