@@ -36,7 +36,6 @@
         "gdb"
         "gnuradio"
         "go"
-        "godot"
         "graphviz"
         "guile-aws"
         "imagemagick"
