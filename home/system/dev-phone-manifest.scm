@@ -30,7 +30,7 @@
         "emacs-yasnippet"
         "ffmpeg"
         "file"
-        "font-iosevka"
+        "font-iosevka-term-slab"
         "freerdp"
         "gcc"
         "gdb"
