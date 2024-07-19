@@ -10,7 +10,7 @@
   (column-number-mode)
 
   ;; Fonts
-  (set-frame-font "fira code 12" nil t)
+  (set-frame-font "iosevka 12" nil t)
   ;; Enable the www ligature in every possible major mode
   (ligature-set-ligatures 't '("www"))
 
