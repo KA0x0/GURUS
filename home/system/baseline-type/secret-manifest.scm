@@ -8,12 +8,6 @@
 
 (specifications->manifest
   (list "age"
-        "age-keygen"
-        "calibre"
-        "podman"
-        "qemu"
-        "sshfs"
-        "transmission@4.0.5"
-        "tpm2-tss"))
+        "age-keygen"))
 
-;;; node1-manifest.scm ends here
+;;; secret-manifest.scm ends here
