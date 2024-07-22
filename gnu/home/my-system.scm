@@ -53,6 +53,7 @@
     "emacs-cape"
     "emacs-combobulate"
     "emacs-consult"
+    "emacs-consult-denote"
     "emacs-corfu"
     "emacs-denote"
     "emacs-eglot-x"
