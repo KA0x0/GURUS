@@ -36,7 +36,8 @@
                                 "twitter.com")
                           (hosts ""
                                 "x.com")
-                          (host ""
+                          (host "109.107.190.203" ;; invidious.privacyredirect.com
+                                "youtu.be"
                                 "youtube.com")))
 
 (simple-service 'my-adblock
