@@ -32,11 +32,9 @@
                     hosts-service-type
                     (list (host ""
                                 "instagram.com")
-                          (host ""
-                                "twitter.com")
                           (hosts ""
                                 "x.com"
-                                "tweeter.com")
+                                "twitter.com")
                           (host "109.107.190.203" ;; invidious.privacyredirect.com
                                 "youtu.be"
                                 "youtube.com")))
