@@ -17,6 +17,8 @@
 
 ;;; Code:
 
+;; Fix Guix's hardcoded vi editor for tools like visudo.
+
 (use-modules 
 )
 
