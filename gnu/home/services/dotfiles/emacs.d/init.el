@@ -1,46 +1,35 @@
-(define-public init
-  ;; Startup
-  (setq-default set inhibit-startup-screen 1)
-
-  ;; Show stray whitespace
-  (setq-default show-trailing-whitespace t)
-  (setq-default indicate-empty-lines t)
-  (setq-default indicate-buffer-boundaries 'left)
-
-  ;; Add a newline automatically at the end of a file while saving
-  (setq-default require-final-newline t)
-
-  ;; Consider a period followed by a single space to be end of sentence
-  (setq-default sentence-end-double-space nil)
-
-  ;; Use spaces, not tabs, for indentation
-  (setq-default indent-tabs-mode nil)
-
-  ;; Highlight matching pairs of parentheses
-  (setq-default show-paren-delay 0)
-  (show-paren-mode)
-
-  ;; Write auto-saves and backups to separate directory
-  (make-directory "~/.tmp/emacs/auto-save/" t)
-  (setq-default auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
-  (setq-default backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
-
-  ;; Do not move the current file while creating backup
-  (setq-default backup-by-copying t)
-
-  ;; Lockfiles
-  (setq-default create-lockfiles nil) ;; Disable lockfiles
-
-  ;; Electric Pair
-  (electric-pair-mode 1) ;; Enable Electric-Pair-mode
-  (setq-default electric-pair-delete-adjacent-pairs 1)
-
-  ;; Eshell
-  (use-package eshell-syntax-highlighting
-    :after eshell-mode
-    :config
-    ;; Enable in all Eshell buffers.
-    (eshell-syntax-highlighting-global-mode +1))
+;; Startup
+(setq-default set inhibit-startup-screen 1)
+;; Show stray whitespace
+(setq-default show-trailing-whitespace t)
+(setq-default indicate-empty-lines t)
+(setq-default indicate-buffer-boundaries 'left)
+;; Add a newline automatically at the end of a file while saving
+(setq-default require-final-newline t)
+;; Consider a period followed by a single space to be end of sentence
+(setq-default sentence-end-double-space nil)
+;; Use spaces, not tabs, for indentation
+(setq-default indent-tabs-mode nil)
+;; Highlight matching pairs of parentheses
+(setq-default show-paren-delay 0)
+(show-paren-mode)
+;; Write auto-saves and backups to separate directory
+(make-directory "~/.tmp/emacs/auto-save/" t)
+(setq-default auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
+(setq-default backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
+;; Do not move the current file while creating backup
+(setq-default backup-by-copying t)
+;; Lockfiles
+(setq-default create-lockfiles nil) ;; Disable lockfiles
+;; Electric Pair
+(electric-pair-mode 1) ;; Enable Electric-Pair-mode
+(setq-default electric-pair-delete-adjacent-pairs 1)
+;; Eshell
+(use-package eshell-syntax-highlighting
+  :after eshell-mode
+  :config
+  ;; Enable in all Eshell buffers.
+  (eshell-syntax-highlighting-global-mode +1))
 
 ;; Enable vertico
 (use-package vertico
@@ -102,6 +91,3 @@
         completion-category-overrides '((file (styles partial-completion)))))
 
   (add-to-list 'load-path (expand-file-name "emacs-client.scm"))
-
-  ;;; init ends here\n
-)
