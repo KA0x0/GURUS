@@ -18,10 +18,8 @@
 ;;; Code:
 
 (use-modules 
-  (ice-9 receive)
-  (web client)
-  (ice-9 binary-ports))
+)
 
-(define (vi-symlink)
+(define (vi-symlink))
 
 ;;; hardcoded-editor-fix.scm ends here
