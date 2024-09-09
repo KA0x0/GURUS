@@ -10,7 +10,6 @@
   (list "adb"
         "ascii"
         "binutils"
-        "blender"
         "curl"
         "diffoscope"
         "my-emacs-next"
