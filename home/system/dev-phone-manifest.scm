@@ -57,6 +57,7 @@
         "socat"
         "sshfs"
         "tesseract-ocr"
+        "tiled"
         "upx"
         "valgrind"
         "wine64"
