@@ -52,6 +52,7 @@
         "python-ipython"
         "python-scapy"
         "qemu"
+        "sigrock-cli"
         "socat"
         "sshfs"
         "tesseract-ocr"
