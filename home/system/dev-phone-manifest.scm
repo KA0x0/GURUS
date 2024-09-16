@@ -27,6 +27,7 @@
         "emacs-yasnippet"
         "ffmpeg"
         "file"
+        "flashrom"
         "fontconfig"
         "font-iosevka-term-slab"
         "freerdp"
