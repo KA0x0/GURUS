@@ -27,6 +27,7 @@
         "emacs-yasnippet"
         "ffmpeg"
         "file"
+        "fontconfig"
         "font-iosevka-term-slab"
         "freerdp"
         "gcc"
