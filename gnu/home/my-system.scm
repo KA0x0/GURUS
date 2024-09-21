@@ -39,7 +39,8 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("awscli-2"
+  '("audit"
+    "awscli-2"
     "bash"
     "bash-completion"
     "emacs-bash-completion"
@@ -84,7 +85,6 @@
     "guile-readline"
     "guile-ssh"
     "gzip"
-    "inotify-tools"
     "iproute2"
     "kmod"
     "lzip"
