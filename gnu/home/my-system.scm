@@ -42,6 +42,7 @@
   '("awscli-2"
     "bash"
     "bash-completion"
+    "bpftrace"
     "emacs-bash-completion"
     "bcachefs-tools"
     "bridge-utils"
