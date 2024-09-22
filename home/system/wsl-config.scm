@@ -30,7 +30,8 @@
       (list
         xf86-video-amdgpu
         sshfs
-        xorg-server-xwayland)
+        xorg-server-xwayland
+        my-wslu)
       %my-base-packages))
    (services
     (append
