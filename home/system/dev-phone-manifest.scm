@@ -10,7 +10,7 @@
   (list "adb"
         "ascii"
         "binutils"
-        "curl"
+        "curl-http3"
         "diffoscope"
         "my-emacs-next"
         "emacs-bluetooth"
