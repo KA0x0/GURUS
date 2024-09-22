@@ -8,9 +8,7 @@
 
 (specifications->manifest
   (list "my-emacs-next"
-        "font-fira-code"
         "hashcat"
-        "rsync"
         "virt-manager"))
 
 ;;; wsl-manifest.scm ends here
