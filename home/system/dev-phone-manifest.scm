@@ -10,7 +10,6 @@
   (list "adb"
         "ascii"
         "binutils"
-        "binwalk"
         "curl-http3"
         "diffoscope"
         "my-emacs-next"
