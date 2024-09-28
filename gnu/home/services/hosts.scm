@@ -31,18 +31,29 @@
 (simple-service 'my-redirect
                     hosts-service-type
                     (list (host ""
-                                "imdb.com")
+                                "bandcamp.com") ;; Tent
                           (host ""
-                                "imgur.com")
+                                "imdb.com") ;; libremdb
                           (host ""
-                                "instagram.com")
+                                "imgur.com") ;; Rimgo
                           (host ""
-                                "reddit.com")
+                                "instagram.com") ;; Proxigram
                           (host ""
-                                "wikipedia.com")
+                                "reddit.com") ;; Teddit
+                          (host ""
+                                "reuters.com") ;; Neuters
+                          (host ""
+                                "bing.com"
+                                "google.com") ;; SearxNG
+                          (host ""
+                                "stackoverflow.com") ;; AnonymousOverflow
+                          (host "" 
+                                "tiktok.com") ;; ProxiTok 
+                          (host ""
+                                "wikipedia.com") ;; wikiless
                           (hosts ""
                                 "x.com"
-                                "twitter.com")
+                                "twitter.com") ;; Nitter
                           (host "109.107.190.203" ;; invidious.privacyredirect.com
                                 "youtu.be"
                                 "youtube.com")))
