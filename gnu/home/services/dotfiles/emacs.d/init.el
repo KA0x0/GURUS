@@ -12,7 +12,7 @@
 (setq-default indent-tabs-mode nil)
 ;; Highlight matching pairs of parentheses
 (setq-default show-paren-delay 0)
-(show-paren-mode)
+(show-paren-mode 1)
 ;; Write auto-saves and backups to separate directory
 (make-directory "~/.tmp/emacs/auto-save/" t)
 (setq-default auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
