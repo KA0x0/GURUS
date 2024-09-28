@@ -31,6 +31,10 @@
 (simple-service 'my-redirect
                     hosts-service-type
                     (list (host ""
+                                "imdb.com")
+                          (host ""
+                                "imgur.com")
+                          (host ""
                                 "instagram.com")
                           (hosts ""
                                 "x.com"
