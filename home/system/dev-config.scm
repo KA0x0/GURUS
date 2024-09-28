@@ -67,6 +67,12 @@
               (extra-special-file "/bin/ssh"
                 (file-append openssh "/bin/ssh"))
         (service elogind-service-type)
+        (service httpd-service-type
+         (httpd-configuration
+           (config
+             (httpd-config-file
+               (server-name "www.example.com")
+               (document-root "/var/www/www.example.com")))))
         (service libvirt-service-type)
         (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
        %base-services
