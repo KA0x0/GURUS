@@ -90,4 +90,4 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
-  (add-to-list 'load-path (expand-file-name "emacs-client.scm"))
+(add-to-list 'load-path (expand-file-name "dev-phone-init.el"))
