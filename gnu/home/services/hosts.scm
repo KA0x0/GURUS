@@ -36,6 +36,8 @@
                                 "imgur.com")
                           (host ""
                                 "instagram.com")
+                          (host ""
+                                "wikipedia.com")
                           (hosts ""
                                 "x.com"
                                 "twitter.com")
