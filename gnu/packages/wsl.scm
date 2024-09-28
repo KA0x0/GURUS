@@ -40,4 +40,4 @@ Requires Windows 10 Creators Update; Some of the feature requires a higher versi
   (home-page "https://github.com/wslutilities/wslu")
   (license gpl3+))
 
-;;; emacs.scm ends here
+;;; wsl.scm ends here
