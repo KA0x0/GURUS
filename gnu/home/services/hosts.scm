@@ -37,6 +37,8 @@
                           (host ""
                                 "instagram.com")
                           (host ""
+                                "reddit.com")
+                          (host ""
                                 "wikipedia.com")
                           (hosts ""
                                 "x.com"
