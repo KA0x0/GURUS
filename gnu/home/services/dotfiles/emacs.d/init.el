@@ -1,4 +1,11 @@
 ;; Startup
+;; UI
+(menu-bar-mode 0)
+(toggle-scroll-bar 0)
+(tool-bar-mode 0)
+(blink-cursor-mode 0)
+(column-number-mode 1)
+
 (setq-default set inhibit-startup-screen 1)
 ;; Show stray whitespace
 (setq-default show-trailing-whitespace t)

@@ -1,13 +1,6 @@
 ;; Theme
 (load-theme 'modus-vivendi)
 
-;; UI
-(menu-bar-mode 0)
-(toggle-scroll-bar 0)
-(tool-bar-mode 0)
-(blink-cursor-mode 0)
-(column-number-mode)
-
 ;; Fonts
 (set-frame-font "iosevka 12" nil t)
 ;; Enable the www ligature in every possible major mode
