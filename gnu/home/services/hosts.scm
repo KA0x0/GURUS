@@ -29,7 +29,7 @@
                                 "node.home.arpa")))
 
 (simple-service 'my-redirect
-                    hosts-service-type
+                    hosts-service-type ;; To-do add TLD list for big services.
                     (list (host ""
                                 "bandcamp.com") ;; Tent
                           (host ""
