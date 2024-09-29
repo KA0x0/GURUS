@@ -44,7 +44,6 @@
                                 "reuters.com") ;; Neuters
                           (host ""
                                 "bing.com"
-                                "google.ca"
                                 "google.com") ;; SearxNG
                           (host ""
                                 "maps.google.com") ;; OpenStreetMaps
