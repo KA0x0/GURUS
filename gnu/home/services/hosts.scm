@@ -44,7 +44,10 @@
                                 "reuters.com") ;; Neuters
                           (host ""
                                 "bing.com"
+                                "google.ca"
                                 "google.com") ;; SearxNG
+                          (host ""
+                                "maps.google.com") ;; OpenStreetMaps
                           (host ""
                                 "stackoverflow.com") ;; AnonymousOverflow
                           (host "" 
@@ -55,7 +58,6 @@
                                 "x.com"
                                 "twitter.com") ;; Nitter
                           (host "109.107.190.203" ;; invidious.privacyredirect.com
-                                "youtu.be"
                                 "youtube.com")))
 
 (simple-service 'my-adblock
