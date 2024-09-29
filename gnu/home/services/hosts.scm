@@ -43,10 +43,10 @@
                           (host ""
                                 "reuters.com") ;; Neuters
                           (host ""
+                                "maps.google.com") ;; OpenStreetMaps
+                          (host ""
                                 "bing.com"
                                 "google.com") ;; SearxNG
-                          (host ""
-                                "maps.google.com") ;; OpenStreetMaps
                           (host ""
                                 "stackoverflow.com") ;; AnonymousOverflow
                           (host "" 
