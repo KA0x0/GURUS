@@ -40,6 +40,7 @@
         "guile-aws"
         "imagemagick"
         "iw"
+        "libfaketime"
         "librewolf"
         "monero"
         "mpd"
