@@ -112,6 +112,7 @@
       (list (service my-dns)
             (service login-service-type my-motd)
             (service nftables-service-type)
+            (service ntp-service-type)
             (service openssh-service-type
               (openssh-configuration
                 (authorized-keys
