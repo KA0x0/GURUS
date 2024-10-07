@@ -47,7 +47,6 @@
     "bpftrace"
     "bridge-utils"
     "bzip2"
-    "chrony"
     "coreutils"
     "diffutils"
     "my-emacs-next-no-x"
