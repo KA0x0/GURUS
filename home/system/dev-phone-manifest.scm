@@ -23,7 +23,6 @@
         "emacs-notmuch"
         "emacs-consult-not-much"
         "emacs-plz"
-        "emacs-symon"
         "emacs-x509-mode"
         "emacs-yasnippet"
         "ffmpeg"
