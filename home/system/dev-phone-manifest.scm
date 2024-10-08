@@ -57,6 +57,7 @@
         "python-ipython"
         "python-scapy"
         "qemu"
+        "rust"
         "sigrock-cli"
         "socat"
         "sshfs"
