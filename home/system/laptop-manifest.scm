@@ -9,7 +9,6 @@
 (specifications->manifest
   (list "my-emacs-next"
         "sshfs"
-        "virt-manager"
         "wireguard-tools"))
 
 ;;; laptop-manifest.scm ends here

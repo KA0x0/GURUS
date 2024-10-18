@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "my-emacs-next"
-        "hashcat"
-        "virt-manager"))
+        "hashcat"))
 
 ;;; wsl-manifest.scm ends here
