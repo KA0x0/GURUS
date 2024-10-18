@@ -22,6 +22,6 @@
                ("cue-split $1 $2" . "ffmpeg -i '$1' -f cue -i '$2' -c copy -map 0 -map_metadata 1 '%02d - $1'")
                ("librewolf" . "guix shell --container --network --no-cwd librewolf")
                ("powershell" . "pwsh")
-               ("spectogram $1" . "ffmpeg -i $1 -lavfi showspectrumpic=s=3140x411")))))))
+               ("spectogram $1" . "ffmpeg -i $1 -lavfi showspectrumpic=s=3140x611")))))))
 
 ;;; dev-phone-home.scm ends here
