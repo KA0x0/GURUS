@@ -59,6 +59,7 @@
         "qemu"
         "rust"
         "sigrock-cli"
+        "skopeo"
         "socat"
         "sshfs"
         "tesseract-ocr"
