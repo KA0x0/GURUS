@@ -19,6 +19,7 @@
         "emacs-emms"
         "emacs-forge"
         "emacs-hyperbole"
+        "emacs-mentor"
         "emacs-modbus"
         "emacs-notmuch"
         "emacs-consult-not-much"

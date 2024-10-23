@@ -12,8 +12,8 @@
         "calibre"
         "podman"
         "qemu"
+        "rtorrent@0.9"
         "sshfs"
-        "transmission@4.0.5"
         "tpm2-tss"))
 
 ;;; node1-manifest.scm ends here
