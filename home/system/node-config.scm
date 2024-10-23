@@ -4,12 +4,6 @@
 (use-service-modules mcron networking shepherd ssh virtualization)
 (use-package-modules bootloaders certs package-management)
 
-(define transmission-notification-job
-  ;; Sends notification about torrents
-  #~(job "1 * * * *"
-         "/bin/transmission-remote --list | sed '/Sum/d'") 
-         #:user "vm")
-
 (operating-system
   (host-name "node")
   (users (cons* (user-account
