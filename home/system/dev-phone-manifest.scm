@@ -65,6 +65,7 @@
         "sshfs"
         "tesseract-ocr"
         "tiled"
+        "umoci"
         "upx"
         "valgrind"
         "wine64"
