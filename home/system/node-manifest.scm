@@ -10,7 +10,6 @@
   (list "age"
         "age-keygen"
         "calibre"
-        "podman"
         "qemu"
         "rtorrent@0.9"
         "sshfs"

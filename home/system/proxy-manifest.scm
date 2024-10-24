@@ -8,8 +8,7 @@
 
 (specifications->manifest
   (list "age"
-        "age-keygen"
-        "podman")) ;; Add mitmproxy once merged.
+        "age-keygen")) ;; Add mitmproxy once merged.
 
 ;;; Scan
 (define-record-type* <scan-configuration>

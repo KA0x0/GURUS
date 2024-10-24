@@ -13,7 +13,7 @@
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/beacon")
                   (supplementary-groups
-                    '("netdev" "wheel")))
+                    '("incus" "netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

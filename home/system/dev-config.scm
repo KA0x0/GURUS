@@ -13,7 +13,7 @@
                   (shell (file-append pwsh "/bin/pwsh"))
                   (home-directory "/home/ka0x")
                   (supplementary-groups
-                    '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))
+                    '("adbusers" "audio" "incus" "kvm" "netdev" "video" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
