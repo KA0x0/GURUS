@@ -10,6 +10,7 @@
   (list "adb"
         "ascii"
         "binutils"
+        "buildah"
         "curl-ssh"
         "diffoscope"
         "my-emacs-next"
