@@ -10,6 +10,7 @@
   (list "adb"
         "ascii"
         "binutils"
+        "bpftrace"
         "buildah"
         "curl-ssh"
         "diffoscope"
