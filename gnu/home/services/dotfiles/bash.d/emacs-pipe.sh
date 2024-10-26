@@ -4,7 +4,7 @@
 
 # echo "hello world" | f -e ~/bin/replace-my-regexp.el "replace-my-regexp" "world" "darkness my old friend"
 
-# Output: hello darness my old friend
+# Output: hello darkness my old friend
 
 # Reminder: use single quotes instead of double quotes for regexps
 # with backslashes in them to make formatting convenient!
