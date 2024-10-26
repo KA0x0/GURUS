@@ -72,8 +72,6 @@
         "wine64"
         "wireguard-tools"
         "wireshark"
-        "xclip"
-        "emacs-xclip"
         "yt-dlp"))
 
 ;;; dev-phone-manifest.scm ends here
