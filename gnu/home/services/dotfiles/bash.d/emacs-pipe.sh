@@ -57,4 +57,3 @@ OUT=`emacsclient -a emacs -e "(progn (set-buffer (get-buffer (substring \"$TMP\"
 cat $TMP
 rm $TMP
 IFS="$oldIFS"
-\n")
