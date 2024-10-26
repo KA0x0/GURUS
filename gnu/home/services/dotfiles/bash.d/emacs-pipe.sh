@@ -2,9 +2,9 @@
 
 # Usage example:
 
-# echo "you are not kidding" | f -e ~/bin/replace-my-regexp.el "replace-my-regexp" "are not" "ain’t"
+# echo "hello world" | f -e ~/bin/replace-my-regexp.el "replace-my-regexp" "world" "darkness my old friend"
 
-# Output: you ain’t kidding
+# Output: hello darness my old friend
 
 # Reminder: use single quotes instead of double quotes for regexps
 # with backslashes in them to make formatting convenient!
