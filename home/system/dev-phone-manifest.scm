@@ -16,6 +16,7 @@
         "my-emacs-next"
         "emacs-bluetooth"
         "emacs-dape"
+        "emacs-ellama"
         "emacs-ement"
         "emacs-emms"
         "emacs-forge"
