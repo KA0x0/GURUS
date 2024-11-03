@@ -38,6 +38,7 @@
                ("patch" . "patch --backup --verbose")
                ("ping" . "ping -v")
                ("ping6" . "ping6 -v")
+               ("powershell" . "pwsh")
                ("ps" . "ps --forest")
                ("rm" . "rm --interactive --one-file-system --verbose")
                ("sudo-emacs" . "sudoedit")
