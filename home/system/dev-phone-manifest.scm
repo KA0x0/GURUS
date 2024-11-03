@@ -45,7 +45,6 @@
         "libfaketime"
         "librewolf"
         "mariadb"
-        "mktorrent"
         "monero"
         "mpd"
         "mpv"
