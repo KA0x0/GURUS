@@ -9,6 +9,7 @@
 (use-modules
   (gnu home)
   (gnu home services)
+  (gnu home services dotfiles)
   (gnu home services shells)
   (guix gexp)
   (gnu services)
@@ -71,6 +72,9 @@
                 ("PS3" . "\t? ")
                 ("PS4" . "\> ")
                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
+            (service home-dotfiles-service-type
+              (home-dotfiles-configuration
+                (directories '("../gnu/home/services/dotfiles"))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
                (services
