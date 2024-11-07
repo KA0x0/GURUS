@@ -5,7 +5,7 @@
 (use-package-modules certs)
 
 (operating-system
-   (host-name "wsl")
+   (host-name "kracken")
    (bootloader
     (bootloader-configuration
      (bootloader dummy-bootloader)))
@@ -15,8 +15,8 @@
    (firmware '())
    (file-systems '())
    (users (cons* (user-account
-                  (name "kracken")
-                  (comment "Kracking hashes")
+                  (name "ai")
+                  (comment "Aissitant Kracken")
                   (group "users")
                   (supplementary-groups
                     '("audio" "kvm" "video" "wheel"))
