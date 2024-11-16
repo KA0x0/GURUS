@@ -26,6 +26,7 @@
         "emacs-modbus"
         "emacs-notmuch"
         "emacs-consult-not-much"
+        "emacs-org-timeblock"
         "emacs-plz"
         "emacs-x509-mode"
         "emacs-yasnippet"
