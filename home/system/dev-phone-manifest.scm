@@ -12,7 +12,6 @@
         "binutils"
         "binwalk"
         "buildah"
-        "curl-ssh"
         "diffoscope"
         "my-emacs-next"
         "emacs-bluetooth"
