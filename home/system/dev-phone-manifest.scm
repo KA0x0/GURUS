@@ -54,7 +54,6 @@
         "openvpn"
         "patch"
         "patchelf"
-        "podman"
         "poke"
         "emacs-poke-mode"
         "pwntools"
