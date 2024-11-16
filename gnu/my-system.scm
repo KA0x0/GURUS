@@ -87,6 +87,7 @@
     "kmod"
     "lzip"
     "man-db"
+    "ncurses"
     "nftables"
     "nss-certs"
     "openssh-sans-x"
