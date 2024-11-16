@@ -12,6 +12,7 @@
         "binutils"
         "binwalk"
         "buildah"
+        "curl"
         "diffoscope"
         "my-emacs-next"
         "emacs-bluetooth"
