@@ -10,6 +10,7 @@
   (list "adb"
         "ascii"
         "binutils"
+        "binwalk"
         "buildah"
         "curl-ssh"
         "diffoscope"
