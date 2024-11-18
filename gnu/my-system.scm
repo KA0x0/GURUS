@@ -103,6 +103,7 @@
     "sysdig"
     "falcosecurity-libs"
     "tar"
+    "texinfo"
     "tree-sitter"
     "util-linux-with-udev"
     "wget"
