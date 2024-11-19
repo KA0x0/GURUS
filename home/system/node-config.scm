@@ -58,14 +58,6 @@
               (service oci-container-service-type
                 (list
                   (oci-container-configuration
-                    (image "containrrr/watchtower:latest")
-                    (provision "watchtower")
-                    (volumes
-                      '("/var/run/docker.sock:/var/run/docker.sock")
-                    (environment
-                      '("WATCHTOWER_CLEANUP" . "true"
-                        "WATCHTOWER_POLL_INTERVAL" . "60"))))
-                  (oci-container-configuration
                     (image "justarchi/archisteamfarm:released")
                     (provision "archisteamfarm")
                     (ports
