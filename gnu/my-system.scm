@@ -104,7 +104,6 @@
     "falcosecurity-libs"
     "tar"
     "texinfo"
-    "tree-sitter"
     "util-linux+udev"
     "wget"
     "which"
