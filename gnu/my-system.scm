@@ -105,7 +105,7 @@
     "tar"
     "texinfo"
     "tree-sitter"
-    "util-linux-with-udev"
+    "util-linux+udev"
     "wget"
     "which"
     "xz")))
