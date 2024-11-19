@@ -1,8 +1,8 @@
 ;;; Code:
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
-(use-service-modules desktop mcron networking shepherd ssh virtualization xorg)
-(use-package-modules bootloaders certs fonts package-management)
+(use-service-modules desktop mcron networking shepherd ssh virtualization)
+(use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses polkit rsync python python-web texinfo version-control wget)
 
 (operating-system
   (host-name "laptop")
