@@ -2,7 +2,7 @@
 
 (use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
 (use-service-modules mcron networking shepherd ssh virtualization)
-(use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses package-management polkit rsync python python-web texinfo wget)
+(use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses polkit rsync python python-web texinfo wget)
 
 (operating-system
   (host-name "node")
