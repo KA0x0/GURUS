@@ -83,7 +83,7 @@
     "guile-readline"
     "guile-ssh"
     "gzip"
-    "iproute2"
+    "iproute"
     "kmod"
     "lzip"
     "man-db"
