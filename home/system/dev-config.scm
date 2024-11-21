@@ -8,7 +8,7 @@
   (host-name "dev")
   (users (cons* (user-account
                   (name "ka0x")
-                  (comment "KA0x0")
+                  (comment "We are legion")
                   (group "users")
                   (shell (file-append pwsh "/bin/pwsh"))
                   (home-directory "/home/ka0x")
