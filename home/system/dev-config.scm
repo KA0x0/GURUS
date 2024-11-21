@@ -10,7 +10,7 @@
                   (name "ka0x")
                   (comment "We are legion")
                   (group "users")
-                  (shell (file-append pwsh "/bin/pwsh"))
+                  (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/ka0x")
                   (supplementary-groups
                     '("adbusers" "audio" "incus" "kvm" "netdev" "video" "wheel")))
