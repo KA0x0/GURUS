@@ -7,6 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "synergy"))
+  (list "curl"
+        "synergy"))
 
-;;; chat-manifest.scm ends here
+;;; out-manifest.scm ends here
