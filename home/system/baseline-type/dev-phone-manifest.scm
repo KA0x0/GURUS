@@ -71,7 +71,6 @@
         "tree-sitter-c"
         "tree-sitter-cpp"
         "tree-sitter-go"
-        "tree-sitter-html"
         "tree-sitter-lua"
         "tree-sitter-org"
         "tree-sitter-php"
