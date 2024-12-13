@@ -15,7 +15,6 @@
         "buildah"
         "curl"
         "diffoscope"
-        "delve"
         "my-emacs-next"
         "emacs-bluetooth"
         "emacs-dape"
@@ -42,6 +41,7 @@
         "gdb"
         "gnuradio"
         "go"
+        "delve" ;; Go debugger
         "graphviz"
         "guile-aws"
         "imagemagick"
