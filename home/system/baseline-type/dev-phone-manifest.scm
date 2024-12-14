@@ -41,7 +41,7 @@
         "gdb"
         "gnuradio"
         "go"
-        "delve" ;; Go debugger
+        "delve" ;; go debugger
         "graphviz"
         "guile-aws"
         "imagemagick"
