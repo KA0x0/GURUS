@@ -1,4 +1,4 @@
-#+TITLE: Guix User Recursive Upgrades
+#+TITLE: Guix User Recursive Updating Sexp
 
 GNU Guix --- Functional package management for GNU
 
