@@ -63,6 +63,7 @@
     "coreutils"
     "diffutils"
     "my-emacs-next-no-x"
+    "emacs-with-editor"
     "emacs-cape"
     "emacs-combobulate"
     "emacs-consult"
