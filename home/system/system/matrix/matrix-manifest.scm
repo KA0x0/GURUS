@@ -10,4 +10,4 @@
   (list "curl"
         "synapse"))
 
-;;; out-manifest.scm ends here
+;;; matrix-manifest.scm ends here

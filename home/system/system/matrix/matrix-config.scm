@@ -46,4 +46,4 @@
       %base-services
       %my-base-services))))
 
-;;; out-config.scm ends here
+;;; matrix-config.scm ends here
