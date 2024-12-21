@@ -98,3 +98,7 @@
         completion-category-overrides '((file (styles partial-completion)))))
 
 (add-to-list 'load-path (expand-file-name "dev-phone-init.el"))
+
+(provide 'init)
+
+;;; init.el ends here

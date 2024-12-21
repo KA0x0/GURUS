@@ -24,3 +24,7 @@
 (background-color . "#000000")
 (ns-appearance . dark)
 (ns-transparent-titlebar . t)
+
+(provide 'early-init)
+
+;;; early-init.el ends here

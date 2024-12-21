@@ -42,6 +42,6 @@
             ("/bin/mount" ,(file-append util-linux "/bin/mount"))
             ("/usr/bin/env" ,(file-append coreutils "/bin/env"))
       %base-services
-      %my-base-services))))
+      %my-base-services))))))
 
 ;;; wsl-config.scm ends here

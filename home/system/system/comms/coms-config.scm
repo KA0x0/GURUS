@@ -5,13 +5,13 @@
 (use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses polkit rsync python python-web texinfo tree-sitter version-control virtualization wget)
 
 (operating-system
-  (host-name "over")
+  (host-name "comms")
   (users (cons* (user-account
-                  (name "out")
-                  (comment "Outbound Radio Signal")
+                  (name "callsign")
+                  (comment "Callsign")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/out")
+                  (home-directory "/home/callsign")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
