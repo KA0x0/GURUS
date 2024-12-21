@@ -11,7 +11,7 @@
                   (comment "Neo")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/callsign")
+                  (home-directory "/home/neo")
                   (supplementary-groups
                     '("netdev" "wheel")))
                 %base-user-accounts))
