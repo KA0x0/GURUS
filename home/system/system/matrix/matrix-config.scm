@@ -5,10 +5,10 @@
 (use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses polkit rsync python python-web texinfo tree-sitter version-control virtualization wget)
 
 (operating-system
-  (host-name "comms")
+  (host-name "matrix")
   (users (cons* (user-account
-                  (name "callsign")
-                  (comment "Callsign")
+                  (name "neo")
+                  (comment "Neo")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/callsign")
