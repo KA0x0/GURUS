@@ -8,6 +8,6 @@
 
 (specifications->manifest
   (list "curl"
-        "synergy"))
+        "synapse"))
 
 ;;; out-manifest.scm ends here
