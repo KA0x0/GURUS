@@ -8,7 +8,7 @@
   (host-name "matrix")
   (users (cons* (user-account
                   (name "neo")
-                  (comment "Neo")
+                  (comment "The One")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/neo")
