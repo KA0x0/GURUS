@@ -31,7 +31,6 @@
         "emacs-plz"
         "emacs-x509-mode"
         "emacs-yasnippet"
-        "ffmpeg"
         "file"
         "flashrom"
         "fontconfig"
