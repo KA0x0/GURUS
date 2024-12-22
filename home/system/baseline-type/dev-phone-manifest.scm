@@ -31,6 +31,7 @@
         "emacs-plz"
         "emacs-x509-mode"
         "emacs-yasnippet"
+     ;; "ffmpeg" propagated by mpv
         "file"
         "flashrom"
         "fontconfig"
