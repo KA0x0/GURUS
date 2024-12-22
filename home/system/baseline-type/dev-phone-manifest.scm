@@ -24,6 +24,7 @@
         "emacs-forge"
         "emacs-hyperbole"
         "emacs-mentor"
+        "emacs-minimap"
         "emacs-modbus"
         "emacs-notmuch"
         "emacs-consult-not-much"
