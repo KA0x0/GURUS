@@ -45,22 +45,6 @@
                ("sudo-emacs" . "sudoedit")
                ("sudo-find-file" . "sudoedit")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
-              (bashrc
-               "\
-                set colored-completion-prefix on
-                set colored-stats on
-                set completion-ignore-case on
-                set show-all-if-ambiguous on
-                set skip-completed-text on
-                shopt -s checkwinsize
-                shopt -s histappend
-                shopt -s autocd # change to named directory
-                shopt -s cdspell # autocorrects cd misspellings
-                shopt -s cmdhist # save multi-line commands in history as single line
-                ### BINDS
-                stty -ixon # Disable ctrl-s and ctrl-q
-                bind '"\C-p": history-search-backward'
-                bind '"\C-n": history-search-forward')
               (environment-variables
                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                 ("HISTCONTROL" . "ignoreboth")
@@ -72,6 +56,8 @@
                 ("PS3" . "\t? ")
                 ("PS4" . "\> ")
                 ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
+              (bashrc)
+                ()
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
                 (directories '("../gnu/home/services/dotfiles"))))
