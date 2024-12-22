@@ -24,14 +24,14 @@
 
 (package
   (name "my-wslu")
-  (version "4.1.3")
+  (version "4.1.4")
   (source (origin
             (method url-fetch)
             (uri (string-append "https://github.com/wslutilities/wslu/archive/refs/tags/v" version
                                 ".tar.gz"))
             (sha256
              (base32
-              "78012fb2e3af46b4cd767bca2af047f03723b41d"))))
+              "fa8b37cc936c55da7a2655eed0599d0fb4988e1f"))))
   (build-system gnu-build-system)
   (synopsis "A collection of utilities for WSL")
   (description
