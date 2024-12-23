@@ -1,5 +1,6 @@
-### This file exist because some
-### aliases,  goes in home.scm
+### This file exist because some bash code can't be passed directly to Shepherd-services yet
+### aliases, Environment Variable goes in home.scm
+### Everything else goes here
 
 set colored-completion-prefix on
 set colored-stats on
