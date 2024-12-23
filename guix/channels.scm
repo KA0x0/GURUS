@@ -19,7 +19,7 @@
 
 (cons* (channel
         (name 'GURU)
-        (url "https://git.sr.ht//GURU")) 
+        (url "https://git.sr.ht//GURU"))
        (channel
         (name 'sops-guix)
         (url "https://git.sr.ht/~fishinthecalculator/sops-guix")
