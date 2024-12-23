@@ -1,5 +1,5 @@
 ### This file exist because some bash code can't be passed directly to Shepherd-services yet
-### aliases, Environment Variable goes in home.scm
+### Aliases, Environment Variable goes in home.scm
 ### Everything else goes here
 
 set colored-completion-prefix on
