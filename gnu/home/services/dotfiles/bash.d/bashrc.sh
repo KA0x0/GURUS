@@ -9,8 +9,8 @@ set show-all-if-ambiguous on
 set skip-completed-text on
  
 shopt -s autocd cdspell checkwinsize cmdhist expand_aliases histappend
+stty -ixon # Disable ctrl-s and ctrl-q
 
 ### BINDS
-stty -ixon # Disable ctrl-s and ctrl-q
 bind '"\C-p": history-search-backward'
 bind '"\C-n": history-search-forward'
