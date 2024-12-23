@@ -55,9 +55,7 @@
                 ("PS2" . "\[\e[3m\]\t\[\e[0;5m\]>\[\e[0m\] ")
                 ("PS3" . "\t? ")
                 ("PS4" . "\> ")
-                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait")))
-              (bashrc)
-                ()
+                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
                 (directories '("../gnu/home/services/dotfiles"))))
@@ -69,6 +67,6 @@
                     (provision '(emacs))
                      (start #~(make-system-constructor "emacs --daemon"))
                      (stop #~(make-system-constructor "emacsclient --eval '(kill-emacs)'")))
-                  (service unattended-upgrade-service-type))))))))))
+                  (service unattended-upgrade-service-type)))))))))
 
 ;;; home.scm ends here

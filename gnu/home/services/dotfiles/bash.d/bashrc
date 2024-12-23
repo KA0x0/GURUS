@@ -1,3 +1,6 @@
+### This file exist because some
+### aliases,  goes in home.scm
+
 set colored-completion-prefix on
 set colored-stats on
 set completion-ignore-case on
