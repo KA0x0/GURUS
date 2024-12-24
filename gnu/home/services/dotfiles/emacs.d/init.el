@@ -105,7 +105,6 @@
   ;; (setq vertico-cycle t))
 
 (use-package marginalia
-  :ensure t
   :config
   (marginalia-mode))
 
