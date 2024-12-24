@@ -5,7 +5,7 @@
 (blink-cursor-mode 0)
 (column-number-mode 1)
 
-(setq-default set inhibit-startup-screen 1)
+(setq-default inhibit-startup-screen 1)
 ;; Show stray whitespace
 (setq-default show-trailing-whitespace t)
 (setq-default indicate-empty-lines t)

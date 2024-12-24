@@ -16,14 +16,14 @@
 (setq default-frame-alist '((fullscreen . maximized)))
 
 ;; Turn off scroll bars
-(vertical-scroll-bars . nil)
-(horizontal-scroll-bars . nil)
+; (vertical-scroll-bars . nil)
+; (horizontal-scroll-bars . nil)
 
 ;; Setting the face in here prevents flashes of
 ;; color as the theme gets activated
-(background-color . "#000000")
-(ns-appearance . dark)
-(ns-transparent-titlebar . t)
+; (background-color . "#000000")
+; (ns-appearance . dark)
+; (ns-transparent-titlebar . t)
 
 (provide 'early-init)
 
