@@ -109,12 +109,10 @@
   (marginalia-mode))
 
 (use-package flycheck
-:ensure t
 :config
 (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (use-package embark
-  :ensure t
 
   :bind
   (("C-." . embark-act)         ;; pick some comfortable binding
@@ -145,7 +143,6 @@
 
 ;; Consult users will also want the embark-consult package.
 (use-package embark-consult
-  :ensure t ; only need to install it, embark loads it after consult if found
   :hook
   (embark-collect-mode . consult-preview-at-point-mode))
 
@@ -217,7 +214,7 @@
 
 (add-to-list 'load-path (expand-file-name "dev-phone-init.el"))
 
-(use-package geiser-guile :ensure t)
+(use-package geiser-guile)
 
 (provide 'init)
 
