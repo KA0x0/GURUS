@@ -123,6 +123,18 @@ Note that OPT-IN-ONLY only affects setups with Emacs 29 or later.
       (ibuffer-do-sort-by-project-file-relative)))
   (add-hook 'ibuffer-hook #'crafted-ide-enhance-ibuffer-with-ibuffer-project))
 
+
+
+
+
+
+
+(use-package geiser-guile)
+
+(use-package flycheck
+:config
+(add-hook 'after-init-hook #'global-flycheck-mode))
+
 (provide 'ide)
 
 ;;; ide.el ends here
