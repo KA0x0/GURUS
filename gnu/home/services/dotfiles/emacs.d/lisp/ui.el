@@ -36,9 +36,7 @@
 (setq-default electric-pair-delete-adjacent-pairs 1)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
-(if (boundp 'use-short-answers)
-    (setq use-short-answers t)
-  (advice-add #'yes-or-no-p :override #'y-or-n-p))
+(fset 'yes-or-no-p 'y-or-n-p))
 
 ;; Enable repeat mode for more ergonomic `dape' use
 (use-package repeat
