@@ -1,3 +1,9 @@
+;;; wm.el --- Provide features usefull on a full display -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 ;; Theme
 (load-theme 'modus-vivendi)
 
@@ -69,6 +75,6 @@
 
 (use-package yasnippet)
 
-(provide 'ui)
+(provide 'my-wm)
 
-;;; ui.el ends here
+;;; wm.el ends here

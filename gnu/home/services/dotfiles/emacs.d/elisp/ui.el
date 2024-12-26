@@ -1,3 +1,9 @@
+;;; ui.el --- Provide basic UI -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (blink-cursor-mode 0)
@@ -47,3 +53,5 @@
   (xterm-mouse-mode 1)
   (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
+
+;; my-ui.el ends here

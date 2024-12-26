@@ -58,3 +58,7 @@
     :config
     ;; send last message in chat buffer with C-c C-c
     (add-hook 'org-ctrl-c-ctrl-c-hook #'ellama-chat-send-last-message))
+
+(provide 'my-llm)
+
+;;; llm.el ends here

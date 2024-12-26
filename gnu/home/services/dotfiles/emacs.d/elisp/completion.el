@@ -149,6 +149,6 @@
   (setq read-extended-command-predicate #'command-completion-default-include-p))
 
 
-(provide 'completion)
+(provide 'my-completion)
 
 ;;; completion.el ends here

@@ -135,6 +135,6 @@ Note that OPT-IN-ONLY only affects setups with Emacs 29 or later.
 :config
 (add-hook 'after-init-hook #'global-flycheck-mode))
 
-(provide 'ide)
+(provide 'my-ide)
 
 ;;; ide.el ends here
