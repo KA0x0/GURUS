@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+(dolist (f(directory-files "~/.emacs.d/lisp" t)) (load-file))
 
 (provide 'init)
 
