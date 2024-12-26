@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(require 'compat)
+
 (dolist (f(directory-files "~/.emacs.d/lisp" t "\\.el$")) (load-file))
 
 (provide 'init)
