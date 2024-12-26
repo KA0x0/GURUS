@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(dolist (f(directory-files "~/.emacs.d/lisp" t)) (load-file))
+(dolist (f(directory-files "~/.emacs.d/lisp" t "\\.el$")) (load-file))
 
 (provide 'init)
 
