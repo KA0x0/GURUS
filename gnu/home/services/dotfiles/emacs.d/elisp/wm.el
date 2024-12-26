@@ -75,6 +75,7 @@
 
 (use-package yasnippet)
 
+
 (provide 'my-wm)
 
 ;;; wm.el ends here
