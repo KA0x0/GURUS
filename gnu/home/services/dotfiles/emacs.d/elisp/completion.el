@@ -9,117 +9,92 @@
 
 ;;; Code:
 
-;;; Vertico
-(when (require 'vertico nil :noerror)
-  (require 'vertico-directory)
-  ;; Cycle back to top/bottom result when the edge is reached
-  (customize-set-variable 'vertico-cycle t)
+;; Enable vertico
+(use-package vertico
+  :init
+  (vertico-mode)
 
-  ;; Start Vertico
-  (vertico-mode 1)
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
 
-  ;; Turn off the built-in fido-vertical-mode and icomplete-vertical-mode, if
-  ;; they have been turned on by crafted-defaults-config, because they interfere
-  ;; with this module.
-  (with-eval-after-load 'crafted-defaults-config
-    (fido-mode -1)
-    (fido-vertical-mode -1)
-    (icomplete-mode -1)
-    (icomplete-vertical-mode -1)))
+  ;; Show more candidates
+  ;; (setq vertico-count 20)
 
-;;; Marginalia
-(when (require 'marginalia nil :noerror)
-  ;; Configure Marginalia
-  (customize-set-variable 'marginalia-annotators
-                          '(marginalia-annotators-heavy
-                            marginalia-annotators-light
-                            nil))
-  (marginalia-mode 1))
+  ;; Grow and shrink the Vertico minibuffer
+  (setq vertico-resize t)
 
-;;; Consult
-;; Since Consult doesn't need to be required, we assume the user wants these
-;; setting if it is installed (regardless of the installation method).
-(when (locate-library "consult")
-  ;; Set some consult bindings
-  (keymap-global-set "C-s" 'consult-line)
-  (keymap-set minibuffer-local-map "C-r" 'consult-history)
+  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
+    (setq vertico-cycle t))
 
-  (setq completion-in-region-function #'consult-completion-in-region))
+(use-package marginalia
+  :config
+  (marginalia-mode))
 
-;;; Orderless
-(when (require 'orderless nil :noerror)
-  ;; Set up Orderless for better fuzzy matching
-  (customize-set-variable 'completion-styles '(orderless basic))
-  (customize-set-variable 'completion-category-overrides
-                          '((file (styles . (partial-completion))))))
+;; consult
 
-;;; Embark
-(when (require 'embark nil :noerror)
+;; Optionally use the `orderless' completion style.
+(use-package orderless
+  :init
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (setq orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
+  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles partial-completion)))))
 
-  (keymap-global-set "<remap> <describe-bindings>" #'embark-bindings)
-  (keymap-global-set "C-." 'embark-act)
+(use-package embark
+  :bind
+  (("C-." . embark-act)         ;; pick some comfortable binding
+   ("C-;" . embark-dwim)        ;; good alternative: M-.
+   ("C-h B" . embark-bindings)) ;; alternative for `describe-bindings'
 
-  ;; Use Embark to show bindings in a key prefix with `C-h`
+  :init
+
+  ;; Optionally replace the key help with a completing-read interface
   (setq prefix-help-command #'embark-prefix-help-command)
 
-  (when (require 'embark-consult nil :noerror)
-    (with-eval-after-load 'embark-consult
-      (add-hook 'embark-collect-mode-hook #'consult-preview-at-point-mode))))
+  ;; Show the Embark target at point via Eldoc. You may adjust the
+  ;; Eldoc strategy, if you want to see the documentation from
+  ;; multiple providers. Beware that using this can be a little
+  ;; jarring since the message shown in the minibuffer can be more
+  ;; than one line, causing the modeline to move up and down:
 
+  ;; (add-hook 'eldoc-documentation-functions #'embark-eldoc-first-target)
+  ;; (setq eldoc-documentation-strategy #'eldoc-documentation-compose-eagerly)
 
-;;; Corfu
-(when (require 'corfu nil :noerror)
+  :config
 
-  (unless (display-graphic-p)
-    (when (require 'corfu-terminal nil :noerror)
-      (corfu-terminal-mode +1)))
+  ;; Hide the mode line of the Embark live/completions buffers
+  (add-to-list 'display-buffer-alist
+               '("\\`\\*Embark Collect \\(Live\\|Completions\\)\\*"
+                 nil
+                 (window-parameters (mode-line-format . none)))))
 
-  ;; Setup corfu for popup like completion
-  (customize-set-variable 'corfu-cycle t)        ; Allows cycling through candidates
-  (customize-set-variable 'corfu-auto t)         ; Enable auto completion
-  (customize-set-variable 'corfu-auto-prefix 2)  ; Complete with less prefix keys
+;; Enable Corfu completion UI
+;; See the Corfu README for more configuration tips.
+(use-package corfu
+  :init
+  (global-corfu-mode))
 
-  (global-corfu-mode 1)
-  (when (require 'corfu-popupinfo nil :noerror)
-
-    (corfu-popupinfo-mode 1)
-    (eldoc-add-command #'corfu-insert)
-    (keymap-set corfu-map "M-p" #'corfu-popupinfo-scroll-down)
-    (keymap-set corfu-map "M-n" #'corfu-popupinfo-scroll-up)
-    (keymap-set corfu-map "M-d" #'corfu-popupinfo-toggle)))
-
-
-;;; Cape
-
-(when (require 'cape nil :noerror)
-  ;; Setup Cape for better completion-at-point support and more
-
-  ;; Add useful defaults completion sources from cape
-  (add-to-list 'completion-at-point-functions #'cape-file)
-  (add-to-list 'completion-at-point-functions #'cape-dabbrev)
-
-  ;; Silence the pcomplete capf, no errors or messages!
-  ;; Important for corfu
-  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
-
-  ;; Ensure that pcomplete does not write to the buffer
-  ;; and behaves as a pure `completion-at-point-function'.
-  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-purify)
-
-  ;; No auto-completion or completion-on-quit in eshell
-  (defun crafted-completion-corfu-eshell ()
-    "Special settings for when using corfu with eshell."
-    (setq-local corfu-quit-at-boundary t
-                corfu-quit-no-match t
-                corfu-auto nil)
-    (corfu-mode))
-  (add-hook 'eshell-mode-hook #'crafted-completion-corfu-eshell))
-
-
-
-
-
-
+;; Add extensions
+(use-package cape
+  ;; Bind prefix keymap providing all Cape commands under a mnemonic key.
+  ;; Press C-c p ? to for help.
+  :bind ("C-c p" . cape-prefix-map) ;; Alternative key: M-<tab>, M-p, M-+
+  ;; Alternatively bind Cape commands individually.
+  ;; :bind (("C-c p d" . cape-dabbrev)
+  ;;        ("C-c p h" . cape-history)
+  ;;        ("C-c p f" . cape-file)
+  ;;        ...)
+  :init
+  ;; Add to the global default value of `completion-at-point-functions' which is
+  ;; used by `completion-at-point'.  The order of the functions matters, the
+  ;; first function returning a result wins.  Note that the list of buffer-local
+  ;; completion functions takes precedence over the global list.
+  (add-hook 'completion-at-point-functions #'cape-dabbrev)
+  (add-hook 'completion-at-point-functions #'cape-file)
+  (add-hook 'completion-at-point-functions #'cape-elisp-block)
+  ;; (add-hook 'completion-at-point-functions #'cape-history))
 
 ;; A few more useful configurations...
 (use-package emacs
