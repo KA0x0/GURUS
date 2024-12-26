@@ -1,3 +1,9 @@
+;;; eshell.el --- Configures eshell -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 (use-package eshell-syntax-highlighting
   :after eshell-mode
   :config

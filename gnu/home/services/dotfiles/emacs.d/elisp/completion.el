@@ -1,4 +1,4 @@
-;;; completion.el --- -*- lexical-binding: t; -*-
+;;; completion.el --- Configure completion -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

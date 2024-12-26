@@ -1,3 +1,9 @@
+;;; llm.el --- Provide features for interracting with llms -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 (use-package ellama
     :bind ("C-c e" . ellama-transient-main-menu)
     :init
