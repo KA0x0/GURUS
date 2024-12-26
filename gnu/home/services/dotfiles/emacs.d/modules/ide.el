@@ -123,5 +123,6 @@ Note that OPT-IN-ONLY only affects setups with Emacs 29 or later.
       (ibuffer-do-sort-by-project-file-relative)))
   (add-hook 'ibuffer-hook #'crafted-ide-enhance-ibuffer-with-ibuffer-project))
 
-(provide 'crafted-ide-config)
+(provide 'ide)
+
 ;;; ide.el ends here

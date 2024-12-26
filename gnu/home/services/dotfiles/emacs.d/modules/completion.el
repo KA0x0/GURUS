@@ -115,6 +115,6 @@
     (corfu-mode))
   (add-hook 'eshell-mode-hook #'crafted-completion-corfu-eshell))
 
-(provide 'crafted-completion-config)
+(provide 'completion)
 
 ;;; completion.el ends here
