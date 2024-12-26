@@ -1,3 +1,9 @@
+;;; early-init.el --- Loads first elisp -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 (require 'server)
 (unless (server-running-p)
   (server-start))
