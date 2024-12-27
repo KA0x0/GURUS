@@ -10,8 +10,6 @@
 ;; Fonts
 (set-frame-font "iosevka 12" nil t)
 
-(global-ligature-mode 't)
-
 (defun shrug ()
   "insert /shrug ascii at point"
 	  (interactive)
