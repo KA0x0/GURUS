@@ -1,4 +1,4 @@
-;;; early-init.el --- Loads first elisp -*- lexical-binding: t; -*-
+;;; early-init.el --- Loads important early elisp -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

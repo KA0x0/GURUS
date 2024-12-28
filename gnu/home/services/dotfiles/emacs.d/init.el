@@ -1,4 +1,4 @@
-;;; init.el --- Default config files, load lisp module -*- lexical-binding: t; -*-
+;;; init.el --- Loads more lisp module -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
