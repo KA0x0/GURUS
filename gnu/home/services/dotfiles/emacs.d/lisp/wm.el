@@ -10,16 +10,6 @@
 ;; Fonts
 (set-frame-font "iosevka 12" nil t)
 
-(defun shrug ()
-  "insert /shrug ascii at point"
-	  (interactive)
-	  (insert "¯\_(ツ)_/¯"))
-
-(defun tableflip ()
-  "insert /tableflip ascii at point"
-	  (interactive)
-	  (insert "(╯° °）╯︵ ┻━┻"))
-
 (hyperbole-mode 1)
 
 (use-package yasnippet)
