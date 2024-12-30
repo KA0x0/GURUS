@@ -5,6 +5,6 @@
 ;;; Code:
 
 
-(provide 'my-dev-phone)
+(provide 'my-comms)
 
 ;;; comms.el ends here
