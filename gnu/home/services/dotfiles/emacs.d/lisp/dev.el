@@ -5,6 +5,6 @@
 ;;; Code:
 
 
-(provide 'my-admin)
+(provide 'my-dev)
 
 ;;; dev.el ends here
