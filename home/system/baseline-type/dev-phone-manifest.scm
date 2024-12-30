@@ -25,6 +25,7 @@
         "emacs-hyperbole"
         "emacs-mentor"
         "emacs-modbus"
+        "emacs-org-caldav"
         "emacs-org-timeblock"
         "emacs-plz"
         "emacs-x509-mode"
