@@ -11,7 +11,6 @@
 (use-package eglot)
 
 (use-package python-mode
-  :ensure nil  ; makes sure that Emacs in-build python-mode is used
   :hook
   (python-mode . eglot-ensure)  ; connect to language server when py-file is opened
   :custom
