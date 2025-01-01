@@ -27,7 +27,6 @@
                ("df" . "df --human-readable")
                ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
                ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
-               ("find-file" . "emacsclient --alternate-editor --create-frame --no-wait")
                ("grep" . "grep --color=auto")
                ("ll" . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
                ("ls" . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v")
@@ -41,8 +40,6 @@
                ("powershell" . "pwsh")
                ("ps" . "ps --forest")
                ("rm" . "rm --interactive --one-file-system --verbose")
-               ("sudo-emacs" . "sudoedit")
-               ("sudo-find-file" . "sudoedit")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
                 ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
