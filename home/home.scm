@@ -26,7 +26,6 @@
                ("dd" . "dd status=progress")
                ("df" . "df --human-readable")
                ("dir" . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
-               ("docker" . "podman")
                ("emacs" . "emacsclient --alternate-editor --create-frame --no-wait")
                ("find-file" . "emacsclient --alternate-editor --create-frame --no-wait")
                ("grep" . "grep --color=auto")
