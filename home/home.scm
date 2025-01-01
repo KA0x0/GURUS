@@ -37,7 +37,7 @@
                ("patch" . "patch --backup --verbose")
                ("ping" . "ping -v")
                ("ping6" . "ping6 -v")
-               ("powershell" . "pwsh")
+               ("powershell" . "pwsh -NoLogo")
                ("ps" . "ps --forest")
                ("rm" . "rm --interactive --one-file-system --verbose")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
