@@ -6,7 +6,7 @@
 
 (require 'compat)
 
-(dolist (f(directory-files "~/config/.emacs.d/lisp" t "\\.el$")) (load-file))
+(dolist (f(directory-files "~/.config/.emacs.d/lisp" t "\\.el$")) (load-file))
 
 (provide 'init)
 
