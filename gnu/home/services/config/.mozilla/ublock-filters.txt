@@ -18,3 +18,6 @@ discord.com##button[aria-label="Start an Activity"]
 
 ! Paypal Block the cookie banner, same as rejecting cookies
 www.paypal.com##.ccpaCookieBanner_container-custom.ccpaCookieBanner_container
+
+! Twitch Adblock
+twitch.tv##+js(twitch-videoad)
