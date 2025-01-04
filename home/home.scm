@@ -42,15 +42,15 @@
                ("rm" . "rm --interactive --one-file-system --verbose")
                ("vdir" . "emacsclient --alternate-editor --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
-                ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
-                ("HISTCONTROL" . "ignoreboth")
-                ("HISTFILESIZE" . "4096")
-                ("HISTSIZE" . "4096")
-                ("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
-                ("PYTHONSTARTUP" . "~/config/python/pythonrc.py")
-                ("PS1" . "\[\e[91m\]\u\[\e[0m\]@\[\e[92m\]\H\[\e[0m\]:\[\e[94m\]\w\[\e[0;5m\]$\[\e[0m\] ") ;; Add Error Code when =/ 0, Git status
-                ("PS2" . "\[\e[3m\]\t\[\e[0;5m\]>\[\e[0m\] ")
-                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
+               ("EDITOR" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
+               ("HISTCONTROL" . "ignoreboth")
+               ("HISTFILESIZE" . "4096")
+               ("HISTSIZE" . "4096")
+               ("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
+               ("PYTHONSTARTUP" . "~/config/python/pythonrc.py")
+               ("PS1" . "\[\e[91m\]\u\[\e[0m\]@\[\e[92m\]\H\[\e[0m\]:\[\e[94m\]\w\[\e[0;5m\]$\[\e[0m\] ") ;; Add Error Code when =/ 0, Git status
+               ("PS2" . "\[\e[3m\]\t\[\e[0;5m\]>\[\e[0m\] ")
+               ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
                 (directories '("../gnu/home/services/dotfiles"))))
