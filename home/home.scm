@@ -53,7 +53,7 @@
                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))))
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
-                (directories '("../gnu/home/services/dotfiles"))))
+                (directories '("../gnu/home/services/config"))))
             (service home-shepherd-service-type
               (home-shepherd-configuration
                (services
