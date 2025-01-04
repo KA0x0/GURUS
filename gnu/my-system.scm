@@ -112,6 +112,7 @@
     "procps"
     "polkit"
     "python-debug-sans-pip-wrapper"
+    "python-ipython"
     "rsync"
     "sed"
     "shadow"
