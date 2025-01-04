@@ -1,3 +1,4 @@
+!! Discord
 ! Block "Add super reaction" button
 discord.com##div[aria-label="Add Super Reaction"]
 ! Block Nitro stuff in user settings
@@ -15,5 +16,5 @@ discord.com##li[role="listitem"]:has-text("Discord's Birthday")
 ! Block "Start an Activity" button
 discord.com##button[aria-label="Start an Activity"]
 
-! Block the cookie banner, same as rejecting cookies
+! Paypal Block the cookie banner, same as rejecting cookies
 www.paypal.com##.ccpaCookieBanner_container-custom.ccpaCookieBanner_container
