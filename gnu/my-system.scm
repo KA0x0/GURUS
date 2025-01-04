@@ -41,6 +41,8 @@
   #:use-module (gnu packages version-control)
   #:use-module (gnu packages virtualization)
   #:use-module (gnu packages wget)
+  #:use-module (shepherd service system-log)
+  #:use-module (shepherd service timer)
   #:export (%my-base-operating-system)
   #:export (%my-base-packages)
   #:export (%my-base-services))
@@ -131,6 +133,15 @@
     "which"
     "xz")))
 
+(define my-motd
+     (service login-service-type
+               (login-configuration
+                (motd (plain-file "motd" "\
+UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED.\n
+You must have explicit, authorized permission to access this device.\n
+Unauthorized attempts and actions to access or use this system may result in civil and/or criminal penalties.\n
+All activities performed on this device are logged and monitored.\n\n")))))
+
 (define-public %my-base-services
   (append
       (list (service my-dns)
@@ -140,6 +151,7 @@
             (service openssh-service-type
               (openssh-configuration
                 (authorized-keys
-                  ("ka0x" ,(local-file "ka0x.pub"))))))))
+                  ("ka0x" ,(local-file "ka0x.pub")))))
+            (service system-log-service))))
 
 ;;; my-system.scm ends here
