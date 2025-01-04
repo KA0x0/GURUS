@@ -116,6 +116,7 @@
     "polkit"
     "python-debug-sans-pip-wrapper"
     "python-ipython"
+    "python-lsp-server"
     "rsync"
     "sed"
     "shadow"
