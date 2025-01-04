@@ -90,6 +90,7 @@
     "emacs-rainbow-delimiters"
     "emacs-vertico"
     "emacs-vterm"
+    "emacs-multi-vterm"
     "emacs-vundo"
     "eudev"
     "findutils"
