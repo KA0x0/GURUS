@@ -48,7 +48,7 @@
                ("HISTSIZE" . "4096")
                ("PAGER" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                ("PYTHONSTARTUP" . "~/config/python/pythonrc.py")
-               ("PYTHONSTARTUP" . "~/config/python/ipython")
+               ("IPYTHONDIR" . "~/config/python/ipython")
                ("PS1" . "\[\e[91m\]\u\[\e[0m\]@\[\e[92m\]\H\[\e[0m\]:\[\e[94m\]\w\[\e[0;5m\]$\[\e[0m\] ") ;; Add Error Code when =/ 0, Git status
                ("PS2" . "\[\e[3m\]\t\[\e[0;5m\]>\[\e[0m\] ")
                ("VISUAL" . ,(file-append emacs "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
