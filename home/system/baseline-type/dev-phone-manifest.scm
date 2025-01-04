@@ -13,7 +13,7 @@
         "binutils"
         "binwalk"
         "buildah"
-        "curl"
+        "curl-ssh"
         "diffoscope"
         "my-emacs-next"
         "emacs-bluetooth"
