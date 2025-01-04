@@ -142,6 +142,8 @@ You must have explicit, authorized permission to access this device.\n
 Unauthorized attempts and actions to access or use this system may result in civil and/or criminal penalties.\n
 All activities performed on this device are logged and monitored.\n\n")))))
 
+(define (hardcoded-editor))
+
 (define-public %my-base-services
   (append
       (list (service my-dns)
