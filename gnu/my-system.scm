@@ -77,6 +77,8 @@
     "emacs-flycheck"
     "emacs-geiser"
     "emacs-geiser-guile"
+    "emacs-git-gutter"
+    "emacs-git-timemachine"
     "emacs-guix"
     "emacs-logview"
     "emacs-magit"
