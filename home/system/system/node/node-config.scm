@@ -55,19 +55,7 @@
                              (destination "default")
                              (gateway "10.10.10.10"))))
                      (name-servers '("10.10.10.10")))))
-              (service oci-container-service-type
-                (list
-                  (oci-container-configuration
-                    (image "justarchi/archisteamfarm:released")
-                    (provision "archisteamfarm")
-                    (ports
-                      '("1242" . "1242"))
-                    (volumes
-                      '("/mnt/storage/kaox/config/archisteamfarm/config:/app/config")
-                       ("/mnt/storage/kaox/config/archisteamfarm/plugins:/app/plugins"))
-                    (environment
-                      '("TZ" . "Etc/Greenwich")))))
-      %base-services
-      %my-base-services))))
+        %base-services
+        %my-base-services))))
 
 ;;; node-config.scm ends here
