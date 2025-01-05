@@ -82,7 +82,6 @@
         "tree-sitter-org"
         "tree-sitter-php"
         "tree-sitter-rust"
-        "umoci"
         "upx"
         "valgrind"
         "wine64"
