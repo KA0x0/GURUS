@@ -27,7 +27,7 @@
                ("df"         . "df --human-readable")
                ("dir"        . "emacsclient --alternate-editor --create-frame --eval '(list-directory)' --no-wait")
                ("emacs"      . "emacsclient --alternate-editor --create-frame --no-wait")
-               ("firefox"    . "guix shell --container librewolf ///~")
+               ("firefox"    . "guix shell --container librewolf -- ///~")
                ("grep"       . "grep --color=auto")
                ("ll"         . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
                ("ls"         . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v")
