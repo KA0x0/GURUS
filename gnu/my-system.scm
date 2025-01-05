@@ -105,7 +105,6 @@
     "gzip"
     "iproute"
     "kmod"
-    "lxc"
     "lzip"
     "man-db"
     "ncurses"
