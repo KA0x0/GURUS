@@ -36,6 +36,7 @@
   #:use-module (gnu packages rsync)
   #:use-module (gnu packages python)
   #:use-module (gnu packages python-web)
+  #:use-module (gnu packages python-xyz)
   #:use-module (gnu packages texinfo)
   #:use-module (gnu packages tree-sitter)
   #:use-module (gnu packages version-control)
