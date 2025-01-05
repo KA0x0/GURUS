@@ -66,7 +66,6 @@
         "emacs-poke-mode"
         "pwntools"
         "python-debugpy"
-        "python-ipython"
         "python-scapy"
         "qemu"
         "rust"
