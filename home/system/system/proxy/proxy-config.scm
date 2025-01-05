@@ -13,7 +13,7 @@
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/hop")
                   (supplementary-groups
-                    '("incus" "netdev" "wheel")))
+                    '("netdev" "wheel")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
