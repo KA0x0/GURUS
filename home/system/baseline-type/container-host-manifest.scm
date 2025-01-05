@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "podman"
+  (list "jq"
+        "podman"
         "podman-compose"))
 
 ;;; container-host-manifest.scm ends here
