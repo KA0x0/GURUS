@@ -16,6 +16,7 @@
         "curl-ssh"
         "diffoscope"
         "my-emacs-next"
+        "guile-emacs"
         "emacs-bluetooth"
         "emacs-dape"
         "emacs-ellama"
