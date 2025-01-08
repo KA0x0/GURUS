@@ -51,7 +51,7 @@
   (savehist-mode))
 
 ;; Number of lines to scroll with mouse
-(setq mouse-wheel-scroll-amount '(16))
+(setq mouse-wheel-scroll-amount '(12))
 
 ;; Mouse scrolling in terminal emacs
 (unless (display-graphic-p)
