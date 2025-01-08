@@ -78,6 +78,7 @@
         "tiled"
         "tree-sitter-c"
         "tree-sitter-cpp"
+        "tree-sitter-dockerfile"
         "tree-sitter-go"
         "tree-sitter-lua"
         "tree-sitter-org"
