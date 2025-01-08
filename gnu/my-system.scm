@@ -59,7 +59,6 @@
   '("awscli-2"
     "bash"
     "bash-completion"
-    "emacs-bash-completion"
     "bcachefs-tools"
     "bridge-utils"
     "bzip2"
