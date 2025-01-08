@@ -86,7 +86,6 @@
     "emacs-marginalia"
     "emacs-multiple-cursors"
     "emacs-orderless"
-    "emacs-pcmpl-args"
     "emacs-rainbow-delimiters"
     "emacs-vertico"
     "emacs-vterm"
