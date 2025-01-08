@@ -75,7 +75,6 @@
     "emacs-denote"
     "emacs-diff-hl"
     "emacs-eglot-booster"
-    "emacs-eshell-prompt-extras"
     "emacs-eshell-syntax-highlighting"
     "emacs-embark"
     "emacs-flycheck"
