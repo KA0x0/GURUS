@@ -73,7 +73,6 @@
     "emacs-corfu"
     "emacs-denote"
     "emacs-diff-hl"
-    "emacs-eglot-x"
     "emacs-eshell-prompt-extras"
     "emacs-eshell-syntax-highlighting"
     "emacs-embark"
