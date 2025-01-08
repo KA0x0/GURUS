@@ -7,11 +7,8 @@
 (use-package ellama
     :bind ("C-c e" . ellama-transient-main-menu)
     :init
-    ;; setup key bindings
-    ;; (setopt ellama-keymap-prefix "C-c e")
     ;; language you want ellama to translate to
-    (setopt ellama-language "German")
-    ;; could be llm-openai for example
+    (setopt ellama-language "English")
     (require 'llm-ollama)
     (setopt ellama-provider
 	  (make-llm-ollama
