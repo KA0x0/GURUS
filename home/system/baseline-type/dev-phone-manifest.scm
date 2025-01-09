@@ -37,6 +37,8 @@
         "flashrom"
         "fontconfig"
         "font-iosevka-term-slab"
+        "font-liberation"
+        "font-wqy-zenhei"
         "freerdp"
         "gcc"
         "gdb"
