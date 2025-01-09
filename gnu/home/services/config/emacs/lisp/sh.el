@@ -1,4 +1,4 @@
-;;; repl.el --- Configures different REPL -*- lexical-binding: t; -*-
+;;; sh.el --- Configures shells -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
@@ -11,6 +11,6 @@
   (eshell-syntax-highlighting-global-mode +1))
 
 
-(provide 'my-repl)
+(provide 'my-sh)
 
-;;; repl.el ends here
+;;; sh.el ends here
