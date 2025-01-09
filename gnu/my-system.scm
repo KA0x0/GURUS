@@ -122,7 +122,6 @@
     "tar"
     "texinfo"
     "tree-sitter-bash"
-    "tree-sitter-dockerfile"
     "tree-sitter-json"
     "tree-sitter-python"
     "util-linux+udev"
