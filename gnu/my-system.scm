@@ -76,7 +76,6 @@
     "emacs-diff-hl"
     "emacs-eshell-syntax-highlighting"
     "emacs-embark"
-    "emacs-flycheck"
     "emacs-geiser"
     "emacs-geiser-guile"
     "emacs-guix"
