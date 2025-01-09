@@ -1,4 +1,4 @@
-;;; ide.el --- Provide IDE-like features -*- lexical-binding: t; -*-
+;;; python.el --- Provide Python related features -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
@@ -12,9 +12,7 @@
   :custom
   (python-shell-interpreter "python3"))
 
-(use-package geiser-guile)
 
+(provide 'my-python)
 
-(provide 'my-ide)
-
-;;; ide.el ends here
+;;; python.el ends here
