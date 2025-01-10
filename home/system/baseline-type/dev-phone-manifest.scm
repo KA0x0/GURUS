@@ -48,7 +48,7 @@
         "graphviz"
         "guile-aws"
         "imagemagick"
-        "go-gitlab.com-shackra-goimapnotify"
+        "isync"
         "iw"
         "libfaketime"
         "librewolf"
