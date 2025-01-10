@@ -57,7 +57,7 @@
         "mpd"
         "mpv"
         "mu"
-        "emacs-mu4e-alert"
+        "go-gitlab.com-shackra-goimapnotify"
         "mysql"
         "node"
         "openjdk"
