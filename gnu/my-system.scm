@@ -101,6 +101,7 @@
     "gzip"
     "iproute"
     "kmod"
+    "less"
     "lzip"
     "man-db"
     "ncurses"
