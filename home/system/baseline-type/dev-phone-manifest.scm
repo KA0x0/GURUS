@@ -58,7 +58,6 @@
         "mpv"
         "mu"
         "emacs-mu4e-alert"
-        "fetchmail"
         "mysql"
         "node"
         "openjdk"
