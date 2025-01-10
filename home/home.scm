@@ -55,7 +55,7 @@
                ("PS1"              . ,(literal-string "\[\e[91m\]\u\[\e[0m\]@\[\e[92m\]\H\[\e[0m\]:\[\e[94m\]\w\[\e[0;5m\]$\[\e[0m\] ")) ;; Add Error Code when =/ 0, Git status
                ("PS2"              . ,(literal-string "\[\e[3m\]\t\[\e[0;5m\]>\[\e[0m\] "))
                ("TMOUT"            . "898")
-               ("VISUAL"           . ../gnu/home/services/config/bash.d/emacs-pipe.sh"))))
+               ("VISUAL"           . "../gnu/home/services/config/bash.d/emacs-pipe.sh"))))
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
                 (directories '("../gnu/home/services/config"))))
