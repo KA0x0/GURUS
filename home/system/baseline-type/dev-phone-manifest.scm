@@ -51,6 +51,7 @@
         "iw"
         "libfaketime"
         "librewolf"
+        "man-pages"
         "mariadb"
         "monero"
         "mpd"
