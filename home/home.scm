@@ -45,7 +45,7 @@
               (environment-variables
                ("EDITOR"           . "/~/.guix-profile/bin/emacsclient --create-frame --no-wait")
                ("ALTERNATE_EDITOR" . "/run/current-system/profile/bin/herd start emacs-daemon && emacsclient --create-frame --nowait --alternate-editor $BACKUP_EDITOR")
-               ("BACKUP_EDITOR"    . ,(file-apend guile-emacs /bin/emacs))
+               ("BACKUP_EDITOR"    . ,(file-append guile-emacs /bin/emacs))
                ("HISTCONTROL"      . "ignoreboth")
                ("HISTFILESIZE"     . "4096")
                ("HISTSIZE"         . "4096")
