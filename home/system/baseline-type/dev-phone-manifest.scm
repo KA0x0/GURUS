@@ -57,7 +57,7 @@
         "mpd"
         "mpv"
         "mu"
-        "emacs-mu4e-alert "
+        "emacs-mu4e-alert"
         "mysql"
         "node"
         "openjdk"
