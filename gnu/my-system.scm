@@ -71,6 +71,7 @@
     "emacs-combobulate"
     "emacs-consult"
     "emacs-consult-denote"
+    "emacs-consult-eglot"
     "emacs-corfu"
     "emacs-denote"
     "emacs-diff-hl"
