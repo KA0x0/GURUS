@@ -104,6 +104,7 @@
     "less"
     "lzip"
     "man-db"
+    "man-pages"
     "ncurses"
     "nftables"
     "nss-certs"
