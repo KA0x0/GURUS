@@ -45,8 +45,8 @@
               (environment-variables
                ("EDITOR"        . ,(file-append emacs-next-no-x "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                ("HISTCONTROL"   . "ignoreboth")
-               ("HISTFILESIZE"  . ,"4096")
-               ("HISTSIZE"      . ,"4096")
+               ("HISTFILESIZE"  . "4096")
+               ("HISTSIZE"      . "4096")
                ("PAGER"         . ,(file-append emacs-next-no-x "/bin/emacsclient --alternate-editor --create-frame --no-wait"))
                ("PYTHONSTARTUP" . "/~/config/python/pythonrc.py")
                ("IPYTHONDIR"    . "/~/config/python/ipython")
