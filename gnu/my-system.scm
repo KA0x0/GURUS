@@ -117,7 +117,6 @@
     "rsync"
     "sed"
     "shadow"
-    "sqls"
     "sudo"
     "sysdig"
     "falcosecurity-libs"
