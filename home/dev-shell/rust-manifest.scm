@@ -7,7 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "my-emacs-next-no-x"
-        "rust"))
+  (list "rust"))
 
 ;;; rust.scm ends here

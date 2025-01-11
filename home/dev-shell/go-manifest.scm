@@ -7,7 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "my-emacs-next-no-x"
-        "go"))
+  (list "go"))
 
 ;;; go.scm ends here
