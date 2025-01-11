@@ -8,6 +8,7 @@
 
 (specifications->manifest
   (list "my-emacs-next-no-x"
+        "clang-toolchain"
         "coreutils"
         "libfaketime"))
 
