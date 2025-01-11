@@ -13,7 +13,6 @@
         "binutils"
         "binwalk"
         "buildah"
-        "ccls"
         "curl-ssh"
         "diffoscope"
         "my-emacs-next"
