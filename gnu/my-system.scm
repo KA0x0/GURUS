@@ -151,7 +151,7 @@ All activities performed on this device are logged and monitored.\n\n")))))
             (service openssh-service-type
               (openssh-configuration
                 (authorized-keys
-                  ("ka0x" ,(local-file "ka0x.pub")))))
+                  ("ka0x" ,(local-file "/etc/ssh/authorized_keys.d/ka0x.pub")))))
             (service system-log-service))))
 
 ;;; my-system.scm ends here
