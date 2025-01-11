@@ -72,6 +72,7 @@
         "python-scapy"
         "qemu"
         "rust"
+        "rust-analyzer"
         "sigrock-cli"
         "skopeo"
         "socat"
