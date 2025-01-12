@@ -89,6 +89,7 @@
         "tree-sitter-php"
         "tree-sitter-rust"
         "ungoogled-chromium-wayland"
+        "ublock-origin-chromium"
         "upx"
         "valgrind"
         "wine64"
