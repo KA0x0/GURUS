@@ -88,6 +88,7 @@
         "tree-sitter-org"
         "tree-sitter-php"
         "tree-sitter-rust"
+        "ungoogled-chromium-wayland"
         "upx"
         "valgrind"
         "wine64"
