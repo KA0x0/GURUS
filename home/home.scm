@@ -44,7 +44,7 @@
                ("vdir"       . "emacsclient --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
                ("EDITOR"           . "/~/.guix-profile/bin/emacsclient --create-frame --no-wait")
-               ("ALTERNATE_EDITOR" . "/run/current-system/profile/bin/herd start emacs-daemon || emacsclient --create-frame --nowait --alternate-editor $BACKUPEDITOR")  ;; Emacs hardcoded var name
+               ("ALTERNATE_EDITOR" . "/run/current-system/profile/bin/herd start emacs-daemon || emacsclient --create-frame --nowait --alternate-editor '$BACKUPEDITOR'")  ;; Emacs hardcoded var name
                ("BACKUPEDITOR"     . ,(file-append guile-emacs /bin/emacs))
                ("HISTCONTROL"      . "ignoreboth")
                ("HISTFILESIZE"     . "4096")
