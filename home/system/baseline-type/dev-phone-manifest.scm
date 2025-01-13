@@ -10,6 +10,7 @@
   (list "adb"
         "aflplusplus"
         "ascii"
+        "awscli-2"
         "binutils"
         "binwalk"
         "buildah"

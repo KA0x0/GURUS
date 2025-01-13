@@ -56,8 +56,7 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("awscli-2"
-    "bash"
+  '("bash"
     "bash-completion"
     "emacs-bash-completion"
     "bcachefs-tools"
