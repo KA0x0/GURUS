@@ -49,6 +49,8 @@
         "delve" ;; go debugger
         "graphviz"
         "guile-aws"
+        "guile-git"
+        "guile-ssh"
         "imagemagick"
         "isync"
         "iw"

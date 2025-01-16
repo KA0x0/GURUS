@@ -96,7 +96,6 @@
     "guile-next"
     "guile-colorized"
     "guile-readline"
-    "guile-ssh"
     "gzip"
     "iproute"
     "kmod"
