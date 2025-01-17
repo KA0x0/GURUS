@@ -4,10 +4,10 @@
 
 ;;; Code:
 
-(menu-bar-mode 0)
-(tool-bar-mode 0)
-(blink-cursor-mode 0)
-(column-number-mode 1)
+(setq menu-bar-mode 0)
+(setq tool-bar-mode 0)
+(setq blink-cursor-mode 0)
+(setq column-number-mode 1)
 
 (setq-default inhibit-startup-screen 1)
 ;; Show stray whitespace
@@ -52,6 +52,8 @@
 
 ;; Number of lines to scroll with mouse
 (setq mouse-wheel-scroll-amount '(12))
+;; Scroll window under mouse
+(setq mouse-wheel-follow-mouse 't)
 
 ;; Mouse scrolling in terminal emacs
 (unless (display-graphic-p)

@@ -20,6 +20,7 @@
         "my-emacs-next"
         "guile-emacs"
         "emacs-bluetooth"
+        "emacs-csv-mode"
         "emacs-dape"
         "emacs-ellama"
         "emacs-ement"
