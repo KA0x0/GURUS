@@ -46,6 +46,7 @@
         "gdb"
         "gnuradio"
         "go"
+        "gopls"
         "delve" ;; go debugger
         "graphviz"
         "guile-aws"
