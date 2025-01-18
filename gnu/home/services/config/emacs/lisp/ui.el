@@ -4,10 +4,10 @@
 
 ;;; Code:
 
-(setq menu-bar-mode 0)
-(setq tool-bar-mode 0)
-(setq blink-cursor-mode 0)
-(setq column-number-mode 1)
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(blink-cursor-mode 0)
+(column-number-mode 1)
 
 (setq-default inhibit-startup-screen 1)
 ;; Show stray whitespace
