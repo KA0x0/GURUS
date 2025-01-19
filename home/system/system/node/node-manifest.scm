@@ -11,7 +11,7 @@
         "age-keygen"
         "calibre"
         "qemu"
-        "rtorrent@0.9"
+        "rtorrent-xml-rpc@0.9"
         "sshfs"
         "tpm2-tss"))
 
