@@ -106,7 +106,6 @@
     "nftables"
     "nss-certs"
     "openssh-sans-x"
-    "pinentry"
     "pinentry-emacs"
     "emacs-pinentry"
     "procps"
