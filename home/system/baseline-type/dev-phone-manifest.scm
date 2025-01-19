@@ -40,6 +40,7 @@
         "file"
         "flashrom"
         "fontconfig"
+        "font-google-noto-emoji"
         "font-iosevka-term-slab"
         "font-liberation"
         "font-wqy-zenhei"
