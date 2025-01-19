@@ -106,7 +106,6 @@
     "nftables"
     "nss-certs"
     "openssh-sans-x"
-    "pinentry-emacs"
     "procps"
     "polkit"
     "python-debug-sans-pip-wrapper"

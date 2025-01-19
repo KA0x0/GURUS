@@ -73,6 +73,7 @@
         "openvpn"
         "patch"
         "patchelf"
+        "pinentry-emacs"
         "poke"
         "emacs-poke-mode"
         "pwntools"
