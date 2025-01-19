@@ -107,7 +107,6 @@
     "nss-certs"
     "openssh-sans-x"
     "pinentry-emacs"
-    "emacs-pinentry"
     "procps"
     "polkit"
     "python-debug-sans-pip-wrapper"
