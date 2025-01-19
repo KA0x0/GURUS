@@ -51,7 +51,6 @@
         "go"
         "gopls"
         "delve" ;; go debugger
-        "gpg"
         "graphviz"
         "guile-aws"
         "guile-git"
