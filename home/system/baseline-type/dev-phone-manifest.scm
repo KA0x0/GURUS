@@ -60,6 +60,7 @@
         "iw"
         "libfaketime"
         "librewolf"
+        "lldb"
         "man-pages"
         "mariadb"
         "monero"
