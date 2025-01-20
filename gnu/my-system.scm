@@ -92,6 +92,7 @@
     "findutils"
     "gawk"
     "git"
+    "gpg"
     "grep"
     "guile-next"
     "guile-colorized"
