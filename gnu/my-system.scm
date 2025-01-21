@@ -101,6 +101,7 @@
     "iproute"
     "kmod"
     "less"
+    "libselinux"
     "lzip"
     "man-db"
     "ncurses"
