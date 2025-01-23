@@ -82,6 +82,7 @@
         "python-debugpy"
         "python-scapy"
         "qemu"
+        "retroarch"
         "rust"
         "rust-analyzer"
         "sigrock-cli"
