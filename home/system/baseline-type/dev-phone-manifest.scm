@@ -82,7 +82,7 @@
         "python-debugpy"
         "python-scapy"
         "qemu"
-        "retroarch" "mupen64plus-core"
+        "retroarch" "libretro-mupen64plus-nx"
         "rust"
         "rust-analyzer"
         "sigrock-cli"
