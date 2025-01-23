@@ -13,7 +13,7 @@
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/mobile")
                   (supplementary-groups
-                    '("audio" "kvm" "netdev" "video" "wheel")))
+                    '("audio" "kvm" "netdev" "video")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

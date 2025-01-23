@@ -11,9 +11,7 @@
                   (comment "Beaconing")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/beacon")
-                  (supplementary-groups
-                    '("netdev" "wheel")))
+                  (home-directory "/home/beacon"))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

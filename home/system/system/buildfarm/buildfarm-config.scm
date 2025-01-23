@@ -11,9 +11,7 @@
                   (comment "I build stuff")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/build")
-                  (supplementary-groups
-                    '("netdev" "wheel")))
+                  (home-directory "/home/build"))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

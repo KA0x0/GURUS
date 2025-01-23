@@ -11,9 +11,7 @@
                   (comment "Mobile")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/mobile")
-                  (supplementary-groups
-                    '("adbusers" "audio" "kvm" "netdev" "video" "wheel")))
+                  (home-directory "/home/mobile"))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

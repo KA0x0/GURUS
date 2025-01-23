@@ -13,7 +13,7 @@
                   (shell (file-append bash "/bin/bash"))
                   (home-directory "/home/virtualizer")
                   (supplementary-groups
-                    '("kvm" "netdev" "wheel")))
+                    '("kvm" "netdev")))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration

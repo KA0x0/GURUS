@@ -11,9 +11,7 @@
                   (comment "I jump from node to node")
                   (group "users")
                   (shell (file-append bash "/bin/bash"))
-                  (home-directory "/home/hop")
-                  (supplementary-groups
-                    '("netdev" "wheel")))
+                  (home-directory "/home/hop"))
                 %base-user-accounts))
   (bootloader
     (bootloader-configuration
