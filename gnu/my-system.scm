@@ -94,7 +94,7 @@
     "git"
     "gnupg"
     "gpm"
-    "ncurses-with-gpm"
+    "ncurses/gpm"
     "grep"
     "guile-next"
     "guile-colorized"
