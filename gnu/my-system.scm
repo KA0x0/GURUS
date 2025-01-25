@@ -83,7 +83,6 @@
     "emacs-lsp-booster" "emacs-eglot-booster"
     "emacs-magit"
     "emacs-marginalia"
-    "emacs-multiple-cursors"
     "emacs-orderless"
     "emacs-prism"
     "emacs-vertico"
