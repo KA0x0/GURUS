@@ -84,6 +84,7 @@
     "emacs-magit"
     "emacs-marginalia"
     "emacs-orderless"
+    "emacs-paredit"
     "emacs-prism"
     "emacs-vertico"
     "emacs-vundo"
