@@ -79,6 +79,7 @@
     "emacs-geiser"
     "emacs-geiser-guile"
     "emacs-guix"
+    "emacs-lispy"
     "emacs-logview"
     "emacs-lsp-booster" "emacs-eglot-booster"
     "emacs-magit"
