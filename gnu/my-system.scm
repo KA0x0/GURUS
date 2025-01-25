@@ -85,7 +85,7 @@
     "emacs-marginalia"
     "emacs-multiple-cursors"
     "emacs-orderless"
-    "emacs-rainbow-delimiters"
+    "emacs-prism"
     "emacs-vertico"
     "emacs-vundo"
     "eudev"
