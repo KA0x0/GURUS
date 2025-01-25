@@ -43,8 +43,6 @@
   :config
   (repeat-mode))
 
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
 ;; Persist history over Emacs restarts. Vertico sorts by history position.
 (use-package savehist
   :init
