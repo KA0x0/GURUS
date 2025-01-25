@@ -100,6 +100,7 @@
         "tree-sitter-rust"
         "upx"
         "valgrind"
+        "wl-clipboard"
         "wine64"
         "wireguard-tools"
         "wireshark"
