@@ -48,6 +48,8 @@
   :init
   (savehist-mode))
 
+(use-package prism)
+
 ;; Number of lines to scroll with mouse
 (setq mouse-wheel-scroll-amount '(12))
 ;; Scroll window under mouse
