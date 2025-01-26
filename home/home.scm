@@ -27,7 +27,6 @@
                ("df"         . "df --human-readable")
                ("dir"        . "emacsclient --create-frame --eval '(list-directory)' --no-wait")
                ("emacs"      . "emacsclient --create-frame --no-wait")
-               ("firefox"    . "guix shell --container librewolf -- ///mnt/storage/kaox/")
                ("grep"       . "grep --color=auto")
                ("ll"         . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
                ("ls"         . "ls --almost-all --color=auto --dired --human-readable --indicator-style -v")

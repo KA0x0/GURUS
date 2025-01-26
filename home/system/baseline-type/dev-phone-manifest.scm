@@ -58,7 +58,6 @@
         "isync"
         "iw"
         "libfaketime"
-        "librewolf"
         "llvm"
         "clang"
         "lldb"
