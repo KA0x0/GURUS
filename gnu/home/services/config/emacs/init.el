@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'compat)
+(use-package compat)
 
 (dolist (f(directory-files "~/.config/emacs/lisp" t "\\.el$")) (load-file))
 
