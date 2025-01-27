@@ -38,7 +38,6 @@
   (packages
     (append
       (list
-        i2pd
         ppp)
         %my-base-packages))
   (services
