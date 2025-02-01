@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "calibre"
-        "llama-cpp"
         "qemu"
         "rtorrent-xml-rpc@0.9"
         "sshfs"
