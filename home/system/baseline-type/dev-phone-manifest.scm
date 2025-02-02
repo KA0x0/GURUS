@@ -32,6 +32,7 @@
         "emacs-modbus"
         "emacs-org-caldav"
         "emacs-org-timeblock"
+        "emacs-org-ql"
         "emacs-plz"
         "emacs-x509-mode"
         "emacs-yasnippet"
