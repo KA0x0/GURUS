@@ -21,7 +21,6 @@
         "emacs-bluetooth"
         "emacs-csv-mode"
         "emacs-dape"
-        "emacs-ellama"
         "emacs-ednc"
         "emacs-ement"
         "emacs-emms"
