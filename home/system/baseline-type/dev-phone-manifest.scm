@@ -103,6 +103,7 @@
         "wine64"
         "wireguard-tools"
         "wireshark"
-        "yt-dlp"))
+        "yt-dlp"
+        "zbar"))
 
 ;;; dev-phone-manifest.scm ends here
