@@ -32,7 +32,7 @@
         "emacs-org-caldav"
         "emacs-org-timeblock"
         "emacs-org-ql"
-        "emacs-plz"
+        "emacs-verb"
         "emacs-x509-mode"
         "emacs-yasnippet"
      ;; "ffmpeg" propagated by mpv
