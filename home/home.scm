@@ -40,8 +40,8 @@
                ("powershell" . "pwsh -NoLogo")
                ("ps"         . "ps --forest")
                ("rm"         . "rm --interactive --one-file-system --verbose")
-               ("sysdig"         . "sudo sysdig --modern-bpf")
-               ("csysdig"         . "sudo csysdig --modern-bpf")
+               ("sysdig"     . "sudo sysdig --modern-bpf")
+               ("csysdig"    . "sudo csysdig --modern-bpf")
                ("vdir"       . "emacsclient --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
                ("EDITOR"           . "/~/.guix-profile/bin/emacsclient --create-frame --no-wait")
