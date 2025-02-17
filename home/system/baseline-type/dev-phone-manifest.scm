@@ -84,6 +84,7 @@
         "retroarch" "libretro-mupen64plus-nx"
         "rust"
         "rust-analyzer"
+        "sage"
         "sigrock-cli"
         "skopeo"
         "socat"
