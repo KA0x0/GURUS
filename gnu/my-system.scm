@@ -51,7 +51,7 @@
 (define-public %my-base-operating-system
   (operating-system
    (locale "en_US.utf8")
-   (timezone "Etc/Greenwich")
+   (timezone "Etc/UTC")
    (keyboard-layout (keyboard-layout "us" "ru"))))
 
 (define-public %my-base-packages
