@@ -98,6 +98,7 @@
     "grep"
     "guile-next"
     "guile-colorized"
+    "guile-fibers-next"
     "guile-readline"
     "gzip"
     "iproute"
