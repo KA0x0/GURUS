@@ -55,6 +55,7 @@
                ("IPYTHONDIR"       . "/~/config/python/ipython")
                ("PS1"              . ,(literal-string "\[\e[92m\]\u\[\e[0m\]@\[\e[94m\]\H\[\e[0m\]:\[\e[97m\]\w\[\e[0;5m\]\$\[\e[0m\] ")) ;; Add Error Code when =/ 0, Git status
                ("PS2"              . ,(literal-string "\[\e[90;3m\]\t\[\e[0;37;5m\]\$\[\e[0m\] "))
+               ("TERM"             . "xterm-256color")
                ("TMOUT"            . "898"))))
             (service home-dotfiles-service-type
               (home-dotfiles-configuration
