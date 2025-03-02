@@ -33,7 +33,6 @@
         "emacs-org-caldav"
         "emacs-org-timeblock"
         "emacs-org-ql"
-        "emacs-ultra-scroll"
         "emacs-verb"
         "emacs-x509-mode"
         "emacs-yasnippet"
