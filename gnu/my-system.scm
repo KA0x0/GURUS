@@ -130,7 +130,8 @@
     "util-linux+udev"
     "wget"
     "which"
-    "xz")))
+    "xz"
+    "zstd")))
 
 (define my-motd
      (service login-service-type
