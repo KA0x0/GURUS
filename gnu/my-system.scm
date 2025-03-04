@@ -108,6 +108,7 @@
     "less"
     "libselinux"
     "lzip"
+    "lzop"
     "man-db"
     "nftables"
     "nss-certs"
