@@ -88,6 +88,7 @@
         "sigrock-cli"
         "skopeo"
         "socat"
+        "squashfs-tools"
         "sshfs"
         "tesseract-ocr"
         "tiled"
