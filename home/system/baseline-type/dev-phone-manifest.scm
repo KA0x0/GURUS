@@ -98,6 +98,7 @@
         "tree-sitter-org"
         "tree-sitter-php"
         "tree-sitter-rust"
+        "unrar"
         "upx"
         "valgrind"
         "wl-clipboard"
