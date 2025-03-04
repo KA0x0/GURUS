@@ -8,6 +8,7 @@
 
 (specifications->manifest
   (list "jq"
+        "nmap" ; slirp4netns dependecy
         "podman"
         "podman-compose"))
 
