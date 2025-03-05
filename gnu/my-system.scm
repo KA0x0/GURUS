@@ -78,6 +78,7 @@
     "emacs-embark"
     "emacs-geiser"
     "emacs-geiser-guile"
+    "emacs-gptel"
     "emacs-guix"
     "emacs-lispy"
     "emacs-logview"
