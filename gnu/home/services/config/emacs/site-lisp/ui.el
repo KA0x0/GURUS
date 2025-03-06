@@ -38,7 +38,6 @@
 ;; Allow for shorter responses: "y" for yes and "n" for no.
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Enable repeat mode for more ergonomic `dape' use
 (use-package repeat
   :config
   (repeat-mode))
@@ -61,6 +60,10 @@
   (xterm-mouse-mode 1)
   (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
+
+(use-package diff-hl
+  :config
+  (global-diff-hl-mode))
 
 
 (provide 'ui-wm)
