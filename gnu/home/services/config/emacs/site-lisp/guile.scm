@@ -4,8 +4,6 @@
 
 ;;; Code:
 
-(use-package eglot)
-
 (use-package geiser)
 (use-package geiser-guile)
 
