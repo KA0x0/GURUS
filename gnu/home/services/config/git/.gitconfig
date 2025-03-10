@@ -5,7 +5,7 @@
 [commit]
         verbose = true
 [core]
-        excludesfile = ~/.config/.gitignore
+        excludesfile = ~/.config/git/.gitignore
         fsmonitor = true
         untrackedCache = true
 [diff]
