@@ -35,7 +35,6 @@
         autoStash = true
         updateRefs = true
 [merge]
-        (just 'diff3' if git version < 2.3)
         conflictstyle = zdiff3 
 [pull]
         rebase = true
