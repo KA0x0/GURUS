@@ -1,40 +1,40 @@
-[column]
-        ui = auto
 [branch]
         sort = -committerdate
-[tag]
-        sort = version:refname
-[init]
-        defaultBranch = main
+[column]
+        ui = auto
+[commit]
+        verbose = true
+[core]
+        excludesfile = ~/.config/.gitignore
+        fsmonitor = true
+        untrackedCache = true
 [diff]
         algorithm = histogram
         colorMoved = plain
         mnemonicPrefix = true
         renames = true
+[fetch]
+        all = true
+        prune = true
+        pruneTags = true
+[help]
+        autocorrect = prompt
+[init]
+        defaultBranch = main
+[merge]
+        conflictstyle = zdiff3
+[pull]
+        rebase = true
 [push]
         default = simple
         autoSetupRemote = true
         followTags = true
-[fetch]
-        prune = true
-        pruneTags = true
-        all = true
-[help]
-        autocorrect = prompt
-[commit]
-        verbose = true
-[rerere]
-        enabled = true
-        autoupdate = true
-[core]
-        excludesfile = ~/.config/.gitignore
-        fsmonitor = true
-        untrackedCache = true
 [rebase]
         autoSquash = true
         autoStash = true
         updateRefs = true
-[merge]
-        conflictstyle = zdiff3 
-[pull]
-        rebase = true
+[rerere]
+        enabled = true
+        autoupdate = true
+[tag]
+        sort = version:refname 
