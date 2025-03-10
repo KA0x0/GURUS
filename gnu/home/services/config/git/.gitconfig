@@ -27,7 +27,7 @@
         enabled = true
         autoupdate = true
 [core]
-        excludesfile = ~/.gitignore
+        excludesfile = ~/.config/.gitignore
         fsmonitor = true
         untrackedCache = true
 [rebase]
