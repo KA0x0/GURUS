@@ -82,7 +82,7 @@
         "python-ipython"
         "python-scapy"
         "qemu"
-        "redis" ;; closed source to migrate
+        "redis" ;; Not free anymore to migrate
         "retroarch" "libretro-mupen64plus-nx"
         "rust"
         "rust-analyzer"
