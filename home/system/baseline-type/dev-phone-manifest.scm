@@ -67,6 +67,7 @@
         "mpd"
         "mpv"
         "mu"
+        "emacs-consult-mu"
         "mysql"
         "node"
         "openjdk"
