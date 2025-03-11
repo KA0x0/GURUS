@@ -72,6 +72,7 @@
     "emacs-consult-eglot"
     "emacs-corfu"
     "emacs-denote"
+    "emacs-disproject"
     "emacs-consult-denote"
     "emacs-diff-hl"
     "emacs-embark"
