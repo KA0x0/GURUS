@@ -64,8 +64,6 @@
     "bzip2"
     "coreutils"
     "diffutils"
-    "direnv"
-    "emacs-envrc"
     "my-emacs-next-no-x"
     "emacs-with-editor"
     "emacs-cape"
