@@ -73,7 +73,6 @@
     "emacs-corfu"
     "emacs-denote"
     "emacs-consult-denote"
-    "emacs-disproject"
     "emacs-diff-hl"
     "emacs-embark"
     "emacs-eshell-syntax-highlighting"
