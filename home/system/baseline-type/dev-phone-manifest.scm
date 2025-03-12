@@ -66,7 +66,7 @@
         "monero"
         "mpd"
         "mpv"
-        "mu" "emacs-consult-mu"
+        "mu"
         "mysql"
         "node"
         "openjdk"
