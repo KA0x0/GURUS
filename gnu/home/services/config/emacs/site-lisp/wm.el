@@ -10,7 +10,6 @@
 ;; Fonts
 (set-frame-font "iosevka 12" nil t)
 
-(hyperbole-mode 1)
 
 (use-package yasnippet)
 
