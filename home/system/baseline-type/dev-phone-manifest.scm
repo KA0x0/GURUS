@@ -28,7 +28,6 @@
         "emacs-emms"
         "emacs-forge"
         "emacs-git-timemachine"
-        "emacs-hyperbole"
         "emacs-mentor"
         "emacs-modbus"
         "emacs-org-caldav"
