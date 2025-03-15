@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Steam Big Picture
+Comment=Start Steam In Big Picture Mode for touch devices
+Type=Application
+Exec=steam -bigpicture
+Icon=steam
