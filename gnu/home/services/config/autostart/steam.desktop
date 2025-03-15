@@ -2,5 +2,7 @@
 Name=Steam Big Picture
 Comment=Start Steam In Big Picture Mode for touch devices
 Type=Application
-Exec=steam -bigpicture
+Terminal=False
+Exec=steam steam://open/bigpicture
 Icon=steam
+MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
