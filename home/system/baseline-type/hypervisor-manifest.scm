@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "qemu"
-        "tpm2-tss"))
+  (list "libvirt"
+        "qemu"))
 
 ;;; hypervisor-manifest.scm ends here
