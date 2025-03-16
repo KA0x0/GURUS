@@ -31,6 +31,9 @@
 (setq-default backup-by-copying t)
 ;; Lockfiles
 (setq-default create-lockfiles nil) ;; Disable lockfiles
+;; Scratch Buffer
+(setq-default initial-scratch-message "")
+
 ;; Electric Pair
 (electric-pair-mode 1) ;; Enable Electric-Pair-mode
 (setq-default electric-pair-delete-adjacent-pairs 1)
