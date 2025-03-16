@@ -66,6 +66,7 @@
                 (file-append sshfs "/bin/sshfs"))
               (extra-special-file "/bin/ssh"
                 (file-append openssh "/bin/ssh"))
+        (service bluetooth-service-type)
         (service elogind-service-type)
         (service httpd-service-type
          (httpd-configuration
