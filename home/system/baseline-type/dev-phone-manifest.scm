@@ -34,6 +34,7 @@
         "emacs-org-timeblock"
         "emacs-org-ql"
         "emacs-verb"
+        "emacs-world-time-mode"
         "emacs-x509-mode"
         "emacs-yasnippet"
      ;; "ffmpeg" propagated by mpv
