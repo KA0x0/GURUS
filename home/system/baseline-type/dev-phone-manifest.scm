@@ -23,6 +23,7 @@
         "emacs-csv-mode"
         "emacs-dape"
         "emacs-dired-preview"
+        "emacs-disproject"
         "emacs-ednc"
         "emacs-ement"
         "emacs-emms"
