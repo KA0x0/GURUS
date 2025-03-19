@@ -83,7 +83,7 @@
     "emacs-lispy"
     "emacs-logview"
     "emacs-lsp-booster" "emacs-eglot-booster"
-    "emacs-magit" ;; pulls emacs-transient
+    "emacs-magit" ;; depends on emacs-transient
     "emacs-marginalia"
     "emacs-orderless"
     "emacs-prism"
