@@ -88,6 +88,7 @@
         "rust"
         "rust-analyzer"
         "sage"
+        "emacs-sage-shell-mode"
         "sigrock-cli"
         "skopeo"
         "socat"
