@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-trap 'echo "Warning: A command has failed. Exiting the script. Line was ($0:$LINENO): $(sed -n "${LINENO}p" "$0")"; exit 3' ERR
-set -Eeuo pipefail
+set -euo pipefail
 
 #Run the given command via 'guix shell'
 function ,
