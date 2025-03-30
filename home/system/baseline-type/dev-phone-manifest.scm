@@ -84,6 +84,7 @@
         "qemu"
         "redis" ;; TODO:Migrate (Not free anymore) 
         "retroarch" "libretro-mupen64plus-nx"
+        "rr"
         "rust"
         "rust-analyzer"
         "sage"
