@@ -20,7 +20,6 @@
         "guile-emacs"
         "emacs-bluetooth"
         "emacs-calibredb"
-        "emacs-csv-mode"
         "emacs-dape"
         "emacs-dired-preview"
         "emacs-disproject"
