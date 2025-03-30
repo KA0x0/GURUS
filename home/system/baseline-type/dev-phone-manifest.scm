@@ -30,6 +30,7 @@
         "emacs-git-timemachine"
         "emacs-mentor"
         "emacs-modbus"
+        "emacs-nov-el"
         "emacs-org-caldav"
         "emacs-org-timeblock"
         "emacs-org-ql"
