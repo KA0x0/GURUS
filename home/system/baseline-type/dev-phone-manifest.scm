@@ -83,7 +83,7 @@
         "python-scapy"
         "qemu"
         "redis" ;; TODO:Migrate (Not free anymore) 
-        "retroarch" "libretro-mupen64plus-nx"
+        "retroarch" "libretro-dolphin-emu" "libretro-mupen64plus-nx"
         "rr"
         "rust"
         "rust-analyzer"
