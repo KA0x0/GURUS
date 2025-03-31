@@ -128,6 +128,7 @@
     "tree-sitter-bash"
     "tree-sitter-json"
     "tree-sitter-python"
+    "tree-sitter-scheme"
     "tree-sitter-yaml"
     "util-linux+udev"
     "wget"
