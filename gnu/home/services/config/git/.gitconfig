@@ -18,8 +18,6 @@
         pruneTags = true
 [help]
         autocorrect = prompt
-[init]
-        defaultBranch = master
 [merge]
         conflictstyle = zdiff3
 [pull]
