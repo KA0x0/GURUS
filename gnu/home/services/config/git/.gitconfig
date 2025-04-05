@@ -20,7 +20,7 @@
 [help]
         autocorrect = prompt
 [init]
-        defaultBranch = main
+        defaultBranch = master
 [merge]
         conflictstyle = zdiff3
 [pull]
