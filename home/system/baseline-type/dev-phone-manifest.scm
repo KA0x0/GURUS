@@ -33,6 +33,7 @@
         "emacs-org-caldav"
         "emacs-org-timeblock"
         "emacs-org-ql"
+        "emacs-parseedn"
         "emacs-verb"
         "emacs-world-time-mode"
         "emacs-x509-mode"
