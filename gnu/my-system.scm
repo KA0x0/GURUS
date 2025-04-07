@@ -92,7 +92,6 @@
     "eudev"
     "findutils"
     "gawk"
-    "gimp"
     "git"
     "gnupg"
     "gpm"

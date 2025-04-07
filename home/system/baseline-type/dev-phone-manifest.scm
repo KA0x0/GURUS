@@ -48,6 +48,7 @@
         "freerdp"
         "gcc"
         "gdb"
+        "gimp"
         "gnuradio"
         "go"
         "gopls"
