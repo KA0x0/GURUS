@@ -104,6 +104,7 @@
     "guile-gcrypt"
     "guile-git"
     "guile-json"
+    "guile-lsp-server"
     "guile-readline"
     "guile-ssh"
     "gzip"
