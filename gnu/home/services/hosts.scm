@@ -46,7 +46,7 @@
                                 "maps.google.com") ;; OpenStreetMaps
                           (host ""
                                 "bing.com"
-                                "google.com") ;; SearxNG
+                                "google.com") ;; Brave Search
                           (host ""
                                 "stackoverflow.com") ;; AnonymousOverflow
                           (host "" 
