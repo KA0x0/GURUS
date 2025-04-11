@@ -21,12 +21,10 @@
                     hosts-service-type
                     (list (host "10.0.0.1"
                                 "network"
-                                "network.home"
-                                "network.home.arpa")
+                                "network.internal")
                           (host "10.0.0.50"
                                 "node"
-                                "node.home"
-                                "node.home.arpa")))
+                                "node.internal")))
 
 (simple-service 'my-redirect
                     hosts-service-type ;; To-do add TLD list for big services.
