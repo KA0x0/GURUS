@@ -31,6 +31,7 @@
         "emacs-mentor"
         "emacs-modbus"
         "emacs-org-caldav"
+        "emacs-org-contacts"
         "emacs-org-timeblock"
         "emacs-org-ql"
         "emacs-verb"
