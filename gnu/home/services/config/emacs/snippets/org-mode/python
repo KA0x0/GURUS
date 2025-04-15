@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: python
-# key: <python
-# --
-#+begin_src python
-#!/usr/bin/env python3
-
-  $0 
-#+end_src
