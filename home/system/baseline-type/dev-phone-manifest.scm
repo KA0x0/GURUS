@@ -34,6 +34,7 @@
         "emacs-org-contacts"
         "emacs-org-timeblock"
         "emacs-org-ql"
+        "emacs-osm"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-world-time-mode"
