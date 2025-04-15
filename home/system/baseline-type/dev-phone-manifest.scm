@@ -28,6 +28,7 @@
         "emacs-emms"
         "emacs-forge"
         "emacs-git-timemachine"
+        "emacs-jinx"
         "emacs-mentor"
         "emacs-modbus"
         "emacs-org-caldav"
