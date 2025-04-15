@@ -107,7 +107,6 @@
         "tree-sitter-rust"
         "unrar"
         "upx"
-        "valgrind"
         "wl-clipboard"
         "wine64"
         "wireguard-tools"
