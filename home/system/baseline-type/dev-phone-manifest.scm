@@ -30,7 +30,6 @@
         "emacs-git-timemachine"
         "emacs-jinx"
         "emacs-mentor"
-        "emacs-modbus"
         "emacs-org-caldav"
         "emacs-org-contacts"
         "emacs-org-timeblock"

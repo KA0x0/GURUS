@@ -63,22 +63,6 @@
         `(modify-phases ,phases
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap)))))))
-
-(define-public emacs-modbus
-  (package
-    (name "emacs-modbus")
-    (version "20200318.1618")
-    (source
-      (origin
-        (method git-fetch)
-        (uri (git-reference
-               (url "https://github.com/spauldo/emacs-modbus.git")
-               (commit
-                 "d9005843b04ccfce19b53e0415834f72b7fbed4a")))))
-    (build-system melpa-build-system)
-    (home-page "https://github.com/spauldo/emacs-modbus")
-    (synopsis
-      "Modbus-mode for emacs")
-    (license license:gpl2)))
+           
 
 ;;; emacs.scm ends here
