@@ -32,7 +32,6 @@
         "emacs-mentor"
         "emacs-org-caldav"
         "emacs-org-contacts"
-        "emacs-org-timeblock"
         "emacs-osm"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
