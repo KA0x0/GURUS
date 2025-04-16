@@ -35,7 +35,6 @@
         "emacs-osm"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
-        "emacs-world-time-mode"
         "emacs-x509-mode"
      ;; "ffmpeg" propagated by mpv
         "file"
