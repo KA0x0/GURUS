@@ -20,6 +20,8 @@
         "guile-emacs"
         "emacs-bluetooth"
         "emacs-calibredb"
+        "emacs-citar"
+        "emacs-citar-denote"
         "emacs-dape"
         "emacs-dired-preview"
         "emacs-disproject"
