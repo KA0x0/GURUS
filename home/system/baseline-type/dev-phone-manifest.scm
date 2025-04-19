@@ -83,7 +83,6 @@
         "python-ipython"
         "python-scapy"
         "qemu"
-        "redis" ;; TODO:Migrate to Valkey(?) (Licening problems) 
         "retroarch" "libretro-dolphin-emu" "libretro-mupen64plus-nx"
         "rr"
         "rust"
@@ -107,6 +106,7 @@
         "tree-sitter-rust"
         "unrar"
         "upx"
+        "valkey"
         "wl-clipboard"
         "wine64"
         "wireguard-tools"
