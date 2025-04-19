@@ -9,7 +9,9 @@
 (specifications->manifest
   (list "guile-emacs"
         "clang-toolchain"
+        "cmake"
         "coreutils"
-        "libfaketime"))
+        "libfaketime"
+        "ninja"))
 
 ;;; base-manifest.scm ends here
