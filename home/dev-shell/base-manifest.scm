@@ -12,6 +12,7 @@
         "clang-toolchain"
         "cmake"
         "coreutils"
+        "git"
         "libfaketime"
         "ninja"))
 
