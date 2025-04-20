@@ -65,7 +65,6 @@
         "man-pages"
         "mariadb"
         "monero"
-        "mpd"
         "mpv"
         "mu"
         "mysql"
