@@ -39,6 +39,7 @@
         "emacs-x509-mode"
      ;; "ffmpeg" propagated by mpv
         "file"
+        "flac"
         "flashrom"
         "fontconfig"
         "font-google-noto-emoji"
