@@ -152,6 +152,9 @@
 (define-public %my-base-services
   (append
       (list (service my-dns)
+            (service guix-service-type
+              (guix-configuration
+                (privileged #f)))
             (service login-service-type my-motd)
             (service nftables-service-type)
             (service ntp-service-type)
