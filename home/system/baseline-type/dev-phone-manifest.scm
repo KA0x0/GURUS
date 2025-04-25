@@ -90,6 +90,8 @@
         "rust-analyzer"
         "sage"
         "emacs-sage-shell-mode"
+        "shellcheck"
+        "emacs-shellcheck-flymake"
         "sigrock-cli"
         "skopeo"
         "socat"
