@@ -100,6 +100,7 @@
         "tree-sitter-cpp"
         "tree-sitter-dockerfile"
         "tree-sitter-go"
+        "tree-sitter-go-mod"
         "tree-sitter-javascript"
         "tree-sitter-org"
         "tree-sitter-php"
