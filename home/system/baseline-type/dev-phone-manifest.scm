@@ -27,6 +27,7 @@
         "emacs-ednc"
         "emacs-ement"
         "emacs-emms"
+        "emacs-eslint-flymake"
         "emacs-forge"
         "emacs-git-timemachine"
         "emacs-jinx"
