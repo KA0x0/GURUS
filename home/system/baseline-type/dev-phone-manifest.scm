@@ -35,6 +35,7 @@
         "emacs-org-caldav"
         "emacs-org-contacts"
         "emacs-osm"
+        "emacs-prettier"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
