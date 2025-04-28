@@ -9,34 +9,34 @@
 (blink-cursor-mode 0)
 (column-number-mode 1)
 
-(setq-default inhibit-startup-screen 1)
+(setopt inhibit-startup-screen 1)
 ;; Show stray whitespace
-(setq-default show-trailing-whitespace t)
-(setq-default indicate-empty-lines t)
-(setq-default indicate-buffer-boundaries 'left)
+(setopt show-trailing-whitespace t)
+(setopt indicate-empty-lines t)
+(setopt indicate-buffer-boundaries 'left)
 ;; Add a newline automatically at the end of a file while saving
-(setq-default require-final-newline t)
+(setopt require-final-newline t)
 ;; Consider a period followed by a single space to be end of sentence
-(setq-default sentence-end-double-space nil)
+(setopt sentence-end-double-space nil)
 ;; Use spaces, not tabs, for indentation
-(setq-default indent-tabs-mode nil)
+(setopt indent-tabs-mode nil)
 ;; Highlight matching pairs of parentheses
-(setq-default show-paren-delay 0)
+(setopt show-paren-delay 0)
 (show-paren-mode 1)
 ;; Write auto-saves and backups to separate directory
 (make-directory "~/.tmp/emacs/auto-save/" t)
-(setq-default auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
-(setq-default backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
+(setopt auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
+(setopt backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
 ;; Do not move the current file while creating backup
-(setq-default backup-by-copying t)
+(setopt backup-by-copying t)
 ;; Lockfiles
-(setq-default create-lockfiles nil) ;; Disable lockfiles
+(setopt create-lockfiles nil) ;; Disable lockfiles
 ;; Scratch Buffer
-(setq-default initial-scratch-message "")
+(setopt initial-scratch-message "")
 
 ;; Electric Pair
 (electric-pair-mode 1) ;; Enable Electric-Pair-mode
-(setq-default electric-pair-delete-adjacent-pairs 1)
+(setopt electric-pair-delete-adjacent-pairs 1)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -53,9 +53,9 @@
 (use-package prism)
 
 ;; Number of lines to scroll with mouse
-(setq mouse-wheel-scroll-amount '(12))
+(setopt mouse-wheel-scroll-amount '(12))
 ;; Scroll window under mouse
-(setq mouse-wheel-follow-mouse 't)
+(setopt mouse-wheel-follow-mouse 't)
 
 ;; Mouse scrolling in terminal emacs
 (unless (display-graphic-p)

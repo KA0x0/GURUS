@@ -15,16 +15,16 @@
   (vertico-mode)
 
   ;; Different scroll margin
-  ;; (setq vertico-scroll-margin 0)
+  ;; (setopt vertico-scroll-margin 0)
 
   ;; Show more candidates
-  ;; (setq vertico-count 20)
+  ;; (setopt vertico-count 20)
 
   ;; Grow and shrink the Vertico minibuffer
-  (setq vertico-resize t)
+  (setopt vertico-resize t)
 
   ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
-    (setq vertico-cycle t))
+    (setopt vertico-cycle t))
 
 (use-package marginalia
   :config
@@ -36,9 +36,9 @@
 (use-package orderless
   :init
   ;; Configure a custom style dispatcher (see the Consult wiki)
-  ;; (setq orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
+  ;; (setopt orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
   ;;       orderless-component-separator #'orderless-escapable-split-on-space)
-  (setq completion-styles '(orderless basic)
+  (setopt completion-styles '(orderless basic)
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
@@ -49,14 +49,14 @@
    ("C-h B" . embark-bindings)) ;; alternative for `describe-bindings'
   :init
   ;; Optionally replace the key help with a completing-read interface
-   (setq prefix-help-command #'embark-prefix-help-command)
+   (setopt prefix-help-command #'embark-prefix-help-command)
   ;; Show the Embark target at point via Eldoc. You may adjust the
   ;; Eldoc strategy, if you want to see the documentation from
   ;; multiple providers. Beware that using this can be a little
   ;; jarring since the message shown in the minibuffer can be more
   ;; than one line, causing the modeline to move up and down:
   ;; (add-hook 'eldoc-documentation-functions #'embark-eldoc-first-target)
-  ;; (setq eldoc-documentation-strategy #'eldoc-documentation-compose-eagerly)
+  ;; (setopt eldoc-documentation-strategy #'eldoc-documentation-compose-eagerly)
   :config
   ;; Hide the mode line of the Embark live/completions buffers
    (add-to-list 'display-buffer-alist
@@ -105,17 +105,17 @@
   (advice-add #'completing-read-multiple :filter-args #'crm-indicator)
 
   ;; Do not allow the cursor in the minibuffer prompt
-  (setq minibuffer-prompt-properties
+  (setopt minibuffer-prompt-properties
         '(read-only t cursor-intangible t face minibuffer-prompt))
   (add-hook 'minibuffer-setup-hook #'cursor-intangible-mode)
 
   ;; Support opening new minibuffers from inside existing minibuffers.
-  (setq enable-recursive-minibuffers t)
+  (setopt enable-recursive-minibuffers t)
 
   ;; Emacs 28 and newer: Hide commands in M-x which do not work in the current
   ;; mode.  Vertico commands are hidden in normal buffers. This setting is
   ;; useful beyond Vertico.
-  (setq read-extended-command-predicate #'command-completion-default-include-p))
+  (setopt read-extended-command-predicate #'command-completion-default-include-p))
 
 
 (provide 'my-completion)

@@ -8,7 +8,7 @@
   :preface
   ;; By default dape shares the same keybinding prefix as `gud'
   ;; If you do not want to use any prefix, set it to nil.
-  ;; (setq dape-key-prefix "\C-x\C-a")
+  ;; (setopt dape-key-prefix "\C-x\C-a")
 
   :hook
   ;; Save breakpoints on quit
@@ -21,17 +21,17 @@
   ;; (dape-breakpoint-global-mode)
 
   ;; Info buffers to the right
-  ;; (setq dape-buffer-window-arrangement 'right)
+  ;; (setopt dape-buffer-window-arrangement 'right)
 
   ;; Info buffers like gud (gdb-mi)
-  ;; (setq dape-buffer-window-arrangement 'gud)
-  ;; (setq dape-info-hide-mode-line nil)
+  ;; (setopt dape-buffer-window-arrangement 'gud)
+  ;; (setopt dape-info-hide-mode-line nil)
 
   ;; Pulse source line (performance hit)
   ;; (add-hook 'dape-display-source-hook 'pulse-momentary-highlight-one-line)
 
   ;; Showing inlay hints
-  ;; (setq dape-inlay-hints t)
+  ;; (setopt dape-inlay-hints t)
 
   ;; Save buffers on startup, useful for interpreted languages
   ;; (add-hook 'dape-start-hook (lambda () (save-some-buffers t t)))
