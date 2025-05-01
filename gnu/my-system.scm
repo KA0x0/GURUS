@@ -81,7 +81,6 @@
     "emacs-guix"
     "emacs-lispy"
     "emacs-logview"
-    "emacs-lsp-booster" "emacs-eglot-booster"
     "emacs-magit" ;; depends on emacs-transient
     "emacs-marginalia"
     "emacs-orderless"
