@@ -22,7 +22,6 @@
         "emacs-calibredb"
         "emacs-citar" "emacs-citar-denote"
         "emacs-dape"
-        "emacs-dired-preview"
         "emacs-disproject"
         "emacs-ednc"
         "emacs-ement"
