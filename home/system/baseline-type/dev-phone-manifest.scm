@@ -38,7 +38,6 @@
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
-        "emacs-ytdl"
      ;; "ffmpeg" propagated by mpv
         "file"
         "flac"
@@ -117,6 +116,7 @@
         "wireguard-tools"
         "wireshark"
         "yt-dlp"
+        "emacs-ytdl"
         "zbar"))
 
 ;;; dev-phone-manifest.scm ends here
