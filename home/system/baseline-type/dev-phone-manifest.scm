@@ -116,7 +116,6 @@
         "wireguard-tools"
         "wireshark"
         "yt-dlp"
-        "emacs-ytdl"
         "zbar"))
 
 ;;; dev-phone-manifest.scm ends here
