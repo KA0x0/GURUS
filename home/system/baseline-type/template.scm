@@ -1,6 +1,6 @@
 ;;; Code:
 
-(use-modules (gnu)
+(use-modules (gnu))
 
 (operating-system
   (host-name "template")
