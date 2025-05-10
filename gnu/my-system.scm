@@ -68,7 +68,6 @@
     "emacs-avy"
     "emacs-cape"
     "emacs-casual-avy"
-    "emacs-casual-calc"
     "emacs-casual-dired"
     "emacs-casual-info"
     "emacs-combobulate"
