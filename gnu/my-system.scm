@@ -71,7 +71,6 @@
     "emacs-casual-calc"
     "emacs-casual-dired"
     "emacs-casual-info"
-    "emacs-casual-lib"
     "emacs-combobulate"
     "emacs-consult" "emacs-consult-eglot"
     "emacs-corfu"
