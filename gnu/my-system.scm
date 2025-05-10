@@ -85,7 +85,6 @@
     "emacs-guix"
     "emacs-lispy"
     "emacs-logview"
-    "emacs-magit" ;; depends on emacs-transient
     "emacs-marginalia"
     "emacs-orderless"
     "emacs-prism"

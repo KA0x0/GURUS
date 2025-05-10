@@ -31,6 +31,7 @@
         "emacs-forge"
         "emacs-git-timemachine"
         "emacs-jinx"
+        "emacs-magit" ;; depends on emacs-transient
         "emacs-mentor"
         "emacs-org-caldav"
         "emacs-org-contacts"
