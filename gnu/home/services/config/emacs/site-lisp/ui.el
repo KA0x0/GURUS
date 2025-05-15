@@ -66,8 +66,6 @@
   :config
   (global-diff-hl-mode))
 
-(use-package casual)
-
-(provide 'ui-wm)
+(provide 'my-ui)
 
 ;; my-ui.el ends here
