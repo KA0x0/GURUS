@@ -11,9 +11,6 @@
 (set-frame-font "iosevka 12" nil t)
 
 
-(use-package yasnippet)
-
-
 (provide 'my-wm)
 
 ;;; wm.el ends here
