@@ -9,4 +9,4 @@
 
 (provide 'my-spellcheck)
 
-;; my-spellcheck.el ends here
+;; spellcheck.el ends here

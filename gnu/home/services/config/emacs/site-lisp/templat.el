@@ -47,4 +47,4 @@
 
 (provide 'my-template)
 
-;; my-templat.el ends here
+;; templat.el ends here
