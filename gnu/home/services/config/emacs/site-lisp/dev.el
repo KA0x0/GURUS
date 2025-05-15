@@ -4,8 +4,6 @@
 
 ;;; Code:
 
-(use-package eglot)
-
 
 (provide 'my-dev)
 
