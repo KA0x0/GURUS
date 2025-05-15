@@ -36,6 +36,15 @@
   (add-hook 'prog-mode-hook #'tempel-abbrev-mode)
   (global-tempel-abbrev-mode))
 
+(use-package citar
+  :custom
+  (citar-bibliography '("~/bib/references.bib"))
+  :hook
+
+(use-package citar-embark
+  :after citar embark
+  :config (citar-embark-mode))
+
 (provide 'my-template)
 
 ;; my-templat.el ends here
