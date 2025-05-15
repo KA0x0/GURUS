@@ -69,7 +69,6 @@
   :init
   (global-corfu-mode))
 
-;; Add extensions
 (use-package cape
   ;; Bind prefix keymap providing all Cape commands under a mnemonic key.
   ;; Press C-c p ? to for help.
