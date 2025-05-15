@@ -1,6 +1,6 @@
 ;;; dev.el --- Provide development related features -*- lexical-binding: t; -*-
 
-;;; Commentary: Small development packages that do not belong in a file
+;;; Commentary: Small development related packages that do not belong in a file
 
 ;;; Code:
 
