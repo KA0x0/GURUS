@@ -1,4 +1,4 @@
-;;; spellcheck.el --- Spell Checking -*- lexical-binding: t; -*-
+;;; spellcheck.el --- Provide Spell Checking -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; script.el --- *script -*- lexical-binding: t; -*-
+;;; script.el --- Provide *script related features -*- lexical-binding: t; -*-
 
 ;;; Commentary: For everything javascript, typescript related.
 
