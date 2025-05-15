@@ -50,8 +50,6 @@
   :init
   (savehist-mode))
 
-(use-package prism)
-
 ;; Number of lines to scroll with mouse
 (setopt mouse-wheel-scroll-amount '(12))
 ;; Scroll window under mouse
@@ -68,6 +66,7 @@
   :config
   (global-diff-hl-mode))
 
+(use-package casual)
 
 (provide 'ui-wm)
 

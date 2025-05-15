@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(use-package ement)
 
 (provide 'my-comms)
 
