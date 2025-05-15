@@ -23,7 +23,7 @@
   (setopt vertico-resize t)
 
   ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
-    (setopt vertico-cycle t))
+  (setopt vertico-cycle t))
 
 (use-package marginalia
   :config
