@@ -38,7 +38,7 @@
 
 (use-package citar
   :custom
-  (citar-bibliography '("~/bib/references.bib"))
+  (citar-bibliography '("~/notes/references.bib"))
   :hook
 
 (use-package citar-embark
