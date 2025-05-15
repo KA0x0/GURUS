@@ -42,7 +42,6 @@
   ;; (global-tempel-abbrev-mode)
 )
 
-;; Enable vertico
 (use-package vertico
   :init
   (vertico-mode)
@@ -123,7 +122,6 @@
   (add-hook 'completion-at-point-functions #'cape-elisp-block)
   (add-hook 'completion-at-point-functions #'cape-history))
 
-;; A few more useful configurations...
 (use-package emacs
   :init
   ;; Add prompt indicator to `completing-read-multiple'.
