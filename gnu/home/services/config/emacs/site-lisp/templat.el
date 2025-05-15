@@ -39,7 +39,7 @@
 (use-package citar
   :custom
   (citar-bibliography '("~/notes/references.bib"))
-  :hook
+  :hook)
 
 (use-package citar-embark
   :after citar embark
