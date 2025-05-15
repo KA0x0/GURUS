@@ -4,7 +4,10 @@
 
 ;;; Code:
 
-(use-package gptel)
+(use-package gpt)
+
+(use-package mcp-hub
+(setopt mcp-hub-servers))
 
 
 (provide 'my-llm)
