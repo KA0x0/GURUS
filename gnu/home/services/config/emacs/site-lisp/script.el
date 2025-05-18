@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+
 (provide 'my-script)
 
 ;;; script.el ends here

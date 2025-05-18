@@ -45,6 +45,7 @@
   :after citar embark
   :config (citar-embark-mode))
 
+
 (provide 'my-template)
 
 ;; templat.el ends here

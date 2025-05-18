@@ -7,6 +7,7 @@
 (use-package jinx
   :hook (emacs-startup . global-jinx-mode))
 
+
 (provide 'my-spellcheck)
 
 ;; spellcheck.el ends here

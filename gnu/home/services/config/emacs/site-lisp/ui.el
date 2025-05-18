@@ -66,6 +66,7 @@
   :config
   (global-diff-hl-mode))
 
+
 (provide 'my-ui)
 
 ;; my-ui.el ends here
