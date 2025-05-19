@@ -37,7 +37,6 @@
         "emacs-mentor"
         "emacs-org-caldav"
         "emacs-org-contacts"
-        "emacs-org-modern"
         "emacs-org-vcard"
         "emacs-osm"
         "emacs-prettier"
