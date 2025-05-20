@@ -34,7 +34,8 @@
 ;; Scratch Buffer
 (setopt initial-scratch-message "")
 
-;; Electric Pair
+(winner-mode 1)
+
 (electric-pair-mode 1) ;; Enable Electric-Pair-mode
 (setopt electric-pair-delete-adjacent-pairs 1)
 
