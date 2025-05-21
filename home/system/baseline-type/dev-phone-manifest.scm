@@ -39,7 +39,6 @@
         "emacs-org-contacts"
         "emacs-org-vcard"
         "emacs-osm"
-        "emacs-prettier"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
