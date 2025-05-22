@@ -33,6 +33,7 @@
         "emacs-eslint-flymake"
         "emacs-forge"
         "emacs-git-timemachine"
+        "emacs-inheritenv"
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
         "emacs-mentor"
