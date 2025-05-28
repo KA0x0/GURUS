@@ -11,6 +11,8 @@
   (put 'denote-file-type 'safe-local-variable-p 'symbolp))
 
 
+(use-package polymode-org)
+
 (provide 'my-org)
 
 ;;; org.el ends here

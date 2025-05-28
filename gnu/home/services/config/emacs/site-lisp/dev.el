@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(use-package polymode)
+
 
 (provide 'my-dev)
 
