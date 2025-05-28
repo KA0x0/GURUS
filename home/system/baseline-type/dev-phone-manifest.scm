@@ -40,6 +40,7 @@
         "emacs-org-contacts"
         "emacs-org-vcard"
         "emacs-osm"
+        "emacs-polymode" "emacs-polymode-org"
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
