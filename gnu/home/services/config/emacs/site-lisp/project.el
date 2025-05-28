@@ -6,6 +6,8 @@
 
 (use-package disproject)
 
+(use-package magit)
+
 
 (provide 'my-project)
 
