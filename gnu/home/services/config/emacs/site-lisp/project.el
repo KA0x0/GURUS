@@ -6,8 +6,6 @@
 
 (use-package disproject)
 
-(use-package git-timemachine)
-
 
 (provide 'my-project)
 
