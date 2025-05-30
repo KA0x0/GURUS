@@ -6,7 +6,7 @@ function prompt {
 
     $currentWorkingDirectory = $PWD.Path.Replace($HOME, "~")
     $host.UI.RawUI.WindowTitle = $currentWorkingDirectory
-    $colorUser = if ($IsAdmin) {"$red" else "$green"}
+    $colorUser = if ($IsAdmin) {$red else $green}
     # TODO : Auto expand aliases on return.
-    return "$colorUser@:$blue$currentWorkingDirectory$resetColor>_"
+    return "$colorUser$env:USERNAME$resetColor@$blue$env:COMPUTERNAME:$resetColor$currentWorkingDirectory>_"
 }
