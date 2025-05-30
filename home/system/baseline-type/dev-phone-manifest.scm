@@ -32,6 +32,7 @@
         "emacs-emms"
         "emacs-eslint-flymake"
         "emacs-forge"
+        "emacs-go-mode"
         "emacs-inheritenv"
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
