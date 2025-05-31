@@ -18,8 +18,8 @@
 ;;; Code:
 
 (cons* (channel
-        (name 'GURU)
-        (url "https://git.sr.ht//GURU"))
+        (name 'GURUS)
+        (url "https://github.com/KA0x0/GURUS"))
        (channel
         (name 'sops-guix)
         (url "https://git.sr.ht/~fishinthecalculator/sops-guix")

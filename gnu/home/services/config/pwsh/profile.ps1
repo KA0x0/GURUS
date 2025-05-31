@@ -11,3 +11,5 @@ function prompt {
     # TODO : Auto expand aliases on return.
     return "$colorUser$env:USERNAME$resetColor@$blue$env:COMPUTERNAME:$resetColor$currentWorkingDirectory$flashing>_$resetColor"
 }
+
+Update-Help # TODO : Move to a user guix service
