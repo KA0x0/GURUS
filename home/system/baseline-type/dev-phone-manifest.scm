@@ -119,7 +119,7 @@
         "upx"
         "valkey"
         "wl-clipboard"
-        "wine64"
+        "wine64-staging"
         "wireguard-tools"
         "wireshark"
         "yt-dlp"
