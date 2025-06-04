@@ -9,9 +9,9 @@
   (server-start))
 
 ;; Startup speed, annoyance suppression
-(setq byte-compile-warnings '(not obsolete))
-(setq warning-suppress-log-types '((comp) (bytecomp)))
-(setq native-comp-async-report-warnings-errors 'silent)
+(setopt byte-compile-warnings '(not obsolete))
+(setopt warning-suppress-log-types '((comp) (bytecomp)))
+(setopt native-comp-async-report-warnings-errors 'silent)
 
 (provide 'early-init)
 
