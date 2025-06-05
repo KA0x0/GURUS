@@ -6,6 +6,8 @@
 
 (use-package polymode)
 
+(use-package rfc-mode)
+
 
 (provide 'my-dev)
 
