@@ -37,7 +37,6 @@
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
         "emacs-mentor"
-        "emacs-nerd-icons"
         "emacs-org-caldav"
         "emacs-org-contacts"
         "emacs-org-vcard"
