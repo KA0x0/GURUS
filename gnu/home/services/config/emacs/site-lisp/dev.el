@@ -6,6 +6,8 @@
 
 (use-package polymode)
 
+(use-package rmsbolt)
+
 
 (provide 'my-dev)
 
