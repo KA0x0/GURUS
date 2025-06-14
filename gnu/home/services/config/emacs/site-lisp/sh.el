@@ -4,8 +4,6 @@
 
 ;;; Code:
 
-(use-package vterm)
-
 (use-package eshell-syntax-highlighting
   :after eshell-mode
   :config

@@ -88,7 +88,6 @@
     "emacs-orderless"
     "emacs-prism"
     "emacs-vertico"
-    "emacs-vterm"
     "emacs-vundo"
     "emacs-with-editor"
     "eudev"
