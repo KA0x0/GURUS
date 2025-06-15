@@ -30,7 +30,6 @@
         "emacs-elisp-autofmt"
         "emacs-ement"
         "emacs-emms"
-        "emacs-eslint-flymake"
         "emacs-forge"
         "emacs-go-mode"
         "emacs-inheritenv"
