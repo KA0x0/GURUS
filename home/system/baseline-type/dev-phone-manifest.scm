@@ -56,6 +56,7 @@
         "freerdp"
         "gcc"
         "gdb"
+        "glibc"
         "gnuradio"
         "go"
         "gopls"

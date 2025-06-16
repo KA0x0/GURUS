@@ -94,7 +94,6 @@
     "eudev"
     "findutils"
     "gawk"
-    "glibc"
     "git"
     "gnupg"
     "grep"
