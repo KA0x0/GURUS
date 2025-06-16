@@ -96,7 +96,6 @@
     "glibc"
     "git"
     "gnupg"
-    "gpm"
     "ncurses/gpm"
     "grep"
     "guile-next"
