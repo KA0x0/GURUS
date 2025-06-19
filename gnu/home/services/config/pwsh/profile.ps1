@@ -14,4 +14,4 @@ function prompt {
     return "$colorUser$env:USERNAME$resetColor@$blue$env:COMPUTERNAME:$resetColor$currentWorkingDirectory$flashing>_$resetColor"
 }
 
-Update-Help # TODO : Move to a user guix cron service, the same as user guix pull ?
+Update-Help # TODO : Move to a user guix cron service, the same as user guix pull?
