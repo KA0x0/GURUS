@@ -1,3 +1,5 @@
+Import-Module
+
 function prompt {
     $red = [\e[31m]
     $green = [\e[32m]
