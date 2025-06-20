@@ -62,6 +62,7 @@
         "gopls"
         "delve" ;; go debugger
         "graphviz"
+        "emacs-graphviz-dot-mode"
         "guile-aws"
         "imagemagick"
         "isync"
