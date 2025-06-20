@@ -6,6 +6,8 @@
 
 (use-package polymode)
 
+(use-package graphviz-dot-mode)
+
 
 (provide 'my-dev)
 
