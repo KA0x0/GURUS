@@ -46,6 +46,7 @@
         emacs-exwm
         fontconfig
         hyprland
+        hyprlock
         iwd
         picom
         pipewire
