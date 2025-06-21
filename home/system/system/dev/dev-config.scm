@@ -43,7 +43,6 @@
         bluez
         dbus
         my-emacs-next
-        emacs-exwm
         fontconfig
         hyprland
         hyprlock
