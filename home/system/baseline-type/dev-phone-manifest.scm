@@ -90,6 +90,8 @@
         "pwntools"
         "python-debugpy"
         "python-ipython"
+        "python-pycryptodomex"
+        "python-requests"
         "python-scapy"
         "qemu"
         "retroarch" "libretro-dolphin-emu" "libretro-mupen64plus-nx"
