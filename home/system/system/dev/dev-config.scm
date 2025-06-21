@@ -45,6 +45,7 @@
         my-emacs-next
         emacs-exwm
         fontconfig
+        hyprland
         iwd
         picom
         pipewire
