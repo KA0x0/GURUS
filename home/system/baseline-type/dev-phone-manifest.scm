@@ -36,6 +36,7 @@
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
         "emacs-mentor"
+        "emacs-ob-go"
         "emacs-org-caldav"
         "emacs-org-contacts"
         "emacs-org-vcard"
