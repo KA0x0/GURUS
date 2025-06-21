@@ -4,8 +4,8 @@
 
 ;;; Code:
 
-
 (setopt dired-mouse-drag-files 1)
+
 
 (provide 'my-dired)
 

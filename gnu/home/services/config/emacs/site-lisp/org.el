@@ -10,8 +10,8 @@
   ;; See "silos" in the manual: https://protesilaos.com/emacs/denote
   (put 'denote-file-type 'safe-local-variable-p 'symbolp))
 
-
 (use-package polymode-org)
+
 
 (provide 'my-org)
 
