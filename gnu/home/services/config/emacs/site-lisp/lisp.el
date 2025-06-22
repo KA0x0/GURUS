@@ -15,7 +15,7 @@
   :hook (emacs-lisp-mode . elisp-autofmt-mode))
 
 (use-package geiser-guile
-  (setopt guix-geiser-connection-timeout (* 1000 60 16)))
+  (setopt guix-geiser-connection-timeout (* 1000 60 30)))
 
 
 (provide 'my-list)
