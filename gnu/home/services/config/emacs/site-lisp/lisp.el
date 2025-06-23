@@ -18,6 +18,6 @@
   (setopt guix-geiser-connection-timeout (* 1000 60 30))) ;; 30 mins
 
 
-(provide 'my-list)
+(provide 'my-lisp)
 
 ;;; lisp.el ends here
