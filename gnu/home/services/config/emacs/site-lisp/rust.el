@@ -6,6 +6,8 @@
 
 (use-package eglot)
 
+(use-package rust-mode)
+
 
 (provide 'my-rust)
 

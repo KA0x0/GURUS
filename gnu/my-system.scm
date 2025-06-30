@@ -88,6 +88,7 @@
     "emacs-marginalia"
     "emacs-orderless"
     "emacs-prism"
+    "emacs-rust-mode"
     "emacs-vertico"
     "emacs-vundo"
     "emacs-with-editor"
