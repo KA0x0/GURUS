@@ -100,6 +100,7 @@
         "rr"
         "rust"
         "rust-analyzer"
+        "emacs-rust-mode"
         "sage"
         "emacs-sage-shell-mode"
         "shellcheck"
