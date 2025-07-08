@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(setopt flymake-show-diagnostic-at-end-of-line fancy)
+
 (use-package jinx
   :hook (emacs-startup . global-jinx-mode))
 
