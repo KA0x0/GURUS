@@ -75,6 +75,7 @@
         "lldb"
         "man-pages"
         "mariadb"
+        "mit-krb5"
         "monero"
         "mpv"
         "mu"
