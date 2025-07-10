@@ -8,8 +8,6 @@
 
 (use-package graphviz-dot-mode)
 
-(use-package ement)
-
 
 (provide 'my-dev)
 
