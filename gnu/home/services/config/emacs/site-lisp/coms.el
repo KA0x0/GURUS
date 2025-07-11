@@ -13,4 +13,4 @@
 
 (provide 'my-coms)
 
-;;; email.el ends here
+;;; coms.el ends here
