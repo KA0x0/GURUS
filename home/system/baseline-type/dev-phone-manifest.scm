@@ -112,6 +112,7 @@
         "socat"
         "squashfs-tools"
         "sshfs"
+        "steam-client"
         "tesseract-ocr"
         "tiled"
         "tree-sitter-c"
