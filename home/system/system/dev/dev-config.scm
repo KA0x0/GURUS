@@ -44,8 +44,6 @@
         dbus
         my-emacs-next
         fontconfig
-        hypridle
-        hyprlock
         iwd
         picom
         pipewire
