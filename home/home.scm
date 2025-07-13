@@ -26,6 +26,7 @@
                ("dd"         . "dd status=progress")
                ("df"         . "df --human-readable")
                ("dir"        . "emacsclient --create-frame --eval '(list-directory)' --no-wait")
+               ("edit"       . "emacsclient --create-frame --no-wait")
                ("emacs"      . "emacsclient --create-frame --no-wait")
                ("grep"       . "grep --color=auto")
                ("ll"         . "ls --all --color=auto --dired --human-readable --indicator-style -l -v")
