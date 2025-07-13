@@ -46,6 +46,7 @@
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
+        "espeak-ng"
      ;; "ffmpeg" propagated by mpv
         "file"
         "flac"
