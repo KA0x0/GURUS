@@ -22,6 +22,7 @@
             (home-bash-configuration
               (aliases ;; use "\" to escape aliases.
                ("cp"         . "rsync --archive --human-readable --info=progress2 --progress --verbose")
+               ("curl        . "curl --verbose")
                ("dd"         . "dd status=progress")
                ("df"         . "df --human-readable")
                ("dir"        . "emacsclient --create-frame --eval '(list-directory)' --no-wait")
