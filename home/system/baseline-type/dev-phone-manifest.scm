@@ -131,7 +131,6 @@
         "wine64-staging"
         "wireguard-tools"
         "wireshark"
-        "wtype"
         "yt-dlp"
         "zbar"))
 
