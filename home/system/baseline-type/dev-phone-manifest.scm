@@ -30,7 +30,6 @@
         "emacs-elisp-autofmt"
         "emacs-ement"
         "emacs-emms"
-        "emacs-exec-path-from-shell"
         "emacs-exwm"
         "emacs-forge"
         "emacs-go-mode"

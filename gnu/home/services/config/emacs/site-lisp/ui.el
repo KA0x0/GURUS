@@ -30,13 +30,13 @@
 ;; Do not move the current file while creating backup
 (setopt backup-by-copying t)
 ;; Lockfiles
-(setopt create-lockfiles nil) ;; Disable lockfiles
+(setopt create-lockfiles nil)
 ;; Scratch Buffer
 (setopt initial-scratch-message "")
 
 (winner-mode 1)
 
-(electric-pair-mode 1) ;; Enable Electric-Pair-mode
+(electric-pair-mode 1)
 (setopt electric-pair-delete-adjacent-pairs 1)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
@@ -62,6 +62,10 @@
   (xterm-mouse-mode 1)
   (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
+
+(use-package exec-path-from-shell
+:init
+  (exec-path-from-shell-initialize))
 
 (use-package diff-hl
   :config
