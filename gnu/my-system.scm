@@ -66,6 +66,7 @@
     "coreutils"
     "diffutils"
     "my-emacs-next-no-x"
+    "my-emacs-guix-shell"
     "emacs-avy"
     "emacs-cape"
     "emacs-casual-avy"
