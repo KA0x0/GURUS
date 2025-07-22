@@ -62,6 +62,7 @@
         "glibc"
         "gnuradio"
         "go"
+        "go-toml"
         "gopls"
         "delve" ;; go debugger
         "graphviz"
