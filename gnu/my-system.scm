@@ -85,6 +85,7 @@
     "emacs-geiser-guile"
     "emacs-gptel"
     "emacs-guix"
+    "emacs-inheritenv"
     "emacs-json-mode"
     "emacs-lispy"
     "emacs-logview"

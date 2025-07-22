@@ -33,7 +33,6 @@
         "emacs-exwm"
         "emacs-forge"
         "emacs-go-mode"
-        "emacs-inheritenv"
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
         "emacs-mentor"
