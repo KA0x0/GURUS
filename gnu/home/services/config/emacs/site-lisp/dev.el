@@ -6,6 +6,10 @@
 
 (use-package polymode)
 
+(use-package exec-path-from-shell
+:init
+  (exec-path-from-shell-initialize))
+
 (use-package graphviz-dot-mode)
 
 

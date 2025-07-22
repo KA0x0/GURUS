@@ -30,6 +30,7 @@
         "emacs-elisp-autofmt"
         "emacs-ement"
         "emacs-emms"
+        "emacs-exec-path-from-shell"
         "emacs-exwm"
         "emacs-forge"
         "emacs-go-mode"
@@ -62,7 +63,6 @@
         "glibc"
         "gnuradio"
         "go"
-        "go-toml"
         "gopls"
         "delve" ;; go debugger
         "graphviz"
