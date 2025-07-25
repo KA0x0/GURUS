@@ -5,6 +5,7 @@
 [commit]
         verbose = true
 [core]
+        compression = 9
         fsmonitor = true
         untrackedCache = true
 [diff]
@@ -34,4 +35,4 @@
         enabled = true
         autoupdate = true
 [tag]
-        sort = version:refname 
+        sort = version:refname
