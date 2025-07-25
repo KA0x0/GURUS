@@ -5,7 +5,6 @@
 [commit]
         verbose = true
 [core]
-        compression = 9
         fsmonitor = true
         untrackedCache = true
 [diff]
