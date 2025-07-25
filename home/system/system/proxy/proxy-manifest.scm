@@ -6,9 +6,6 @@
 
 ;;; Code:
 
-(specifications->manifest
-  (list "age"
-        "age-keygen")) ;; Add mitmproxy once merged.
 
 ;;; Scan
 (define-record-type* <scan-configuration>
