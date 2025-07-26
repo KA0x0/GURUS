@@ -12,6 +12,11 @@
         colorMoved = plain
         mnemonicPrefix = true
         renames = true
+        tool = difftool
+[difftool]
+        prompt = false
+[difftool "diffsitter"]
+        cmd = diffsitter "$LOCAL" "$REMOTE" || diff "$LOCAL" "$REMOTE"
 [fetch]
         all = true
         prune = true
