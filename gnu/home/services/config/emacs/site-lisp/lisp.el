@@ -14,10 +14,6 @@
   :commands (elisp-autofmt-mode elisp-autofmt-buffer)
   :hook (emacs-lisp-mode . elisp-autofmt-mode))
 
-(use-package geiser-guile
- :config
- (setopt guix-geiser-connection-timeout (* 1000 60 30))) ;; 30 mins
-
 
 (provide 'my-lisp)
 

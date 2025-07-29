@@ -82,8 +82,6 @@
     "emacs-embark"
     "emacs-eshell-syntax-highlighting"
     "emacs-exec-path-from-shell"
-    "emacs-geiser"
-    "emacs-geiser-guile"
     "emacs-gptel"
     "emacs-guix"
     "emacs-inheritenv"
