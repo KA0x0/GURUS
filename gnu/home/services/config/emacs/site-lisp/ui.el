@@ -69,7 +69,7 @@
 :init
   (exec-path-from-shell-initialize))
 
-(setopt guix-geiser-connection-timeout (* 1000 60 30))) ;; 30 mins
+(setopt guix-geiser-connection-timeout (* 1000 60 30)) ;; 30 mins
 
 (use-package diff-hl
   :config
