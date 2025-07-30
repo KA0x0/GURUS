@@ -91,7 +91,6 @@
     "emacs-marginalia"
     "emacs-orderless"
     "emacs-prism"
-    "emacs-sesman"
     "emacs-vertico"
     "emacs-vundo"
     "emacs-with-editor"
