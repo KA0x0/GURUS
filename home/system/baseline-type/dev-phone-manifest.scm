@@ -32,6 +32,7 @@
         "emacs-emms"
         "emacs-exwm"
         "emacs-forge"
+        "emacs-helpful"
         "emacs-go-mode"
         "emacs-jinx"
         "emacs-magit" ;; depends on emacs-transient
