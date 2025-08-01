@@ -73,7 +73,6 @@
         "llvm"
         "clang"
         "lldb"
-        "mailutils"
         "man-pages"
         "mariadb"
         "mit-krb5"

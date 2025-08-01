@@ -45,6 +45,7 @@
         my-emacs-next
         fontconfig
         iwd
+        mailutils
         picom
         pipewire
         spice-vdagent
