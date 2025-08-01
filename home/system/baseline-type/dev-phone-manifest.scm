@@ -22,7 +22,6 @@
         "emacs-bluetooth"
         "emacs-buffer-env"
         "emacs-calibredb"
-        "emacs-casual-calc"
         "emacs-citar" "emacs-citar-denote"
         "emacs-dape"
         "emacs-disproject"
