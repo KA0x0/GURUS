@@ -41,7 +41,6 @@
         bluez
         dbus
         emacs-with-native-comp-no-x
-        emacs-exwm
         iwd
         picom
         pipewire
