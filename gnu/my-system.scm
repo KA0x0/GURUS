@@ -67,6 +67,7 @@
     "diffutils"
     "my-emacs-next-no-x"
     "my-emacs-guix-shell"
+    "emacs-ace-window"
     "emacs-arei"
     "emacs-avy"
     "emacs-cape"
