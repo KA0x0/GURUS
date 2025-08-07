@@ -64,6 +64,7 @@
     "bridge-utils"
     "bzip2"
     "coreutils"
+    "curl-ssh"
     "diffutils"
     "my-emacs-next-no-x"
     "my-emacs-guix-shell"

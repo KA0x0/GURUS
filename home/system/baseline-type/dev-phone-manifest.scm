@@ -14,7 +14,6 @@
         "binutils"
         "binwalk"
         "buildah"
-        "curl-ssh"
         "diffoscope"
         "my-emacs-next"
         "guile-emacs"
