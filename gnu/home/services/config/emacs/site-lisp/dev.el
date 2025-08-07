@@ -29,6 +29,8 @@
 
 (use-package graphviz-dot-mode)
 
+(use-package powershell)
+
 
 (provide 'my-dev)
 
