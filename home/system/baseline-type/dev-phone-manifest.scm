@@ -128,6 +128,7 @@
         "unrar"
         "upx"
         "valkey"
+        "wget"
         "wine64-staging"
         "wireguard-tools"
         "wireshark"
