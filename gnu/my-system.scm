@@ -71,6 +71,7 @@
     "emacs-ace-window"
     "emacs-arei"
     "emacs-avy"
+    "emacs-casual-avy"
     "emacs-cape"
     "emacs-casual"
     "emacs-combobulate"
