@@ -8,7 +8,6 @@
 
 (specifications->manifest
   (list "adb"
-        "aflplusplus"
         "ascii"
         "awscli-2"
         "binutils"
