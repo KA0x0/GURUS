@@ -31,7 +31,7 @@
         "emacs-helpful"
         "emacs-go-mode"
         "emacs-jinx"
-        "emacs-magit" ;; depends on emacs-transient
+        "emacs-magit"
         "emacs-mentor"
         "emacs-ob-go"
         "emacs-org-caldav"
