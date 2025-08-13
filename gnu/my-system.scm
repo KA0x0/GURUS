@@ -135,8 +135,6 @@
     "shadow"
     "sops"
     "sudo"
-    "sysdig"
-    "falcosecurity-libs"
     "tar"
     "texinfo"
     "tree-sitter-bash"

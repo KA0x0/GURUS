@@ -40,8 +40,6 @@
                ("powershell" . "pwsh -NoLogo")
                ("ps"         . "ps --forest")
                ("rm"         . "rm -I --one-file-system --verbose")
-               ("sysdig"     . "sudo sysdig --modern-bpf")
-               ("csysdig"    . "sudo csysdig --modern-bpf")
                ("vdir"       . "emacsclient --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
                ("BROWSER"          . ,(file-append brave /bin/brave --enable-gpu-rasterization --enable-zero-copy --ignore-gpu-blocklist --enable-vulkan --enable-parallel-downloading")
