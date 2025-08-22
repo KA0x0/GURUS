@@ -12,6 +12,7 @@
         "awscli-2"
         "binutils"
         "binwalk"
+        "buildah"
         "diffoscope"
         "my-emacs-next"
         "guile-emacs"

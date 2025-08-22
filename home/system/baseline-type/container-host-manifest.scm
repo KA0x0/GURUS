@@ -7,7 +7,8 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "jq"
+  (list "buildah"
+        "jq"
         "podman"
         "podman-compose"))
 
