@@ -134,6 +134,7 @@
     "sed"
     "shadow"
     "sops"
+    "emacs-sops"
     "sudo"
     "tar"
     "texinfo"
