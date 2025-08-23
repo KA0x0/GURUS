@@ -144,7 +144,6 @@
     "tree-sitter-python"
     "tree-sitter-yaml"
     "util-linux+udev"
-    "watchexec"
     "which"
     "xz"
     "zstd")))
