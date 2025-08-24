@@ -70,7 +70,6 @@
     "my-emacs-guix-shell"
     "emacs-ace-window"
     "emacs-arei"
-    "emacs-async"
     "emacs-avy"
     "emacs-casual-avy"
     "emacs-cape"
