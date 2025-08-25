@@ -1,1 +1,0 @@
-FROM docker.io/mrcraftcod/channel-points-miner:develop
