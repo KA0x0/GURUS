@@ -61,7 +61,7 @@
                   (network "host")
                   (image "docker.io/justarchi/archisteamfarm:released")
                   (ports
-                    '(("1242" . "80"))))
+                    '(("80" . "1242"))))
                 (oci-container-configuration
                   (network "host")
                   (image "docker.io/mrcraftcod/channel-points-miner:develop")
