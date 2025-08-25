@@ -1,0 +1,1 @@
+FROM docker.io/justarchi/archisteamfarm:released
