@@ -55,6 +55,20 @@
                              (destination "default")
                              (gateway "10.10.10.10"))))
                      (name-servers '("10.10.10.10")))))
+            (service oci-contaier-service-type
+              list
+                (oci-container-configuration
+                  (network "host")
+                  (image "docker.io/justarchi/archisteamfarm:released")
+                  (ports
+                    '(("1242" . "80"))))
+                (oci-container-configuration
+                  (network "host")
+                  (image "docker.io/mrcraftcod/channel-points-miner:develop")
+                  (volumes
+                    '((/mnt/storage/config/channel-points-miner/authentication:/usr/src/app/authentication)
+                     (/mnt/storage/config/channel-points-miner/channel:/usr/src/app/channel:ro)
+                     (/mnt/storage/config/channel-points-miner/config.json:/usr/src/app/config.json:ro)))))
         %base-services
         %my-base-services))))
 
