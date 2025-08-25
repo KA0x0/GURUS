@@ -9,7 +9,6 @@
 (specifications->manifest
   (list "buildah"
         "jq"
-        "podman"
-        "podman-compose"))
+        "podman"))
 
 ;;; container-host-manifest.scm ends here
