@@ -9,6 +9,8 @@
 (specifications->manifest
   (list "buildah"
         "jq"
-        "podman"))
+        "nmap"
+        "podman"
+        "slirp4netns"))
 
 ;;; container-host-manifest.scm ends here
