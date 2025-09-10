@@ -85,7 +85,6 @@
     "emacs-exec-path-from-shell"
     "emacs-gptel"
     "emacs-guix"
-    "emacs-hydra"
     "emacs-inheritenv"
     "emacs-json-mode"
     "emacs-lispy"
