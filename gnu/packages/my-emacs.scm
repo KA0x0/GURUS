@@ -39,7 +39,7 @@
               (for-each delete-file-recursively
                 '("emulation"
                   "erc"
-                  "lisp/which-key.el" ;; use transient
+                  "which-key.el" ;; use transient
                   "mh-e"
                   "net/dig.el"
                   "obsolete"
