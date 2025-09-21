@@ -15,7 +15,11 @@
   show-paren-delay 0
   setopt auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t))
   backup-directory-alist '(("." . "~/.tmp/emacs/backup/"))
-  backup-by-copying t) ;; Do not move the current file while creating backup
+  backup-by-copying t ;; Do not move the current file while creating backup
+;; Lockfiles
+  setopt create-lockfiles nil
+;; Scratch Buffer
+  setopt initial-scratch-message "")
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
@@ -24,10 +28,6 @@
 
 (show-paren-mode 1)
 (make-directory "~/.tmp/emacs/auto-save/" t)
-;; Lockfiles
-(setopt create-lockfiles nil)
-;; Scratch Buffer
-(setopt initial-scratch-message "")
 
 (winner-mode 1)
 
