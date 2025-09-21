@@ -5,7 +5,7 @@
 ;;; Code:
 
 (setopt 
-  inhibit-startup-screen 1
+  inhibit-startup-screen t
   show-trailing-whitespace t
   indicate-empty-lines t
   indicate-buffer-boundaries 'left
@@ -24,15 +24,15 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (blink-cursor-mode 0)
-(column-number-mode 1)
+(column-number-mode t)
 
-(show-paren-mode 1)
+(show-paren-mode t)
 (make-directory (expand-file-name ".tmp/emacs/auto-save/" (getenv "HOME")) t)
 
-(winner-mode 1)
+(winner-mode t)
 
-(electric-pair-mode 1
-  setopt electric-pair-delete-adjacent-pairs 1)
+(electric-pair-mode t
+  setopt electric-pair-delete-adjacent-pairs t)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -54,7 +54,7 @@
 ;; Mouse scrolling in terminal emacs
 (unless (display-graphic-p)
   ;; activate mouse-based scrolling
-  (xterm-mouse-mode 1)
+  (xterm-mouse-mode t)
   (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
 
