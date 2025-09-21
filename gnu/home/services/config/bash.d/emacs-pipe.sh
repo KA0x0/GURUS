@@ -35,7 +35,7 @@ set -euo pipefail
 # Code:
 
 oldIFS="$IFS"
-IFS=$'😃'
+IFS=$'λ'
 
 # designate a temporary file
 TMP="$(mktemp /tmp/stdin-XXX)"
@@ -48,7 +48,7 @@ emacsclient -a emacs -n $TMP
 
 OUT=`emacsclient -a emacs -e "(progn (set-buffer (get-buffer (substring \"$TMP\" 5)))"\
 "(let* ((inhibit-message t) (message-log-max nil)"\
-"(args (split-string \"$*\" \"😃\"))"\
+"(args (split-string \"$*\" \""λ"\"))"\
 "(f (intern (concat \"f/\" (third args))))"\
 "(ret (progn (load (second args)) (apply f (nthcdr 3 args)))))"\
 "(save-buffer)"\
