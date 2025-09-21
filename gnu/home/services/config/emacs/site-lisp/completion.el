@@ -12,17 +12,8 @@
 (use-package vertico
   :init
   (vertico-mode)
-
-  ;; Different scroll margin
-  ;; (setopt vertico-scroll-margin 0)
-
-  ;; Show more candidates
-  ;; (setopt vertico-count 20)
-
-  ;; Grow and shrink the Vertico minibuffer
+  (setopt vertico-count (/ (window-height) 4))
   (setopt vertico-resize t)
-
-  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
   (setopt vertico-cycle t))
 
 (use-package marginalia
@@ -30,7 +21,6 @@
   (marginalia-mode))
 
 ;; consult
-
 ;; Optionally use the `orderless' completion style.
 (use-package orderless
   :init
