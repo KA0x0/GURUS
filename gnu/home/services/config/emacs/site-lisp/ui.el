@@ -4,31 +4,26 @@
 
 ;;; Code:
 
+(setopt 
+  inhibit-startup-screen 1
+  show-trailing-whitespace t
+  indicate-empty-lines t
+  indicate-buffer-boundaries 'left
+  require-final-newline t
+  sentence-end-double-space nil ;; Consider a period followed by a single space to be end of sentence
+  indent-tabs-mode nil ;; ;; Use spaces, not tabs, for indentation
+  show-paren-delay 0
+  setopt auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t))
+  backup-directory-alist '(("." . "~/.tmp/emacs/backup/"))
+  backup-by-copying t) ;; Do not move the current file while creating backup
+
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (blink-cursor-mode 0)
 (column-number-mode 1)
 
-(setopt inhibit-startup-screen 1)
-;; Show stray whitespace
-(setopt show-trailing-whitespace t)
-(setopt indicate-empty-lines t)
-(setopt indicate-buffer-boundaries 'left)
-;; Add a newline automatically at the end of a file while saving
-(setopt require-final-newline t)
-;; Consider a period followed by a single space to be end of sentence
-(setopt sentence-end-double-space nil)
-;; Use spaces, not tabs, for indentation
-(setopt indent-tabs-mode nil)
-;; Highlight matching pairs of parentheses
-(setopt show-paren-delay 0)
 (show-paren-mode 1)
-;; Write auto-saves and backups to separate directory
 (make-directory "~/.tmp/emacs/auto-save/" t)
-(setopt auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
-(setopt backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
-;; Do not move the current file while creating backup
-(setopt backup-by-copying t)
 ;; Lockfiles
 (setopt create-lockfiles nil)
 ;; Scratch Buffer
