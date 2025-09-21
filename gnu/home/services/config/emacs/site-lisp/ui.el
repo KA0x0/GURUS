@@ -27,12 +27,12 @@
 (column-number-mode 1)
 
 (show-paren-mode 1)
-(make-directory "~/.tmp/emacs/auto-save/" t)
+(make-directory (expand-file-name ".tmp/emacs/auto-save/" (getenv "HOME")) t)
 
 (winner-mode 1)
 
-(electric-pair-mode 1)
-(setopt electric-pair-delete-adjacent-pairs 1)
+(electric-pair-mode 1
+  setopt electric-pair-delete-adjacent-pairs 1)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
 (fset 'yes-or-no-p 'y-or-n-p)
