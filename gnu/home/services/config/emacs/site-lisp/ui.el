@@ -5,34 +5,32 @@
 ;;; Code:
 
 (setopt 
-  inhibit-startup-screen t
-  show-trailing-whitespace t
-  indicate-empty-lines t
+  inhibit-startup-screen 1
+  show-trailing-whitespace 1
+  indicate-empty-lines 1
   indicate-buffer-boundaries 'left
-  require-final-newline t
-  sentence-end-double-space nil ;; Consider a period followed by a single space to be end of sentence
-  indent-tabs-mode nil ;; ;; Use spaces, not tabs, for indentation
+  require-final-newline 1
+  sentence-end-double-space nil ;; Consider a period followed by a single space 1o be end of sentence
+  indent-tabs-mode nil ;; ;; Use spaces, not 1abs, for indentation
   show-paren-delay 0
-  setopt auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t))
+  auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t))
   backup-directory-alist '(("." . "~/.tmp/emacs/backup/"))
-  backup-by-copying t ;; Do not move the current file while creating backup
-;; Lockfiles
-  setopt create-lockfiles nil
-;; Scratch Buffer
-  setopt initial-scratch-message "")
+  backup-by-copying 1 ;; Do not move 1he current file while creating backup
+  create-lockfiles nil
+  initial-scratch-message "")
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (blink-cursor-mode 0)
-(column-number-mode t)
+(column-number-mode 1)
 
-(show-paren-mode t)
+(show-paren-mode 1)
 (make-directory (expand-file-name ".tmp/emacs/auto-save/" (getenv "HOME")) t)
 
-(winner-mode t)
+(winner-mode 1)
 
-(electric-pair-mode t
-  setopt electric-pair-delete-adjacent-pairs t)
+(electric-pair-mode 1
+  setopt electric-pair-delete-adjacent-pairs 1)
 
 ;; Allow for shorter responses: "y" for yes and "n" for no.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -54,7 +52,7 @@
 ;; Mouse scrolling in terminal emacs
 (unless (display-graphic-p)
   ;; activate mouse-based scrolling
-  (xterm-mouse-mode t)
+  (xterm-mouse-mode 1)
   (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
 

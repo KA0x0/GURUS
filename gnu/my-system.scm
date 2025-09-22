@@ -58,9 +58,8 @@
 (define-public %my-base-packages
   (map specification->package
   '("bash"
-    "bash-completion"
-    "emacs-bash-completion"
     "bcachefs-tools"
+    "blesh"
     "bridge-utils"
     "bzip2"
     "coreutils"
