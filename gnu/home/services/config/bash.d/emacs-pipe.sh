@@ -38,7 +38,7 @@ oldIFS="$IFS"
 IFS=$'λ'
 
 # designate a temporary file
-TMP="$(mktemp /tmp/stdin-XXX)"
+TMP="$(mktemp /tmp/stdin-emacs-pipe)"
 # write input to temporary file
 cat >$TMP
 # open the temporary file in emacs
