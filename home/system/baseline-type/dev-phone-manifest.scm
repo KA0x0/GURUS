@@ -62,6 +62,7 @@
         "go"
         "gopls"
         "delve" ;; go debugger
+        "go-minify"
         "graphviz"
         "emacs-graphviz-dot-mode"
         "guile-aws"
