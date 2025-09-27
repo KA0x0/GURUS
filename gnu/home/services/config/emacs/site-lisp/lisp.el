@@ -8,7 +8,10 @@
 
 (use-package prism)
 
-(add-hook 'emacs-lisp-mode-hook (lambda () (lispy-mode 1)))
+(use-package lispy
+  :hook (emacs-lisp-mode . lispy-mode))
+
+(defun my/format-elisp-buffer ()) ;; autofmt on save
 
 (provide 'my-lisp)
 
