@@ -9,3 +9,6 @@ function encode_to_charcode(string) {
             }
             return output;
         }
+
+    function encode_to_charcode(string) {
+    }
