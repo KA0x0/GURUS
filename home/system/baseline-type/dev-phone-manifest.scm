@@ -29,7 +29,6 @@
         "emacs-exwm"
         "emacs-forge"
         "emacs-helpful"
-        "emacs-go-mode"
         "emacs-jinx"
         "emacs-magit"
         "emacs-mentor"
@@ -59,6 +58,7 @@
         "glibc"
         "gnuradio"
         "go"
+        "emacs-go-mode"
         "gopls"
         "delve" ;; go debugger
         "go-minify"
