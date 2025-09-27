@@ -24,7 +24,6 @@
         "emacs-dape"
         "emacs-disproject"
         "emacs-ednc"
-        "emacs-elisp-autofmt"
         "emacs-ement"
         "emacs-emms"
         "emacs-exwm"
