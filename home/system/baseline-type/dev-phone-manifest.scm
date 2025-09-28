@@ -90,6 +90,7 @@
         "poke"
         "emacs-poke-mode"
         "pwntools"
+        "python-angr"
         "python-debugpy"
         "python-ipython"
         "python-pycryptodomex"
