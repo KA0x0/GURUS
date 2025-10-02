@@ -8,6 +8,10 @@
   :mode ("\\.org\\'" . org-mode)
   :config (define-key org-mode-map (kbd "C-c C-r") verb-command-map))
 
+(use-package graphql-mode)
+
+(use-package swagg)
+
 
 (provide 'my-http)
 

@@ -28,6 +28,7 @@
         "emacs-emms"
         "emacs-exwm"
         "emacs-forge"
+        "emacs-graphql-mode"
         "emacs-helpful"
         "emacs-jinx"
         "emacs-magit"
