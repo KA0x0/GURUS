@@ -27,6 +27,7 @@
         "emacs-ement"
         "emacs-emms"
         "emacs-exwm"
+        "emacs-filechooser"
         "emacs-forge"
         "emacs-graphql-mode"
         "emacs-helpful"
