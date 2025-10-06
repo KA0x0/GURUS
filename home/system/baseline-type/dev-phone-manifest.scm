@@ -99,6 +99,7 @@
         "python-requests"
         "python-scapy"
         "qemu"
+        "qmk"
         "retroarch" "libretro-dolphin-emu" "libretro-mupen64plus-nx"
         "rizin"
         "rr"
