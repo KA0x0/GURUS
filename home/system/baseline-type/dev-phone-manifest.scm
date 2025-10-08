@@ -17,6 +17,7 @@
         "my-emacs-next"
         "guile-emacs"
         "emacs-alert"
+        "emacs-autocrypt"
         "emacs-bluetooth"
         "emacs-buffer-env"
         "emacs-calibredb"
