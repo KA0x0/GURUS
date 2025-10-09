@@ -61,7 +61,6 @@
         "glibc"
         "gnuradio"
         "go"
-        "emacs-go-mode"
         "gopls"
         "delve" ;; go debugger
         "go-minify"
@@ -105,7 +104,6 @@
         "rizin"
         "rr"
         "rust"
-        "emacs-rust-mode"
         "rust-analyzer"
         "rust-clippy"
         "emacs-flymake-clippy"
