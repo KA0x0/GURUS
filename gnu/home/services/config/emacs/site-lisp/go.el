@@ -6,8 +6,6 @@
 
 (use-package eglot)
 
-(use-package go-mode)
-
 
 (provide 'my-go)
 
