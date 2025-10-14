@@ -22,6 +22,7 @@
         "emacs-buffer-env"
         "emacs-calibredb"
         "emacs-citar" "emacs-citar-denote"
+        "emacs-csv-mode"
         "emacs-dape"
         "emacs-disproject"
         "emacs-ednc"
