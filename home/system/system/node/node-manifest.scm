@@ -9,7 +9,7 @@
 (specifications->manifest
   (list "calibre"
         "qemu"
-        "rtorrent-xml-rpc@0.9"
+        "rtorrent-xml-rpc@0.16.1"
         "sshfs"
         "tpm2-tss"))
 
