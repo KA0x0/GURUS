@@ -10,8 +10,6 @@
   ;; Enable in all Eshell buffers.
   (eshell-syntax-highlighting-global-mode +1))
 
-(use-package powershell)
-
 
 (provide 'my-sh)
 
