@@ -17,4 +17,4 @@ Set-Alias -Name "ping6"      -Value "ping6 -v"
 Set-Alias -Name "powershell" -Value "pwsh -NoLogo"
 Set-Alias -Name "ps"         -Value "ps --forest"
 Set-Alias -Name "rm"         -Value "rm -I --one-file-system --verbose"
-Set-Alias -Name "vdir"       -Value "emacsclient --create-frame --eval '(dired)' --no-wait")
+Set-Alias -Name "vdir"       -Value "emacsclient --create-frame --eval '(dired)' --no-wait"
