@@ -30,8 +30,7 @@
       (list
         xf86-video-amdgpu
         sshfs
-        xorg-server-xwayland
-        my-wslu)
+        xorg-server-xwayland)
       %my-base-packages))
    (services
     (append
@@ -45,3 +44,4 @@
       %my-base-services))))))
 
 ;;; wsl-config.scm ends here
+
