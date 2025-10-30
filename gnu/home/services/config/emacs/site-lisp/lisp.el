@@ -11,7 +11,8 @@
 (use-package lispy
   :hook (emacs-lisp-mode . lispy-mode))
 
-(defun my/format-elisp-buffer ()) ;; autofmt on save
+(use-package flymake-guile
+  :hook (scheme-mode-hook . flymake-guile))
 
 
 (provide 'my-lisp)
