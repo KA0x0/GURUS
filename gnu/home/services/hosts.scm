@@ -30,7 +30,7 @@
                     hosts-service-type ;; To-do add TLD list for big services.
                     (list (host ""
                                 "bandcamp.com") ;; Tent
-                          (host ""
+                          (host "" ;; libremdb.privacyredirect.com
                                 "imdb.com") ;; libremdb
                           (host ""
                                 "imgur.com") ;; Rimgo
@@ -45,21 +45,22 @@
                           (host ""
                                 "bing.com"
                                 "google.com") ;; Brave Search
-                          (host ""
+                          (host "" ;; anonymousoverflow.privacyredirect.com
                                 "stackoverflow.com") ;; AnonymousOverflow
                           (host "" 
                                 "tiktok.com") ;; ProxiTok 
                           (host ""
                                 "wikipedia.com") ;; wikiless
-                          (hosts ""
+                          (hosts "109.107.190.203" ;; nitter.privacyredirect.com
                                 "x.com"
                                 "twitter.com") ;; Nitter
-                          (host "109.107.190.203" ;; invidious.privacyredirect.com
+                          (host "200.14.81.226" ;; inv.nadeko.net
                                 "youtube.com")))
 
 (simple-service 'my-adblock
                     hosts-service-type
                     (list (host "0.0.0.0"
                                 "")))
+
 
 ;;; hosts.scm ends here
