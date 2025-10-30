@@ -126,7 +126,6 @@
         "tree-sitter-dockerfile"
         "tree-sitter-go"
         "tree-sitter-gomod"
-        "tree-sitter-gosum"
         "tree-sitter-javascript"
         "tree-sitter-make"
         "tree-sitter-org"
