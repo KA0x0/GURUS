@@ -111,6 +111,7 @@
     "guile-lsp-server"
     "guile-readline"
     "guile-ssh"
+    "emacs-flymake-guile"
     "gzip"
     "iproute"
     "kmod"
