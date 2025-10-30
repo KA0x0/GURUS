@@ -107,7 +107,6 @@
         "rust"
         "rust-analyzer"
         "rust-clippy"
-        "emacs-flymake-clippy"
         "sage"
         "emacs-sage-shell-mode"
         "samba"
