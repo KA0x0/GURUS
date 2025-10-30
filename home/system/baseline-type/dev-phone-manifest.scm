@@ -86,6 +86,7 @@
         "openjdk"
         "openocd"
         "openssh"
+        "openssl"
         "openvpn"
         "patch"
         "patchelf"
