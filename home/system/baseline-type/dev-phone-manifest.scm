@@ -61,8 +61,8 @@
         "gdb"
         "glibc"
         "gnuradio"
-        "go"
-        "gopls" "emacs-go-mode"
+        "go" "emacs-go-mode"
+        "gopls"
         "delve" ;; go debugger
         "go-minify"
         "graphviz"
