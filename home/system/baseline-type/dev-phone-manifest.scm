@@ -95,7 +95,7 @@
         "emacs-poke-mode"
         "pwntools"
         "python-angr"
-        "python-black" "emacs-blacken"
+        "python-black"
         "python-debugpy"
         "python-ipython"
         "python-pycryptodomex"
