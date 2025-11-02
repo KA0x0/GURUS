@@ -105,7 +105,7 @@
         "retroarch" "libretro-dolphin-emu" "libretro-mupen64plus-nx"
         "rizin"
         "rr"
-        "rust" "emacs-rustic"
+        "rust" "emacs-rust-mode"
         "rust-analyzer"
         "rust-clippy"
         "sage"
