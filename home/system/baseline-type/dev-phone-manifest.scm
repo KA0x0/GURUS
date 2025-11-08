@@ -21,7 +21,6 @@
         "emacs-bluetooth"
         "emacs-buffer-env"
         "emacs-calfw"
-        "emacs-calibredb"
         "emacs-citar" "emacs-citar-denote"
         "emacs-csv-mode"
         "emacs-dape"

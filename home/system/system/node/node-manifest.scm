@@ -7,8 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "calibre"
-        "qemu"
+  (list "qemu"
         "rtorrent-xml-rpc@0.16.1"
         "sshfs"
         "tpm2-tss"))
