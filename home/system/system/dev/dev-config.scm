@@ -46,7 +46,6 @@
         fontconfig
         iwd
         mailutils
-        network-manager
         picom
         pipewire
         spice-vdagent
