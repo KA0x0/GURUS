@@ -37,7 +37,6 @@
         "emacs-magit"
         "emacs-mentor"
         "emacs-nov-el"
-        "emacs-ob-go"
         "emacs-org-caldav"
         "emacs-org-contacts"
         "emacs-org-vcard"
