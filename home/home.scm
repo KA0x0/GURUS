@@ -49,6 +49,7 @@
                ("HISTCONTROL"      . "ignoreboth")
                ("HISTFILESIZE"     . "4096")
                ("HISTSIZE"         . "4096")
+               ("LESSCOLORIZER"    . ",(file-append tree-sitter /bin/tree-sitter highlight")
                ("PYTHONSTARTUP"    . "$HOME/config/python/pythonrc.py")
                ("IPYTHONDIR"       . "$HOME/config/python/ipython")
                ("PS1"              . ,(literal-string "\[\e[92m\]\u\[\e[0m\]@\[\e[94m\]\H\[\e[0m\]:\[\e[97m\]\w\[\e[0;5m\]\$\[\e[0m\] ")) ;; Add Error Code when =/ 0, Git status
