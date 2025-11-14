@@ -1,3 +1,0 @@
-{
-    "fallback-cmd": "diff  --minimal --recursive"
-}
