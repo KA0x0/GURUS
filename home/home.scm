@@ -40,6 +40,7 @@
                ("powershell" . "pwsh -NoLogo")
                ("ps"         . "ps --forest")
                ("rm"         . "rm -I --one-file-system --verbose")
+               ("sudo"       . "sudo-rs")
                ("vdir"       . "emacsclient --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
                ("BROWSER"          . ,(file-append brave /bin/brave --enable-gpu-rasterization --enable-zero-copy --ignore-gpu-blocklist --enable-vulkan --enable-parallel-downloading"))
