@@ -14,6 +14,7 @@
         "binwalk"
         "buildah"
         "diffoscope"
+        "difftastic"
         "my-emacs-next"
         "guile-emacs"
         "emacs-alert"
