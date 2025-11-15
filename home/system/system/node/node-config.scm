@@ -64,7 +64,7 @@
                     '(("80" . "1242"))))
                 (oci-container-configuration
                   (network "host")
-                  (image "docker.io/mrcraftcod/channel-points-miner:develop")
+                  (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
                    '((/mnt/storage/config/channel-points-miner/authentication:/usr/src/app/authentication)
                      (/mnt/storage/config/channel-points-miner/channel:/usr/src/app/channel:ro)
