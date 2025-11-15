@@ -68,9 +68,9 @@
                   (network "host")
                   (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
-                   '((/mnt/storage/config/channel-points-miner/authentication:/usr/src/app/authentication)
-                     (/mnt/storage/config/channel-points-miner/channel:/usr/src/app/channel:ro)
-                     (/mnt/storage/config/channel-points-miner/config.json:/usr/src/app/config.json:ro))))))
+                   '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
+                     (/mnt/storage/config/twitch-miner/channel:/usr/src/app/channel:ro)
+                     (/mnt/storage/config/twitch-miner/config.json:/usr/src/app/config.json:ro))))))
         %base-services
         %my-base-services))))
 
