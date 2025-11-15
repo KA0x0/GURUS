@@ -58,11 +58,13 @@
             (service oci-contaier-service-type
               (list
                 (oci-container-configuration
+                  (name "archisteamfarm")
                   (network "host")
                   (image "docker.io/justarchi/archisteamfarm:released")
                   (ports
                     '(("80" . "1242"))))
                 (oci-container-configuration
+                  (name "twitch-miner")
                   (network "host")
                   (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
