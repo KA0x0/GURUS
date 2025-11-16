@@ -61,8 +61,6 @@
                   (name "archisteamfarm")
                   (network "macvlan")
                   (image "docker.io/justarchi/archisteamfarm:released")
-                  (ports
-                    '(("80" . "1242")))
                   (volumes
                    '((/mnt/storage/config/archisteamfarm/config:/app/config)
                      (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
