@@ -65,7 +65,7 @@
                     '(("80" . "1242")))
                   (volumes
                    '((/mnt/storage/config/archisteamfarm/ArchiSteamFarm/config:/app/config)
-                     (/mnt/storage/config/archisteamfarm/ArchiSteamFarm/plugin:/app/plugins)))))
+                     (/mnt/storage/config/archisteamfarm/ArchiSteamFarm/plugins:/app/plugins)))))
                 (oci-container-configuration
                   (name "twitch-miner")
                   (network "host")
