@@ -59,7 +59,7 @@
               (list
                 (oci-container-configuration
                   (name "archisteamfarm")
-                  (network "macvlan")
+                  (network "macvlan-internal")
                   (image "docker.io/justarchi/archisteamfarm:released")
                   (volumes
                    '((/mnt/storage/config/archisteamfarm/config:/app/config)
