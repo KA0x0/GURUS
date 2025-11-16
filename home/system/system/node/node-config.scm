@@ -55,23 +55,29 @@
                              (destination "default")
                              (gateway "10.10.10.10"))))
                      (name-servers '("10.10.10.10")))))
-            (service oci-contaier-service-type
-              (list
-                (oci-container-configuration
-                  (name "archisteamfarm")
-                  (network "macvlan-internal")
-                  (image "docker.io/justarchi/archisteamfarm:released")
-                  (volumes
-                   '((/mnt/storage/config/archisteamfarm/config:/app/config)
-                     (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
-                (oci-container-configuration
-                  (name "twitch-miner")
-                  (network "private")
-                  (image "docker.io/mrcraftcod/channel-points-miner:main")
-                  (volumes
-                   '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
-                     (/mnt/storage/config/twitch-miner/channel:/usr/src/app/channel:ro)
-                     (/mnt/storage/config/twitch-miner/config.json:/usr/src/app/config.json:ro))))))
+            (simple-service 'oci-provisioning
+                oci-service-type
+                (oci-extension
+                  (networks
+                    (list
+                      (oci-network-configuration (name "macvlan-internal"))))
+                  (containers
+                    (list
+                      (oci-container-configuration
+                        (name "archisteamfarm")
+                        (network "macvlan-internal")
+                        (image "docker.io/justarchi/archisteamfarm:released")
+                        (volumes
+                         '((/mnt/storage/config/archisteamfarm/config:/app/config)
+                           (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
+                      (oci-container-configuration
+                        (name "twitch-miner")
+                        (network "private")
+                        (image "docker.io/mrcraftcod/channel-points-miner:main")
+                        (volumes
+                         '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
+                           (/mnt/storage/config/twitch-miner/channel:/usr/src/app/channel:ro)
+                           (/mnt/storage/config/twitch-miner/config.json:/usr/src/app/config.json:ro))))))))
         %base-services
         %my-base-services))))
 
