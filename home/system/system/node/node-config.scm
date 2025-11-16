@@ -60,7 +60,9 @@
                 (oci-extension
                   (networks
                     (list
-                      (oci-network-configuration (name "macvlan-internal"))))
+                      (oci-network-configuration 
+                        (name "macvlan-internal")
+                        (driver "macvlan"))))
                   (containers
                     (list
                       (oci-container-configuration
