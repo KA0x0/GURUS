@@ -62,15 +62,18 @@
                   (network "host")
                   (image "docker.io/justarchi/archisteamfarm:released")
                   (ports
-                    '(("80" . "1242"))))
+                    '(("80" . "1242")))
+                  (volumes
+                   '((/mnt/storage/config/archisteamfarm/ArchiSteamFarm/config:/app/config)
+                     (/mnt/storage/config/archisteamfarm/ArchiSteamFarm/plugin:/app/plugins)))))
                 (oci-container-configuration
                   (name "twitch-miner")
                   (network "host")
                   (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
-                   '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
-                     (/mnt/storage/config/twitch-miner/channel:/usr/src/app/channel:ro)
-                     (/mnt/storage/config/twitch-miner/config.json:/usr/src/app/config.json:ro))))))
+                   '((/mnt/storage/config/twitch-miner/Twitch-Miner/authentication:/usr/src/app/authentication)
+                     (/mnt/storage/config/twitch-miner/Twitch-Miner/channel:/usr/src/app/channel:ro)
+                     (/mnt/storage/config/twitch-miner/Twitch-Miner/config.json:/usr/src/app/config.json:ro))))))
         %base-services
         %my-base-services))))
 
