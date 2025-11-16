@@ -68,6 +68,7 @@
                      (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
                 (oci-container-configuration
                   (name "twitch-miner")
+                  (network "private")
                   (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
                    '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
