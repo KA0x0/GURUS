@@ -59,7 +59,7 @@
               (list
                 (oci-container-configuration
                   (name "archisteamfarm")
-                  (network "host")
+                  (network "macvlan")
                   (image "docker.io/justarchi/archisteamfarm:released")
                   (ports
                     '(("80" . "1242")))
@@ -68,7 +68,6 @@
                      (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
                 (oci-container-configuration
                   (name "twitch-miner")
-                  (network "host")
                   (image "docker.io/mrcraftcod/channel-points-miner:main")
                   (volumes
                    '((/mnt/storage/config/twitch-miner/authentication:/usr/src/app/authentication)
