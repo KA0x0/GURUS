@@ -70,8 +70,7 @@
                         (network "macvlan-internal")
                         (image "docker.io/justarchi/archisteamfarm:released")
                         (volumes
-                         '((/mnt/storage/config/archisteamfarm/config:/app/config)
-                           (/mnt/storage/config/archisteamfarm/plugins:/app/plugins))))
+                         '((/mnt/storage/config/archisteamfarm/config:/app/config))))
                       (oci-container-configuration
                         (name "twitch-miner")
                         (network "private")
