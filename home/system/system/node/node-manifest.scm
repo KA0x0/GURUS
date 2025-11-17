@@ -8,7 +8,7 @@
 
 (specifications->manifest
   (list "qemu"
-        "rtorrent-xml-rpc@0.16.1"
+        "rtorrent-xml-rpc@0.16.2"
         "sshfs"
         "tpm2-tss"))
 
