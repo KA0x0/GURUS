@@ -86,5 +86,25 @@
 environment variables appropriately.")
     (license gpl3+)))
 
+(define-public my-emacs-jwt
+  (package
+    (name "emacs-jwt")
+    (version "0.2.0")
+    (source 
+      (origin
+       (method git-fetch)
+       (uri (git-reference
+             (url "https://github.com/joshbax189/jwt-el.git")
+             (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+       (sha256
+        (base32 "d7deb62f8c2df58d5cfebf087a147c75207964e8"))))
+    (build-system emacs-build-system)
+   (home-page "https://github.com/joshbax189/jwt-el")
+    (synopsis "Interact with JSON Web Tokens from Emacs")
+    (description
+    "Decode and verify JSON Web Tokens in Emacs.")
+    (license gpl3+)))
+
 
 ;;; emacs.scm ends here

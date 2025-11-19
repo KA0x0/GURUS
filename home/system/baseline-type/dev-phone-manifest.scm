@@ -16,6 +16,7 @@
         "diffoscope"
         "difftastic"
         "my-emacs-next"
+        "my-emacs-jwt"
         "guile-emacs"
         "emacs-alert"
         "emacs-autocrypt"
