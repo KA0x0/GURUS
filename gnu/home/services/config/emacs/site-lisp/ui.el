@@ -25,7 +25,6 @@
 (column-number-mode 1)
 
 (show-paren-mode 1)
-(global-highlight-changes-mode 1)
 (make-directory (expand-file-name ".tmp/emacs/auto-save/" (getenv "HOME")) t)
 
 (winner-mode 1)
