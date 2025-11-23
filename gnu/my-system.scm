@@ -136,6 +136,7 @@
     "tar"
     "texinfo"
     "tree-sitter-bash"
+    "tree-sitter-elisp"
     "tree-sitter-json"
     "tree-sitter-python"
     "tree-sitter-yaml"
