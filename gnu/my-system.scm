@@ -78,7 +78,6 @@
     "emacs-corfu"
     "emacs-denote"
     "emacs-consult-denote"
-    "emacs-diff-hl"
     "emacs-embark"
     "emacs-eshell-syntax-highlighting"
     "emacs-exec-path-from-shell"
