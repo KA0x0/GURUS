@@ -128,6 +128,7 @@
         "tree-sitter-gitcommit"
         "tree-sitter-go"
         "tree-sitter-gomod"
+        "tree-sitter-graphql"
         "tree-sitter-javascript"
         "tree-sitter-make"
         "tree-sitter-org"
