@@ -118,7 +118,6 @@
         "squashfs-tools"
         "sshfs"
         "steam-client"
-        "tesseract-ocr"
         "tiled"
         "tree-sitter-c"
         "tree-sitter-cpp"
