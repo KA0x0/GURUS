@@ -15,14 +15,16 @@
         tool = difftool
 [difftool]
         prompt = false
-[difftool "diffsitter"]
-        cmd = diffsitter "$LOCAL" "$REMOTE" || diff "$LOCAL" "$REMOTE"
+[difftool "difftastic"]
+        cmd = difftastic "$LOCAL" "$REMOTE"
 [fetch]
         all = true
         prune = true
         pruneTags = true
 [help]
         autocorrect = prompt
+[init]
+        defaultBranch = main
 [merge]
         conflictStyle = zdiff3
 [pull]
