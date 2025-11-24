@@ -36,6 +36,7 @@
         "emacs-graphql-mode"
         "emacs-helpful"
         "emacs-jinx"
+        "emacs-jq-mode"
         "emacs-magit"
         "emacs-mentor"
         "emacs-nov-el"
