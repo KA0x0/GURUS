@@ -71,6 +71,7 @@
         "guile-aws"
         "imagemagick"
         "iw"
+        "java-eclipse-jdt-core"
         "libfaketime"
         "llvm"
         "clang"
