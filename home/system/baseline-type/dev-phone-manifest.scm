@@ -48,7 +48,6 @@
         "emacs-tempel" "emacs-eglot-tempel"
         "emacs-verb"
         "emacs-x509-mode"
-     ;; "ffmpeg" propagated by mpv
         "file"
         "flac"
         "flashrom"
@@ -80,7 +79,7 @@
         "mariadb"
         "mit-krb5"
         "monero"
-        "mpv"
+        "mpv" ;; "ffmpeg" propagated by "mpv"
         "mu"
         "emacs-mu4e-alert"
         "mysql"
