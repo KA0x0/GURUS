@@ -58,6 +58,7 @@
 (define-public %my-base-packages
   (map specification->package
   '("bash"
+    "bcachefs-linux-module"
     "bcachefs-tools"
     "blesh"
     "bridge-utils"
