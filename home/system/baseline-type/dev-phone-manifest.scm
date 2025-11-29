@@ -88,7 +88,7 @@
         "openocd"
         "openssh"
         "openssl"
-        "openvpn"
+        "openvpn" "network-manager-openvpn"
         "patch"
         "patchelf"
         "pinentry-emacs"
