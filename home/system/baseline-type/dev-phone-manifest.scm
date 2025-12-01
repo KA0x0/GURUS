@@ -91,6 +91,7 @@
         "openvpn"
         "patch"
         "patchelf"
+        "php"
         "pinentry-emacs"
         "poke"
         "emacs-poke-mode"
