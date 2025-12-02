@@ -83,7 +83,6 @@
         "mu"
         "emacs-mu4e-alert"
         "mysql"
-        "node"
         "openjdk"
         "openocd"
         "openssh"
