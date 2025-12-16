@@ -29,15 +29,5 @@
           (openpgp-fingerprint
            "2A39 3FFF 68F4 EF7A 3D29  12AF 6F51 20A0 22FB B2D5"))))
        %default-channels)
-       (channel
-        (name 'sops-guix)
-        (url "https://git.sr.ht/~fishinthecalculator/sops-guix")
-        (branch "main")
-        (introduction
-         (make-channel-introduction
-          "0bbaf1fdd25266c7df790f65640aaa01e6d2dbc9"
-      (openpgp-fingerprint
-        "D088 4467 87F7 CBB2 AE08  BE6D D075 F59A 4805 49C3"))))
-       %default-channels)
 
 ;;; channels.scm ends here
