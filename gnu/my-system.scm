@@ -57,7 +57,8 @@
 
 (define-public %my-base-packages
   (map specification->package
-  '("bash"
+  '("awscli-2"
+    "bash"
     "bcachefs-linux-module"
     "bcachefs-tools"
     "blesh"
@@ -130,8 +131,6 @@
     "rsync"
     "sed"
     "shadow"
-    "sops"
-    "emacs-sops"
     "sudo"
     "tar"
     "texinfo"

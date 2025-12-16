@@ -9,7 +9,6 @@
 (specifications->manifest
   (list "adb"
         "ascii"
-        "awscli-2"
         "binutils"
         "binwalk"
         "buildah"
