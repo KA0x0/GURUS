@@ -36,6 +36,7 @@
         "emacs-helpful"
         "emacs-jinx"
         "emacs-jq-mode"
+        "emacs-lpy"
         "emacs-magit"
         "emacs-mentor"
         "emacs-nov-el"
