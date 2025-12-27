@@ -53,7 +53,6 @@
         mailutils
         pipewire
         spice-vdagent
-        xclip
         xf86-video-amdgpu)
       %my-base-packages))
   (services
