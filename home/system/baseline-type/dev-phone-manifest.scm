@@ -143,7 +143,6 @@
         "wine64-staging"
         "wireguard-tools"
         "wireshark"
-        "xclip"
         "yt-dlp"
         "zbar"))
 
