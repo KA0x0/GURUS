@@ -3,4 +3,4 @@
 (channel
   (version 0)
   (keyring-reference "keyring")
-  (url "https://git.sr.ht//GURU")) ;the primary URL
+  (url "https://github.com/KA0x0/GURUS")) ;the primary URL
