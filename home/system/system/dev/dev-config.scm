@@ -1,4 +1,9 @@
-(use-modules (gnu) (guix) (guix packages) (srfi srfi-1))
+(use-modules
+  (gnu)
+  (guix)
+  (guix packages)
+  (srfi
+  srfi-1))
 (use-service-modules desktop mcron networking shepherd spice ssh virtualization)
 (use-package-modules admin bash certs compression emacs emacs-xyz file-systems gawk guile guile-xyz gnupg less linux man ncurses polkit rsync python python-web texinfo tree-sitter version-control virtualization wget)
 
@@ -46,11 +51,10 @@
         fontconfig
         iwd
         mailutils
-        picom
         pipewire
         spice-vdagent
-        xf86-video-amdgpu
-        xorg-server-xwayland)
+        xclip
+        xf86-video-amdgpu)
       %my-base-packages))
   (services
     (append
