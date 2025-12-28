@@ -144,6 +144,7 @@
         "wine64-staging"
         "wireguard-tools"
         "wireshark"
+        "xrandr"
         "yt-dlp"
         "zbar"))
 
