@@ -146,6 +146,8 @@
         "wireshark"
         "xrandr" "arandr"
         "yt-dlp"
-        "zbar"))
+        "zbar"
+        "zig"
+        "zls"))
 
 ;;; dev-phone-manifest.scm ends here
