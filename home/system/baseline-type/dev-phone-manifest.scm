@@ -39,6 +39,7 @@
         "emacs-lpy"
         "emacs-magit"
         "emacs-mentor"
+        "emacs-nerd-icons"
         "emacs-nov-el"
         "emacs-org-caldav"
         "emacs-org-contacts"
