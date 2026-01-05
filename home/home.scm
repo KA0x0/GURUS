@@ -40,6 +40,7 @@
                ("powershell" . "pwsh -NoLogo")
                ("ps"         . "ps --forest")
                ("rm"         . "rm -I --one-file-system --verbose")
+               ("su"         . "su-rs")
                ("sudo"       . "sudo-rs")
                ("vdir"       . "emacsclient --create-frame --eval '(dired)' --no-wait"))
               (environment-variables
