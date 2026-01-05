@@ -116,6 +116,7 @@
     "guile-ssh"
     "gzip"
     "iproute"
+    "jq"
     "kmod"
     "less"
     "libselinux"
