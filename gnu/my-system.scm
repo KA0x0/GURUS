@@ -124,6 +124,7 @@
     "man-db"
     "ncurses-with-gpm"
     "nftables"
+    "nmap"
     "nss-certs"
     "openssh-sans-x"
     "procps"
