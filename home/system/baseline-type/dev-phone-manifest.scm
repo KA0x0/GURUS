@@ -117,6 +117,7 @@
         "emacs-shellcheck-flymake"
         "sigrock-cli"
         "socat"
+        "sqlite"
         "squashfs-tools"
         "sshfs"
         "steam-client"
