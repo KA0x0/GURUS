@@ -1,4 +1,4 @@
-;;; init.el --- Loads more lisp module -*- lexical-binding: t; -*-
+;;; init.el --- Initial configuration -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
