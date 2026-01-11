@@ -48,7 +48,6 @@
         "emacs-osm"
         "emacs-polymode" "emacs-polymode-org"
         "emacs-tempel" "emacs-eglot-tempel"
-        "emacs-varuga"
         "emacs-verb"
         "emacs-x509-mode"
         "file"
