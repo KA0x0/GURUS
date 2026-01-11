@@ -15,7 +15,7 @@
   show-paren-delay 0
   auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t))
   backup-directory-alist '(("." . "~/.tmp/emacs/backup/"))
-  backup-by-copying 1 ;; Do not move 1he current file while creating backup
+  backup-by-copying 1 ;; Do not move the current file while creating backup
   create-lockfiles nil
   initial-scratch-message "")
 
