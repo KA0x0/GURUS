@@ -8,8 +8,6 @@
 (use-package geiser)
 (use-package prism)
 
-(setopt guix-geiser-connection-timeout (* 1000 60 30)) ;; 30 mins
-
 (use-package lispy
   :hook (emacs-lisp-mode . lispy-mode))
 
