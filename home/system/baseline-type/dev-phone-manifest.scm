@@ -83,7 +83,6 @@
         "monero"
         "mpv" ;; "ffmpeg" propagated by "mpv"
         "mu"
-        "emacs-mu4e-alert"
         "mysql"
         "openjdk"
         "openocd"
