@@ -147,7 +147,7 @@
         "xrandr" "arandr"
         "yt-dlp"
         "zbar"
-        "zig"
-        "zls" "emacs-zig-mode"))
+        "zig" "emacs-zig-mode"
+        "zls"))
 
 ;;; dev-phone-manifest.scm ends here
