@@ -73,7 +73,7 @@
     (append
       (list
         physical)
-    %my-base-packages))
+    %pecus-base-packages))
   (services
     (append
       (list (service static-networking-service-type
@@ -112,6 +112,6 @@
                            (/mnt/storage/config/twitch-miner/channel:/usr/src/app/channel:ro)
                            (/mnt/storage/config/twitch-miner/config.json:/usr/src/app/config.json:ro))))))))
         %base-services
-        %my-base-services))))
+        %pecus-base-services))))
 
 ;;; node-config.scm ends here

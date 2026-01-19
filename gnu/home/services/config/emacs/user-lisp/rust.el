@@ -7,6 +7,6 @@
 (use-package eglot)
 
 
-(provide 'my-rust)
+(provide 'pecus-rust)
 
 ;;; rust.el ends here

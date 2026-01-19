@@ -72,7 +72,7 @@
     (append
       (list
         ppp)
-        %my-base-packages))
+        %pecus-base-packages))
   (services
     (append
       (list
@@ -91,6 +91,6 @@
                    (gateway "10.10.10.10"))))
               (name-servers '("10.10.10.10")))))
         %base-services
-        %my-base-services))))
+        %pecus-base-services))))
 
 ;;; network-config.scm ends here

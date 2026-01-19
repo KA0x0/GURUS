@@ -9,6 +9,6 @@
 (use-package yaml-mode)
 
 
-(provide 'my-markup)
+(provide 'pecus-markup)
 
 ;;; markup.el ends here

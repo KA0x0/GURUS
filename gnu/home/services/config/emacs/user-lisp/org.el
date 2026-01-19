@@ -13,6 +13,6 @@
 (use-package polymode-org)
 
 
-(provide 'my-org)
+(provide 'pecus-org)
 
 ;;; org.el ends here

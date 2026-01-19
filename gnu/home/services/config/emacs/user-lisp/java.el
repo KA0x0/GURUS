@@ -7,6 +7,6 @@
 (use-package eglot)
 
 
-(provide 'my-java)
+(provide 'pecus-java)
 
 ;;; java.el ends here

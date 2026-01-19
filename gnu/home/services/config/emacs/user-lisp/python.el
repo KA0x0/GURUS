@@ -13,6 +13,6 @@
   (python-shell-interpreter "python3"))
 
 
-(provide 'my-python)
+(provide 'pecus-python)
 
 ;;; python.el ends here

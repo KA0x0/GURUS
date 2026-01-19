@@ -30,6 +30,6 @@
 (use-package graphviz-dot-mode)
 
 
-(provide 'my-dev)
+(provide 'pecus-dev)
 
 ;;; dev.el ends here

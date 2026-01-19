@@ -17,7 +17,7 @@
 
 ;;; Code:
 
-(define-module (packages my-emacs)
+(define-module (packages pecus-emacs)
   #:use-module (guix packages)
   #:use-module (guix git-download)
   #:use-module (guix utils)
@@ -30,7 +30,7 @@
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26))
 
-(define-public my-emacs-next
+(define-public pecus-emacs-next
     (package
       (inherit emacs-next)
       (snippet
@@ -45,9 +45,9 @@
                   "obsolete"
                   "play")))))))
 
-(define-public my-emacs-next-no-x
+(define-public pecus-emacs-next-no-x
     (package
-      (inherit my-emacs-next)
+      (inherit pecus-emacs-next)
     (build-system gnu-build-system)
     (inputs (fold alist-delete
                   (package-inputs emacs)
@@ -57,7 +57,7 @@
                     ;; These depend on libx11, so remove them as well.
                     "libotf" "m17n-lib" "dbus")))
       (arguments
-       (substitute-keyword-arguments (package-arguments my-emacs-next-no-x)
+       (substitute-keyword-arguments (package-arguments pecus-emacs-next-no-x)
          ((#:configure-flags flags ''())
           `(delete "--with-cairo" ,flags))
        ((#:phases phases)
@@ -65,7 +65,7 @@
            (delete 'restore-emacs-pdmp)
            (delete 'strip-double-wrap)))))))
 
-(define-public my-emacs-guix-shell
+(define-public pecus-emacs-guix-shell
   (package
     (name "emacs-guix-shell")
     (version "0.1")
@@ -86,7 +86,7 @@
 environment variables appropriately.")
     (license gpl3+)))
 
-(define-public my-emacs-jwt
+(define-public pecus-emacs-jwt
   (package
     (name "emacs-jwt")
     (version "0.2.0")

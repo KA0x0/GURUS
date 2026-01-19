@@ -70,11 +70,11 @@
            %base-file-systems))
   (packages
     (append
-      %my-base-packages))
+      %pecus-base-packages))
   (services
     (append
       (list
       %base-services
-      %my-base-services))))
+      %pecus-base-services))))
 
 ;;; c2-config.scm ends here

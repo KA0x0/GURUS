@@ -63,6 +63,6 @@
   (exec-path-from-shell-initialize))
 
 
-(provide 'my-ui)
+(provide 'pecus-ui)
 
-;; my-ui.el ends here
+;; pecus-ui.el ends here

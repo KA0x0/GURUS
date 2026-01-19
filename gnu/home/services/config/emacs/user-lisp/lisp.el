@@ -14,6 +14,6 @@
 (use-package flymake-guile
   :hook (scheme-mode-hook . flymake-guile))
 
-(provide 'my-lisp)
+(provide 'pecus-lisp)
 
 ;;; lisp.el ends here

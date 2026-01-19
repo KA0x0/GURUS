@@ -40,6 +40,6 @@
   ;; (add-hook 'dape-compile-hook 'kill-buffer))
 
 
-(provide 'my-debugger)
+(provide 'pecus-debugger)
 
 ;;; debugger.el ends here

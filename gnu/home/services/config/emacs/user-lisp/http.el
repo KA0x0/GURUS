@@ -13,6 +13,6 @@
 (use-package swagg)
 
 
-(provide 'my-http)
+(provide 'pecus-http)
 
 ;;; http.el ends here

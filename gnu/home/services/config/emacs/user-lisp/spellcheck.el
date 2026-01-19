@@ -10,6 +10,6 @@
   :hook (emacs-startup . global-jinx-mode))
 
 
-(provide 'my-spellcheck)
+(provide 'pecus-spellcheck)
 
 ;; spellcheck.el ends here

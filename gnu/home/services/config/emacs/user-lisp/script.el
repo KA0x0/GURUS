@@ -5,6 +5,6 @@
 ;;; Code:
 
 
-(provide 'my-script)
+(provide 'pecus-script)
 
 ;;; script.el ends here

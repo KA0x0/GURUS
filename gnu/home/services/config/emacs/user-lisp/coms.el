@@ -11,6 +11,6 @@
 (use-package ement)
 
 
-(provide 'my-coms)
+(provide 'pecus-coms)
 
 ;;; coms.el ends here

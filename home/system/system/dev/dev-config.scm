@@ -78,14 +78,14 @@
       (list
         bluez
         dbus
-        my-emacs-next
+        pecus-emacs-next
         fontconfig
         iwd
         mailutils
         pipewire
         spice-vdagent
         xf86-video-amdgpu)
-      %my-base-packages))
+      %pecus-base-packages))
   (services
     (append
       (list 
@@ -105,6 +105,6 @@
         (service libvirt-service-type)
         (service spice-vdagent-service-type) ;; Add support for the SPICE protocol, which enables dynamic resizing of the guest screen resolution, clipboard integration with the host, etc.
        %base-services
-       %my-base-services))))
+       %pecus-base-services))))
 
 ;;; dev-config.scm ends here

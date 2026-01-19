@@ -7,6 +7,6 @@
 (use-package eglot)
 
 
-(provide 'my-go)
+(provide 'pecus-go)
 
 ;;; go.el ends here

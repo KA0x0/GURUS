@@ -11,6 +11,6 @@
 (set-frame-font "iosevka 12" nil t)
 
 
-(provide 'my-wm)
+(provide 'pecus-wm)
 
 ;;; wm.el ends here

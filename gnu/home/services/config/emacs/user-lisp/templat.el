@@ -46,6 +46,6 @@
   :config (citar-embark-mode))
 
 
-(provide 'my-template)
+(provide 'pecus-template)
 
 ;; templat.el ends here

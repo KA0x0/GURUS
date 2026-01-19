@@ -7,6 +7,6 @@
 (use-package eglot)
 
 
-(provide 'my-zig)
+(provide 'pecus-zig)
 
 ;;; zig.el ends here

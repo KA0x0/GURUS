@@ -70,12 +70,12 @@
            %base-file-systems))
   (packages
     (append
-     %my-base-packages))
+     %pecus-base-packages))
   (services
     (append
       (list
         (service cuirass-service-type)
       %base-services
-      %my-base-services))))
+      %pecus-base-services))))
 
 ;;; buildfarm-config.scm ends here

@@ -11,6 +11,6 @@
   (eshell-syntax-highlighting-global-mode +1))
 
 
-(provide 'my-sh)
+(provide 'pecus-sh)
 
 ;;; sh.el ends here

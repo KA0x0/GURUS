@@ -17,7 +17,7 @@
 
 ;;; Code:
 
-(define-module (gnu my-system)
+(define-module (gnu pecus-system)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages bash)
   #:use-module (gnu packages certs)
@@ -45,17 +45,17 @@
   #:use-module (sops packages sops)
   #:use-module (shepherd service system-log)
   #:use-module (shepherd service timer)
-  #:export (%my-base-operating-system)
-  #:export (%my-base-packages)
-  #:export (%my-base-services))
+  #:export (%pecus-base-operating-system)
+  #:export (%pecus-base-packages)
+  #:export (%pecus-base-services))
 
-(define-public %my-base-operating-system
+(define-public %pecus-base-operating-system
   (operating-system
    (locale "en_US.utf8")
    (timezone "Etc/UTC")
    (keyboard-layout (keyboard-layout "us" "ru"))))
 
-(define-public %my-base-packages
+(define-public %pecus-base-packages
   (map specification->package
   '("awscli-2"
     "bash"
@@ -67,8 +67,8 @@
     "coreutils"
     "curl"
     "diffutils"
-    "my-emacs-next-no-x"
-    "my-emacs-guix-shell"
+    "pecus-emacs-next-no-x"
+    "pecus-emacs-guix-shell"
     "emacs-ace-window"
     "emacs-arei"
     "emacs-avy"
@@ -147,7 +147,7 @@
     "xz"
     "zstd")))
 
-(define my-motd
+(define pecus-motd
      (service login-service-type
                (login-configuration
                 (motd (plain-file "motd" "\
@@ -158,10 +158,10 @@
 
 (define (hardcoded-editor))
 
-(define-public %my-base-services
+(define-public %pecus-base-services
   (append
-      (list (service my-dns)
-            (service login-service-type my-motd)
+      (list (service pecus-dns)
+            (service login-service-type pecus-motd)
             (service nftables-service-type)
             (service ntp-service-type)
             (service openssh-service-type
@@ -170,4 +170,4 @@
                   ("ka0x" ,(local-file "/etc/ssh/authorized_keys.d/ka0x.pub")))))
             (service system-log-service))))
 
-;;; my-system.scm ends here
+;;; pecus-system.scm ends here

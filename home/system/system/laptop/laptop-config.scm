@@ -75,17 +75,17 @@
     (append
       (list
         dbus
-        my-emacs-next
+        pecus-emacs-next
         emacs-exwm
         lm-sensors
         xorg-server-xwayland)
-      %my-base-packages))
+      %pecus-base-packages))
   (services
     (append
       (list
         (service elogind-service-type)
         (service libvirt-service-type)
         %base-services
-        %my-base-services))))
+        %pecus-base-services))))
 
 ;;; laptop-config.scm ends here

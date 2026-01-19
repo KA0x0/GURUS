@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "my-emacs-next"
+  (list "pecus-emacs-next"
         "sshfs"
         "virt-manager"
         "wireguard-tools"))

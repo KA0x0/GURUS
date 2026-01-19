@@ -7,6 +7,6 @@
 (use-package eglot)
 
 
-(provide 'my-c)
+(provide 'pecus-c)
 
 ;;; c.el ends here

@@ -100,6 +100,6 @@
   (setopt read-extended-command-predicate #'command-completion-default-include-p))
 
 
-(provide 'my-completion)
+(provide 'pecus-completion)
 
 ;;; completion.el ends here

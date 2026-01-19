@@ -11,6 +11,6 @@
  (setopt mcp-hub-servers))
 
 
-(provide 'my-llm)
+(provide 'pecus-llm)
 
 ;;; llm.el ends here

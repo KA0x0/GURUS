@@ -9,6 +9,6 @@
 (use-package magit)
 
 
-(provide 'my-project)
+(provide 'pecus-project)
 
 ;;; project.el ends here

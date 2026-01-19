@@ -23,6 +23,6 @@
   (packages
     (append
       (list
-        %my-base-packages))))
+        %pecus-base-packages))))
 
 ;;; template.scm ends here
