@@ -100,6 +100,7 @@
         "python-debugpy"
         "python-ipython"
         "python-pycryptodomex"
+        "python-rassumfrassum"
         "python-requests"
         "python-scapy"
         "qemu"
