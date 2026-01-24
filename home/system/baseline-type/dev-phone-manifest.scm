@@ -39,6 +39,7 @@
         "emacs-ligature"
         "emacs-lpy"
         "emacs-magit"
+        "emacs-markdown-mode"
         "emacs-mentor"
         "emacs-nerd-icons"
         "emacs-nov-el"
