@@ -112,7 +112,7 @@
         "samba"
         "shellcheck"
         "emacs-shellcheck-flymake"
-        "sigrock-cli"
+        "sigrok-cli"
         "socat"
         "sqlite"
         "squashfs-tools"
