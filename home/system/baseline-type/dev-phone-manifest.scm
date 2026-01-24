@@ -28,7 +28,7 @@
         "emacs-disproject"
         "emacs-ednc"
         "emacs-ement"
-        "emacs-emms"
+        "emacs-emms" "opus-tools"
         "emacs-exwm"
         "emacs-filechooser"
         "emacs-forge"
