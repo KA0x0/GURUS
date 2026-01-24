@@ -59,7 +59,7 @@
         "font-liberation"
         "font-wqy-zenhei"
         "freerdp"
-        "gcc"
+        "gcc-toolchain"
         "gdb"
         "glibc"
         "gnuradio"
