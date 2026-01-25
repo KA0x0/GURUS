@@ -137,7 +137,7 @@
         "tree-sitter-sql"
         "tree-sitter-rust"
         "tree-sitter-xml"
-        "unrar"
+        "unrar-free"
         "upx"
         "valkey"
         "wget"
