@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "fwupd"
+      '("fwupd"
         "lm-sensors"
         "tpm2-tss"
         "usbguard"))

@@ -7,6 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "curl"))
+      '("curl"))
 
 ;;; matrix-manifest.scm ends here

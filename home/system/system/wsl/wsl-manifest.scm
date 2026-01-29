@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "pecus-emacs-next"
+      '("pecus-emacs-next"
         "hashcat"
         "virt-manager"))
 

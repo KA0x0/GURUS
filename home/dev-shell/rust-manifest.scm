@@ -7,6 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "rust"))
+      '("rust"))
 
 ;;; rust.scm ends here

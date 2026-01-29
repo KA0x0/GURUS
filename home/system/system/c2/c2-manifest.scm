@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "rsync"
+  '    ("rsync"
         "sshfs"
         "wireguard-tools"))
 

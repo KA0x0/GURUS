@@ -7,6 +7,6 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "go"))
+      '("go"))
 
 ;;; go.scm ends here

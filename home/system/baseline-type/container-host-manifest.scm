@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "buildah"
+      '("buildah"
         "crun"
         "podman"))
 

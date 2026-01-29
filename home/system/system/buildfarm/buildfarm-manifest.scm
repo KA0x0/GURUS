@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "cuirass"
+      '("cuirass"
         "emacs-build-farm"))
 
 ;;; buildfarm-manifest.scm ends here

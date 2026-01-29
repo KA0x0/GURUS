@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "qemu"
+      '("qemu"
         "rtorrent-xml-rpc@0.16.2"
         "sshfs"
         "tpm2-tss"))

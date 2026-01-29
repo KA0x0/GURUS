@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "boost"
+      '("boost"
         "guile-emacs"
         "clang-toolchain"
         "cmake"

@@ -7,7 +7,7 @@
 ;;; Code:
 
 (specifications->manifest
-  (list "adb"
+      '("adb"
         "ascii"
         "binutils"
         "binwalk"
